@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ViewModels="clr-namespace:LoLSkinExplorer.ViewModels"
+             x:Class="LoLSkinExplorer.Views.SkinsPage">
+    
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="icons8_search.ico" />
+
+    </ContentPage.ToolbarItems>
+
+    <ListView x:Name="ListView" HasUnevenRows="True" ItemsSource="{Binding Skins}" 
+              BackgroundColor="Transparent" SeparatorVisibility="None" 
+              >
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="10">
+                        <Frame Padding="0" WidthRequest="350" HeightRequest="200" 
+                               HasShadow="True" HorizontalOptions="Center"
+                               CornerRadius="10" 
+                               >
+                            <Grid>
+                                <StackLayout>
+                                    <Image Source="{Binding ImgLink}"  
+                                           HeightRequest="500" VerticalOptions="FillAndExpand"
+                                           HorizontalOptions="StartAndExpand" Opacity="0.8" 
+                                           Margin="0,-150,0,0"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding SkinName}" TextColor="Black" 
+                                        HorizontalTextAlignment="Start"
+                                        HorizontalOptions="CenterAndExpand"
+                                           VerticalOptions="EndAndExpand"
+                                        FontSize="Large"/>
+                                    <!--<Label Text="{Binding SkinNum}" 
+                                           FontSize="Large" Margin="0,0,0,5" 
+                                           HorizontalOptions="End" 
+                                           VerticalOptions="End"
+                                           TextColor="Black"/>-->
+                                </StackLayout>
+
+                            </Grid>
+                        </Frame>
+                    </Grid>
+
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
