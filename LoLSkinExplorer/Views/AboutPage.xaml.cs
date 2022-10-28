@@ -125,20 +125,11 @@ namespace LoLSkinExplorer.Views
             var champ = ((ListView)sender).SelectedItem as Champion;
             if (champ == null)
                 return;
-            //var route = $"{nameof(SkinsPage)}?ChampName = {champ.Name}";
-            //try
-            //{
-            //    await Shell.Current.GoToAsync(route);
-            //}
-            //catch(Exception ex)
-            //{
-            //    await Application.Current.MainPage.DisplayAlert("error", ex.Message, "OK");
-            //}
-            //await Navigation.PushAsync(new SkinsPage(champ.ChampionName));
-            //List<Skin> ChampSkins = GetSkins(champ.ChampionName);
-            SkinPageViewModel viewModel = new SkinPageViewModel();
-            viewModel.Skins.Clear();
-            viewModel.Skins = Skins;
+            
+            
+            
+            //viewModel.Skins.Clear();
+            //viewModel.Skins = Skins;
 
             Navigation.PushAsync(new SkinsPage(champ.ChampionName));
         }

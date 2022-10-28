@@ -6,9 +6,9 @@
 
 
 
-    <ContentPage.BindingContext>
+    <!--<ContentPage.BindingContext>
         <ViewModels:SkinsPageViewModel/>
-    </ContentPage.BindingContext>
+    </ContentPage.BindingContext>-->
     
     <!--<ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="icons8_search.ico" />
