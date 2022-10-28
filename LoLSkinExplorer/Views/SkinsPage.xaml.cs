@@ -19,7 +19,7 @@ namespace LoLSkinExplorer.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SkinsPage : ContentPage
     {
-        public string ChampName { get; set; }
+        public string ChampName;
 
         string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
         public ObservableRangeCollection<Skin> Skins { get; set; }
@@ -39,22 +39,22 @@ namespace LoLSkinExplorer.Views
                 HasChromas = false,
                 ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_1.jpg",
             });
-            
+            //GetSkins(ChampName);
         }
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            SkinsPageViewModel skinsPageViewModel = new SkinsPageViewModel()
-            {
-                ChampName = ChampName
-            };
-            
-        }
+        //protected override void OnAppearing()
+        //{
+        //    base.OnAppearing();
+        //    SkinsPageViewModel skinsPageViewModel = new SkinsPageViewModel()
+        //    {
+        //        ChampName = ChampName
+        //    };
+
+        //}
 
         public void GetSkins(string _ChampName)
         {
             Skins.Clear();
-            string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/" + _ChampName + ".json";
+            string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.19.1/data/en_US/champion/" + _ChampName + ".json";
             WebClient webClient = new WebClient();
             string downloadedJsonText = webClient.DownloadString(jsonText);
             JObject dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);
@@ -70,7 +70,7 @@ namespace LoLSkinExplorer.Views
                     Skins[i].SkinName = _ChampName;
                 }
             }
-            OnPropertyChanged();
+            OnPropertyChanged(nameof(Skins));
         }
 
     }

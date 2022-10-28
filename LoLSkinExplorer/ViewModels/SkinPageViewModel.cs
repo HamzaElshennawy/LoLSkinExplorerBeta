@@ -51,16 +51,7 @@ namespace LoLSkinExplorer.ViewModels
             Skins = new ObservableRangeCollection<Skin>();
             SkinsAtStart = new ObservableRangeCollection<Skin>();
             RefreshCommand = new AsyncCommand(Refresh);
-            //getDataCommand = new AsyncCommand(getdata);
-            //SearchCommand = new AsyncCommand(Search);
-            //SkinsAtStart.Add(new Skin()
-            //{
-            //    SkinID = "266000",
-            //    SkinNum = 0,
-            //    SkinName = "default",
-            //    HasChromas = false,
-            //    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg"
-            //});
+            
             Skins.Add(new Skin()
             {
                 SkinID = "266001",
@@ -91,8 +82,8 @@ namespace LoLSkinExplorer.ViewModels
                 {
                     try
                     {
-                        //http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/Aatrox.json
-                        string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/" + ChampionsNames[i] + ".json";
+                        //http://ddragon.leagueoflegends.com/cdn/12.20.1/data/en_US/champion/Aatrox.json
+                        string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.20.1/data/en_US/champion/" + ChampionsNames[i] + ".json";
                         WebClient webClient = new WebClient();
                         string downloadedJsonText = webClient.DownloadString(jsonText);
                         JObject dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);

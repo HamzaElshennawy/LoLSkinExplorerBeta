@@ -16,8 +16,6 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="icons8_search.ico"  Clicked="ToolbarItem_Clicked"/>
-
-
     </ContentPage.ToolbarItems>
 
     <StackLayout>
@@ -25,7 +23,7 @@
             Margin="0" IsVisible="False"  TextChanged="SearchEntryBox_TextChanged" Unfocused="SearchEntryBox_Unfocused"/>
         <ListView x:Name="ListViewomePage" HasUnevenRows="True" ItemsSource="{Binding Champions}" 
               BackgroundColor="Transparent" SeparatorVisibility="None" 
-              ItemSelected="ListViewomePage_ItemSelected" ItemTapped="ListViewomePage_ItemTapped">
+              ItemSelected="ListViewomePage_ItemSelected_1Async" ItemTapped="ListViewomePage_ItemTapped">
 
             <ListView.ItemTemplate>
                 <DataTemplate>

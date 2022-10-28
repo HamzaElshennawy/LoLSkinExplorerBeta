@@ -3,13 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ViewModels="clr-namespace:LoLSkinExplorer.ViewModels"
              x:Class="LoLSkinExplorer.Views.SkinsPage">
+
+
+
+    <ContentPage.BindingContext>
+        <ViewModels:SkinsPageViewModel/>
+    </ContentPage.BindingContext>
     
-
-
-    <ContentPage.ToolbarItems>
+    <!--<ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="icons8_search.ico" />
 
-    </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>-->
 
     <ListView x:Name="ListView" HasUnevenRows="True" ItemsSource="{Binding Skins}" 
               BackgroundColor="Transparent" SeparatorVisibility="None" 
@@ -35,7 +39,7 @@
                                         HorizontalTextAlignment="Start"
                                         HorizontalOptions="CenterAndExpand"
                                            VerticalOptions="EndAndExpand"
-                                        FontSize="Large"/>
+                                        FontSize="30"/>
                                     <!--<Label Text="{Binding SkinNum}" 
                                            FontSize="Large" Margin="0,0,0,5" 
                                            HorizontalOptions="End" 
