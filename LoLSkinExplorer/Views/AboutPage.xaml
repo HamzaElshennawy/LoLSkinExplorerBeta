@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ViewModels="clr-namespace:LoLSkinExplorer.ViewModels" 
              xmlns:lolskinexplorer="clr-namespace:LoLSkinExplorer" 
-             
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarHasShadow="True"
              x:Class="LoLSkinExplorer.Views.AboutPage"
              BackgroundColor="White"   >
 
@@ -15,53 +16,58 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="icons8_search.ico"  Clicked="ToolbarItem_Clicked"/>
-        
+
+
     </ContentPage.ToolbarItems>
-    
-    <ListView x:Name="ListViewomePage" HasUnevenRows="True" ItemsSource="{Binding Champions}" 
+
+    <StackLayout>
+        <SearchBar x:Name="SearchEntryBox" Placeholder="Search" HorizontalTextAlignment="Center" BackgroundColor="GhostWhite"
+            Margin="0" IsVisible="False"  TextChanged="SearchEntryBox_TextChanged" Unfocused="SearchEntryBox_Unfocused"/>
+        <ListView x:Name="ListViewomePage" HasUnevenRows="True" ItemsSource="{Binding Champions}" 
               BackgroundColor="Transparent" SeparatorVisibility="None" 
               ItemSelected="ListViewomePage_ItemSelected" ItemTapped="ListViewomePage_ItemTapped">
-        
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <Grid Padding="10">
-                        <Frame Padding="0" WidthRequest="350" HeightRequest="200" 
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="7">
+                            <Frame Padding="0" WidthRequest="350" HeightRequest="200" 
                                HasShadow="True" HorizontalOptions="Center"
                                CornerRadius="10" 
                                >
-                            <Grid>
-                                <StackLayout>
-                                    <Image Source="{Binding ChampionImage}"  
+                                <Grid>
+                                    <StackLayout>
+                                        <Image Source="{Binding ChampionImage}"  
                                            HeightRequest="500" VerticalOptions="FillAndExpand"
                                            HorizontalOptions="StartAndExpand" Opacity="0.8" 
                                            Margin="0,-150,0,0"/>
-                                </StackLayout>
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Text="{Binding ChampionName}" TextColor="Black" 
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding ChampionName}" TextColor="Black" 
                                         HorizontalTextAlignment="Start"
                                         HorizontalOptions="CenterAndExpand"
                                            VerticalOptions="EndAndExpand"
                                         FontSize="Large"/>
-                                    <!--<Label Text="{Binding SkinNum}" 
+                                        <!--<Label Text="{Binding SkinNum}" 
                                            FontSize="Large" Margin="0,0,0,5" 
                                            HorizontalOptions="End" 
                                            VerticalOptions="End"
                                            TextColor="Black"/>-->
-                                </StackLayout>
-                                
-                            </Grid>
-                        </Frame>
-                    </Grid>
-                    
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
-    
+                                    </StackLayout>
+
+                                </Grid>
+                            </Frame>
+                        </Grid>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 
 
-    
+
+
 
 
 

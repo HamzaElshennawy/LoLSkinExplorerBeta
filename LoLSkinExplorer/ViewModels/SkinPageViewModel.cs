@@ -28,7 +28,7 @@ namespace LoLSkinExplorer.ViewModels
     public class SkinPageViewModel : BaseViewModel
     {
 
-        
+
 
 
         string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
@@ -51,8 +51,8 @@ namespace LoLSkinExplorer.ViewModels
             Skins = new ObservableRangeCollection<Skin>();
             SkinsAtStart = new ObservableRangeCollection<Skin>();
             RefreshCommand = new AsyncCommand(Refresh);
-            getDataCommand = new AsyncCommand(getdata);
-            SearchCommand = new AsyncCommand(Search);
+            //getDataCommand = new AsyncCommand(getdata);
+            //SearchCommand = new AsyncCommand(Search);
             //SkinsAtStart.Add(new Skin()
             //{
             //    SkinID = "266000",
@@ -71,13 +71,13 @@ namespace LoLSkinExplorer.ViewModels
             });
             Champions.Add(new Champion()
             {
-                ChampionId =  "Ahri",
+                ChampionId = "Ahri",
                 ChampionKey = "103",
                 ChampionName = "Ahri",
                 ChampionTitle = "the Nine-Tailed Fox",
                 ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg"
-            }) ;
-            
+            });
+
             GetData();
         }
 
@@ -96,20 +96,6 @@ namespace LoLSkinExplorer.ViewModels
                         WebClient webClient = new WebClient();
                         string downloadedJsonText = webClient.DownloadString(jsonText);
                         JObject dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);
-                        //var skinNames = dobj["data"][ChampionsNames[i]]["skins"].Value<JArray>();
-
-                        //List<Skin> skins = skinNames.ToObject<List<Skin>>();
-
-                        //for (int j = 0; j < skins.Count; j++)
-                        //{
-                        //    skins[j].imgLink = BaseSkinLink + ChampionsNames[i] + "_" + skins[j].SkinNum + ".jpg";
-                        //    Skins.Add(skins[j]);
-
-                        //    //if (Skins[i+j].SkinName == "default")
-                        //    //{
-                        //    //    Skins[i].SkinName = ChampionsNames[i];
-                        //    //}
-                        //}
 
 
                         Champion TempChampion = new Champion();
@@ -131,40 +117,28 @@ namespace LoLSkinExplorer.ViewModels
 
                         await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
                     }
-                    
+
                 }
 
 
-                //for(int i = 0; i < Skins.Count; i++)
-                //{
-                //    if(Skins[i].SkinName == "default")
-                //    {
-                //        Skins.Remove(Skins[i]);
-                //    }
-                //}
+
 
 
                 OnPropertyChanged(nameof(Skins));
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("error" , ex.Message, "OK");
+                await Application.Current.MainPage.DisplayAlert("error", ex.Message, "OK");
             }
         }
-        async Task getdata()
-        {
-            GetData();
-        }
+
         async Task Refresh()
         {
             IsBusy = true;
             await Task.Delay(2000);
             IsBusy = false;
         }
-        async Task Search()
-        {
 
-        }
         List<string> ChampionsNames = new List<string>()
         {
             "Aatrox","Ahri","Akali","Akshan","Alistar","Amumu","Anivia","Annie","Aphelios","Ashe","AurelionSol","Azir",
@@ -195,9 +169,6 @@ namespace LoLSkinExplorer.ViewModels
             "Yasuo","Yone","Yorick","Yuumi",
             "Zac","Zed","Zeri","Ziggs","Zilean","Zoe","Zyra"
         };
-        
+
     }
 }
-
-
-
