@@ -2,25 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ViewModels="clr-namespace:LoLSkinExplorer.ViewModels"
-             x:Class="LoLSkinExplorer.Views.SkinsPage"
-             Title="{Binding ChampName}" BackgroundColor="#1874a5">
+             x:Class="LoLSkinExplorer.Views.SkinsPage" 
+              BackgroundColor="#1874a5">
 
-
-
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="{Binding Skins[0].SkinName}"/>
+    </ContentPage.ToolbarItems>
     
 
     <ListView x:Name="ListView" HasUnevenRows="True" ItemsSource="{Binding Skins}" 
               BackgroundColor="Transparent" SeparatorVisibility="None"  ItemSelected="ListView_ItemSelected"
               >
-        <ListView.HeaderTemplate>
-            <DataTemplate>
-                <Grid>
-
-                    <Label Text="Test" FontSize="30"/>
-
-                </Grid>
-            </DataTemplate>
-        </ListView.HeaderTemplate>
+        
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>

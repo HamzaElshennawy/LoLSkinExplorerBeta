@@ -6,9 +6,13 @@
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarHasShadow="True"
              x:Class="LoLSkinExplorer.Views.AboutPage"
-             BackgroundColor="#1874a5"   >
+             BackgroundColor="#1874a5"
+             Title="Skin Explorer"
+             >
 
-
+    <!--<NavigationPage.TitleView>
+        <Label Text="Skin Explorer"/>
+    </NavigationPage.TitleView>-->
     <ContentPage.BindingContext>
         <ViewModels:SkinPageViewModel/>
     </ContentPage.BindingContext>

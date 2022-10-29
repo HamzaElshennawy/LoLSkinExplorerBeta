@@ -10,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        
         app:lottie_autoPlay="true"
         app:lottie_fileName="36321-khazix.json"
         app:lottie_loop="true"
