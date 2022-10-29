@@ -2,30 +2,32 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ViewModels="clr-namespace:LoLSkinExplorer.ViewModels"
-             x:Class="LoLSkinExplorer.Views.SkinsPage">
+             x:Class="LoLSkinExplorer.Views.SkinsPage"
+             Title="{Binding ChampName}" BackgroundColor="#1874a5">
 
 
 
-    <!--<ContentPage.BindingContext>
-        <ViewModels:SkinsPageViewModel/>
-    </ContentPage.BindingContext>-->
     
-    <!--<ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="icons8_search.ico" />
-
-    </ContentPage.ToolbarItems>-->
 
     <ListView x:Name="ListView" HasUnevenRows="True" ItemsSource="{Binding Skins}" 
-              BackgroundColor="Transparent" SeparatorVisibility="None" 
+              BackgroundColor="Transparent" SeparatorVisibility="None"  ItemSelected="ListView_ItemSelected"
               >
+        <ListView.HeaderTemplate>
+            <DataTemplate>
+                <Grid>
 
+                    <Label Text="Test" FontSize="30"/>
+
+                </Grid>
+            </DataTemplate>
+        </ListView.HeaderTemplate>
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <Grid Padding="10">
                         <Frame Padding="0" WidthRequest="350" HeightRequest="200" 
                                HasShadow="True" HorizontalOptions="Center"
-                               CornerRadius="10" 
+                               CornerRadius="20" 
                                >
                             <Grid>
                                 <StackLayout>
@@ -37,9 +39,10 @@
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="{Binding SkinName}" TextColor="Black" 
                                         HorizontalTextAlignment="Start"
-                                        HorizontalOptions="CenterAndExpand"
+                                        HorizontalOptions="StartAndExpand"
                                            VerticalOptions="EndAndExpand"
-                                        FontSize="30"/>
+                                           Padding="8"
+                                        FontSize="23"/>
                                     <!--<Label Text="{Binding SkinNum}" 
                                            FontSize="Large" Margin="0,0,0,5" 
                                            HorizontalOptions="End" 
@@ -54,5 +57,6 @@
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
+        
     </ListView>
 </ContentPage>

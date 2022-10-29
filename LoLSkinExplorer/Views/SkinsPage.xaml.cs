@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using LoLSkinExplorer.ViewModels;
+using System.Collections.ObjectModel;
 
 namespace LoLSkinExplorer.Views
 {
@@ -22,13 +23,14 @@ namespace LoLSkinExplorer.Views
         public string ChampName;
 
         string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
-        public ObservableRangeCollection<Skin> Skins { get; set; }
+        public ObservableCollection<Skin> Skins { get; set; }
 
         public SkinsPage(string cName)
         {
             InitializeComponent();
+            BindingContext = this;
             ChampName = cName;
-            Skins = new ObservableRangeCollection<Skin>();
+            Skins = new ObservableCollection<Skin>();
 
 
             Skins.Add(new Skin()
@@ -63,7 +65,7 @@ namespace LoLSkinExplorer.Views
 
             List<Skin> skins = new List<Skin>();
 
-            var skinNames = dobj["data"]["Aatrox"]["skins"].Value<JArray>();
+            var skinNames = dobj["data"][_ChampName]["skins"].Value<JArray>();
             try
             {
                 skins = skinNames.ToObject<List<Skin>>();
@@ -89,8 +91,12 @@ namespace LoLSkinExplorer.Views
 
             //await Application.Current.MainPage.DisplayAlert("Skin name", skins[0].skinName, "ok");
 
-            OnPropertyChanged();
+            OnPropertyChanged(nameof(Skins));
         }
 
+        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            ((ListView)sender).SelectedItem = null;
+        }
     }
 }

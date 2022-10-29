@@ -6,7 +6,7 @@
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarHasShadow="True"
              x:Class="LoLSkinExplorer.Views.AboutPage"
-             BackgroundColor="White"   >
+             BackgroundColor="#1874a5"   >
 
 
     <ContentPage.BindingContext>
@@ -30,7 +30,7 @@
                     <ViewCell>
                         <Grid Padding="7">
                             <Frame Padding="0" WidthRequest="350" HeightRequest="200" 
-                               HasShadow="True" HorizontalOptions="Center"
+                               HasShadow="True" HorizontalOptions="Center" 
                                CornerRadius="10" 
                                >
                                 <Grid>

@@ -87,8 +87,6 @@ namespace LoLSkinExplorer.ViewModels
                         WebClient webClient = new WebClient();
                         string downloadedJsonText = webClient.DownloadString(jsonText);
                         JObject dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);
-
-
                         Champion TempChampion = new Champion();
                         var champID = dobj["data"][ChampionsNames[i]]["id"];
                         TempChampion.ChampionId = (string)champID;
@@ -110,10 +108,6 @@ namespace LoLSkinExplorer.ViewModels
                     }
 
                 }
-
-
-
-
 
                 OnPropertyChanged(nameof(Skins));
             }
@@ -160,6 +154,5 @@ namespace LoLSkinExplorer.ViewModels
             "Yasuo","Yone","Yorick","Yuumi",
             "Zac","Zed","Zeri","Ziggs","Zilean","Zoe","Zyra"
         };
-
     }
 }
