@@ -1,20 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿ ?xml version="1.0" encoding="utf-8" ?><ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ViewModels="clr-namespace:LoLSkinExplorer.ViewModels"
              x:Class="LoLSkinExplorer.Views.SkinsPage" 
               BackgroundColor="#1874a5">
 
-    
+
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="{Binding Skins[0].SkinName}"/>
+        <ToolbarItem Text="{Binding Skinss[0].SkinName}"/>
     </ContentPage.ToolbarItems>
-    
+
 
     <ListView x:Name="ListView" HasUnevenRows="True" ItemsSource="{Binding Skins}" 
               BackgroundColor="Transparent" SeparatorVisibility="None"  ItemSelected="ListView_ItemSelected"
               >
-        
+
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
@@ -37,11 +36,7 @@
                                            VerticalOptions="EndAndExpand"
                                            Padding="8"
                                         FontSize="23"/>
-                                    <!--<Label Text="{Binding SkinNum}" 
-                                           FontSize="Large" Margin="0,0,0,5" 
-                                           HorizontalOptions="End" 
-                                           VerticalOptions="End"
-                                           TextColor="Black"/>-->
+
                                 </StackLayout>
 
                             </Grid>
@@ -51,6 +46,6 @@
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
-        
+
     </ListView>
 </ContentPage>
