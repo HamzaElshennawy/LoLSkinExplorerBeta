@@ -26,7 +26,7 @@ namespace LoLSkinExplorer.Droid
         {
             base.OnResume();
             SetContentView(Resource.Layout.splash);
-            Task startupWork = new Task(() => { SimulateStartupAsync(); });
+            Task startupWork = new Task(() => { _ = SimulateStartupAsync(); });
             startupWork.Start();
         }
         private async Task SimulateStartupAsync()
