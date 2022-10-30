@@ -24,35 +24,16 @@ namespace LoLSkinExplorer.Views
 
         string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
         public ObservableCollection<Skin> Skins { get; set; }
-
+        public ObservableCollection<Skin> Skinss { get; set; }
         public SkinsPage(string cName)
         {
             InitializeComponent();
             BindingContext = this;
             ChampName = cName;
             Skins = new ObservableCollection<Skin>();
-
-
-            Skins.Add(new Skin()
-            {
-                SkinID = "266001",
-                SkinNum = 1,
-                SkinName = "Justicar Aatrox",
-                HasChromas = false,
-                ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_1.jpg",
-            });
+            Skinss = new ObservableCollection<Skin>();
             GetSkins(ChampName);
         }
-        //protected override void OnAppearing()
-        //{
-        //    base.OnAppearing();
-        //    SkinsPageViewModel skinsPageViewModel = new SkinsPageViewModel()
-        //    {
-        //        ChampName = ChampName
-        //    };
-
-        //}
-
         public void GetSkins(string _ChampName)
         {
             Skins.Clear();
@@ -72,15 +53,12 @@ namespace LoLSkinExplorer.Views
             }
             catch (Exception)
             {
-
                 throw;
             }
 
             for (int i = 0; i < skins.Count; i++)
             {
                 skins[i].imgLink = BaseSkinLink + _ChampName + "_" + skins[i].SkinNum + ".jpg";
-
-
                 if (skins[i].SkinName == "default")
                 {
                     skins[i].SkinName = _ChampName;
@@ -88,9 +66,9 @@ namespace LoLSkinExplorer.Views
                 Skins.Add(skins[i]);
 
             }
-
-            //await Application.Current.MainPage.DisplayAlert("Skin name", skins[0].skinName, "ok");
-
+            Skinss.Clear();
+            Skinss.Add(skins[0]);
+            Skins.Remove(skins[0]);
             OnPropertyChanged(nameof(Skins));
         }
 
