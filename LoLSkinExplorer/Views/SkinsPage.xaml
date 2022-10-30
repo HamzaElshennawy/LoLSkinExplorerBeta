@@ -7,7 +7,7 @@
 
     
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="{Binding Skinss[0].SkinName}"/>
+        <ToolbarItem Text="{Binding Skins[0].SkinName}"/>
     </ContentPage.ToolbarItems>
     
 
@@ -37,7 +37,11 @@
                                            VerticalOptions="EndAndExpand"
                                            Padding="8"
                                         FontSize="23"/>
-                                    
+                                    <!--<Label Text="{Binding SkinNum}" 
+                                           FontSize="Large" Margin="0,0,0,5" 
+                                           HorizontalOptions="End" 
+                                           VerticalOptions="End"
+                                           TextColor="Black"/>-->
                                 </StackLayout>
 
                             </Grid>

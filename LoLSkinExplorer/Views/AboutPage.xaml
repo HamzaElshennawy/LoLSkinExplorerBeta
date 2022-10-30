@@ -16,19 +16,19 @@
     <ContentPage.BindingContext>
         <ViewModels:SkinPageViewModel/>
     </ContentPage.BindingContext>
+
+
     <ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="icons8_search.ico"  Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
+
     <StackLayout>
-        <Button x:Name="LoadBTN" 
-            Text="Load All Champions" WidthRequest="200" HeightRequest="50"
-            HorizontalOptions="CenterAndExpand" CornerRadius="20" Margin="0,10,0,0" 
-            Command="{Binding GetDataCommand}" CharacterSpacing="2" Clicked="LoadBTN_Clicked"/>
         <SearchBar x:Name="SearchEntryBox" Placeholder="Search" HorizontalTextAlignment="Center" BackgroundColor="GhostWhite"
             Margin="0" IsVisible="False"  TextChanged="SearchEntryBox_TextChanged" Unfocused="SearchEntryBox_Unfocused"/>
         <ListView x:Name="ListViewomePage" HasUnevenRows="True" ItemsSource="{Binding Champions}" 
               BackgroundColor="Transparent" SeparatorVisibility="None" 
               ItemSelected="ListViewomePage_ItemSelected_1Async" ItemTapped="ListViewomePage_ItemTapped">
+
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -50,13 +50,27 @@
                                         HorizontalOptions="CenterAndExpand"
                                            VerticalOptions="EndAndExpand"
                                         FontSize="Large"/>
+                                        <!--<Label Text="{Binding SkinNum}" 
+                                           FontSize="Large" Margin="0,0,0,5" 
+                                           HorizontalOptions="End" 
+                                           VerticalOptions="End"
+                                           TextColor="Black"/>-->
                                     </StackLayout>
+
                                 </Grid>
                             </Frame>
                         </Grid>
+
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
+
+
+
+
+
+
+
 </ContentPage>

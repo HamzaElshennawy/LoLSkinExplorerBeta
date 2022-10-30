@@ -36,6 +36,24 @@ namespace LoLSkinExplorer.Views
         }
 
         
+
+        //private async void ListViewomePage_ItemSelected(object sender, SelectedItemChangedEventArgs e, MvvmHelpers.ObservableRangeCollection<Skin> skins)
+        //{
+        //    //var skin = ((ListView)sender).SelectedItem as Skin;
+        //    //if(skin == null)
+        //    //    return;
+        //    //await DisplayAlert("Skin link", skin.ImgLink, "OK");
+        //    var champ = ((ListView)sender).SelectedItem as Champion;
+        //    if (champ == null)
+        //        return;
+            
+        //    //SkinPageViewModel viewModel = new SkinPageViewModel();
+        //    //viewModel.Skins.Clear();
+        //    //viewModel.Skins = Skins;
+
+        //    await Navigation.PushAsync(new SkinsPage(champ.ChampionName));
+        //}
+
         private void ListViewomePage_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             ((ListView)sender).SelectedItem = null;
@@ -81,7 +99,15 @@ namespace LoLSkinExplorer.Views
 
         private void SearchEntryBox_Unfocused(object sender, FocusEventArgs e)
         {
-            SearchEntryBox.IsVisible = false;
+            //    var context = Android.App.Application.Context;
+            //    var inputMethodManager = context.GetSystemService(Context.InputMethodService) as InputMethodManager;
+            //    if (inputMethodManager != null && context is Activity)
+            //    {
+            //        var activity = context as Activity;
+            //        var token = activity.CurrentFocus?.WindowToken;
+            //        inputMethodManager.HideSoftInputFromWindow(token, HideSoftInputFlags.None);
+            //        activity.Window.DecorView.ClearFocus();
+            //    }
         }
 
         private void ListViewomePage_ItemSelected_1Async(object sender, SelectedItemChangedEventArgs e)
@@ -89,12 +115,13 @@ namespace LoLSkinExplorer.Views
             var champ = ((ListView)sender).SelectedItem as Champion;
             if (champ == null)
                 return;
-            Navigation.PushAsync(new SkinsPage(champ.ChampionId));
-        }
+            
+            
+            
+            //viewModel.Skins.Clear();
+            //viewModel.Skins = Skins;
 
-        private void LoadBTN_Clicked(object sender, EventArgs e)
-        {
-            LoadBTN.IsVisible = false;
+            Navigation.PushAsync(new SkinsPage(champ.ChampionName));
         }
     }
 }
