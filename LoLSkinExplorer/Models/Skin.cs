@@ -68,6 +68,32 @@ namespace LoLSkinExplorer.Models
                 NotifyPropertyChanged(nameof(ImgLink));
             }
         }
+        public string skinType;
+        public string SkinType
+        {
+            get => skinType;
+            set
+            {
+                if (skinType == value)
+                    return;
+                skinType = value;
+                NotifyPropertyChanged(nameof(SkinType));
+            }
+        }
+
+        public int skinPrice;
+        public int SkinPrice
+        {
+            get => skinPrice;
+            set
+            {
+                if (skinPrice == value)
+                    return;
+                skinPrice = value;
+                NotifyPropertyChanged(nameof(SkinPrice));
+            }
+        }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
