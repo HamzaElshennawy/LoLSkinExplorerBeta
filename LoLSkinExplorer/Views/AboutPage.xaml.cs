@@ -96,5 +96,7 @@ namespace LoLSkinExplorer.Views
         {
             LoadBTN.IsVisible = false;
         }
+
+        
     }
 }
