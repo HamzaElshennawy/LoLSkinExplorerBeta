@@ -34,7 +34,7 @@ namespace LoLSkinExplorer.Views
             Skinss = new ObservableCollection<Skin>();
             GetSkins(ChampName);
         }
-        public void GetSkins(string _ChampName)
+        public async void GetSkins(string _ChampName)
         {
             Skins.Clear();
             string name = _ChampName;
@@ -56,16 +56,35 @@ namespace LoLSkinExplorer.Views
                 throw;
             }
 
-            for (int i = 0; i < skins.Count; i++)
-            {
-                skins[i].imgLink = BaseSkinLink + _ChampName + "_" + skins[i].SkinNum + ".jpg";
-                if (skins[i].SkinName == "default")
-                {
-                    skins[i].SkinName = _ChampName;
-                }
-                Skins.Add(skins[i]);
+            //for (int i = 0; i < skins.Count; i++)
+            //{
+            //    skins[i].imgLink = BaseSkinLink + _ChampName + "_" + skins[i].SkinNum + ".jpg";
+            //    if (skins[i].SkinName == "default")
+            //    {
+            //        skins[i].SkinName = _ChampName;
+            //    }
+            //    Skins.Add(skins[i]);
 
+            //}
+
+            List<string> skinIDs = new List<string>();
+            foreach (var skin in skins)
+            {
+                skinIDs.Add(skin.SkinID.ToString());
             }
+
+            jsonText = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/skins.json";
+            downloadedJsonText = webClient.DownloadString(jsonText);
+            dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);
+
+            skins.Clear();
+            for(int i = 0; i < skinIDs.Count; i++)
+            {
+                var _skins = dobj[skinIDs[i]].Value<JArray>();
+                skins[i].SkinType = _skins["rarity"].ToString();
+                await Application.Current.MainPage.DisplayAlert("Skin type", skins[i].skinType, "ok");
+            }
+
             Skinss.Clear();
             Skinss.Add(skins[0]);
             Skins.Remove(skins[0]);
