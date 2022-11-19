@@ -69,6 +69,7 @@ namespace LoLSkinExplorer.Views
                 {
                     skins[i].SkinName = _ChampName;
                 }
+
                 Skins.Add(skins[i]);
 
             }
