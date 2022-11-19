@@ -6,6 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Aatrox.json" />
+    <None Remove="Champions.json" />
+    <None Remove="Champions\Aatrox.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Aatrox.json" />
+    <EmbeddedResource Include="Champions.json" />
+    <EmbeddedResource Include="Champions\Aatrox.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.1.0" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta1" />

@@ -41,14 +41,7 @@ namespace LoLSkinExplorer.ViewModels
             Skins = new ObservableRangeCollection<Skin>();
             SkinsAtStart = new ObservableRangeCollection<Skin>();
             GetDataCommand = new AsyncCommand(GetDataTask);
-            Skins.Add(new Skin()
-            {
-                SkinID = "266001",
-                SkinNum = 1,
-                SkinName = "Justicar Aatrox",
-                HasChromas = false,
-                ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_1.jpg",
-            });
+            
             Champions.Add(new Champion()
             {
                 ChampionId = "Ahri",
@@ -64,31 +57,56 @@ namespace LoLSkinExplorer.ViewModels
             Champions.Clear();
             try
             {
-                for (int i = 0; i < ChampionsNames.Count; i++)
-                {
+                //for (int i = 0; i < ChampionsNames.Count; i++)
+                //{
                     try
                     {
-                        string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.20.1/data/en_US/champion/" + ChampionsNames[i] + ".json";
-                        WebClient webClient = new WebClient();
-                        string downloadedJsonText = webClient.DownloadString(jsonText);
-                        JObject dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);
+                        //string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.20.1/data/en_US/champion/" + ChampionsNames[i] + ".json";
+                        //WebClient webClient = new WebClient();
+                        //string downloadedJsonText = webClient.DownloadString(jsonText);
+                        //JObject dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);
+                        //Champion TempChampion = new Champion();
+                        //var champID = dobj["data"][ChampionsNames[i]]["id"];
+                        //TempChampion.ChampionId = (string)champID;
+                        //var champKey = dobj["data"][ChampionsNames[i]]["key"];
+                        //TempChampion.ChampionKey = (string)champKey;
+                        //var champName = dobj["data"][ChampionsNames[i]]["name"];
+                        //TempChampion.ChampionName = (string)champName;
+                        //var champTitle = dobj["data"][ChampionsNames[i]]["title"];
+                        //TempChampion.ChampionTitle = (string)champTitle;
+                        //TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionId + "_0.jpg";
+                        //Champions.Add(TempChampion);
+
+
+
+
+                        var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
+                        System.IO.Stream s = tmp.GetManifestResourceStream("LoLSkinExplorer.Champions.Aatrox.json");
+                        System.IO.StreamReader sr = new System.IO.StreamReader(s);
+
+                        string JsonText = sr.ReadToEnd();
+                        //WebClient webClient = new WebClient();
+                        //string downloadedJsonText = webClient.DownloadString(jsonText);
+
+                        JObject dobj = JsonConvert.DeserializeObject<dynamic>(JsonText);
                         Champion TempChampion = new Champion();
-                        var champID = dobj["data"][ChampionsNames[i]]["id"];
+                        var champID = dobj["data"]["Aatrox"]["id"];
                         TempChampion.ChampionId = (string)champID;
-                        var champKey = dobj["data"][ChampionsNames[i]]["key"];
+                        var champKey = dobj["data"]["Aatrox"]["key"];
                         TempChampion.ChampionKey = (string)champKey;
-                        var champName = dobj["data"][ChampionsNames[i]]["name"];
+                        var champName = dobj["data"]["Aatrox"]["name"];
                         TempChampion.ChampionName = (string)champName;
-                        var champTitle = dobj["data"][ChampionsNames[i]]["title"];
+                        var champTitle = dobj["data"]["Aatrox"]["title"];
                         TempChampion.ChampionTitle = (string)champTitle;
                         TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionId + "_0.jpg";
                         Champions.Add(TempChampion);
+
                     }
                     catch (Exception ex)
                     {
                         await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
                     }
-                }
+                //}
                 OnPropertyChanged(nameof(Skins));
             }
             catch (Exception ex)
