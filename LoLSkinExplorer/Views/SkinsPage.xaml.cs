@@ -44,7 +44,7 @@ namespace LoLSkinExplorer.Views
             //string downloadedJsonText = webClient.DownloadString(jsonText);
 
             var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
-            System.IO.Stream s = tmp.GetManifestResourceStream("LoLSkinExplorer.Champions.Annie.json");
+            System.IO.Stream s = tmp.GetManifestResourceStream($"LoLSkinExplorer.Champions.{name}.json");
             System.IO.StreamReader sr = new System.IO.StreamReader(s);
 
             string JsonText = sr.ReadToEnd();
@@ -52,7 +52,7 @@ namespace LoLSkinExplorer.Views
 
             List<Skin> skins = new List<Skin>();
 
-            var skinNames = dobj["data"][_ChampName]["skins"].Value<JArray>();
+            var skinNames = dobj["skins"].Value<JArray>();
             try
             {
                 skins = skinNames.ToObject<List<Skin>>();
@@ -74,31 +74,7 @@ namespace LoLSkinExplorer.Views
 
             }
 
-            //List<string> skinIDs = new List<string>();
-            //foreach (var skin in skins)
-            //{
-            //    skinIDs.Add(skin.SkinID.ToString());
-            //}
-
-            //jsonText = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/skins.json";
-            //downloadedJsonText = webClient.DownloadString(jsonText);
-            //dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);
-
-            //skins.Clear();
-            //try
-            //{
-            //    for (int i = 0; i < skinIDs.Count; i++)
-            //    {
-            //        var _skins = dobj[skinIDs[i]].Value<JArray>();
-            //        skins[i].SkinType = _skins["rarity"].ToString();
-            //        await Application.Current.MainPage.DisplayAlert("Skin type", skins[i].skinType, "ok");
-            //    }
-            //}
-            //catch(Exception e)
-            //{
-            //    await Application.Current.MainPage.DisplayAlert("error", e.Message, "ok");
-            //}
-
+            
             Skinss.Clear();
             Skinss.Add(skins[0]);
             Skins.Remove(skins[0]);

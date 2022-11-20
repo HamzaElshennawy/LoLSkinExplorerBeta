@@ -6,8 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Aatrox.json" />
-    <None Remove="Champions.json" />
     <None Remove="Champions\Aatrox.json" />
     <None Remove="Champions\Ahri.json" />
     <None Remove="Champions\Akali.json" />
@@ -173,8 +171,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Aatrox.json" />
-    <EmbeddedResource Include="Champions.json" />
     <EmbeddedResource Include="Champions\Aatrox.json" />
     <EmbeddedResource Include="Champions\Ahri.json" />
     <EmbeddedResource Include="Champions\Akali.json" />
