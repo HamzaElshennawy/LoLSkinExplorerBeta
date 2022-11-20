@@ -1,691 +1,1186 @@
 {
-"type": "champion",
-"format": "standAloneComplex",
-"version": "12.22.1",
-"data": {
-"Aatrox": {
-"id": "Aatrox",
-"key": "266",
+"id": 266,
 "name": "Aatrox",
+"alias": "Aatrox",
 "title": "the Darkin Blade",
-"image": {
-"full": "Aatrox.png",
-"sprite": "champion0.png",
-"group": "champion",
-"x": 0,
-"y": 0,
-"w": 48,
-"h": 48
+"shortBio": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.",
+"tacticalInfo": {
+"style": 3,
+"difficulty": 2,
+"damageType": "kPhysical"
 },
+"playstyleInfo": {
+"damage": 3,
+"durability": 3,
+"crowdControl": 2,
+"mobility": 2,
+"utility": 2
+},
+"squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/266.png",
+"stingerSfxPath": "/lol-game-data/assets/v1/champion-sfx-audios/266.ogg",
+"chooseVoPath": "/lol-game-data/assets/v1/champion-choose-vo/266.ogg",
+"banVoPath": "/lol-game-data/assets/v1/champion-ban-vo/266.ogg",
+"roles": [
+"fighter",
+"tank"
+],
+"recommendedItemDefaults": [],
 "skins": [
 {
-"id": "266000",
-"num": 0,
-"name": "default",
-"chromas": false
+"id": 266000,
+"isBase": true,
+"name": "Aatrox",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/266/266000.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/266/266000.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/266/266000.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/Skins/Base/AatroxLoadscreen.jpg",
+"skinType": "",
+"rarity": "kNoRarity",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": null,
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": null,
+"description": null
 },
 {
-"id": "266001",
-"num": 1,
+"id": 266001,
+"isBase": false,
 "name": "Justicar Aatrox",
-"chromas": false
-},
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/266/266001.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/266/266001.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/266/266001.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/Skins/Skin01/AatroxLoadscreen_1.jpg",
+"skinType": "",
+"rarity": "kNoRarity",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": null,
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
 {
-"id": "266002",
-"num": 2,
-"name": "Mecha Aatrox",
-"chromas": true
-},
-{
-"id": "266003",
-"num": 3,
-"name": "Sea Hunter Aatrox",
-"chromas": false
-},
-{
-"id": "266007",
-"num": 7,
-"name": "Blood Moon Aatrox",
-"chromas": false
-},
-{
-"id": "266008",
-"num": 8,
-"name": "Prestige Blood Moon Aatrox",
-"chromas": false
-},
-{
-"id": "266009",
-"num": 9,
-"name": "Victorious Aatrox",
-"chromas": true
-},
-{
-"id": "266011",
-"num": 11,
-"name": "Odyssey Aatrox",
-"chromas": true
-},
-{
-"id": "266020",
-"num": 20,
-"name": "Prestige Blood Moon Aatrox (2022)",
-"chromas": false
-},
-{
-"id": "266021",
-"num": 21,
-"name": "Lunar Eclipse Aatrox",
-"chromas": true
+"id": 33
 }
 ],
-"lore": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.",
-"blurb": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find...",
-"allytips": [
-"Use Umbral Dash while casting The Darkin Blade to increase your chances of hitting the enemy.",
-"Crowd Control abilities like Infernal Chains or your allies' immobilizing effects will help you set up The Darkin Blade.",
-"Cast World Ender when you are sure you can force a fight."
-],
-"enemytips": [
-"Aatrox's attacks are very telegraphed, so use the time to dodge the hit zones.",
-"Aatrox's Infernal Chains are easier to exit when running towards the sides or at Aatrox.",
-"Keep your distance when Aatrox uses his Ultimate to prevent him from reviving."
-],
-"tags": [
-"Fighter",
-"Tank"
-],
-"partype": "Blood Well",
-"info": {
-"attack": 8,
-"defense": 4,
-"magic": 3,
-"difficulty": 4
+"description": "Chief among the Arclight stand the Justicars, sentinels who serve as living embodiments of justice and order. Aatrox embodies power, for it is his martial prowess that holds the chaos back."
 },
-"stats": {
-"hp": 650,
-"hpperlevel": 114,
-"mp": 0,
-"mpperlevel": 0,
-"movespeed": 345,
-"armor": 38,
-"armorperlevel": 4.45,
-"spellblock": 32,
-"spellblockperlevel": 2.05,
-"attackrange": 175,
-"hpregen": 3,
-"hpregenperlevel": 1,
-"mpregen": 0,
-"mpregenperlevel": 0,
-"crit": 0,
-"critperlevel": 0,
-"attackdamage": 60,
-"attackdamageperlevel": 5,
-"attackspeedperlevel": 2.5,
-"attackspeed": 0.651
+{
+"id": 266002,
+"isBase": false,
+"name": "Mecha Aatrox",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/266/266002.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/266/266002.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/266/266002.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/Skins/Skin02/AatroxLoadscreen_2.jpg",
+"skinType": "",
+"rarity": "kEpic",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266002.png",
+"chromas": [
+{
+"id": 266004,
+"name": "Mecha Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266004.png",
+"colors": [
+"#27211C",
+"#27211C"
+],
+"descriptions": [],
+"rarities": [
+{
+"region": "TENCENT",
+"rarity": 1
+},
+{
+"region": "riot",
+"rarity": 0
+}
+]
+},
+{
+"id": 266005,
+"name": "Mecha Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266005.png",
+"colors": [
+"#ECF9F8",
+"#ECF9F8"
+],
+"descriptions": [],
+"rarities": [
+{
+"region": "TENCENT",
+"rarity": 1
+},
+{
+"region": "riot",
+"rarity": 0
+}
+]
+},
+{
+"id": 266006,
+"name": "Mecha Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266006.png",
+"colors": [
+"#54209B",
+"#54209B"
+],
+"descriptions": [],
+"rarities": [
+{
+"region": "TENCENT",
+"rarity": 1
+},
+{
+"region": "riot",
+"rarity": 0
+}
+]
+}
+],
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 35
+}
+],
+"description": "Designated ATRX-1, the “Mecha Aatrox” unit was developed in response to 'gliding' kaiju with the capability of limited flight. In addition, ATRX-1 wields a thermal blade that can turn residual light particles into a heated cutting edge. "
+},
+{
+"id": 266003,
+"isBase": false,
+"name": "Sea Hunter Aatrox",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/266/266003.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/266/266003.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/266/266003.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/Skins/Skin03/AatroxLoadscreen_3.jpg",
+"skinType": "",
+"rarity": "kNoRarity",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": null,
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 49
+}
+],
+"description": "Bilgewater is home to many bounty hunters, but those looking to track a target through hundreds of miles of open ocean go to the hulking creature known as Aatrox. Cool, professional, and capable of rapidly regenerating from near-fatal wounds, with Aatrox you'll always know your bounty is in good hands."
+},
+{
+"id": 266007,
+"isBase": false,
+"name": "Blood Moon Aatrox",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/266/266007.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/266/266007.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/266/266007.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/Skins/Skin07/AatroxLoadScreen_7.jpg",
+"skinType": "",
+"rarity": "kEpic",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": null,
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 12
+}
+],
+"description": "Ancient manuscripts tracking the orbit of the Blood Moon describe it not as celestial phenomenon, but as a cosmic womb. As the seasons grow shorter and the cult's activity continues to increase, some worry it will give birth to a new kind of demon—a creature helping to bring about its own dark ascendance."
+},
+{
+"id": 266008,
+"isBase": false,
+"name": "Prestige Blood Moon Aatrox",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/266/266008.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/266/266008.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/266/266008.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/Skins/Skin08/AatroxLoadScreen_8.jpg",
+"skinType": "",
+"rarity": "kMythic",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": null,
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 12
+}
+],
+"description": "Aatrox has been loosed upon the mortal plane. A creature born in the heart of the Blood Moon, he is the progenitor of all demons, and a malignant darkness that will consume the entire world."
+},
+{
+"id": 266009,
+"isBase": false,
+"name": "Victorious Aatrox",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/266/266009.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/266/266009.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/266/266009.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/Skins/Skin09/AatroxLoadscreen_9.jpg",
+"skinType": "",
+"rarity": "kNoRarity",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266009.png",
+"chromas": [
+{
+"id": 266010,
+"name": "Victorious Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266010.png",
+"colors": [
+"#FF2C25",
+"#FF2C25"
+],
+"descriptions": [],
+"rarities": [
+{
+"region": "riot",
+"rarity": 2
+}
+]
+}
+],
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 7
+}
+],
+"description": "Victorious Aatrox was awarded to players who reached Gold or higher in the 2019 season. With arm and sword sculpted from crystal quartz, he stands as a monument to all who wish to achieve greatness."
+},
+{
+"id": 266011,
+"isBase": false,
+"name": "Odyssey Aatrox",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/266/266011.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/266/266011.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/266/266011.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/Skins/Skin11/AatroxLoadScreen_11.jpg",
+"loadScreenVintagePath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/Skins/Skin11/AatroxLoadscreen_11_LE.jpg",
+"skinType": "",
+"rarity": "kEpic",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266011.png",
+"chromas": [
+{
+"id": 266012,
+"name": "Odyssey Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266012.png",
+"colors": [
+"#D33528",
+"#D33528"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a bundle exclusive in 2020."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+},
+{
+"id": 266013,
+"name": "Odyssey Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266013.png",
+"colors": [
+"#DF9117",
+"#DF9117"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 266014,
+"name": "Odyssey Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266014.png",
+"colors": [
+"#73BFBE",
+"#73BFBE"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 266015,
+"name": "Odyssey Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266015.png",
+"colors": [
+"#2756CE",
+"#2756CE"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 266016,
+"name": "Odyssey Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266016.png",
+"colors": [
+"#2DA130",
+"#2DA130"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 266017,
+"name": "Odyssey Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266017.png",
+"colors": [
+"#E58BA5",
+"#E58BA5"
+],
+"descriptions": [],
+"rarities": [
+{
+"region": "TENCENT",
+"rarity": 1
+}
+]
+},
+{
+"id": 266018,
+"name": "Odyssey Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266018.png",
+"colors": [
+"#C1F2FF",
+"#C1F2FF"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 266019,
+"name": "Odyssey Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266019.png",
+"colors": [
+"#0C0C0F",
+"#9B1520"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a Loot exclusive in the 2020 Worlds event."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+}
+],
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 73
+}
+],
+"description": "Aatrox is a violent and notorious crime lord whose name is feared throughout the criminal underworld. He is also disfigured by Ora abuse. Seeking to purge the substance from his body, he abducts Templars to extract it—and kills them when they are unable to do so. He has seized a number of high ranking Templar priests in order to draw out Karma, who he believes will finally heal him."
+},
+{
+"id": 266020,
+"isBase": false,
+"name": "Prestige Blood Moon Aatrox (2022)",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/266/266020.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/266/266020.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/266/266020.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/Skins/Skin20/AatroxLoadScreen_20.PIE_C_12_6.jpg",
+"skinType": "",
+"rarity": "kMythic",
+"isLegacy": true,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": null,
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 12
+}
+],
+"description": "Aatrox has been loosed upon the mortal plane. A creature born in the heart of the Blood Moon, he is the progenitor of all demons, and a malignant darkness that will consume the entire world."
+},
+{
+"id": 266021,
+"isBase": false,
+"name": "Lunar Eclipse Aatrox",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/266/266021.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/266/266021.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/266/266021.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/Skins/Skin21/AatroxLoadScreen_21.PIE_C_12_8.jpg",
+"skinType": "",
+"rarity": "kEpic",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266021.png",
+"chromas": [
+{
+"id": 266022,
+"name": "Lunar Eclipse Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266022.png",
+"colors": [
+"#D33528",
+"#D33528"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a bundle exclusive in 2022."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+},
+{
+"id": 266023,
+"name": "Lunar Eclipse Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266023.png",
+"colors": [
+"#DF9117",
+"#DF9117"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 266024,
+"name": "Lunar Eclipse Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266024.png",
+"colors": [
+"#2DA130",
+"#2DA130"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 266025,
+"name": "Lunar Eclipse Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266025.png",
+"colors": [
+"#73BFBE",
+"#73BFBE"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 266026,
+"name": "Lunar Eclipse Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266026.png",
+"colors": [
+"#E58BA5",
+"#E58BA5"
+],
+"descriptions": [],
+"rarities": [
+{
+"region": "TENCENT",
+"rarity": 1
+}
+]
+},
+{
+"id": 266027,
+"name": "Lunar Eclipse Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266027.png",
+"colors": [
+"#54209B",
+"#54209B"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 266028,
+"name": "Lunar Eclipse Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266028.png",
+"colors": [
+"#27211C",
+"#27211C"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 266029,
+"name": "Lunar Eclipse Aatrox",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/266/266029.png",
+"colors": [
+"#C1F2FF",
+"#C1F2FF"
+],
+"descriptions": [],
+"rarities": []
+}
+],
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 93
+}
+],
+"description": "One of the few who took up the mantle of the Eclipse Knights in the days of old, Aatrox hopelessly pined for Kayle's affections… but she could only ever love the blazing sun. When she devoured it, the entity's lunar corona consumed him. He exists now as Kayle's monstrous, once-noble shadow, ever at her side."
+}
+],
+"passive": {
+"name": "Deathbringer Stance",
+"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/HUD/Icons2D/Aatrox_Passive.png",
+"abilityVideoPath": "champion-abilities/0266/ability_0266_P1.webm",
+"abilityVideoImagePath": "champion-abilities/0266/ability_0266_P1.jpg",
+"description": "Periodically, Aatrox's next basic attack deals bonus <physicalDamage>physical damage</physicalDamage> and heals him, based on the target's max health. "
 },
 "spells": [
 {
-"id": "AatroxQ",
+"spellKey": "q",
 "name": "The Darkin Blade",
+"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/HUD/Icons2D/Aatrox_Q.png",
+"abilityVideoPath": "champion-abilities/0266/ability_0266_Q1.webm",
+"abilityVideoImagePath": "champion-abilities/0266/ability_0266_Q1.jpg",
+"cost": "No Cost",
+"cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect.",
-"tooltip": "Aatrox slams his greatsword, dealing <physicalDamage>{{ qdamage }} physical damage</physicalDamage>. If they are hit on the edge, they are briefly <status>Knocked Up</status> and they take <physicalDamage>{{ qedgedamage }}</physicalDamage> instead. This Ability can be <recast>Recast</recast> twice, each one changing shape and dealing 25% more damage than the previous one.{{ spellmodifierdescriptionappend }}",
-"leveltip": {
-"label": [
-"Cooldown",
-"Damage",
-"Total AD Ratio"
-],
-"effect": [
-"{{ cooldown }} -> {{ cooldownNL }}",
-"{{ qbasedamage }} -> {{ qbasedamageNL }}",
-"{{ qtotaladratio*100.000000 }}% -> {{ qtotaladrationl*100.000000 }}%"
-]
-},
-"maxrank": 5,
-"cooldown": [
-14,
-12,
-10,
-8,
-6
-],
-"cooldownBurn": "14/12/10/8/6",
-"cost": [
-0,
-0,
-0,
-0,
-0
-],
-"costBurn": "0",
-"datavalues": {},
-"effect": [
-null,
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-]
-],
-"effectBurn": [
-null,
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0"
-],
-"vars": [],
-"costType": "No Cost",
-"maxammo": "-1",
+"dynamicDescription": "Aatrox slams his greatsword, dealing <physicalDamage>@QDamage@ physical damage</physicalDamage>. If they are hit on the edge, they are briefly <status>Knocked Up</status> and they take <physicalDamage>@QEdgeDamage@</physicalDamage> instead. This Ability can be <recast>Recast</recast> twice, each one changing shape and dealing 25% more damage than the previous one.@SpellModifierDescriptionAppend@",
 "range": [
+25000,
 25000,
 25000,
 25000,
 25000,
 25000
 ],
-"rangeBurn": "25000",
-"image": {
-"full": "AatroxQ.png",
-"sprite": "spell0.png",
-"group": "spell",
-"x": 288,
-"y": 48,
-"w": 48,
-"h": 48
+"costCoefficients": [
+0,
+0,
+0,
+0,
+0,
+0
+],
+"cooldownCoefficients": [
+14,
+12,
+10,
+8,
+6,
+4
+],
+"coefficients": {
+"coefficient1": 0,
+"coefficient2": 0
 },
-"resource": "No Cost"
+"effectAmounts": {
+"Effect1Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect2Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect3Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect4Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect5Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect6Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect7Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect8Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect9Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect10Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"ammo": {
+"ammoRechargeTime": [
+0,
+0,
+0,
+0,
+0,
+0
+],
+"maxAmmo": [
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"maxLevel": 0
 },
 {
-"id": "AatroxW",
+"spellKey": "w",
 "name": "Infernal Chains",
+"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/HUD/Icons2D/Aatrox_W.png",
+"abilityVideoPath": "champion-abilities/0266/ability_0266_W1.webm",
+"abilityVideoImagePath": "champion-abilities/0266/ability_0266_W1.jpg",
+"cost": "No Cost",
+"cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again.",
-"tooltip": "Aatrox fires a chain, <status>Slowing</status> the first enemy hit by {{ wslowpercentage*-100 }}% for {{ wslowduration }} seconds and dealing <physicalDamage>{{ wdamage }} physical damage</physicalDamage>. Champions and large jungle monsters have {{ wslowduration }} seconds to leave the impact area or be <status>Pulled</status> back to the center and damaged again for the same amount.{{ spellmodifierdescriptionappend }}",
-"leveltip": {
-"label": [
-"Cooldown",
-"Damage"
-],
-"effect": [
-"{{ cooldown }} -> {{ cooldownNL }}",
-"{{ wbasedamage }} -> {{ wbasedamageNL }}"
-]
-},
-"maxrank": 5,
-"cooldown": [
-20,
-18.5,
-17,
-15.5,
-14
-],
-"cooldownBurn": "20/18.5/17/15.5/14",
-"cost": [
-0,
-0,
-0,
-0,
-0
-],
-"costBurn": "0",
-"datavalues": {},
-"effect": [
-null,
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-],
-[
-0,
-0,
-0,
-0,
-0
-]
-],
-"effectBurn": [
-null,
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0"
-],
-"vars": [],
-"costType": "No Cost",
-"maxammo": "-1",
+"dynamicDescription": "Aatrox fires a chain, <status>Slowing</status> the first enemy hit by @WSlowPercentage*-100@% for @WSlowDuration@ seconds and dealing <physicalDamage>@WDamage@ physical damage</physicalDamage>. Champions and large jungle monsters have @WSlowDuration@ seconds to leave the impact area or be <status>Pulled</status> back to the center and damaged again for the same amount.@SpellModifierDescriptionAppend@",
 "range": [
+825,
 825,
 825,
 825,
 825,
 825
 ],
-"rangeBurn": "825",
-"image": {
-"full": "AatroxW.png",
-"sprite": "spell0.png",
-"group": "spell",
-"x": 336,
-"y": 48,
-"w": 48,
-"h": 48
-},
-"resource": "No Cost"
-},
-{
-"id": "AatroxE",
-"name": "Umbral Dash",
-"description": "Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction.",
-"tooltip": "<spellPassive>Passive:</spellPassive> Aatrox gains <lifeSteal>{{ espellvamp }}% Omnivamp</lifeSteal> against champions, increased to <lifeSteal>{{ espellvampempowered }}% Omnivamp</lifeSteal> during <keywordMajor>World Ender</keywordMajor>.<br /><br /><spellActive>Active:</spellActive> Aatrox dashes. He can use this Ability while winding up his other Abilities.{{ spellmodifierdescriptionappend }}",
-"leveltip": {
-"label": [
-"Cooldown",
-"Healing %",
-"Healing % during World Ender"
+"costCoefficients": [
+0,
+0,
+0,
+0,
+0,
+0
 ],
-"effect": [
-"{{ cooldown }} -> {{ cooldownNL }}",
-"{{ espellvamp }}% -> {{ espellvampNL }}%",
-"{{ espellvampempowered }}% -> {{ espellvampempoweredNL }}%"
+"cooldownCoefficients": [
+20,
+18.5,
+17,
+15.5,
+14,
+12.5
+],
+"coefficients": {
+"coefficient1": 0,
+"coefficient2": 0
+},
+"effectAmounts": {
+"Effect1Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect2Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect3Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect4Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect5Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect6Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect7Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect8Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect9Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect10Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
 ]
 },
-"maxrank": 5,
-"cooldown": [
+"ammo": {
+"ammoRechargeTime": [
+0,
+0,
+0,
+0,
+0,
+0
+],
+"maxAmmo": [
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"maxLevel": 0
+},
+{
+"spellKey": "e",
+"name": "Umbral Dash",
+"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/HUD/Icons2D/Aatrox_E.png",
+"abilityVideoPath": "champion-abilities/0266/ability_0266_E1.webm",
+"abilityVideoImagePath": "champion-abilities/0266/ability_0266_E1.jpg",
+"cost": "No Cost",
+"cooldown": "@Cooldown@s %i:cooldown%",
+"description": "Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction.",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Aatrox gains <lifeSteal>@ESpellVamp@% Omnivamp</lifeSteal> against champions, increased to <lifeSteal>@ESpellVampEmpowered@% Omnivamp</lifeSteal> during <keywordMajor>World Ender</keywordMajor>.<br><br><spellActive>Active:</spellActive> Aatrox dashes. He can use this Ability while winding up his other Abilities.@SpellModifierDescriptionAppend@",
+"range": [
+25000,
+25000,
+25000,
+25000,
+25000,
+25000
+],
+"costCoefficients": [
+0,
+0,
+0,
+0,
+0,
+0
+],
+"cooldownCoefficients": [
 9,
 8,
 7,
 6,
-5
+5,
+4
 ],
-"cooldownBurn": "9/8/7/6/5",
-"cost": [
+"coefficients": {
+"coefficient1": 0,
+"coefficient2": 0
+},
+"effectAmounts": {
+"Effect1Amount": [
+0,
+0,
 0,
 0,
 0,
 0,
 0
 ],
-"costBurn": "0",
-"datavalues": {},
-"effect": [
-null,
-[
+"Effect2Amount": [
 0,
 0,
-0,
-0,
-0
-],
-[
 0,
 0,
 0,
 0,
 0
 ],
-[
+"Effect3Amount": [
 0,
 0,
-0,
-0,
-0
-],
-[
 0,
 0,
 0,
 0,
 0
 ],
-[
+"Effect4Amount": [
 0,
 0,
-0,
-0,
-0
-],
-[
 0,
 0,
 0,
 0,
 0
 ],
-[
+"Effect5Amount": [
 0,
 0,
-0,
-0,
-0
-],
-[
 0,
 0,
 0,
 0,
 0
 ],
-[
+"Effect6Amount": [
+0,
+0,
 0,
 0,
 0,
 0,
 0
 ],
-[
+"Effect7Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect8Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect9Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect10Amount": [
+0,
+0,
 0,
 0,
 0,
 0,
 0
 ]
-],
-"effectBurn": [
-null,
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0"
-],
-"vars": [],
-"costType": "No Cost",
-"maxammo": "1",
-"range": [
-25000,
-25000,
-25000,
-25000,
-25000
-],
-"rangeBurn": "25000",
-"image": {
-"full": "AatroxE.png",
-"sprite": "spell0.png",
-"group": "spell",
-"x": 384,
-"y": 48,
-"w": 48,
-"h": 48
 },
-"resource": "No Cost"
+"ammo": {
+"ammoRechargeTime": [
+0,
+0,
+0,
+0,
+0,
+0
+],
+"maxAmmo": [
+1,
+1,
+1,
+1,
+1,
+1
+]
+},
+"maxLevel": 0
 },
 {
-"id": "AatroxR",
+"spellKey": "r",
 "name": "World Ender",
+"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Aatrox/HUD/Icons2D/Aatrox_R.png",
+"abilityVideoPath": "champion-abilities/0266/ability_0266_R1.webm",
+"abilityVideoImagePath": "champion-abilities/0266/ability_0266_R1.jpg",
+"cost": "No Cost",
+"cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended.",
-"tooltip": "Aatrox reveals his true demonic form, <status>Fearing</status> nearby minions for {{ rminionfearduration }} seconds and gaining <speed>{{ rmovementspeedbonus*100 }}% Move Speed</speed> decaying over {{ rduration }} seconds. He also gains <scaleAD>{{ rtotaladamp*100 }}% Attack Damage</scaleAD> and increases <healing>self-healing by {{ rhealingamp*100 }}%</healing> for the duration.<br /><br />Champion takedowns extend the duration of this effect by {{ rextension }} seconds and refresh the <speed>Move Speed</speed> effect.{{ spellmodifierdescriptionappend }}",
-"leveltip": {
-"label": [
-"Total Attack Damage Increase",
-"Healing Increase",
-"Move Speed",
-"Cooldown"
-],
-"effect": [
-"{{ rtotaladamp*100.000000 }}% -> {{ rtotaladampnl*100.000000 }}%",
-"{{ rhealingamp*100.000000 }}% -> {{ rhealingampnl*100.000000 }}%",
-"{{ rmovementspeedbonus*100.000000 }}% -> {{ rmovementspeedbonusnl*100.000000 }}%",
-"{{ cooldown }} -> {{ cooldownNL }}"
-]
-},
-"maxrank": 3,
-"cooldown": [
-120,
-100,
-80
-],
-"cooldownBurn": "120/100/80",
-"cost": [
-0,
-0,
-0
-],
-"costBurn": "0",
-"datavalues": {},
-"effect": [
-null,
-[
-0,
-0,
-0
-],
-[
-0,
-0,
-0
-],
-[
-0,
-0,
-0
-],
-[
-0,
-0,
-0
-],
-[
-0,
-0,
-0
-],
-[
-0,
-0,
-0
-],
-[
-0,
-0,
-0
-],
-[
-0,
-0,
-0
-],
-[
-0,
-0,
-0
-],
-[
-0,
-0,
-0
-]
-],
-"effectBurn": [
-null,
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0"
-],
-"vars": [],
-"costType": "No Cost",
-"maxammo": "-1",
+"dynamicDescription": "Aatrox reveals his true demonic form, <status>Fearing</status> nearby minions for @RMinionFearDuration@ seconds and gaining <speed>@RMovementSpeedBonus*100@% Move Speed</speed> decaying over @RDuration@ seconds. He also gains <scaleAD>@RTotalADAmp*100@% Attack Damage</scaleAD> and increases <healing>self-healing by @RHealingAmp*100@%</healing> for the duration.<br><br>Champion takedowns extend the duration of this effect by @RExtension@ seconds and refresh the <speed>Move Speed</speed> effect.@SpellModifierDescriptionAppend@",
 "range": [
+25000,
+25000,
+25000,
 25000,
 25000,
 25000
 ],
-"rangeBurn": "25000",
-"image": {
-"full": "AatroxR.png",
-"sprite": "spell0.png",
-"group": "spell",
-"x": 432,
-"y": 48,
-"w": 48,
-"h": 48
-},
-"resource": "No Cost"
-}
+"costCoefficients": [
+0,
+0,
+0,
+0,
+0,
+0
 ],
-"passive": {
-"name": "Deathbringer Stance",
-"description": "Periodically, Aatrox's next basic attack deals bonus <physicalDamage>physical damage</physicalDamage> and heals him, based on the target's max health. ",
-"image": {
-"full": "Aatrox_Passive.png",
-"sprite": "passive0.png",
-"group": "passive",
-"x": 0,
-"y": 0,
-"w": 48,
-"h": 48
-}
+"cooldownCoefficients": [
+120,
+100,
+80,
+80,
+80,
+80
+],
+"coefficients": {
+"coefficient1": 1,
+"coefficient2": 0
 },
-"recommended": []
+"effectAmounts": {
+"Effect1Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect2Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect3Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect4Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect5Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect6Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect7Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect8Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect9Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"Effect10Amount": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"ammo": {
+"ammoRechargeTime": [
+0,
+0,
+0,
+0,
+0,
+0
+],
+"maxAmmo": [
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"maxLevel": 0
 }
-}
+]
 }

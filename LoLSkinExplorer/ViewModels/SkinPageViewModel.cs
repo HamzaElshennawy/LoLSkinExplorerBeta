@@ -132,7 +132,7 @@ namespace LoLSkinExplorer.ViewModels
             "Hecarim","Heimerdinger",
             "Illaoi","Irelia","Ivern",
             "Janna","JarvanIV","Jax","Jayce","Jhin","Jinx",
-            "Kaisa","Kalista","Karma","Karthus","Kassadin","Katarina","Katarina","Kayn","Kennen","Khazix","Kindred","Kled","KogMaw",
+            "Kaisa","Kalista","Karma","Karthus","Kassadin","Katarina","Katarina","Kayn","Kennen","Khazix","Kindred","Kled","KogMaw","KSante",
             "Leblanc","LeeSin","Leona","Lillia","Lissandra",
             "Lucian", "Lulu","Lux",
             "Malphite","Malzahar","Maokai","MasterYi","MissFortune","MonkeyKing","Mordekaiser","Morgana",
