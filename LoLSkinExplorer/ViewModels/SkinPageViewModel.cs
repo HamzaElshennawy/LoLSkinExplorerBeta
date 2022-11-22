@@ -61,45 +61,27 @@ namespace LoLSkinExplorer.ViewModels
                 {
                     try
                     {
-                        //string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.20.1/data/en_US/champion/" + ChampionsNames[i] + ".json";
-                        //WebClient webClient = new WebClient();
-                        //string downloadedJsonText = webClient.DownloadString(jsonText);
-                        //JObject dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);
-                        //Champion TempChampion = new Champion();
-                        //var champID = dobj["data"][ChampionsNames[i]]["id"];
-                        //TempChampion.ChampionId = (string)champID;
-                        //var champKey = dobj["data"][ChampionsNames[i]]["key"];
-                        //TempChampion.ChampionKey = (string)champKey;
-                        //var champName = dobj["data"][ChampionsNames[i]]["name"];
-                        //TempChampion.ChampionName = (string)champName;
-                        //var champTitle = dobj["data"][ChampionsNames[i]]["title"];
-                        //TempChampion.ChampionTitle = (string)champTitle;
-                        //TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionId + "_0.jpg";
-                        //Champions.Add(TempChampion);
-
-
-
-
+                        
                         var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
                         System.IO.Stream s = tmp.GetManifestResourceStream($"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json");
                         //await Application.Current.MainPage.DisplayAlert("path", $"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json", "OK");
                         System.IO.StreamReader sr = new System.IO.StreamReader(s);
 
                         string JsonText = sr.ReadToEnd();
-                        //WebClient webClient = new WebClient();
-                        //string downloadedJsonText = webClient.DownloadString(jsonText);
-
+                        
                         JObject dobj = JsonConvert.DeserializeObject<dynamic>(JsonText);
                         Champion TempChampion = new Champion();
                         var champID = dobj["id"];
                         TempChampion.ChampionId = (string)champID;
                         //var champKey = dobj["key"];
                         //TempChampion.ChampionKey = (string)champKey;
+                        var championAlias = dobj["alias"];
+                        TempChampion.ChampionAlias = (string)championAlias;
                         var champName = dobj["name"];
                         TempChampion.ChampionName = (string)champName;
                         var champTitle = dobj["title"];
                         TempChampion.ChampionTitle = (string)champTitle;
-                        TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionName + "_0.jpg";
+                        TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionAlias + "_0.jpg";
                         Champions.Add(TempChampion);
 
                     }

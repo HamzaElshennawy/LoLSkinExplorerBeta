@@ -30,9 +30,13 @@ namespace LoLSkinExplorer.Views
             if (!SearchEntryBox.IsVisible)
             {
                 SearchEntryBox.IsVisible = true;
-                return;
+                SearchEntryBox.Focus();
             }
-
+            if(SearchEntryBox.IsVisible)
+            {
+                SearchEntryBox.IsVisible = false;
+            }
+            
         }
 
 
@@ -89,7 +93,7 @@ namespace LoLSkinExplorer.Views
             var champ = ((ListView)sender).SelectedItem as Champion;
             if (champ == null)
                 return;
-            Navigation.PushAsync(new SkinsPage(champ.ChampionName));
+            Navigation.PushAsync(new SkinsPage(champ.ChampionAlias));
         }
 
         private void LoadBTN_Clicked(object sender, EventArgs e)

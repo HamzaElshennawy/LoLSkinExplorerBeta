@@ -47,16 +47,31 @@ namespace LoLSkinExplorer.Models
             }
         }
         [JsonProperty("chromas")]
-        public bool hasChromas;
-        public bool HasChromas {
-            get => hasChromas;
+        public List<Chromas> chromas;
+        public List<Chromas> Chromas
+        {
+            get => chromas;
             set
             {
-                if (hasChromas == value)
+                if (chromas == value)
                     return;
-                NotifyPropertyChanged(nameof(HasChromas));
+                chromas = value;
+
+                NotifyPropertyChanged(nameof(chromas));
             }
         }
+        
+        
+        //public bool hasChromas;
+        //public bool HasChromas {
+        //    get => hasChromas;
+        //    set
+        //    {
+        //        if (hasChromas == value)
+        //            return;
+        //        NotifyPropertyChanged(nameof(HasChromas));
+        //    }
+        //}
         public string imgLink;
         public string ImgLink {
             get => imgLink;
@@ -68,6 +83,7 @@ namespace LoLSkinExplorer.Models
                 NotifyPropertyChanged(nameof(ImgLink));
             }
         }
+        [JsonProperty("rarity")]
         public string skinType;
         public string SkinType
         {
@@ -93,7 +109,7 @@ namespace LoLSkinExplorer.Models
                 NotifyPropertyChanged(nameof(SkinPrice));
             }
         }
-
+        
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")

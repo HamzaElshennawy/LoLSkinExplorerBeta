@@ -8,6 +8,21 @@ namespace LoLSkinExplorer.Models
 {
     public class Champion : INotifyPropertyChanged
     {
+        public string Alias;
+        public string ChampionAlias
+        {
+            get => Alias;
+            set
+            {
+                if(Alias == value)
+                    return;
+                Alias = value;
+                NotifyPropertyChanged(nameof(ChampionAlias));
+            }
+        }
+
+
+
         public string Name;
         public string ChampionName {
             get => Name;

@@ -6,7 +6,7 @@
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarHasShadow="True"
              x:Class="LoLSkinExplorer.Views.AboutPage"
-             BackgroundColor="#1874a5"
+             BackgroundColor="#43494c"
              Title="Skin Explorer"
              >
 
@@ -34,7 +34,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <Grid Padding="7">
-                            <Frame Padding="0" WidthRequest="350" HeightRequest="200" 
+                            <Frame Padding="0" WidthRequest="400" HeightRequest="200" 
                                HasShadow="True" HorizontalOptions="Center" 
                                CornerRadius="10" 
                                >

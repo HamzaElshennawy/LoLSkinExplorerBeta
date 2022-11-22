@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ViewModels="clr-namespace:LoLSkinExplorer.ViewModels"
              x:Class="LoLSkinExplorer.Views.SkinsPage" 
-              BackgroundColor="#1874a5">
-
+              BackgroundColor="#43494c">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="{Binding Skinss[0].SkinName}"/>
+        <ToolbarItem Text="{Binding Skinss[0].SkinName}" />
+        
     </ContentPage.ToolbarItems>
-
+    
 
     <ListView x:Name="ListView" HasUnevenRows="True" ItemsSource="{Binding Skins}" 
               BackgroundColor="Transparent" SeparatorVisibility="None"  ItemSelected="ListView_ItemSelected"
@@ -19,7 +19,7 @@
             <DataTemplate>
                 <ViewCell>
                     <Grid Padding="10">
-                        <Frame Padding="0" WidthRequest="350" HeightRequest="200" 
+                        <Frame Padding="0" WidthRequest="400" HeightRequest="200" 
                                HasShadow="True" HorizontalOptions="Center"
                                CornerRadius="20" 
                                >

@@ -25,9 +25,7 @@ namespace LoLSkinExplorer.ViewModels
             Skins.Add(new Skin()
             {
                 SkinID = "266001",
-                SkinNum = 1,
                 SkinName = "Justicar Aatrox",
-                HasChromas = false,
                 ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_1.jpg",
             });
 
@@ -48,7 +46,6 @@ namespace LoLSkinExplorer.ViewModels
                 SkinID = "266001",
                 SkinNum = 1,
                 SkinName = "Justicar Aatrox",
-                HasChromas = false,
                 ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_1.jpg",
             });
 
