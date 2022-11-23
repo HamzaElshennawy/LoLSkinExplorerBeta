@@ -87,35 +87,36 @@ namespace LoLSkinExplorer.Views
                 {
                     
                     skins[i].imgLink = BaseSplashLink + champID+ "/" +skins[i].SkinID+".jpg";
-                    
+                    //await Application.Current.MainPage.DisplayAlert("Skin Type",skins[i].skinType,"OK");
                     //if (skins[i].SkinName == "default")
                     //{
                     //    skins[i].SkinName = _ChampName;
                     //}
                     string  price = null;
-                    //try
-                    //{
-                    //     price = (string)dobj["skins"]["rarity"];
+                    if (skins[i].skinType == "kEpic")
+                        skins[i].SkinPrice = 1350;
+                    if (skins[i].skinType == "kLegendary")
+                        skins[i].SkinPrice = 1820;
+                    if (skins[i].skinType == "kUltimate")
+                        skins[i].SkinPrice = 3250;
+                    if (skins[i].skinType == "kMythic")
+                        skins[i].SkinPrice = 100;
+                    if (skins[i].skinType == "kNoRarity")
+                        skins[i].SkinPrice = 975;
 
-                    //}
-                    //catch(Exception e)
-                    //{
-                    //    await Application.Current.MainPage.DisplayAlert("Rarity", "line 95", "OK");
-                    //}
-                    //await Application.Current.MainPage.DisplayAlert("Rarity",price,"OK");
-                    //skins[i].SkinPrice = Price(price);
-                    //for (int j = 0; j < NumberOfChromas.Count; j++)
-                    //{
-                    //    string chroma_ID = (string)NumberOfChromas["id"];
-                    //    await Application.Current.MainPage.DisplayAlert("Error", "Chroma ID "+chroma_ID, "OK");
-                    //    skins[i].Chromas[j].ChromaID = chroma_ID;
-                    //    string chromaName = (string)NumberOfChromas["name"];
-                    //    await Application.Current.MainPage.DisplayAlert("Error", "Chroma Name " + chromaName, "OK");
-                    //    skins[i].Chromas[j].ChromaName = chromaName;
-                    //    string chromaPath = BaseChromaLink + chroma_ID + ".png";
 
-                    //    skins[i].Chromas[j].ChromaPath = chromaPath;
-                    //}
+
+                    if (skins[i].IsAvailable)
+                    {
+                        Label ALBL = _ListView.FindByName("AvailabltyLBL");
+                        ALBL.Text = "Available";
+                    }
+                        
+
+
+
+
+
                     Skins.Add(skins[i]);
                 }
             }

@@ -6,12 +6,12 @@
               BackgroundColor="#43494c">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="{Binding Skinss[0].SkinName}" />
+        <ToolbarItem Text="{Binding ChampName}" />
         
     </ContentPage.ToolbarItems>
     
 
-    <ListView x:Name="ListView" HasUnevenRows="True" ItemsSource="{Binding Skins}" 
+    <ListView x:Name="_ListView" HasUnevenRows="True" ItemsSource="{Binding Skins}" 
               BackgroundColor="Transparent" SeparatorVisibility="None"  ItemSelected="ListView_ItemSelected"
               >
 
@@ -19,14 +19,15 @@
             <DataTemplate>
                 <ViewCell>
                     <Grid Padding="10">
-                        <Frame Padding="0" WidthRequest="400" HeightRequest="200" 
+                        <Frame x:Name="DataFrame"
+                            Padding="0" WidthRequest="400" HeightRequest="200" 
                                HasShadow="True" HorizontalOptions="Center"
                                CornerRadius="20" 
                                >
                             <Grid>
                                 <StackLayout>
                                     <Image Source="{Binding ImgLink}"  
-                                           HeightRequest="500" VerticalOptions="FillAndExpand"
+                                           HeightRequest="500" VerticalOptions="Fill"
                                            HorizontalOptions="StartAndExpand" Opacity="0.8" 
                                            Margin="0,-150,0,0"/>
                                 </StackLayout>
@@ -37,6 +38,28 @@
                                            VerticalOptions="EndAndExpand"
                                            Padding="8"
                                         FontSize="23"/>
+                                    <Label x:Name="AvailabltyLBL"
+                                           Text="{Binding SkinAvailable}"
+                                           />
+                                    <Label Text="{Binding SkinPrice}"
+                                           HorizontalTextAlignment="Start"
+                                           VerticalTextAlignment="Center"
+                                           VerticalOptions="EndAndExpand"
+                                           FontSize="22"
+                                           FontAttributes="Bold"
+                                           TextColor="DarkOrange"
+                                           Margin="0,0,0,13"
+                                           />
+                                    <Label x:Name="CurrenyLBL"
+                                        Text="RP"
+                                           HorizontalTextAlignment="Start"
+                                           VerticalTextAlignment="Center"
+                                           VerticalOptions="EndAndExpand"
+                                           FontSize="22"
+                                           FontAttributes="Bold"
+                                           TextColor="DarkOrange"
+                                           Margin="0,0,13,13"
+                                           />
 
                                 </StackLayout>
 

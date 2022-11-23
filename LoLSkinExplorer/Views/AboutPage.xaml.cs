@@ -44,34 +44,35 @@ namespace LoLSkinExplorer.Views
         {
             ((ListView)sender).SelectedItem = null;
         }
-        public List<Skin> GetSkins(string _ChampName)
-        {
-            string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
-            string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/" + _ChampName + ".json";
-            WebClient webClient = new WebClient();
-            string downloadedJsonText = webClient.DownloadString(jsonText);
-            JObject dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);
-            var skinNames = dobj["data"][_ChampName]["skins"].Value<JArray>();
-            List<Skin> skins = skinNames.ToObject<List<Skin>>();
-            for (int i = 0; i < skins.Count; i++)
-            {
-                skins[i].imgLink = BaseSkinLink + _ChampName + "_" + skins[i].SkinNum + ".jpg";
+        //public List<Skin> GetSkins(string _ChampName)
+        //{
+        //    string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
+        //    string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/" + _ChampName + ".json";
+        //    WebClient webClient = new WebClient();
+        //    string downloadedJsonText = webClient.DownloadString(jsonText);
+        //    JObject dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);
+        //    var skinNames = dobj["data"][_ChampName]["skins"].Value<JArray>();
+        //    List<Skin> skins = skinNames.ToObject<List<Skin>>();
+        //    for (int i = 0; i < skins.Count; i++)
+        //    {
+        //        skins[i].imgLink = BaseSkinLink + _ChampName + "_" + skins[i].SkinNum + ".jpg";
 
 
-                if (skins[i].SkinName == "default")
-                {
-                    skins[i].SkinName = _ChampName;
-                }
-                Skins.Add(skins[i]);
-            }
-            OnPropertyChanged();
-            return skins;
-        }
+        //        if (skins[i].SkinName == "default")
+        //        {
+        //            skins[i].SkinName = _ChampName;
+        //        }
+        //        Skins.Add(skins[i]);
+        //    }
+        //    OnPropertyChanged();
+        //    return skins;
+        //}
 
         private void SearchEntryBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             var _container = BindingContext as SkinPageViewModel;
             ListViewomePage.BeginRefresh();
+            
             if (string.IsNullOrWhiteSpace(e.NewTextValue))
             {
                 ListViewomePage.ItemsSource = _container.Champions;
