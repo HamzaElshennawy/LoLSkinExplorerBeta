@@ -20,12 +20,13 @@
         <ToolbarItem IconImageSource="icons8_search.ico"  Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
     <StackLayout>
-        <Button x:Name="LoadBTN" 
+        <!--<Button x:Name="LoadBTN" 
             Text="Load All Champions" WidthRequest="200" HeightRequest="50"
             HorizontalOptions="CenterAndExpand" CornerRadius="20" Margin="0,10,0,0" 
-            Command="{Binding GetDataCommand}" CharacterSpacing="2" Clicked="LoadBTN_Clicked"/>
-        <SearchBar x:Name="SearchEntryBox" Placeholder="Search" HorizontalTextAlignment="Center" BackgroundColor="GhostWhite"
-            Margin="0" IsVisible="False"  TextChanged="SearchEntryBox_TextChanged" Unfocused="SearchEntryBox_Unfocused"/>
+            Command="{Binding GetDataCommand}" CharacterSpacing="2" Clicked="LoadBTN_Clicked"/>-->
+        <SearchBar x:Name="SearchEntryBox" Placeholder="Search"  HorizontalTextAlignment="Center" BackgroundColor="Gray"
+                   WidthRequest="500" HorizontalOptions="CenterAndExpand"
+            Margin="0" IsVisible="false"  TextChanged="SearchEntryBox_TextChanged" />
         <ListView x:Name="ListViewomePage" HasUnevenRows="True" ItemsSource="{Binding Champions}" 
               BackgroundColor="Transparent" SeparatorVisibility="None" 
               ItemSelected="ListViewomePage_ItemSelected_1Async" ItemTapped="ListViewomePage_ItemTapped" 

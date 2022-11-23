@@ -2,13 +2,15 @@
 <resources>
 
   <style name="MainTheme" parent="MainTheme.Base">
-    <item name="android:windowBackground"> #FFFFFF </item>
+    <item name="android:windowBackground"> #43494c </item>
+	  <item name="android:statusBarColor">#43494c</item>
+	  <item name="android:navigationBarColor">#43494c</item>
   </style>
   <style name="MainTheme.Launcher">
-    <item name="android:windowBackground">#FFFFFF</item>
+    <item name="android:windowBackground">#000000</item>
   </style>
   <style name="MainTheme.Splash">
-    <item name="android:windowBackground">@android:color/white</item>
+    <item name="android:windowBackground">#43494c</item>
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowFullscreen">true</item>
     <item name="android:windowContentOverlay">@null</item>

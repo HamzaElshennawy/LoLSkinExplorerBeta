@@ -41,6 +41,7 @@ namespace LoLSkinExplorer.Views
         {
             Skins.Clear();
             string name = _ChampName;
+            TBItemName.Text = name;
             //string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.20.1/data/en_US/champion/" +"Aatrox"+ ".json";
             //string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.20.1/data/en_US/champion/" + _ChampName + ".json";
             //WebClient webClient = new WebClient();
@@ -87,12 +88,11 @@ namespace LoLSkinExplorer.Views
                 {
                     
                     skins[i].imgLink = BaseSplashLink + champID+ "/" +skins[i].SkinID+".jpg";
-                    //await Application.Current.MainPage.DisplayAlert("Skin Type",skins[i].skinType,"OK");
-                    //if (skins[i].SkinName == "default")
-                    //{
-                    //    skins[i].SkinName = _ChampName;
-                    //}
-                    string  price = null;
+
+
+                    /// <summary>
+                    /// In this aria I declare the skin prices.
+                    /// </summary>
                     if (skins[i].skinType == "kEpic")
                         skins[i].SkinPrice = 1350;
                     if (skins[i].skinType == "kLegendary")
@@ -104,14 +104,22 @@ namespace LoLSkinExplorer.Views
                     if (skins[i].skinType == "kNoRarity")
                         skins[i].SkinPrice = 975;
 
+                    /// <summary>
+                    /// In this area I declare if the skin is avialable or not.
+                    /// </summary>
 
-
-                    if (skins[i].IsAvailable)
+                    if (!skins[i].IsAvailable)
                     {
-                        Label ALBL = _ListView.FindByName("AvailabltyLBL");
-                        ALBL.Text = "Available";
+                        if (skins[i].skinType == "kMythic")
+                            skins[i].availableString = "Unavailable";
+                        else
+                            skins[i].AvailableString = "Available";
                     }
-                        
+                    else
+                    {
+                        skins[i].availableString = "Unavailable";
+                    }
+
 
 
 

@@ -41,13 +41,13 @@ namespace LoLSkinExplorer.ViewModels
             Skins = new ObservableRangeCollection<Skin>();
 
 
-            Skins.Add(new Skin()
-            {
-                SkinID = "266001",
-                SkinNum = 1,
-                SkinName = "Justicar Aatrox",
-                ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_1.jpg",
-            });
+            //Skins.Add(new Skin()
+            //{
+            //    SkinID = "266001",
+            //    SkinNum = 1,
+            //    SkinName = "Justicar Aatrox",
+            //    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_1.jpg",
+            //});
 
             GetSkins(ChampName);
         }
@@ -64,7 +64,7 @@ namespace LoLSkinExplorer.ViewModels
 
             List<Skin> skins = new List<Skin>();
 
-            var skinNames = dobj["data"]["Aatrox"]["skins"].Value<JArray>();
+            var skinNames = dobj["data"]["Ahri"]["skins"].Value<JArray>();
             try
             {
                 skins = skinNames.ToObject<List<Skin>>();

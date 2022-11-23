@@ -30,9 +30,9 @@ namespace LoLSkinExplorer.Views
             if (!SearchEntryBox.IsVisible)
             {
                 SearchEntryBox.IsVisible = true;
-                SearchEntryBox.Focus();
+                
             }
-            if(SearchEntryBox.IsVisible)
+            else
             {
                 SearchEntryBox.IsVisible = false;
             }
@@ -44,29 +44,29 @@ namespace LoLSkinExplorer.Views
         {
             ((ListView)sender).SelectedItem = null;
         }
-        //public List<Skin> GetSkins(string _ChampName)
-        //{
-        //    string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
-        //    string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/" + _ChampName + ".json";
-        //    WebClient webClient = new WebClient();
-        //    string downloadedJsonText = webClient.DownloadString(jsonText);
-        //    JObject dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);
-        //    var skinNames = dobj["data"][_ChampName]["skins"].Value<JArray>();
-        //    List<Skin> skins = skinNames.ToObject<List<Skin>>();
-        //    for (int i = 0; i < skins.Count; i++)
-        //    {
-        //        skins[i].imgLink = BaseSkinLink + _ChampName + "_" + skins[i].SkinNum + ".jpg";
+        public List<Skin> GetSkins(string _ChampName)
+        {
+            string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
+            string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/" + _ChampName + ".json";
+            WebClient webClient = new WebClient();
+            string downloadedJsonText = webClient.DownloadString(jsonText);
+            JObject dobj = JsonConvert.DeserializeObject<dynamic>(downloadedJsonText);
+            var skinNames = dobj["data"][_ChampName]["skins"].Value<JArray>();
+            List<Skin> skins = skinNames.ToObject<List<Skin>>();
+            for (int i = 0; i < skins.Count; i++)
+            {
+                skins[i].imgLink = BaseSkinLink + _ChampName + "_" + skins[i].SkinNum + ".jpg";
 
 
-        //        if (skins[i].SkinName == "default")
-        //        {
-        //            skins[i].SkinName = _ChampName;
-        //        }
-        //        Skins.Add(skins[i]);
-        //    }
-        //    OnPropertyChanged();
-        //    return skins;
-        //}
+                if (skins[i].SkinName == "default")
+                {
+                    skins[i].SkinName = _ChampName;
+                }
+                Skins.Add(skins[i]);
+            }
+            OnPropertyChanged();
+            return skins;
+        }
 
         private void SearchEntryBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -86,7 +86,7 @@ namespace LoLSkinExplorer.Views
 
         private void SearchEntryBox_Unfocused(object sender, FocusEventArgs e)
         {
-            SearchEntryBox.IsVisible = false;
+            //SearchEntryBox.IsVisible = false;
         }
 
         private void ListViewomePage_ItemSelected_1Async(object sender, SelectedItemChangedEventArgs e)
@@ -97,10 +97,10 @@ namespace LoLSkinExplorer.Views
             Navigation.PushAsync(new SkinsPage(champ.ChampionAlias));
         }
 
-        private void LoadBTN_Clicked(object sender, EventArgs e)
-        {
-            LoadBTN.IsVisible = false;
-        }
+        //private void LoadBTN_Clicked(object sender, EventArgs e)
+        //{
+        //    LoadBTN.IsVisible = false;
+        //}
 
         
     }

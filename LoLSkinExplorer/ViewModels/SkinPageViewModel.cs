@@ -27,7 +27,7 @@ namespace LoLSkinExplorer.ViewModels
 
     public class SkinPageViewModel : BaseViewModel
     {
-        string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
+        //string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
         public ObservableRangeCollection<Champion> Champions { get; set; }
         public ObservableRangeCollection<Skin> Skins { get; set; }
         public ObservableRangeCollection<Skin> SkinsAtStart { get; set; }
@@ -42,14 +42,15 @@ namespace LoLSkinExplorer.ViewModels
             SkinsAtStart = new ObservableRangeCollection<Skin>();
             GetDataCommand = new AsyncCommand(GetDataTask);
             
-            Champions.Add(new Champion()
-            {
-                ChampionId = "Ahri",
-                ChampionKey = "103",
-                ChampionName = "Ahri",
-                ChampionTitle = "the Nine-Tailed Fox",
-                ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg"
-            });
+            //Champions.Add(new Champion()
+            //{
+            //    ChampionId = "Ahri",
+            //    ChampionKey = "103",
+            //    ChampionName = "Ahri",
+            //    ChampionTitle = "the Nine-Tailed Fox",
+            //    ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg"
+            //});
+            GetData();
         }
         public async Task GetData()
         {
@@ -64,9 +65,15 @@ namespace LoLSkinExplorer.ViewModels
                         
                         var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
                         System.IO.Stream s = tmp.GetManifestResourceStream($"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json");
+                        if (s == null)
+                        {
+                            await Application.Current.MainPage.DisplayAlert("sr", ChampionsNames[i], "ok");
+                        }
                         //await Application.Current.MainPage.DisplayAlert("path", $"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json", "OK");
                         System.IO.StreamReader sr = new System.IO.StreamReader(s);
-
+                        
+                        
+                        
                         string JsonText = sr.ReadToEnd();
                         
                         JObject dobj = JsonConvert.DeserializeObject<dynamic>(JsonText);
@@ -110,25 +117,25 @@ namespace LoLSkinExplorer.ViewModels
             "Caitlyn","Camille","Cassiopeia","Chogath","Corki",
             "Darius","Diana","Draven","DrMundo",
             "Ekko","Elise","Evelynn","Ezreal",
-            "Fiddlesticks","Fiora","Fizz",
+            "FiddleSticks","Fiora","Fizz",
             "Galio","Gangplank","Garen","Gnar","Gragas","Graves","Gwen",
             "Hecarim","Heimerdinger",
             "Illaoi","Irelia","Ivern",
             "Janna","JarvanIV","Jax","Jayce","Jhin","Jinx",
-            "Kaisa","Kalista","Karma","Karthus","Kassadin","Katarina","Katarina","Kayn","Kennen","Khazix","Kindred","Kled","KogMaw","KSante",
+            "Kaisa","Kalista","Karma","Karthus","Kassadin","Katarina","Kayn","Kennen","Khazix","Kindred","Kled","KogMaw","KSante",
             "Leblanc","LeeSin","Leona","Lillia","Lissandra",
             "Lucian", "Lulu","Lux",
-            "Malphite","Malzahar","Maokai","MasterYi","MissFortune","MonkeyKing","Mordekaiser","Morgana",
+            "Malphite","Malzahar","Maokai","MasterYi","MissFortune","Mordekaiser","Morgana",
             "Nami","Nasus","Neeko","Nidalee","Nilah","Nocturne","Nunu",
             "Olaf","Orianna","Ornn",
             "Pantheon","Poppy","Pyke",
             "Qiyana","Quinn",
             "Rakan","Rammus","RekSai","Rell","Renata","Renekton","Rengar","Riven","Rumble" ,"Ryze",
-            "Samira","Sejuani","Senna","Senna","Seraphine","Sett","Shaco","Shen","Shyvana","Singed","Sion","Sivir","Skarner","Sona","Soraka","Swain","Sylas","Syndra",
+            "Samira","Sejuani","Senna","Seraphine","Sett","Shaco","Shen","Shyvana","Singed","Sion","Sivir","Skarner","Sona","Soraka","Swain","Sylas","Syndra",
             "TahmKench","Taliyah","Talon","Taric","Teemo","Thresh","Tristana","Trundle","Tryndamere","TwistedFate","Twitch",
             "Udyr","Urgot",
             "Varus","Vayne","Veigar","Velkoz","Vex","Vi","Viego","Viktor","Vladimir","Volibear",
-            "Warwick",
+            "Warwick","Wukong",
             "Xayah","Xerath","XinZhao",
             "Yasuo","Yone","Yorick","Yuumi",
             "Zac","Zed","Zeri","Ziggs","Zilean","Zoe","Zyra"

@@ -109,6 +109,7 @@ namespace LoLSkinExplorer.Models
                 NotifyPropertyChanged(nameof(SkinPrice));
             }
         }
+        
         [JsonProperty("isLegacy")]
         public bool isavailable;
         public bool IsAvailable
@@ -123,6 +124,18 @@ namespace LoLSkinExplorer.Models
             }
         }
 
+        public string availableString;
+        public string AvailableString
+        {
+            get => availableString;
+            set
+            {
+                if (availableString == value)
+                    return;
+                availableString = value;
+                NotifyPropertyChanged(nameof(availableString));
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")

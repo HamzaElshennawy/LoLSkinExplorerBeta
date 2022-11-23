@@ -6,8 +6,12 @@
               BackgroundColor="#43494c">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="{Binding ChampName}" />
-        
+        <ToolbarItem x:Name="TBItemName" Text="" >
+            <ToolbarItem.Effects>
+                
+            </ToolbarItem.Effects>
+        </ToolbarItem>
+
     </ContentPage.ToolbarItems>
     
 
@@ -20,16 +24,17 @@
                 <ViewCell>
                     <Grid Padding="10">
                         <Frame x:Name="DataFrame"
-                            Padding="0" WidthRequest="400" HeightRequest="200" 
+                            Padding="0" WidthRequest="400" HeightRequest="180" 
                                HasShadow="True" HorizontalOptions="Center"
                                CornerRadius="20" 
                                >
                             <Grid>
                                 <StackLayout>
                                     <Image Source="{Binding ImgLink}"  
-                                           HeightRequest="500" VerticalOptions="Fill"
+                                            VerticalOptions="FillAndExpand"
+                                           
                                            HorizontalOptions="StartAndExpand" Opacity="0.8" 
-                                           Margin="0,-150,0,0"/>
+                                           Margin="0,0,0,0"/>
                                 </StackLayout>
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="{Binding SkinName}" TextColor="Black" 
@@ -37,10 +42,17 @@
                                         HorizontalOptions="StartAndExpand"
                                            VerticalOptions="EndAndExpand"
                                            Padding="8"
-                                        FontSize="23"/>
+                                        FontSize="20"/>
                                     <Label x:Name="AvailabltyLBL"
-                                           Text="{Binding SkinAvailable}"
+                                           HorizontalTextAlignment="Start"
+                                           HorizontalOptions="StartAndExpand"
+                                           VerticalOptions="EndAndExpand"
+                                           Padding="8"
+                                           FontSize="15"
+                                           FontAttributes="Bold"
+                                           Text="{Binding AvailableString}"
                                            />
+                                    
                                     <Label Text="{Binding SkinPrice}"
                                            HorizontalTextAlignment="Start"
                                            VerticalTextAlignment="Center"
