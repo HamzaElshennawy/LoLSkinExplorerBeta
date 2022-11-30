@@ -14,6 +14,8 @@ using Xamarin.Forms.Xaml;
 using LoLSkinExplorer.ViewModels;
 using System.Collections.ObjectModel;
 
+#pragma warning disable IDE1006 // Naming Styles
+
 namespace LoLSkinExplorer.Views
 {
     //chromas link https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-chroma-images/
@@ -21,8 +23,18 @@ namespace LoLSkinExplorer.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SkinsPage : ContentPage
     {
-        public string ChampName;
-
+        public string champName;
+        public string ChampName
+        {
+            get => champName;
+            set
+            {
+                if(champName == value)
+                    return;
+                champName = value;
+                OnPropertyChanged();
+            }
+        }
         string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
         string BaseSplashLink = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/";
         string BaseChromaLink = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-chroma-images/";
@@ -41,11 +53,8 @@ namespace LoLSkinExplorer.Views
         {
             Skins.Clear();
             string name = _ChampName;
-            TBItemName.Text = name;
-            //string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.20.1/data/en_US/champion/" +"Aatrox"+ ".json";
-            //string jsonText = "https://ddragon.leagueoflegends.com/cdn/12.20.1/data/en_US/champion/" + _ChampName + ".json";
-            //WebClient webClient = new WebClient();
-            //string downloadedJsonText = webClient.DownloadString(jsonText);
+            
+            
 
             var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
             System.IO.Stream s = tmp.GetManifestResourceStream($"LoLSkinExplorer.Champions.{name}.json");
@@ -59,19 +68,7 @@ namespace LoLSkinExplorer.Views
             var skinNames = dobj["skins"].Value<JArray>();
             string champID = (string)dobj["id"];
             JArray NumberOfChromas = new JArray();
-            //await Application.Current.MainPage.DisplayAlert("..", (string)dobj["skins"]["id"]["chromaPath"], "ok");
-            try
-            {
-                //await Application.Current.MainPage.DisplayAlert("Error",)
-                //if ((string)dobj["skins"]["id"]["chromaPath"]!= "null")
-                //    NumberOfChromas = dobj["skins"][]["chromas"].Value<JArray>();
-                string test = "";
-                throw new Exception();
-            }
-            catch (Exception e)
-            {
-                NumberOfChromas = null;
-            }
+            
             
             try
             {
@@ -153,7 +150,19 @@ namespace LoLSkinExplorer.Views
 
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            ((ListView)sender).SelectedItem = null;
+            var skin = ((ListView)sender).SelectedItem as Skin;
+            if(skin.Chromas==null)
+                Application.Current.MainPage.DisplayAlert("Has crhomas?", "No", "OK");
+            else
+                Application.Current.MainPage.DisplayAlert("Has crhomas?", "Yes", "OK");
+            
+        }
+
+
+        private async void _ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+
+        {
+            //((ListView)sender).SelectedItem = null;
         }
     }
 }

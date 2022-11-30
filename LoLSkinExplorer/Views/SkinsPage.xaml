@@ -3,20 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ViewModels="clr-namespace:LoLSkinExplorer.ViewModels"
              x:Class="LoLSkinExplorer.Views.SkinsPage" 
-              BackgroundColor="#43494c">
+              BackgroundColor="#43494c" Title="{Binding ChampName}">
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="TBItemName" Text="" >
-            <ToolbarItem.Effects>
-                
-            </ToolbarItem.Effects>
-        </ToolbarItem>
-
-    </ContentPage.ToolbarItems>
+    
     
 
     <ListView x:Name="_ListView" HasUnevenRows="True" ItemsSource="{Binding Skins}" 
               BackgroundColor="Transparent" SeparatorVisibility="None"  ItemSelected="ListView_ItemSelected"
+              ItemTapped="_ListView_ItemTapped"
               >
 
         <ListView.ItemTemplate>

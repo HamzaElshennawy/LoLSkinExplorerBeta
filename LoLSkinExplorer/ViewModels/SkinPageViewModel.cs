@@ -17,6 +17,7 @@ using System.IO;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Essentials;
 
 namespace LoLSkinExplorer.ViewModels
 {
@@ -34,77 +35,89 @@ namespace LoLSkinExplorer.ViewModels
         public AsyncCommand GetDataCommand { get; }
         public AsyncCommand getDataCommand { get; }
         public AsyncCommand SearchCommand { get; }
+        public AsyncCommand _RefreshCommand { get; }
         public SkinPageViewModel()
         {
+            var ScreenSize = DeviceDisplay.MainDisplayInfo;
+            var ScreenWidth = ScreenSize.Width;
+            var ScreenHeight = ScreenSize.Height;
+
+            var ScreenWidthForCell = ScreenWidth * 0.80;
+            var ScreenHightForCell = ScreenHeight * 0.3;
+
             Title = "Skins";
             Champions = new ObservableRangeCollection<Champion>();
             Skins = new ObservableRangeCollection<Skin>();
             SkinsAtStart = new ObservableRangeCollection<Skin>();
             GetDataCommand = new AsyncCommand(GetDataTask);
+            _RefreshCommand = new AsyncCommand(Refresh);
             
-            //Champions.Add(new Champion()
-            //{
-            //    ChampionId = "Ahri",
-            //    ChampionKey = "103",
-            //    ChampionName = "Ahri",
-            //    ChampionTitle = "the Nine-Tailed Fox",
-            //    ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg"
-            //});
-            GetData();
+            _=GetData();
         }
         public async Task GetData()
         {
             Skins.Clear();
             Champions.Clear();
-            try
-            {
-                for (int i = 0; i < ChampionsNames.Count; i++)
+            //if (CheckForNetwork() == 1)
+            //{
+                try
                 {
-                    try
+                    for (int i = 0; i < ChampionsNames.Count; i++)
                     {
-                        
-                        var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
-                        System.IO.Stream s = tmp.GetManifestResourceStream($"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json");
-                        if (s == null)
+                        try
                         {
-                            await Application.Current.MainPage.DisplayAlert("sr", ChampionsNames[i], "ok");
-                        }
-                        //await Application.Current.MainPage.DisplayAlert("path", $"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json", "OK");
-                        System.IO.StreamReader sr = new System.IO.StreamReader(s);
-                        
-                        
-                        
-                        string JsonText = sr.ReadToEnd();
-                        
-                        JObject dobj = JsonConvert.DeserializeObject<dynamic>(JsonText);
-                        Champion TempChampion = new Champion();
-                        var champID = dobj["id"];
-                        TempChampion.ChampionId = (string)champID;
-                        //var champKey = dobj["key"];
-                        //TempChampion.ChampionKey = (string)champKey;
-                        var championAlias = dobj["alias"];
-                        TempChampion.ChampionAlias = (string)championAlias;
-                        var champName = dobj["name"];
-                        TempChampion.ChampionName = (string)champName;
-                        var champTitle = dobj["title"];
-                        TempChampion.ChampionTitle = (string)champTitle;
-                        TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionAlias + "_0.jpg";
-                        Champions.Add(TempChampion);
 
+                            var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
+                            System.IO.Stream s = tmp.GetManifestResourceStream($"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json");
+                            if (s == null)
+                            {
+                                await Application.Current.MainPage.DisplayAlert("sr", ChampionsNames[i], "ok");
+                            }
+                            //await Application.Current.MainPage.DisplayAlert("path", $"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json", "OK");
+                            System.IO.StreamReader sr = new System.IO.StreamReader(s);
+
+
+
+                            string JsonText = sr.ReadToEnd();
+
+                            JObject dobj = JsonConvert.DeserializeObject<dynamic>(JsonText);
+                            Champion TempChampion = new Champion();
+                            var champID = dobj["id"];
+                            TempChampion.ChampionId = (string)champID;
+                            //var champKey = dobj["key"];
+                            //TempChampion.ChampionKey = (string)champKey;
+                            var championAlias = dobj["alias"];
+                            TempChampion.ChampionAlias = (string)championAlias;
+                            var champName = dobj["name"];
+                            TempChampion.ChampionName = (string)champName;
+                            var champTitle = dobj["title"];
+                            TempChampion.ChampionTitle = (string)champTitle;
+                            TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionAlias + "_0.jpg";
+                            Champions.Add(TempChampion);
+
+                        }
+                        catch (Exception ex)
+                        {
+                            await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+                        }
                     }
-                    catch (Exception ex)
-                    {
-                        await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
-                    }
+                    OnPropertyChanged(nameof(Skins));
                 }
-                OnPropertyChanged(nameof(Skins));
-            }
-            catch (Exception ex)
-            {
-                await Application.Current.MainPage.DisplayAlert("error", ex.Message, "OK");
-            }
+                catch (Exception ex)
+                {
+                    await Application.Current.MainPage.DisplayAlert("error", ex.Message, "OK");
+                }
+            //}
+            //else
+            //    await Application.Current.MainPage.DisplayAlert("Internet issue", "Please connect to the internet to be able to use this app", "OK");
         }
         async Task GetDataTask()
+        {
+            IsBusy = true;
+            await GetData();
+            IsBusy = false;
+        }
+        async Task Refresh()
         {
             IsBusy = true;
             await GetData();
@@ -140,5 +153,12 @@ namespace LoLSkinExplorer.ViewModels
             "Yasuo","Yone","Yorick","Yuumi",
             "Zac","Zed","Zeri","Ziggs","Zilean","Zoe","Zyra"
         };
+        public int CheckForNetwork()
+        {
+            var connectivity = Connectivity.NetworkAccess;
+            if (connectivity == NetworkAccess.Internet)
+                return 1;
+            return 0; 
+        }
     }
 }

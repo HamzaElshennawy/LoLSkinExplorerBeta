@@ -19,46 +19,82 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="icons8_search.ico"  Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
-    <StackLayout>
-        <!--<Button x:Name="LoadBTN" 
-            Text="Load All Champions" WidthRequest="200" HeightRequest="50"
-            HorizontalOptions="CenterAndExpand" CornerRadius="20" Margin="0,10,0,0" 
-            Command="{Binding GetDataCommand}" CharacterSpacing="2" Clicked="LoadBTN_Clicked"/>-->
-        <SearchBar x:Name="SearchEntryBox" Placeholder="Search"  HorizontalTextAlignment="Center" BackgroundColor="Gray"
-                   WidthRequest="500" HorizontalOptions="CenterAndExpand"
-            Margin="0" IsVisible="false"  TextChanged="SearchEntryBox_TextChanged" />
-        <ListView x:Name="ListViewomePage" HasUnevenRows="True" ItemsSource="{Binding Champions}" 
-              BackgroundColor="Transparent" SeparatorVisibility="None" 
-              ItemSelected="ListViewomePage_ItemSelected_1Async" ItemTapped="ListViewomePage_ItemTapped" 
-                  >
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Grid Padding="7">
-                            <Frame Padding="0" WidthRequest="400" HeightRequest="200" 
-                               HasShadow="True" HorizontalOptions="Center" 
+    <StackLayout Orientation="Vertical">
+        <StackLayout BackgroundColor="Transparent" HeightRequest="300">
+            <CarouselView  ItemsSource="{Binding Champions}" HorizontalScrollBarVisibility="Always" 
+                           VerticalOptions="StartAndExpand" PeekAreaInsets="0"
+              BackgroundColor="Transparent" 
+              >
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Grid >
+                                <Frame Padding="0" WidthRequest="100" HeightRequest="160" 
+                               HasShadow="False" 
                                CornerRadius="10" 
                                >
-                                <Grid>
-                                    <StackLayout>
-                                        <Image Source="{Binding ChampionImage}"  
-                                           HeightRequest="500" VerticalOptions="FillAndExpand"
-                                           HorizontalOptions="StartAndExpand" Opacity="0.8" 
-                                           Margin="0,-150,0,0"/>
-                                    </StackLayout>
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="{Binding ChampionName}" TextColor="Black" 
+                                    <Grid>
+                                        <StackLayout>
+                                            <Image Source="{Binding ChampionImage}"
+                                                   VerticalOptions="CenterAndExpand"
+                                                   HorizontalOptions="CenterAndExpand"
+                                                Aspect="AspectFill"
+                                                Opacity="1.8" 
+                                            />
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding ChampionName}" TextColor="Red" 
                                         HorizontalTextAlignment="Start"
                                         HorizontalOptions="CenterAndExpand"
                                            VerticalOptions="EndAndExpand"
                                         FontSize="Large"/>
-                                    </StackLayout>
-                                </Grid>
-                            </Frame>
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                                        </StackLayout>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </StackLayout>
+        <StackLayout>
+            <SearchBar x:Name="SearchEntryBox" Placeholder="Search"  HorizontalTextAlignment="Center" BackgroundColor="Gray"
+                   WidthRequest="500" HorizontalOptions="CenterAndExpand"
+            Margin="0" IsVisible="false"  TextChanged="SearchEntryBox_TextChanged" />
+            <ListView x:Name="ListViewomePage" HasUnevenRows="True" ItemsSource="{Binding Champions}" 
+              BackgroundColor="Transparent" SeparatorVisibility="None" 
+              ItemSelected="ListViewomePage_ItemSelected_1Async" ItemTapped="ListViewomePage_ItemTapped" 
+              IsPullToRefreshEnabled="True" RefreshCommand="{Binding _RefreshCommand}"  IsRefreshing="{Binding IsBusy, Mode=TwoWay}"   
+                  >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="7">
+                                <Frame Padding="0" WidthRequest="350" HeightRequest="150" 
+                               HasShadow="True" HorizontalOptions="Center" 
+                               CornerRadius="10" 
+                               >
+                                    <Grid>
+                                        <StackLayout>
+                                            <Image Source="{Binding ChampionImage}"  
+                                           HeightRequest="500" VerticalOptions="FillAndExpand"
+                                           HorizontalOptions="StartAndExpand" Opacity="1.8" 
+                                           Margin="0,-150,0,0"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding ChampionName}" TextColor="Black" 
+                                        HorizontalTextAlignment="Start"
+                                        HorizontalOptions="CenterAndExpand"
+                                           VerticalOptions="EndAndExpand"
+                                        FontSize="Large"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </StackLayout>
 </ContentPage>
