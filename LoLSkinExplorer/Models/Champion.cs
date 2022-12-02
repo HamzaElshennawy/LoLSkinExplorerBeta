@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -8,6 +9,7 @@ namespace LoLSkinExplorer.Models
 {
     public class Champion : INotifyPropertyChanged
     {
+        [JsonProperty("alias")]
         public string Alias;
         public string ChampionAlias
         {
@@ -22,7 +24,7 @@ namespace LoLSkinExplorer.Models
         }
 
 
-
+        [JsonProperty("name")]
         public string Name;
         public string ChampionName {
             get => Name;
@@ -33,6 +35,9 @@ namespace LoLSkinExplorer.Models
                 NotifyPropertyChanged(nameof(ChampionName));
             }
         }
+
+
+        [JsonProperty("id")]
         public string ID;
         public string ChampionId {
             get => ID;
@@ -43,28 +48,50 @@ namespace LoLSkinExplorer.Models
                 NotifyPropertyChanged(nameof(ChampionId));
             }
         }
-        public string Key;
-        public string ChampionKey {
-            get => Key;
-            set
-            {
-                if(Key == value) return;
-                Key = value;
-                NotifyPropertyChanged(nameof(ChampionKey));
-            }
-        }
-        public string Title;
-        public string ChampionTitle {
-            get => Title;
-            set
-            {
-                if(Title == value) return;
-                Title = value;
-                NotifyPropertyChanged(nameof(ChampionTitle));
-            }
-        }
+        //public string Key;
+        //public string ChampionKey {
+        //    get => Key;
+        //    set
+        //    {
+        //        if(Key == value) return;
+        //        Key = value;
+        //        NotifyPropertyChanged(nameof(ChampionKey));
+        //    }
+        //}
+
+        //public string Title;
+        //public string ChampionTitle {
+        //    get => Title;
+        //    set
+        //    {
+        //        if(Title == value) return;
+        //        Title = value;
+        //        NotifyPropertyChanged(nameof(ChampionTitle));
+        //    }
+        //}
+
+        [JsonProperty("roles")]
+        public List<string> Role { set; get; }
+
+
         //public List<Skin> _Skins;
+        [JsonProperty("skins")]
         public List<Skin> ChampionSkins = new List<Skin>();
+
+
+        [JsonProperty("shortBio")]
+        public string _Bio;
+        public string Bio
+        {
+            get => _Bio;
+            set
+            {
+                if(Bio == value) 
+                    return;
+                Bio = value;
+                NotifyPropertyChanged(nameof(_Bio));
+            }
+        }
 
         public string _Image;
 
