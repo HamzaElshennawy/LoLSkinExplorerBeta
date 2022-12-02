@@ -73,8 +73,12 @@ namespace LoLSkinExplorer.Views
             var champ = ((ListView)sender).SelectedItem as Champion;
             if (champ == null)
                 return;
-            await Navigation.PushAsync(new SkinsPage(champ.ChampionAlias));
+            //await Navigation.PushAsync(new SkinsPage(champ));
             //await Navigation.PushAsync(new ChampionPage(champ.ChampionAlias));
+            for(int i = 0; i<champ.Abilities.Count; i++)
+            {
+                await Application.Current.MainPage.DisplayAlert("Champion spell Keys", champ.Abilities[i].SpellKey, "OK");
+            }
         }
 
         

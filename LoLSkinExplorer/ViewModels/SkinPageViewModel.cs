@@ -18,6 +18,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Essentials;
+using System.Linq;
 
 namespace LoLSkinExplorer.ViewModels
 {
@@ -32,6 +33,7 @@ namespace LoLSkinExplorer.ViewModels
         public ObservableRangeCollection<Champion> Champions { get; set; }
         public ObservableRangeCollection<Skin> Skins { get; set; }
         public ObservableRangeCollection<Skin> SkinsAtStart { get; set; }
+        public ObservableRangeCollection<Abilities> abilities { get; set; }
         public AsyncCommand GetDataCommand { get; }
         public AsyncCommand getDataCommand { get; }
         public AsyncCommand SearchCommand { get; }
@@ -58,58 +60,123 @@ namespace LoLSkinExplorer.ViewModels
         {
             Skins.Clear();
             Champions.Clear();
-            //if (CheckForNetwork() == 1)
-            //{
-                try
+            try
+            {
+                for (int i = 0; i < ChampionsNames.Count; i++)
                 {
-                    for (int i = 0; i < ChampionsNames.Count; i++)
+                    try
                     {
-                        try
+
+                        var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
+                        System.IO.Stream s = tmp.GetManifestResourceStream($"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json");
+                        if (s == null)
                         {
-
-                            var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
-                            System.IO.Stream s = tmp.GetManifestResourceStream($"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json");
-                            if (s == null)
-                            {
-                                await Application.Current.MainPage.DisplayAlert("sr", ChampionsNames[i], "ok");
-                            }
-                            //await Application.Current.MainPage.DisplayAlert("path", $"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json", "OK");
-                            System.IO.StreamReader sr = new System.IO.StreamReader(s);
-
-
-
-                            string JsonText = sr.ReadToEnd();
-
-                            JObject dobj = JsonConvert.DeserializeObject<dynamic>(JsonText);
-                            Champion TempChampion = new Champion();
-                            var champID = dobj["id"];
-                            TempChampion.ChampionId = (string)champID;
-                            //var champKey = dobj["key"];
-                            //TempChampion.ChampionKey = (string)champKey;
-                            var championAlias = dobj["alias"];
-                            TempChampion.ChampionAlias = (string)championAlias;
-                            var champName = dobj["name"];
-                            TempChampion.ChampionName = (string)champName;
-                            var champTitle = dobj["title"];
-                            TempChampion.ChampionTitle = (string)champTitle;
-                            TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionAlias + "_0.jpg";
-                            Champions.Add(TempChampion);
-
+                            await Application.Current.MainPage.DisplayAlert("sr", ChampionsNames[i], "ok");
                         }
-                        catch (Exception ex)
+                        //await Application.Current.MainPage.DisplayAlert("path", $"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json", "OK");
+                        System.IO.StreamReader sr = new System.IO.StreamReader(s);
+
+
+
+                        string JsonText = sr.ReadToEnd();
+
+                        JObject dobj = JsonConvert.DeserializeObject<dynamic>(JsonText);
+                        Champion TempChampion = new Champion();
+                        var champID = dobj["id"];
+                        TempChampion.ChampionId = (string)champID;
+                        //var champKey = dobj["key"];
+                        //TempChampion.ChampionKey = (string)champKey;
+                        var championAlias = dobj["alias"];
+                        TempChampion.ChampionAlias = (string)championAlias;
+                        var champName = dobj["name"];
+                        TempChampion.ChampionName = (string)champName;
+                        //var champTitle = dobj["title"];
+                        //TempChampion.ChampionTitle = (string)champTitle;
+                        TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionAlias + "_0.jpg";
+                        var champBio = dobj["shortBio"];
+                        //try
+                        //{
+                        //    TempChampion.Bio = (string)champBio;
+                        //}
+                        //catch(Exception e)
+                        //{
+                        //    await Application.Current.MainPage.DisplayAlert("Error BIO", e.Message, "OK");
+                        //}
+                        var champRoles = dobj["roles"];
+                        //foreach ( var champRole in champRoles )
+                        //{
+                        //    try
+                        //    {
+                        //        TempChampion.Role.Add((string)champRole);
+                        //        //await Application.Current.MainPage.DisplayAlert("error", champRole.ToString(), "OK");
+                        //    }
+                        //    catch (Exception e)
+                        //    {
+
+                        //        await Application.Current.MainPage.DisplayAlert("error", e.Message, "OK");
+                        //    }
+                            
+                        //}
+
+
+                        /*
+                         
+                         This section is for the champion abilities
+                         
+                         */
+
+
+
+                        abilities = new ObservableRangeCollection<Abilities>();
+                        
+                        var SpellP = dobj["passive"];
+                        Abilities spellP = new Abilities();
+                        spellP.SpellName = dobj["passive"]["name"].ToString();
+                        spellP.SpellDescription = dobj["passive"]["description"].ToString();
+                        spellP.SpellKey = "q";
+                        abilities.Add(spellP);
+                        //TempChampion.Abilities.Add(spellP);
+
+                        var champAbilities = dobj["spells"]["spellkey"];
+
+                        foreach ( var champAbility in champAbilities )
                         {
-                            await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+                            
+
+
+                            var spellKey = champAbility["spellKey"].ToString();
+
+                            var spellName = champAbility["name"].ToString();
+
+                            var spellRanges = champAbility["range"].Values<JArray>();
+
+                            var spellCoolDown = champAbility["cooldownCoefficients"].Values<JArray>();
+
+                            var spellDescription = champAbility["description"].ToString();
+
+                            Abilities abilitiess = new Abilities();
+                            abilitiess._SpellRange = (List<int>)spellRanges;
+                            abilitiess._SpellCoolDowns = (List<int>)spellCoolDown;
+                            abilitiess.SpellName = spellName;
+                            abilitiess.SpellKey = spellKey;
+                            abilitiess.SpellDescription = spellDescription;
+
+                            abilities.Add(abilitiess);
+                            TempChampion.Abilities = abilities.ToList<Abilities>();
                         }
+                        Champions.Add(TempChampion);
                     }
-                    OnPropertyChanged(nameof(Skins));
+                    catch (Exception ex)
+                    {
+                        await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+                    }
                 }
-                catch (Exception ex)
-                {
-                    await Application.Current.MainPage.DisplayAlert("error", ex.Message, "OK");
-                }
-            //}
-            //else
-            //    await Application.Current.MainPage.DisplayAlert("Internet issue", "Please connect to the internet to be able to use this app", "OK");
+                OnPropertyChanged(nameof(Skins));
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("error", ex.Message, "OK");
+            }
         }
         async Task GetDataTask()
         {

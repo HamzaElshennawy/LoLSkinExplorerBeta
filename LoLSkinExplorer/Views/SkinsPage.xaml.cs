@@ -40,11 +40,11 @@ namespace LoLSkinExplorer.Views
         string BaseChromaLink = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-chroma-images/";
         public ObservableCollection<Skin> Skins { get; set; }
         public ObservableCollection<Skin> Skinss { get; set; }
-        public SkinsPage(string cName)
+        public SkinsPage(Champion champion)
         {
             InitializeComponent();
             BindingContext = this;
-            ChampName = cName;
+            ChampName = champion.ChampionAlias;
             Skins = new ObservableCollection<Skin>();
             Skinss = new ObservableCollection<Skin>();
             GetSkins(ChampName);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -8,6 +9,7 @@ namespace LoLSkinExplorer.Models
 {
     public class Chromas : INotifyPropertyChanged
     {
+        [JsonProperty("name")]
         public string Name;
         public string ChromaName
         {
@@ -20,7 +22,7 @@ namespace LoLSkinExplorer.Models
                 NotifyPropertyChanged(nameof(Name));
             }
         }
-
+        [JsonProperty("id")]
         public string id;
         public string ChromaID
         {
@@ -44,6 +46,34 @@ namespace LoLSkinExplorer.Models
                     return;
                 path = value;
                 NotifyPropertyChanged(nameof(path));
+            }
+        }
+        
+        public class Description : Chromas
+        {
+            [JsonProperty("region")]
+            public string region;
+            public string Region
+            {
+                get => region;
+                set
+                {
+                    if(region == value)
+                        return;
+                    region = value;
+                    NotifyPropertyChanged(nameof(region));
+                }
+            }
+            [JsonProperty("description")]
+            public string description;
+            public string ChromaDescription
+            {
+                get => description;
+                set
+                {
+                    if(description == value) return;
+                    description = value;
+                    NotifyPropertyChanged(nameof(description));                }
             }
         }
 

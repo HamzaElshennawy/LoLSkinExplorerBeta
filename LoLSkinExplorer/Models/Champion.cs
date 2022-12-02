@@ -70,6 +70,9 @@ namespace LoLSkinExplorer.Models
         //    }
         //}
 
+        [JsonProperty("spells")]
+        public List<Abilities> Abilities;
+
         [JsonProperty("roles")]
         public List<string> Role { set; get; }
 
