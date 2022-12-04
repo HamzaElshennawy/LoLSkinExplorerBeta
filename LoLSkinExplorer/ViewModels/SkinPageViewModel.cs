@@ -129,15 +129,15 @@ namespace LoLSkinExplorer.ViewModels
 
                         abilities = new ObservableRangeCollection<Abilities>();
                         
-                        var SpellP = dobj["passive"];
-                        Abilities spellP = new Abilities();
-                        spellP.SpellName = dobj["passive"]["name"].ToString();
-                        spellP.SpellDescription = dobj["passive"]["description"].ToString();
-                        spellP.SpellKey = "q";
-                        abilities.Add(spellP);
+                        //var SpellP = dobj["passive"];
+                        //Abilities spellP = new Abilities();
+                        //spellP.SpellName = dobj["passive"]["name"].ToString();
+                        //spellP.SpellDescription = dobj["passive"]["description"].ToString();
+                        //spellP.SpellKey = "q";
+                        //abilities.Add(spellP);
                         //TempChampion.Abilities.Add(spellP);
 
-                        var champAbilities = dobj["spells"]["spellkey"];
+                        var champAbilities = dobj["spells"];
 
                         foreach ( var champAbility in champAbilities )
                         {
@@ -155,8 +155,8 @@ namespace LoLSkinExplorer.ViewModels
                             var spellDescription = champAbility["description"].ToString();
 
                             Abilities abilitiess = new Abilities();
-                            abilitiess._SpellRange = (List<int>)spellRanges;
-                            abilitiess._SpellCoolDowns = (List<int>)spellCoolDown;
+                            //abilitiess._SpellRange = (List<int>)spellRanges;
+                            //abilitiess._SpellCoolDowns = (List<int>)spellCoolDown;
                             abilitiess.SpellName = spellName;
                             abilitiess.SpellKey = spellKey;
                             abilitiess.SpellDescription = spellDescription;
