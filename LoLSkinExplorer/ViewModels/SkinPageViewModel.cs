@@ -95,11 +95,13 @@ namespace LoLSkinExplorer.ViewModels
                         TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionAlias + "_0.jpg";
                         TempChampion._LoadingScreen = $"http://ddragon.leagueoflegends.com/cdn/img/champion/loading/"+TempChampion.ChampionAlias+"_0.jpg";
                         var champBio = dobj["shortBio"];
+                        //await Application.Current.MainPage.DisplayAlert("Bio", (string)champBio, "OK");
+                        TempChampion._Bio = (string)champBio;
                         //try
                         //{
                         //    TempChampion.Bio = (string)champBio;
                         //}
-                        //catch(Exception e)
+                        //catch (Exception e)
                         //{
                         //    await Application.Current.MainPage.DisplayAlert("Error BIO", e.Message, "OK");
                         //}

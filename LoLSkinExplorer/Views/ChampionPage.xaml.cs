@@ -27,9 +27,10 @@ namespace LoLSkinExplorer.Views
             
             Title = MainChampion.Name;
             BioLabel.Text = MainChampion.Bio;
+            //Application.Current.MainPage.DisplayAlert("BIO", MainChampion.Bio, "OK");
         }
         
-        public async void GetChampionAbilities(Champion _MainChampion)
+        public void GetChampionAbilities(Champion _MainChampion)
         {
             //string name = _ChampName;
 
