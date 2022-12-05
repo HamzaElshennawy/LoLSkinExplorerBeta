@@ -83,6 +83,20 @@ namespace LoLSkinExplorer.Models
                 NotifyPropertyChanged(nameof(ImgLink));
             }
         }
+
+        public string _LoadingScreen;
+        public string LoadingScreen
+        {
+            get => _LoadingScreen;
+            set
+            {
+                if(_LoadingScreen == value)
+                    return;
+                _LoadingScreen = value;
+                NotifyPropertyChanged(nameof(_LoadingScreen));
+            }
+        }
+
         [JsonProperty("rarity")]
         public string skinType;
         public string SkinType

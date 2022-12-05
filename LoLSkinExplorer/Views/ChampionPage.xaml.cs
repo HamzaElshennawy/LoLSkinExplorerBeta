@@ -18,12 +18,15 @@ namespace LoLSkinExplorer.Views
 	{
         public ChampionPage(Champion TempChampion)
         {
+            InitializeComponent();
             Champion MainChampion = TempChampion as Champion;
             BindingContext = MainChampion;
             //Application.Current.MainPage.DisplayAlert("source", TempChampion.ChampionImage, "OK");
-            //BackGrounImage.Source = MainChampion.ChampionImage;
+            BackGrounImage.Source = MainChampion.ChampionLoadingScreen;
             BindingMode bindingMode = BindingMode.TwoWay;
-            InitializeComponent();
+            
+            Title = MainChampion.Name;
+            BioLabel.Text = MainChampion.Bio;
         }
         
         public async void GetChampionAbilities(Champion _MainChampion)

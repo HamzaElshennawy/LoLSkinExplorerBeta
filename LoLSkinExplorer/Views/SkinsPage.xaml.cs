@@ -38,6 +38,7 @@ namespace LoLSkinExplorer.Views
         string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
         string BaseSplashLink = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/";
         string BaseChromaLink = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-chroma-images/";
+        string BaseLoadingScrrenLink = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/";
         public ObservableCollection<Skin> Skins { get; set; }
         public ObservableCollection<Skin> Skinss { get; set; }
         public SkinsPage(Champion champion)
@@ -85,7 +86,7 @@ namespace LoLSkinExplorer.Views
                 {
                     
                     skins[i].imgLink = BaseSplashLink + champID+ "/" +skins[i].SkinID+".jpg";
-
+                    skins[i].LoadingScreen = BaseLoadingScrrenLink + name + skins[i].SkinID + ".jpg";
 
                     /// <summary>
                     /// In this aria I declare the skin prices.

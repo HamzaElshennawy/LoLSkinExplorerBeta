@@ -93,6 +93,7 @@ namespace LoLSkinExplorer.ViewModels
                         //var champTitle = dobj["title"];
                         //TempChampion.ChampionTitle = (string)champTitle;
                         TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionAlias + "_0.jpg";
+                        TempChampion._LoadingScreen = $"http://ddragon.leagueoflegends.com/cdn/img/champion/loading/"+TempChampion.ChampionAlias+"_0.jpg";
                         var champBio = dobj["shortBio"];
                         //try
                         //{

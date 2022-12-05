@@ -1,18 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LoLSkinExplorer.Views.ChampionPage" Title="{Binding TempChampion.Name}">
-    <ContentPage.BindingContext>
+             x:Class="LoLSkinExplorer.Views.ChampionPage" Title="{Binding MainChampion.Name}" BackgroundColor="#43494c">
+    <!--<ContentPage.BindingContext>
         MainChampion
-    </ContentPage.BindingContext>
+    </ContentPage.BindingContext>-->
     <ContentPage.Content>
         <!--<Image Source= "{Binding TempChampion.ChampionImage}" Opacity="0.5" VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" BackgroundColor="Red"/>-->
-        <StackLayout>
+        <Grid BackgroundColor="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Padding="0" Grid.Row="0" Grid.RowSpan="2" HeightRequest="500">
 
-            <Image x:Name="BackGrounImage" Source="{Binding MainChampio.ChampionImage}"  
-                   Opacity="0.6" VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand" Aspect="AspectFit"/>
-        </StackLayout>
+                        <Image x:Name="BackGrounImage" 
+                   Opacity="0.3" BackgroundColor="Transparent" 
+                       VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                       />
+                    </StackLayout>
+                    <StackLayout BackgroundColor="red" VerticalOptions="CenterAndExpand">
+                        <Label Text="Bio" FontSize="30" TextColor="Orange" VerticalOptions="CenterAndExpand"/>
+                        <Label x:Name="BioLabel" Text="Test"/>
+                    </StackLayout>
+                </StackLayout>
+
+            </ScrollView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

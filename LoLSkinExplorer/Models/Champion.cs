@@ -109,6 +109,19 @@ namespace LoLSkinExplorer.Models
             }
         }
 
+        public string _LoadingScreen;
+        public string ChampionLoadingScreen
+        {
+            get => _LoadingScreen;
+            set
+            {
+                if (_LoadingScreen == value) return;
+                _LoadingScreen = value;
+                NotifyPropertyChanged(nameof(_LoadingScreen));
+            }
+        }
+
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {
