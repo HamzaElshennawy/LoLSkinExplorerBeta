@@ -41,7 +41,7 @@ namespace LoLSkinExplorer.ViewModels
             Skins = new ObservableRangeCollection<Skin>();
 
 
-            //Skins.Add(new Skin()
+            //ChampSkins.Add(new Skin()
             //{
             //    SkinID = "266001",
             //    SkinNum = 1,

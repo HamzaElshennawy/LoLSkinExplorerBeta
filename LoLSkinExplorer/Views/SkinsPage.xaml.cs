@@ -39,20 +39,20 @@ namespace LoLSkinExplorer.Views
         string BaseSplashLink = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/";
         string BaseChromaLink = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-chroma-images/";
         string BaseLoadingScrrenLink = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/";
-        public ObservableCollection<Skin> Skins { get; set; }
+        public ObservableCollection<Skin> ChampSkins { get; set; }
         public ObservableCollection<Skin> Skinss { get; set; }
-        public SkinsPage(Champion champion)
+        public SkinsPage(/*Champion champion*/ string ChampName)
         {
             InitializeComponent();
             BindingContext = this;
-            ChampName = champion.ChampionAlias;
-            Skins = new ObservableCollection<Skin>();
+            //ChampName = champion.ChampionAlias;
+            ChampSkins = new ObservableCollection<Skin>();
             Skinss = new ObservableCollection<Skin>();
             GetSkins(ChampName);
         }
         public async void GetSkins(string _ChampName)
         {
-            Skins.Clear();
+            ChampSkins.Clear();
             string name = _ChampName;
             
             
@@ -123,7 +123,7 @@ namespace LoLSkinExplorer.Views
 
 
 
-                    Skins.Add(skins[i]);
+                    ChampSkins.Add(skins[i]);
                 }
             }
             catch(Exception e)
@@ -135,8 +135,8 @@ namespace LoLSkinExplorer.Views
             
             Skinss.Clear();
             Skinss.Add(skins[0]);
-            Skins.Remove(skins[0]);
-            OnPropertyChanged(nameof(Skins));
+            ChampSkins.Remove(skins[0]);
+            OnPropertyChanged(nameof(ChampSkins));
         }
 
         public int Price(string Rarity)
@@ -149,21 +149,20 @@ namespace LoLSkinExplorer.Views
                 return 0;
         }
 
-        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+                
+
             var skin = ((ListView)sender).SelectedItem as Skin;
-            if(skin.Chromas==null)
-                Application.Current.MainPage.DisplayAlert("Has crhomas?", "No", "OK");
-            else
-                Application.Current.MainPage.DisplayAlert("Has crhomas?", "Yes", "OK");
-            
+
+            //await Application.Current.MainPage.DisplayAlert("Has crhomas?", skin.Chromas == null ? "No" : "Yes", "OK");
         }
 
 
-        private async void _ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        private void _ListView_ItemTapped(object sender, ItemTappedEventArgs e)
 
         {
-            //((ListView)sender).SelectedItem = null;
+            ((ListView)sender).SelectedItem = null;
         }
     }
 }

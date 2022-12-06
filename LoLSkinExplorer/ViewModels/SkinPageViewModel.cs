@@ -47,7 +47,7 @@ namespace LoLSkinExplorer.ViewModels
             var ScreenWidthForCell = ScreenWidth * 0.80;
             var ScreenHightForCell = ScreenHeight * 0.3;
 
-            Title = "Skins";
+            Title = "ChampSkins";
             Champions = new ObservableRangeCollection<Champion>();
             Skins = new ObservableRangeCollection<Skin>();
             SkinsAtStart = new ObservableRangeCollection<Skin>();

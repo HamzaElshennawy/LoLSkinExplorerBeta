@@ -8,19 +8,24 @@
     
     
 
-    <ListView x:Name="_ListView" HasUnevenRows="True" ItemsSource="{Binding Skins}" 
+    <ListView x:Name="_ListView" HasUnevenRows="True" ItemsSource="{Binding ChampSkins}" 
               BackgroundColor="Transparent" SeparatorVisibility="None"  ItemSelected="ListView_ItemSelected"
-              ItemTapped="_ListView_ItemTapped"
+              ItemTapped="_ListView_ItemTapped" 
               >
+
+        <ListView.Resources>
+            <SolidColorBrush x:Key="ListViewItemBackgroundSelected" Color="#FF0000" />
+            <!--<SolidColorBrush x:Key="ListViewItemBackgroundSelectedPointerOver" Color="#FF0000" />-->
+        </ListView.Resources>
 
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <Grid Padding="10">
                         <Frame x:Name="DataFrame"
-                            Padding="0" WidthRequest="400" HeightRequest="180" 
+                            Padding="0" WidthRequest="10000" HeightRequest="180" 
                                HasShadow="True" HorizontalOptions="Center"
-                               CornerRadius="20" 
+                               CornerRadius="20"
                                >
                             <Grid>
                                 <StackLayout>

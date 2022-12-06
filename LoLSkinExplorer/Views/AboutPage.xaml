@@ -64,13 +64,13 @@
             <ListView x:Name="ListViewomePage" HasUnevenRows="True" ItemsSource="{Binding Champions}" 
               BackgroundColor="Transparent" SeparatorVisibility="None" 
               ItemSelected="ListViewomePage_ItemSelected_1Async" ItemTapped="ListViewomePage_ItemTapped" 
-              IsPullToRefreshEnabled="True" RefreshCommand="{Binding _RefreshCommand}"  IsRefreshing="{Binding IsBusy, Mode=TwoWay}"   
+              IsPullToRefreshEnabled="True" RefreshCommand="{Binding _RefreshCommand}"  IsRefreshing="{Binding IsBusy, Mode=TwoWay}" 
                   >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Grid Padding="7">
-                                <Frame Padding="0" WidthRequest="350" HeightRequest="150" 
+                                <Frame Padding="0" WidthRequest="10000" HeightRequest="150" 
                                HasShadow="True" HorizontalOptions="Center" 
                                CornerRadius="10" 
                                >
