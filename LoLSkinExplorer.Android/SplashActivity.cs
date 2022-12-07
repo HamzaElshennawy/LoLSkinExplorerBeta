@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 
 namespace LoLSkinExplorer.Droid
 {
-    [Activity(Label = "SplashActivity" ,MainLauncher = true, Theme = "@style/MainTheme.Splash", NoHistory =true
-        ,Icon = "@mipmap/icon") ]
+    [Activity(Label = "LoL Skin Explorer" ,MainLauncher = true, Theme = "@style/MainTheme.Splash", NoHistory =true
+        ,Icon = "@drawable/AppIcon") ]
     public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
