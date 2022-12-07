@@ -235,8 +235,6 @@ namespace LoLSkinExplorer.ViewModels
         }
         public void NewSkinsDisplay()
         {
-
-            //var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
             NewSkins.Add(
                 new Skin
                 {
@@ -264,10 +262,10 @@ namespace LoLSkinExplorer.ViewModels
             NewSkins.Add(
                 new Skin
                 {
-                    SkinName = "Winterblessed Warwick",
+                    SkinName = "Winterblessed Zoe",
                     SkinPrice = "1350 RP",
                     SkinType = "Epic",
-                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_45.jpg"
+                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_22.jpg"
                 });
             NewSkins.Add(
                 new Skin
@@ -280,18 +278,10 @@ namespace LoLSkinExplorer.ViewModels
             NewSkins.Add(
                 new Skin
                 {
-                    SkinName = "Winterblessed Zoe",
+                    SkinName = "Winterblessed Warwick",
                     SkinPrice = "1350 RP",
                     SkinType = "Epic",
-                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_22.jpg"
-                });
-            NewSkins.Add(
-                new Skin
-                {
-                    SkinName = "Ashen Graveknight Mordekaiser",
-                    SkinPrice = "100 ME",
-                    SkinType = "Mythic",
-                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_42.jpg"
+                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_45.jpg"
                 });
             NewSkins.Add(
                 new Skin
@@ -301,6 +291,15 @@ namespace LoLSkinExplorer.ViewModels
                     SkinType = "Prestige",
                     ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_46.jpg"
                 });
+            
+            NewSkins.Add(
+            new Skin
+            {
+                SkinName = "Ashen Graveknight Mordekaiser",
+                SkinPrice = "100 ME",
+                SkinType = "Mythic",
+                ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_42.jpg"
+            });
         }
     }
 }
