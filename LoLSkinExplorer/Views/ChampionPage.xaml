@@ -23,7 +23,9 @@
                     </StackLayout>
                     <StackLayout BackgroundColor="Transparent" VerticalOptions="StartAndExpand" HeightRequest="200">
                         <Label Text="Bio" FontSize="30" TextColor="Orange" VerticalOptions="CenterAndExpand"/>
-                    <Label x:Name="BioLabel" FontFamily="Times New Roman" FontSize="16" Padding="10" Scale="1" FontAttributes="Bold" LineHeight="1.6" CharacterSpacing="1.1"/>
+                    <Label x:Name="BioLabel" 
+                           FontFamily="Times New Roman" FontSize="16" Padding="10" Scale="1" 
+                           FontAttributes="Bold" LineHeight="1.6" CharacterSpacing="1.1"/>
                     </StackLayout>
                 </StackLayout>
             

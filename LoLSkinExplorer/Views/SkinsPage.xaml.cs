@@ -8,7 +8,6 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using LoLSkinExplorer.ViewModels;
@@ -54,7 +53,6 @@ namespace LoLSkinExplorer.Views
         {
             ChampSkins.Clear();
             string name = _ChampName;
-
 
 
             var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
@@ -152,9 +150,9 @@ namespace LoLSkinExplorer.Views
         private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             Skin skin = ((ListView)sender).SelectedItem as Skin;
-            if (skin != null)
+            if (skin != null) 
                 await Application.Current.MainPage.DisplayAlert("Has crhomas?", skin.Chromas == null ? "No" : "Yes", "OK");
-
+                //Toast.MakeText(Application.Context, message, ToastLength.Short).Show();
 
         }
 

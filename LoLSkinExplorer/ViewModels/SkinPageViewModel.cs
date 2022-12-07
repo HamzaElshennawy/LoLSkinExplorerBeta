@@ -19,6 +19,7 @@ using System.Runtime.CompilerServices;
 using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Essentials;
 using System.Linq;
+using static System.Net.WebRequestMethods;
 
 namespace LoLSkinExplorer.ViewModels
 {
@@ -30,9 +31,10 @@ namespace LoLSkinExplorer.ViewModels
     public class SkinPageViewModel : BaseViewModel
     {
         //string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
+        //21,
         public ObservableRangeCollection<Champion> Champions { get; set; }
         public ObservableRangeCollection<Skin> Skins { get; set; }
-        public ObservableRangeCollection<Skin> SkinsAtStart { get; set; }
+        public ObservableRangeCollection<Skin> NewSkins { get; set; }
         public ObservableRangeCollection<Abilities> abilities { get; set; }
         public AsyncCommand GetDataCommand { get; }
         public AsyncCommand getDataCommand { get; }
@@ -50,11 +52,12 @@ namespace LoLSkinExplorer.ViewModels
             Title = "ChampSkins";
             Champions = new ObservableRangeCollection<Champion>();
             Skins = new ObservableRangeCollection<Skin>();
-            SkinsAtStart = new ObservableRangeCollection<Skin>();
+            NewSkins = new ObservableRangeCollection<Skin>();
             GetDataCommand = new AsyncCommand(GetDataTask);
             _RefreshCommand = new AsyncCommand(Refresh);
             
             _=GetData();
+            NewSkinsDisplay();
         }
         public async Task GetData()
         {
@@ -229,6 +232,75 @@ namespace LoLSkinExplorer.ViewModels
             if (connectivity == NetworkAccess.Internet)
                 return 1;
             return 0; 
+        }
+        public void NewSkinsDisplay()
+        {
+
+            //var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
+            NewSkins.Add(
+                new Skin
+                {
+                    SkinName = "Winterblessed Swain",
+                    SkinPrice = "1350 RP",
+                    SkinType = "Epic",
+                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_21.jpg",
+                }) ;
+            NewSkins.Add(
+                new Skin
+                {
+                    SkinName = "Winterblessed Diana",
+                    SkinPrice = "1820 RP",
+                    SkinType = "Legendary",
+                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_47.jpg"
+                });
+            NewSkins.Add(
+                new Skin
+                {
+                    SkinName = "Winterblessed Shaco",
+                    SkinPrice = "1350 RP",
+                    SkinType = "Epic",
+                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_33.jpg"
+                });
+            NewSkins.Add(
+                new Skin
+                {
+                    SkinName = "Winterblessed Warwick",
+                    SkinPrice = "1350 RP",
+                    SkinType = "Epic",
+                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_45.jpg"
+                });
+            NewSkins.Add(
+                new Skin
+                {
+                    SkinName = "Winterblessed Zilean",
+                    SkinPrice = "1350 RP",
+                    SkinType = "",
+                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_14.jpg"
+                });
+            NewSkins.Add(
+                new Skin
+                {
+                    SkinName = "Winterblessed Zoe",
+                    SkinPrice = "1350 RP",
+                    SkinType = "Epic",
+                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_22.jpg"
+                });
+            NewSkins.Add(
+                new Skin
+                {
+                    SkinName = "Ashen Graveknight Mordekaiser",
+                    SkinPrice = "100 ME",
+                    SkinType = "Mythic",
+                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_42.jpg"
+                });
+            NewSkins.Add(
+                new Skin
+                {
+                    SkinName = "Prestige Winterblessed Warwick",
+                    SkinPrice = "2000 Tokens",
+                    SkinType = "Prestige",
+                    ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_46.jpg"
+                });
         }
     }
 }

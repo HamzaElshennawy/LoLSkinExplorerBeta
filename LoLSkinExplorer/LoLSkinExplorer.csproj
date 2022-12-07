@@ -168,6 +168,13 @@
     <None Remove="Champions\Zilean.json" />
     <None Remove="Champions\Zoe.json" />
     <None Remove="Champions\Zyra.json" />
+    <None Remove="New Skins\Prestige-wb-Warwick.jpg" />
+    <None Remove="New Skins\wb-diana.jpg" />
+    <None Remove="New Skins\wb-Shaco.jpg" />
+    <None Remove="New Skins\wb-Swain.jpg" />
+    <None Remove="New Skins\wb-Warwick.jpg" />
+    <None Remove="New Skins\wb-Zilean.jpg" />
+    <None Remove="New Skins\wb-Zoe.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -333,6 +340,13 @@
     <EmbeddedResource Include="Champions\Zilean.json" />
     <EmbeddedResource Include="Champions\Zoe.json" />
     <EmbeddedResource Include="Champions\Zyra.json" />
+    <EmbeddedResource Include="New Skins\Prestige-wb-Warwick.jpg" />
+    <EmbeddedResource Include="New Skins\wb-diana.jpg" />
+    <EmbeddedResource Include="New Skins\wb-Shaco.jpg" />
+    <EmbeddedResource Include="New Skins\wb-Swain.jpg" />
+    <EmbeddedResource Include="New Skins\wb-Warwick.jpg" />
+    <EmbeddedResource Include="New Skins\wb-Zilean.jpg" />
+    <EmbeddedResource Include="New Skins\wb-Zoe.jpg" />
   </ItemGroup>
 
   <ItemGroup>
