@@ -111,8 +111,8 @@ namespace LoLSkinExplorer.Models
             }
         }
 
-        public int skinPrice;
-        public int SkinPrice
+        public string skinPrice;
+        public string SkinPrice
         {
             get => skinPrice;
             set

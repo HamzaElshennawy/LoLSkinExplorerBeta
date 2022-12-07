@@ -29,7 +29,7 @@ namespace LoLSkinExplorer.Views
             get => champName;
             set
             {
-                if(champName == value)
+                if (champName == value)
                     return;
                 champName = value;
                 OnPropertyChanged();
@@ -54,13 +54,13 @@ namespace LoLSkinExplorer.Views
         {
             ChampSkins.Clear();
             string name = _ChampName;
-            
-            
+
+
 
             var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
             System.IO.Stream s = tmp.GetManifestResourceStream($"LoLSkinExplorer.Champions.{name}.json");
             System.IO.StreamReader sr = new System.IO.StreamReader(s);
-            
+
             string JsonText = sr.ReadToEnd();
             JObject dobj = JsonConvert.DeserializeObject<dynamic>(JsonText);
 
@@ -69,8 +69,8 @@ namespace LoLSkinExplorer.Views
             var skinNames = dobj["skins"].Value<JArray>();
             string champID = (string)dobj["id"];
             JArray NumberOfChromas = new JArray();
-            
-            
+
+
             try
             {
                 skins = skinNames.ToObject<List<Skin>>();
@@ -78,29 +78,29 @@ namespace LoLSkinExplorer.Views
             }
             catch (Exception e)
             {
-                await Application.Current.MainPage.DisplayAlert("Error",e.Message,"ok");
+                await Application.Current.MainPage.DisplayAlert("Error", e.Message, "ok");
             }
             try
             {
                 for (int i = 0; i < skins.Count; i++)
                 {
-                    
-                    skins[i].imgLink = BaseSplashLink + champID+ "/" +skins[i].SkinID+".jpg";
+
+                    skins[i].imgLink = BaseSplashLink + champID + "/" + skins[i].SkinID + ".jpg";
                     skins[i].LoadingScreen = BaseLoadingScrrenLink + name + skins[i].SkinID + ".jpg";
 
                     /// <summary>
                     /// In this aria I declare the skin prices.
                     /// </summary>
                     if (skins[i].skinType == "kEpic")
-                        skins[i].SkinPrice = 1350;
+                        skins[i].SkinPrice = "1350 RP";
                     if (skins[i].skinType == "kLegendary")
-                        skins[i].SkinPrice = 1820;
+                        skins[i].SkinPrice = "1820 RP";
                     if (skins[i].skinType == "kUltimate")
-                        skins[i].SkinPrice = 3250;
+                        skins[i].SkinPrice = "3250 RP";
                     if (skins[i].skinType == "kMythic")
-                        skins[i].SkinPrice = 100;
+                        skins[i].SkinPrice = "100 ME";
                     if (skins[i].skinType == "kNoRarity")
-                        skins[i].SkinPrice = 975;
+                        skins[i].SkinPrice = "975 RP";
 
                     /// <summary>
                     /// In this area I declare if the skin is avialable or not.
@@ -126,13 +126,13 @@ namespace LoLSkinExplorer.Views
                     ChampSkins.Add(skins[i]);
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 await Application.Current.MainPage.DisplayAlert("Error", e.Message, "OK");
             }
-            
 
-            
+
+
             Skinss.Clear();
             Skinss.Add(skins[0]);
             ChampSkins.Remove(skins[0]);
@@ -141,9 +141,9 @@ namespace LoLSkinExplorer.Views
 
         public int Price(string Rarity)
         {
-            if(Rarity == "kNoRarity")
+            if (Rarity == "kNoRarity")
                 return 975;
-            if(Rarity == "kEpic")
+            if (Rarity == "kEpic")
                 return 1350;
             else
                 return 0;
@@ -151,11 +151,11 @@ namespace LoLSkinExplorer.Views
 
         private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-                
+            Skin skin = ((ListView)sender).SelectedItem as Skin;
+            if (skin != null)
+                await Application.Current.MainPage.DisplayAlert("Has crhomas?", skin.Chromas == null ? "No" : "Yes", "OK");
 
-            var skin = ((ListView)sender).SelectedItem as Skin;
 
-            //await Application.Current.MainPage.DisplayAlert("Has crhomas?", skin.Chromas == null ? "No" : "Yes", "OK");
         }
 
 

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ViewModels="clr-namespace:LoLSkinExplorer.ViewModels" 
              xmlns:lolskinexplorer="clr-namespace:LoLSkinExplorer" 
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarHasShadow="True"
              x:Class="LoLSkinExplorer.Views.AboutPage"
@@ -79,14 +80,24 @@
                                             <Image Source="{Binding ChampionImage}"  
                                            HeightRequest="500" VerticalOptions="FillAndExpand"
                                            HorizontalOptions="StartAndExpand" Opacity="1.8" 
-                                           Margin="0,-150,0,0"/>
+                                           Margin="0,-150,0,0" 
+                                            xct:ShadowEffect.Color="Black"
+                                            xct:ShadowEffect.OffsetY="10"
+                                            xct:ShadowEffect.OffsetX="10"
+                                            xct:ShadowEffect.Radius="5"
+                                                   />
                                         </StackLayout>
                                         <StackLayout Orientation="Horizontal">
-                                            <Label Text="{Binding ChampionName}" TextColor="Black" 
+                                            <Label Text="{Binding ChampionName}" TextColor="White" 
                                         HorizontalTextAlignment="Start"
                                         HorizontalOptions="CenterAndExpand"
                                            VerticalOptions="EndAndExpand"
-                                        FontSize="Large"/>
+                                                   FontAttributes="Bold"
+                                        FontSize="30"
+                                                   xct:ShadowEffect.Color="Black"
+                                            xct:ShadowEffect.OffsetY="10"
+                                   xct:ShadowEffect.OffsetX="10"
+                                            xct:ShadowEffect.Radius="5"/>
                                         </StackLayout>
                                     </Grid>
                                 </Frame>

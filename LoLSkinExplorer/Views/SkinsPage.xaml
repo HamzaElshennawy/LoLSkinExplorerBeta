@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ViewModels="clr-namespace:LoLSkinExplorer.ViewModels"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="LoLSkinExplorer.Views.SkinsPage" 
               BackgroundColor="#43494c" Title="{Binding ChampName}">
 
-    
-    
+
+
 
     <ListView x:Name="_ListView" HasUnevenRows="True" ItemsSource="{Binding ChampSkins}" 
               BackgroundColor="Transparent" SeparatorVisibility="None"  ItemSelected="ListView_ItemSelected"
-              ItemTapped="_ListView_ItemTapped" 
+              ItemTapped="_ListView_ItemTapped" Margin="5,8,5,0"  
               >
 
         <ListView.Resources>
@@ -21,62 +22,82 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <Grid Padding="10">
-                        <Frame x:Name="DataFrame"
-                            Padding="0" WidthRequest="10000" HeightRequest="180" 
+                    <!--<Grid Padding="10">-->
+                    <Frame x:Name="DataFrame"
+                            Padding="0" WidthRequest="10000" HeightRequest="200" 
                                HasShadow="True" HorizontalOptions="Center"
-                               CornerRadius="20"
+                               CornerRadius="20" BackgroundColor="Transparent" 
                                >
-                            <Grid>
-                                <StackLayout>
-                                    <Image Source="{Binding ImgLink}"  
-                                            VerticalOptions="FillAndExpand"
+                        <Grid Margin="0,0,0,5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+                            <!--<StackLayout Grid.Column="0"-->
+                            <!--Grid.ColumnSpan="3">-->
+                            <Image Source="{Binding ImgLink}"  
+                                           Aspect="Fill"
+                                           Grid.ColumnSpan="3"
+                                           HorizontalOptions="Fill" Opacity="0.8"
                                            
-                                           HorizontalOptions="StartAndExpand" Opacity="0.8" 
-                                           Margin="0,0,0,0"/>
-                                </StackLayout>
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Text="{Binding SkinName}" TextColor="Black" 
+                                           />
+
+                            <!--Grid.Column="0"
+                                           Grid.ColumnSpan="4"-->
+
+                            <!--</StackLayout>-->
+                            <!--<StackLayout Orientation="Horizontal" Grid.Column="0"
+                                           Grid.ColumnSpan="3">-->
+                            <Label Text="{Binding SkinName}" TextColor="White" 
                                         HorizontalTextAlignment="Start"
                                         HorizontalOptions="StartAndExpand"
                                            VerticalOptions="EndAndExpand"
                                            Padding="8"
-                                        FontSize="20"/>
-                                    <Label x:Name="AvailabltyLBL"
-                                           HorizontalTextAlignment="Start"
-                                           HorizontalOptions="StartAndExpand"
-                                           VerticalOptions="EndAndExpand"
-                                           Padding="8"
-                                           FontSize="15"
-                                           FontAttributes="Bold"
-                                           Text="{Binding AvailableString}"
+                                        FontSize="20" 
+                                           Grid.Column="0" 
+                                           xct:ShadowEffect.Color="Black"
+                                            xct:ShadowEffect.OffsetY="10"
+                                   xct:ShadowEffect.OffsetX="10"
+                                            xct:ShadowEffect.Radius="5"
                                            />
-                                    
-                                    <Label Text="{Binding SkinPrice}"
-                                           HorizontalTextAlignment="Start"
-                                           VerticalTextAlignment="Center"
-                                           VerticalOptions="EndAndExpand"
-                                           FontSize="22"
-                                           FontAttributes="Bold"
-                                           TextColor="DarkOrange"
-                                           Margin="0,0,0,13"
-                                           />
-                                    <Label x:Name="CurrenyLBL"
-                                        Text="RP"
-                                           HorizontalTextAlignment="Start"
-                                           VerticalTextAlignment="Center"
-                                           VerticalOptions="EndAndExpand"
-                                           FontSize="22"
-                                           FontAttributes="Bold"
-                                           TextColor="DarkOrange"
-                                           Margin="0,0,13,13"
+                            <Label x:Name="AvailabltyLBL"
+                                TextColor="White"
+                                        HorizontalTextAlignment="Center"
+                                        HorizontalOptions="StartAndExpand"
+                                        VerticalOptions="EndAndExpand"
+                                        VerticalTextAlignment="Center"
+                                        Padding="8"
+                                        FontSize="17"
+                                        FontAttributes="Bold"
+                                        Grid.Column="1"
+                                        Text="{Binding AvailableString}"
+                                        xct:ShadowEffect.Color="Black"
+                                        xct:ShadowEffect.OffsetY="10"
+                                        xct:ShadowEffect.OffsetX="10"
+                                        xct:ShadowEffect.Radius="5"
                                            />
 
-                                </StackLayout>
+                            <Label Text="{Binding SkinPrice}"
+                                        HorizontalTextAlignment="Start"
+                                        VerticalTextAlignment="Center"
+                                        VerticalOptions="EndAndExpand"
+                                        FontSize="22"
+                                        FontAttributes="Bold"
+                                        TextColor="DarkOrange"
+                                        Margin="0,0,0,8"
+                                        Grid.Column="2"
+                                        xct:ShadowEffect.Color="Black"
+                                        xct:ShadowEffect.OffsetY="10"
+                                        xct:ShadowEffect.OffsetX="10"
+                                        xct:ShadowEffect.Radius="5"
+                                           />
 
-                            </Grid>
-                        </Frame>
-                    </Grid>
+                            <!--</StackLayout>-->
+
+                        </Grid>
+                    </Frame>
+                    <!--</Grid>-->
 
                 </ViewCell>
             </DataTemplate>
