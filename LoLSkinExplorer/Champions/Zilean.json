@@ -298,6 +298,168 @@
 }
 ],
 "description": "For most denizens of Candy Kingdom, there's never enough time to eat all the sweets. For Zilean, there's never enough candy to fill all the time."
+},
+{
+"id": 26014,
+"isBase": false,
+"name": "Winterblessed Zilean",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/26/26014.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/26/26014.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/26/26014.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Zilean/Skins/Skin14/ZileanLoadScreen_14.PIE_C_12_23.jpg",
+"loadScreenVintagePath": "/lol-game-data/assets/ASSETS/Characters/Zilean/Skins/Skin14/ZileanLoadscreen_14_LE.PIE_C_12_23.jpg",
+"skinType": "",
+"rarity": "kEpic",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/26/26014.png",
+"chromas": [
+{
+"id": 26015,
+"name": "Winterblessed Zilean",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/26/26015.png",
+"colors": [
+"#D33528",
+"#D33528"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a bundle exclusive in 2022."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+},
+{
+"id": 26016,
+"name": "Winterblessed Zilean",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/26/26016.png",
+"colors": [
+"#DF9117",
+"#DF9117"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 26017,
+"name": "Winterblessed Zilean",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/26/26017.png",
+"colors": [
+"#2756CE",
+"#2756CE"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 26018,
+"name": "Winterblessed Zilean",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/26/26018.png",
+"colors": [
+"#2DA130",
+"#2DA130"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "Obtained through Influencer audience giveaways."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+},
+{
+"id": 26019,
+"name": "Winterblessed Zilean",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/26/26019.png",
+"colors": [
+"#ECF9F8",
+"#ECF9F8"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 26020,
+"name": "Winterblessed Zilean",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/26/26020.png",
+"colors": [
+"#27211C",
+"#27211C"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 26021,
+"name": "Winterblessed Zilean",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/26/26021.png",
+"colors": [
+"#73BFBE",
+"#73BFBE"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 26022,
+"name": "Winterblessed Zilean",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/26/26022.png",
+"colors": [
+"#E58BA5",
+"#E58BA5"
+],
+"descriptions": [],
+"rarities": [
+{
+"region": "TENCENT",
+"rarity": 1
+}
+]
+},
+{
+"id": 26023,
+"name": "Winterblessed Zilean",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/26/26023.png",
+"colors": [
+"#BF2020",
+"#368B25"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a Loot exclusive in the Season 2023 event."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+}
+],
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 187
+}
+],
+"description": "Sage Zilean bowed his head in supplication as he took the Hunter's place before the Aurora's judge. His request was for more power to help calm the spirits of his followers. As he talked, he was oblivious to the Aurora sheen of Polaris' hair flickering red as she watched his pronounced humility. Something was stirring inside her, a roiling winter storm."
 }
 ],
 "passive": {

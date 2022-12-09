@@ -420,6 +420,158 @@
 }
 ],
 "description": "Swain knows how important the alliances formed at the Festival of the Crystal Rose are… and how fragile. His determination to see the event go perfectly has gained him a connection with Zyra, the Rose's protector. With her help, he intends this to be the most successful festival ever—and that he will be celebrated as its architect."
+},
+{
+"id": 50021,
+"isBase": false,
+"name": "Winterblessed Swain",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/50/50021.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/50/50021.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/50/50021.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Swain/Skins/Skin21/SwainLoadScreen_21.PIE_C_12_23.jpg",
+"loadScreenVintagePath": "/lol-game-data/assets/ASSETS/Characters/Swain/Skins/Skin21/SwainLoadscreen_21_LE.PIE_C_12_23.jpg",
+"skinType": "",
+"rarity": "kEpic",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/50/50021.png",
+"chromas": [
+{
+"id": 50023,
+"name": "Winterblessed Swain",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/50/50023.png",
+"colors": [
+"#D33528",
+"#D33528"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a bundle exclusive in 2022."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+},
+{
+"id": 50024,
+"name": "Winterblessed Swain",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/50/50024.png",
+"colors": [
+"#FFEE59",
+"#FFEE59"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 50025,
+"name": "Winterblessed Swain",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/50/50025.png",
+"colors": [
+"#2756CE",
+"#2756CE"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 50026,
+"name": "Winterblessed Swain",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/50/50026.png",
+"colors": [
+"#2DA130",
+"#2DA130"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 50027,
+"name": "Winterblessed Swain",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/50/50027.png",
+"colors": [
+"#ECF9F8",
+"#ECF9F8"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 50028,
+"name": "Winterblessed Swain",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/50/50028.png",
+"colors": [
+"#27211C",
+"#27211C"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 50029,
+"name": "Winterblessed Swain",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/50/50029.png",
+"colors": [
+"#73BFBE",
+"#73BFBE"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 50030,
+"name": "Winterblessed Swain",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/50/50030.png",
+"colors": [
+"#E58BA5",
+"#E58BA5"
+],
+"descriptions": [],
+"rarities": [
+{
+"region": "TENCENT",
+"rarity": 1
+}
+]
+},
+{
+"id": 50031,
+"name": "Winterblessed Swain",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/50/50031.png",
+"colors": [
+"#BF2020",
+"#368B25"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a Loot exclusive in the Season 2023 event."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+}
+],
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 187
+}
+],
+"description": "The Hunter Swain made no acknowledgment of his fellow leaders and was the first to put himself forward. He desired the Aurora's blessings to better provide meat and pelts for his people. After making his case, he gave the smallest of bows to Polaris, who watched with a face as serene as moonlit ice. Satisfied, Swain stepped aside and waited for his gift."
 }
 ],
 "passive": {

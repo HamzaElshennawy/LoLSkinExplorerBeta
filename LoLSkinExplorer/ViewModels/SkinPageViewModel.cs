@@ -92,7 +92,8 @@ namespace LoLSkinExplorer.ViewModels
                         var championAlias = dobj["alias"];
                         TempChampion.ChampionAlias = (string)championAlias;
                         var champName = dobj["name"];
-                        TempChampion.ChampionName = (string)champName;
+                        string _champName = (string)champName;
+                        TempChampion.ChampionName = _champName.ToLower();
                         //var champTitle = dobj["title"];
                         //TempChampion.ChampionTitle = (string)champTitle;
                         TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionAlias + "_0.jpg";

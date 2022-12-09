@@ -920,6 +920,125 @@
 }
 ],
 "description": "Market stalls offer the Lady of the Moon their wares freely, in hope of receiving a blessing for the New Year. Diana is happy to oblige, even if it means getting stopped every few feet by another well-wisher… Luckily, Diana's festival buddies are patient."
+},
+{
+"id": 131047,
+"isBase": false,
+"name": "Winterblessed Diana",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/131/131047.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/131/131047.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/131/131047.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Diana/Skins/Skin47/DianaLoadScreen_47.PIE_C_12_23.jpg",
+"loadScreenVintagePath": "/lol-game-data/assets/ASSETS/Characters/Diana/Skins/Skin47/DianaLoadscreen_47_LE.PIE_C_12_23.jpg",
+"skinType": "",
+"rarity": "kLegendary",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/131/131047.png",
+"chromas": [
+{
+"id": 131048,
+"name": "Winterblessed Diana",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/131/131048.png",
+"colors": [
+"#D33528",
+"#D33528"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a bundle exclusive in 2022."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+},
+{
+"id": 131049,
+"name": "Winterblessed Diana",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/131/131049.png",
+"colors": [
+"#E58BA5",
+"#E58BA5"
+],
+"descriptions": [],
+"rarities": [
+{
+"region": "TENCENT",
+"rarity": 1
+}
+]
+},
+{
+"id": 131050,
+"name": "Winterblessed Diana",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/131/131050.png",
+"colors": [
+"#2DA130",
+"#2DA130"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 131051,
+"name": "Winterblessed Diana",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/131/131051.png",
+"colors": [
+"#73BFBE",
+"#73BFBE"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 131052,
+"name": "Winterblessed Diana",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/131/131052.png",
+"colors": [
+"#ECF9F8",
+"#ECF9F8"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 131053,
+"name": "Winterblessed Diana",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/131/131053.png",
+"colors": [
+"#BF2020",
+"#368B25"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a Loot exclusive in the Season 2023 event."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+}
+],
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 187
+}
+],
+"description": "One can learn many lessons from the tales of Polaris, the living embodiment of the Aurora. Each year brings a new Polaris and a new chance to receive the Aurora's blessings—or its punishments. This incarnation of Polaris, Diana, arrived to find three local leaders waiting for her, eager for blessings: the Hunter Swain, Sage Zilean, and Warden Zoe."
 }
 ],
 "passive": {

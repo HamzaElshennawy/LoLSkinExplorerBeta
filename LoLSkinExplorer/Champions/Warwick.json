@@ -747,6 +747,184 @@
 }
 ],
 "description": "Once known as Father Wolf, Warwick roamed the wood and reveled in moonlight's bloody hunt. The Eclipse Order thought to slay him in his den and end his barbarity—but death means nothing to Old Gods, and he did not stay down. Father Wolf howls into the night once more, now slavering for the taste of human flesh."
+},
+{
+"id": 19045,
+"isBase": false,
+"name": "Winterblessed Warwick",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/19/19045.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/19/19045.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/19/19045.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Warwick/Skins/Skin45/WarwickLoadScreen_45.PIE_C_12_23.jpg",
+"loadScreenVintagePath": "/lol-game-data/assets/ASSETS/Characters/Warwick/Skins/Skin45/WarwickLoadscreen_45_LE.PIE_C_12_23.jpg",
+"skinType": "",
+"rarity": "kEpic",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/19/19045.png",
+"chromas": [
+{
+"id": 19047,
+"name": "Winterblessed Warwick",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/19/19047.png",
+"colors": [
+"#D33528",
+"#D33528"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a bundle exclusive in 2022."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+},
+{
+"id": 19048,
+"name": "Winterblessed Warwick",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/19/19048.png",
+"colors": [
+"#DF9117",
+"#DF9117"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 19049,
+"name": "Winterblessed Warwick",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/19/19049.png",
+"colors": [
+"#2DA130",
+"#2DA130"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 19050,
+"name": "Winterblessed Warwick",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/19/19050.png",
+"colors": [
+"#2756CE",
+"#2756CE"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 19051,
+"name": "Winterblessed Warwick",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/19/19051.png",
+"colors": [
+"#E58BA5",
+"#E58BA5"
+],
+"descriptions": [],
+"rarities": [
+{
+"region": "TENCENT",
+"rarity": 1
+}
+]
+},
+{
+"id": 19052,
+"name": "Winterblessed Warwick",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/19/19052.png",
+"colors": [
+"#73BFBE",
+"#73BFBE"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 19053,
+"name": "Winterblessed Warwick",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/19/19053.png",
+"colors": [
+"#85827F",
+"#85827F"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 19054,
+"name": "Winterblessed Warwick",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/19/19054.png",
+"colors": [
+"#27211C",
+"#27211C"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 19055,
+"name": "Winterblessed Warwick",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/19/19055.png",
+"colors": [
+"#BF2020",
+"#368B25"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a Loot exclusive in the Season 2023 event."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+}
+],
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 187
+}
+],
+"description": "The Beast Warwick sniffed his newborn sibling, the Automaton Shaco, as his maker beckoned the leaders to accept their gifts. The Hunter claimed the Beast as his prize, but the prospect of sharing so disgusted the Sage and Warden that chaos quickly erupted over who deserved what. All the while Warwick focused on Polaris, who watched with a wry smile."
+},
+{
+"id": 19046,
+"isBase": false,
+"name": "Prestige Winterblessed Warwick",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/19/19046.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/19/19046.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/19/19046.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Warwick/Skins/Skin46/WarwickLoadScreen_46.PIE_C_12_23.jpg",
+"loadScreenVintagePath": "/lol-game-data/assets/ASSETS/Characters/Warwick/Skins/Skin46/WarwickLoadscreen_46_LE.PIE_C_12_23.jpg",
+"skinType": "",
+"rarity": "kMythic",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": null,
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 187
+}
+],
+"description": "It can get rough on the runway, but everybody knows better than to mess with Warwick. Between his razor sharp cuts, impeccable grooming, and wolfpack entourage, the Gala better think twice before it calls this one a beast."
 }
 ],
 "passive": {

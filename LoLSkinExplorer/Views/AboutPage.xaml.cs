@@ -58,7 +58,14 @@ namespace LoLSkinExplorer.Views
             }
             else
             {
-                ListViewomePage.ItemsSource = _container.Champions.Where(i => i.ChampionName.Contains(e.NewTextValue));
+                if (e.NewTextValue[0].ToString() == e.NewTextValue[0].ToString().ToUpper())
+                {
+                    ListViewomePage.ItemsSource = _container.Champions.Where(i => i.ChampionAlias.Contains(e.NewTextValue));
+                }
+                else
+                {
+                    ListViewomePage.ItemsSource = _container.Champions.Where(i => i.ChampionName.Contains(e.NewTextValue));
+                }
             }
             ListViewomePage.EndRefresh();
         }
@@ -73,13 +80,7 @@ namespace LoLSkinExplorer.Views
             var champ = ((ListView)sender).SelectedItem as Champion;
             if (champ == null)
                 return;
-            //await Navigation.PushAsync(new ChampionPage(champ));
-            //await Navigation.PushAsync(new ChampionPage(champ.ChampionAlias));
             await Navigation.PushAsync(new SkinsPage(champ.ChampionAlias));
-            //for (int i = 0; i < champ.Abilities.Count; i++)
-            //{
-            //    await Application.Current.MainPage.DisplayAlert("Champion spell Keys", champ.Abilities[i].SpellKey, "OK");
-            //}
         }
 
         

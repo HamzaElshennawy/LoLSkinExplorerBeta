@@ -592,6 +592,158 @@
 }
 ],
 "description": "Once a mere courier for the Twitch syndicate, Shaco is now barely human. The eldritch corruption has stripped him of reason and identity, turning him into a chittering horde of knife-wielding monsters that haunt the boroughs of Valoran City. None of them are sure which is the “real” Shaco anymore. None of them care."
+},
+{
+"id": 35033,
+"isBase": false,
+"name": "Winterblessed Shaco",
+"splashPath": "/lol-game-data/assets/v1/champion-splashes/35/35033.jpg",
+"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/35/35033.jpg",
+"tilePath": "/lol-game-data/assets/v1/champion-tiles/35/35033.jpg",
+"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Shaco/Skins/Skin33/ShacoLoadScreen_33.PIE_C_12_23.jpg",
+"loadScreenVintagePath": "/lol-game-data/assets/ASSETS/Characters/Shaco/Skins/Skin33/ShacoLoadscreen_33_LE.PIE_C_12_23.jpg",
+"skinType": "",
+"rarity": "kEpic",
+"isLegacy": false,
+"splashVideoPath": null,
+"collectionSplashVideoPath": null,
+"featuresText": null,
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/35/35033.png",
+"chromas": [
+{
+"id": 35034,
+"name": "Winterblessed Shaco",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/35/35034.png",
+"colors": [
+"#D33528",
+"#D33528"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a bundle exclusive in 2022."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+},
+{
+"id": 35035,
+"name": "Winterblessed Shaco",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/35/35035.png",
+"colors": [
+"#73BFBE",
+"#73BFBE"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 35036,
+"name": "Winterblessed Shaco",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/35/35036.png",
+"colors": [
+"#FFEE59",
+"#FFEE59"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 35037,
+"name": "Winterblessed Shaco",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/35/35037.png",
+"colors": [
+"#2DA130",
+"#2DA130"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 35038,
+"name": "Winterblessed Shaco",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/35/35038.png",
+"colors": [
+"#E58BA5",
+"#E58BA5"
+],
+"descriptions": [],
+"rarities": [
+{
+"region": "TENCENT",
+"rarity": 1
+}
+]
+},
+{
+"id": 35039,
+"name": "Winterblessed Shaco",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/35/35039.png",
+"colors": [
+"#9C68D7",
+"#9C68D7"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 35040,
+"name": "Winterblessed Shaco",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/35/35040.png",
+"colors": [
+"#27211C",
+"#27211C"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 35041,
+"name": "Winterblessed Shaco",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/35/35041.png",
+"colors": [
+"#ECF9F8",
+"#ECF9F8"
+],
+"descriptions": [],
+"rarities": []
+},
+{
+"id": 35042,
+"name": "Winterblessed Shaco",
+"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/35/35042.png",
+"colors": [
+"#BF2020",
+"#368B25"
+],
+"descriptions": [
+{
+"region": "riot",
+"description": "This chroma was released as a Loot exclusive in the Season 2023 event."
+}
+],
+"rarities": [
+{
+"region": "riot",
+"rarity": 1
+}
+]
+}
+],
+"emblems": null,
+"regionRarityId": 0,
+"rarityGemPath": null,
+"skinLines": [
+{
+"id": 187
+}
+],
+"description": "The Automaton Shaco felt nothing toward the quarreling leaders until Polaris snapped her fingers and ordered her “gifts” to corner the trio. “Winter is cruel,” she boomed, “and warmth is meant to be shared. Let this punishment serve as a warning.” In a flurry of snow, Polaris disappeared, leaving the Automaton and Beast to dispense her judgment."
 }
 ],
 "passive": {
