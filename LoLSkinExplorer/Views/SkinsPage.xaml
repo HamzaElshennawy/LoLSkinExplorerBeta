@@ -4,6 +4,8 @@
              xmlns:ViewModels="clr-namespace:LoLSkinExplorer.ViewModels"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="LoLSkinExplorer.Views.SkinsPage" 
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarHasShadow="True"
               BackgroundColor="#43494c" Title="{Binding ChampName}">
 
     <ListView 
@@ -36,6 +38,25 @@
                                 Aspect="Fill"
                                 Grid.ColumnSpan="3"
                                 HorizontalOptions="Fill" Opacity="0.8"/>
+
+                            <Frame 
+                                BackgroundColor="Transparent" 
+                                Grid.Column="2"
+                                
+                                >
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+
+                                    <Image
+                                Source="{Binding SkinTypeIconLink}"
+                                Grid.Column="2" Aspect="AspectFit" Margin="0,-50,0,0" 
+                                />
+                                </Grid>
+                            </Frame>
 
                             <Label 
                                 Text="{Binding SkinName}"

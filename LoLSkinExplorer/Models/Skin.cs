@@ -151,6 +151,19 @@ namespace LoLSkinExplorer.Models
             }
         }
 
+        public string _SkinTypeIconLink;
+        public string SkinTypeIconLink
+        {
+            get => _SkinTypeIconLink;
+            set
+            {
+                if (_SkinTypeIconLink == value)
+                    return;
+                _SkinTypeIconLink = value;
+                NotifyPropertyChanged(nameof(_SkinTypeIconLink));
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {

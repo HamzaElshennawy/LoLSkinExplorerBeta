@@ -80,7 +80,7 @@ namespace LoLSkinExplorer.Views
             var champ = ((ListView)sender).SelectedItem as Champion;
             if (champ == null)
                 return;
-            await Navigation.PushAsync(new SkinsPage(champ.ChampionAlias));
+            await Navigation.PushAsync(new SkinsPage(champ.ChampionAlias),true);
         }
 
         

@@ -38,11 +38,20 @@ namespace LoLSkinExplorer.Views
         string BaseSplashLink = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/";
         string BaseChromaLink = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-chroma-images/";
         string BaseLoadingScrrenLink = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/";
+
+
+        string EpicSkinLink = "https://static.wikia.nocookie.net/leagueoflegends/images/4/40/Epic_Skin.png/revision/latest/scale-to-width-down/20?cb=20171016035243";
+        string LegendarySkinLink = "https://static.wikia.nocookie.net/leagueoflegends/images/f/f1/Legendary_Skin.png/revision/latest/scale-to-width-down/20?cb=20171016035307";
+        string MythicSkinLink = "https://static.wikia.nocookie.net/leagueoflegends/images/4/4d/Hextech_Skin.png/revision/latest/scale-to-width-down/20?cb=20171016035256";
+        string UltimateSkinLink = "https://static.wikia.nocookie.net/leagueoflegends/images/2/25/Ultimate_Skin.png/revision/latest/scale-to-width-down/20?cb=20171016035317";
+
         public ObservableCollection<Skin> ChampSkins { get; set; }
         public ObservableCollection<Skin> Skinss { get; set; }
         public SkinsPage(/*Champion champion*/ string ChampName)
         {
             InitializeComponent();
+            Title = ChampName;
+            //Title = champion.Name;
             BindingContext = this;
             //ChampName = champion.ChampionAlias;
             ChampSkins = new ObservableCollection<Skin>();
@@ -90,15 +99,30 @@ namespace LoLSkinExplorer.Views
                     /// In this aria I declare the skin prices.
                     /// </summary>
                     if (skins[i].skinType == "kEpic")
+                    {
                         skins[i].SkinPrice = "1350 RP";
+                        skins[i].SkinTypeIconLink = EpicSkinLink;
+                    }
                     if (skins[i].skinType == "kLegendary")
+                    {
                         skins[i].SkinPrice = "1820 RP";
+                        skins[i].SkinTypeIconLink = LegendarySkinLink;
+                    }
                     if (skins[i].skinType == "kUltimate")
+                    {
                         skins[i].SkinPrice = "3250 RP";
+                        skins[i].SkinTypeIconLink = UltimateSkinLink;
+                    }
                     if (skins[i].skinType == "kMythic")
+                    {
                         skins[i].SkinPrice = "100 ME";
+                        skins[i].SkinTypeIconLink = MythicSkinLink;
+                    }
                     if (skins[i].skinType == "kNoRarity")
+                    {
                         skins[i].SkinPrice = "975 RP";
+                        skins[i].SkinTypeIconLink = "";
+                    }
 
                     /// <summary>
                     /// In this area I declare if the skin is avialable or not.

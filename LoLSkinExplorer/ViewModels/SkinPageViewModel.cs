@@ -55,7 +55,7 @@ namespace LoLSkinExplorer.ViewModels
             NewSkins = new ObservableRangeCollection<Skin>();
             GetDataCommand = new AsyncCommand(GetDataTask);
             _RefreshCommand = new AsyncCommand(Refresh);
-            
+            DeviceScreenSize();
             _=GetData();
             NewSkinsDisplay();
         }
@@ -162,8 +162,20 @@ namespace LoLSkinExplorer.ViewModels
                             var spellDescription = champAbility["description"].ToString();
 
                             Abilities abilitiess = new Abilities();
-                            //abilitiess._SpellRange = (List<int>)spellRanges;
-                            //abilitiess._SpellCoolDowns = (List<int>)spellCoolDown;
+                            //if (spellRanges.Count() > 0)
+                            //{
+                            //    for (int j = 0; j < spellRanges.Count(); j++)
+                            //    {
+                            //        abilitiess._SpellRange.Add(spellRanges.ElementAt(j).ToString());
+                            //    }
+                            //    for (int j = 0; j < spellCoolDown.Count(); j++)
+                            //    {
+                            //        abilitiess._SpellCoolDowns.Add(spellCoolDown.ElementAt(j).ToString());
+                            //    }
+                            //}
+                            
+                            //abilitiess._SpellRange = spellRanges.Values();
+
                             abilitiess.SpellName = spellName;
                             abilitiess.SpellKey = spellKey;
                             abilitiess.SpellDescription = spellDescription;
@@ -301,6 +313,13 @@ namespace LoLSkinExplorer.ViewModels
                 SkinType = "Mythic",
                 ImgLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_42.jpg"
             });
+        }
+        public List<double> DeviceScreenSize()
+        {
+            List<double> WidthandHeight = new List<double>();
+            WidthandHeight.Add(DeviceDisplay.MainDisplayInfo.Width);
+            WidthandHeight.Add(DeviceDisplay.MainDisplayInfo.Height);
+            return WidthandHeight;
         }
     }
 }

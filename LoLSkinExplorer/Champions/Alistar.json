@@ -57,7 +57,7 @@
 "loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Alistar/Skins/Skin01/AlistarLoadScreen_1.jpg",
 "skinType": "",
 "rarity": "kNoRarity",
-"isLegacy": false,
+"isLegacy": true,
 "splashVideoPath": null,
 "collectionSplashVideoPath": null,
 "featuresText": null,
@@ -448,55 +448,55 @@
 ],
 "description": "The fusion of arcane sorcery and Piltovan ingenuity, Alistar is an advanced, living golem built by the finest artificers in Runeterra. Tasked with guarding the secrets of hextech, it crushes all who would abuse the methods behind its creation."
 },
-{
-"id": 12020,
-"isBase": false,
-"name": "Conqueror Alistar",
-"splashPath": "/lol-game-data/assets/v1/champion-splashes/12/12020.jpg",
-"uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/12/12020.jpg",
-"tilePath": "/lol-game-data/assets/v1/champion-tiles/12/12020.jpg",
-"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Alistar/Skins/Skin20/AlistarLoadScreen_20.jpg",
-"loadScreenVintagePath": "/lol-game-data/assets/ASSETS/Characters/Alistar/Skins/Skin20/AlistarLoadscreen_20_LE.jpg",
-"skinType": "",
-"rarity": "kRare",
-"isLegacy": true,
-"splashVideoPath": null,
-"collectionSplashVideoPath": null,
-"featuresText": null,
-"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/12/12020.png",
-"chromas": [
-{
-"id": 12021,
-"name": "Conqueror Alistar",
-"chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/12/12021.png",
-"colors": [
-"#FFC948",
-"#FFC948"
-],
-"descriptions": [
-{
-"region": "riot",
-"description": "Loot exclusive gained during the 2019 MSI Event."
-}
-],
-"rarities": [
-{
-"region": "riot",
-"rarity": 2
-}
-]
-}
-],
-"emblems": null,
-"regionRarityId": 0,
-"rarityGemPath": null,
-"skinLines": [
-{
-"id": 109
-}
-],
-"description": "Commemorating the 2019 Mid-Season Invitational in Asia."
-},
+  {
+    "id": 12020,
+    "isBase": false,
+    "name": "Conqueror Alistar",
+    "splashPath": "/lol-game-data/assets/v1/champion-splashes/12/12020.jpg",
+    "uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/12/12020.jpg",
+    "tilePath": "/lol-game-data/assets/v1/champion-tiles/12/12020.jpg",
+    "loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Alistar/Skins/Skin20/AlistarLoadScreen_20.jpg",
+    "loadScreenVintagePath": "/lol-game-data/assets/ASSETS/Characters/Alistar/Skins/Skin20/AlistarLoadscreen_20_LE.jpg",
+    "skinType": "",
+    "rarity": "kNoRarity",
+    "isLegacy": true,
+    "splashVideoPath": null,
+    "collectionSplashVideoPath": null,
+    "featuresText": null,
+    "chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/12/12020.png",
+    "chromas": [
+      {
+        "id": 12021,
+        "name": "Conqueror Alistar",
+        "chromaPath": "/lol-game-data/assets/v1/champion-chroma-images/12/12021.png",
+        "colors": [
+          "#FFC948",
+          "#FFC948"
+        ],
+        "descriptions": [
+          {
+            "region": "riot",
+            "description": "Loot exclusive gained during the 2019 MSI Event."
+          }
+        ],
+        "rarities": [
+          {
+            "region": "riot",
+            "rarity": 2
+          }
+        ]
+      }
+    ],
+    "emblems": null,
+    "regionRarityId": 0,
+    "rarityGemPath": null,
+    "skinLines": [
+      {
+        "id": 109
+      }
+    ],
+    "description": "Commemorating the 2019 Mid-Season Invitational in Asia."
+  },
 {
 "id": 12022,
 "isBase": false,
