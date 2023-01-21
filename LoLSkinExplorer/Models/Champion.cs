@@ -88,8 +88,8 @@ namespace LoLSkinExplorer.Models
         [JsonProperty("spells")]
         public List<Abilities> Abilities;
 
-        
-        public List<string> Role { set; get; }
+
+        public List<string> Role = new List<string>();
 
 
         //public List<Skin> _Skins;

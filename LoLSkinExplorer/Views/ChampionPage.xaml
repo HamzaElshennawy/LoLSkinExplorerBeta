@@ -3,6 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarHasShadow="True"
+             Shell.ForegroundColor="Red"
+             Shell.TitleColor="Red"
+             
              x:Class="LoLSkinExplorer.Views.ChampionPage" Title="{Binding MainChampion.Name}" BackgroundColor="#43494c">
     <!--<ContentPage.BindingContext>
         MainChampion
@@ -11,7 +14,7 @@
         <!--<Image Source= "{Binding TempChampion.ChampionImage}" Opacity="0.5" VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" BackgroundColor="Red"/>-->
         <Grid BackgroundColor="Transparent">
-            
+
 
             <StackLayout BackgroundColor="Transparent">
                 <StackLayout Padding="0" Grid.Row="0" Grid.RowSpan="2" HeightRequest="50">
@@ -23,7 +26,7 @@
                                HeightRequest="1000"
                        />
                 </StackLayout>
-                <ScrollView>
+                <ScrollView Margin="0,-40,0,0">
                     <StackLayout BackgroundColor="Transparent" Orientation="Vertical" HeightRequest="1000">
                         <StackLayout 
                             BackgroundColor="Transparent"
@@ -57,27 +60,65 @@
                             </Frame>
                             <Frame 
                                 BackgroundColor="Transparent" 
-                                
                                 >
-                                <Label 
-                                    x:Name="TypeLabel" 
-                                    FontFamily="Times New Roman"
-                                    FontSize="16"
-                                    Padding="10"
-                                    Scale="1" 
-                                    FontAttributes="Bold"
-                                    LineHeight="1.6"
-                                    CharacterSpacing="1.1"
-                                    TextColor="White"
-                                    >
-                                </Label>
+                                <StackLayout Orientation="Vertical">
+                                    <Label 
+                                        BackgroundColor="Transparent"
+                                        Text="Category"
+                                        HorizontalTextAlignment="Center"
+                                        WidthRequest="1000"
+                                        Margin="-15,0,0,0"
+                                        FontSize="25"
+                                        TextDecorations="None"
+                                        TextColor="Orange"
+                                        VerticalOptions="StartAndExpand"
+                                        />
+                                    <StackLayout Orientation="Horizontal">
+                                        
+                                        <Label 
+                                            x:Name="Type1Label" 
+                                            WidthRequest="200"
+                                            FontFamily="Times New Roman"
+                                            FontSize="25"
+                                            Padding="10"
+                                            Scale="1" 
+                                            FontAttributes="Bold"
+                                            LineHeight="1.6"
+                                            CharacterSpacing="1.1"
+                                            TextColor="White"
+                                        />
+                                        <Image 
+                                            x:Name="Role1image"
+                                            HorizontalOptions="EndAndExpand"
+                                            Source="https://static.wikia.nocookie.net/leagueoflegends/images/8/8f/Fighter_icon.png/revision/latest/scale-to-width-down/96?cb=20181117143554"
+                                        
+                                        />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label 
+                                            x:Name="Type2Label" 
+                                            WidthRequest="200"
+                                            FontFamily="Times New Roman"
+                                            FontSize="25"
+                                            Padding="10"
+                                            Scale="1" 
+                                            FontAttributes="Bold"
+                                            LineHeight="1.6"
+                                            CharacterSpacing="1.1"
+                                            TextColor="White"
+                                        />
+                                        <Image 
+                                            x:Name="Role2image"
+                                            HorizontalOptions="EndAndExpand"
+                                            Source="https://static.wikia.nocookie.net/leagueoflegends/images/5/5a/Tank_icon.png/revision/latest/scale-to-width-down/96?cb=20181117143558"
+                                        />
+                                    </StackLayout>
+                                </StackLayout>
                             </Frame>
                         </StackLayout>
-
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
-
         </Grid>
     </ContentPage.Content>
 </ContentPage>

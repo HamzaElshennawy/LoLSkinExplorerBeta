@@ -102,11 +102,10 @@ namespace LoLSkinExplorer.ViewModels
                         TempChampion._Bio = (string)champBio;
                         
                         var champRoles = dobj["roles"];
-                        TempChampion.Role.Add("test");
                         for(int j = 0; j < champRoles.Count(); j++)
                         {
                             string tempRole = champRoles[j].ToString();
-                            await Application.Current.MainPage.DisplayAlert("Role", tempRole, "OK");
+                            //await Application.Current.MainPage.DisplayAlert("Role", tempRole, "OK");
                             TempChampion.Role.Add(tempRole);
                         }
                         

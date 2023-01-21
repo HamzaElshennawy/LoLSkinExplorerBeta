@@ -23,6 +23,7 @@ namespace LoLSkinExplorer.Views
         {
             InitializeComponent();
             Skins = new MvvmHelpers.ObservableRangeCollection<Skin>();
+            
         }
 
         private void ToolbarItem_Clicked(object sender, EventArgs e)
@@ -80,8 +81,8 @@ namespace LoLSkinExplorer.Views
             var champ = ((ListView)sender).SelectedItem as Champion;
             if (champ == null)
                 return;
-            //await Navigation.PushAsync(new SkinsPage(champ.ChampionAlias),true);
-            await Navigation.PushAsync(new ChampionPage(champ), true);
+            await Navigation.PushAsync(new SkinsPage(champ,champ.ChampionAlias),true);
+            //await Navigation.PushAsync(new ChampionPage(champ), true);
         }
 
         

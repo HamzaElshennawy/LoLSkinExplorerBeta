@@ -30,34 +30,34 @@ namespace LoLSkinExplorer.Views
             BackGrounImage.Source = MainChampion.ChampionLoadingScreen;
             BindingMode bindingMode = BindingMode.TwoWay;
             
-            Title = MainChampion.Name;
-            BioLabel.Text = MainChampion.Bio;
-            //string role1 = MainChampion.Role[0];
-            //string role2 = MainChampion.Role[1];
-            //string roles = role1 +" , " +role2;
-            //TypeLabel.Text = roles;
-            //Application.Current.MainPage.DisplayAlert("BIO", MainChampion.Bio, "OK");
+            Title = MainChampion.Name.ToUpper();
+
+            GetChampionCoreData(MainChampion);//pass the main champion to the function to get the core data such as lore, title,role, etc.
+
         }
-        
+        /// <summary>
+        /// This method gets the champion abilities from the json files and stores them in collection list
+        /// </summary>
         public void GetChampionAbilities(Champion _MainChampion)
         {
-            //string name = _ChampName;
-
-
-
-            //var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
-            //System.IO.Stream s = tmp.GetManifestResourceStream($"LoLSkinExplorer.Champions.{name}.json");
-            //System.IO.StreamReader sr = new System.IO.StreamReader(s);
-
-            //string JsonText = sr.ReadToEnd();
-            //JObject dobj = JsonConvert.DeserializeObject<dynamic>(JsonText);
-
-
-
-
-
-
-
+           
+        }
+        public void GetChampionCoreData(Champion champion)
+        {
+            Champion MainChampion = champion;
+            BioLabel.Text = MainChampion.Bio;
+            string championRoles = "";
+            if (MainChampion.Role.Count() == 2)
+            {
+                Type1Label.Text = MainChampion.Role[0].ToUpper();
+                Type2Label.Text = MainChampion.Role[1].ToUpper();
+            }
+            else
+            {
+                Type1Label.Text = MainChampion.Role[0].ToUpper();
+                Type2Label.IsVisible = false;
+                Role2image.IsVisible = false;
+            }
         }
     }
 }

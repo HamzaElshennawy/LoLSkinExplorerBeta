@@ -6,9 +6,21 @@
              x:Class="LoLSkinExplorer.Views.SkinsPage" 
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarHasShadow="True"
-              BackgroundColor="#43494c" Title="{Binding ChampName}">
+             BackgroundColor="#43494c" Title="{Binding ChampName}">
 
-    <ListView 
+
+    <StackLayout>
+        <Button 
+            Margin="0,5,0,-5"
+            HeightRequest="40"
+            WidthRequest="200"
+            CornerRadius="15"
+            HorizontalOptions="CenterAndExpand"
+            Text="Champion Details"
+            FontSize="16"
+            Clicked="ChampionPageBTN" 
+            />
+        <ListView 
         x:Name="_ListView"
         HasUnevenRows="True"
         ItemsSource="{Binding ChampSkins}"
@@ -18,47 +30,47 @@
         ItemTapped="_ListView_ItemTapped"
         Margin="5,8,5,0">
 
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <Frame 
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame 
                         x:Name="DataFrame"
                         Padding="0" WidthRequest="10000" HeightRequest="200" 
                         HasShadow="True" HorizontalOptions="Center"
                         CornerRadius="20" BackgroundColor="Transparent">
-                        <Grid Margin="0,0,0,5">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="5*"/>
-                                <ColumnDefinition Width="4*"/>
-                                <ColumnDefinition Width="3*"/>
-                            </Grid.ColumnDefinitions>
+                            <Grid Margin="0,0,0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="4*"/>
+                                    <ColumnDefinition Width="3*"/>
+                                </Grid.ColumnDefinitions>
 
-                            <Image 
+                                <Image 
                                 Source="{Binding ImgLink}"  
                                 Aspect="Fill"
                                 Grid.ColumnSpan="3"
                                 HorizontalOptions="Fill" Opacity="0.8"/>
 
-                            <Frame 
+                                <Frame 
                                 BackgroundColor="Transparent" 
                                 Grid.Column="2"
                                 
                                 >
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition/>
-                                        <RowDefinition/>
-                                        <RowDefinition/>
-                                    </Grid.RowDefinitions>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
 
-                                    <Image
+                                        <Image
                                 Source="{Binding SkinTypeIconLink}"
                                 Grid.Column="2" Aspect="AspectFit" Margin="0,-50,0,0" 
                                 />
-                                </Grid>
-                            </Frame>
+                                    </Grid>
+                                </Frame>
 
-                            <Label 
+                                <Label 
                                 Text="{Binding SkinName}"
                                 TextColor="White" 
                                 HorizontalTextAlignment="Start"
@@ -73,7 +85,7 @@
                                 xct:ShadowEffect.Radius="5"
                                 LineBreakMode="TailTruncation"/>
 
-                            <Label 
+                                <Label 
                                 x:Name="AvailabltyLBL"
                                 TextColor="White"
                                 HorizontalTextAlignment="Center"
@@ -90,7 +102,7 @@
                                 xct:ShadowEffect.OffsetX="10"
                                 xct:ShadowEffect.Radius="5"/>
 
-                            <Label 
+                                <Label 
                                 Text="{Binding SkinPrice}"
                                 HorizontalTextAlignment="Start"
                                 VerticalTextAlignment="Center"
@@ -104,10 +116,11 @@
                                 xct:ShadowEffect.OffsetY="10"
                                 xct:ShadowEffect.OffsetX="10"
                                 xct:ShadowEffect.Radius="5"/>
-                        </Grid>
-                    </Frame>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

@@ -12,6 +12,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using LoLSkinExplorer.ViewModels;
 using System.Collections.ObjectModel;
+using MvvmHelpers.Commands;
 
 #pragma warning disable IDE1006 // Naming Styles
 
@@ -34,6 +35,7 @@ namespace LoLSkinExplorer.Views
                 OnPropertyChanged();
             }
         }
+        Champion Tempchampion = new Champion();
         string BaseSkinLink = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
         string BaseSplashLink = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/";
         string BaseChromaLink = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-chroma-images/";
@@ -45,11 +47,17 @@ namespace LoLSkinExplorer.Views
         string MythicSkinLink = "https://static.wikia.nocookie.net/leagueoflegends/images/4/4d/Hextech_Skin.png/revision/latest/scale-to-width-down/20?cb=20171016035256";
         string UltimateSkinLink = "https://static.wikia.nocookie.net/leagueoflegends/images/2/25/Ultimate_Skin.png/revision/latest/scale-to-width-down/20?cb=20171016035317";
 
+        public AsyncCommand GoToChampionDetails { get; }
+
+
+
         public ObservableCollection<Skin> ChampSkins { get; set; }
         public ObservableCollection<Skin> Skinss { get; set; }
-        public SkinsPage(/*Champion champion*/ string ChampName)
+        public SkinsPage(Champion champion, string ChampName)
         {
             InitializeComponent();
+            Champion MainChampion = champion;
+            Tempchampion = MainChampion;
             Title = ChampName;
             //Title = champion.Name;
             BindingContext = this;
@@ -57,6 +65,7 @@ namespace LoLSkinExplorer.Views
             ChampSkins = new ObservableCollection<Skin>();
             Skinss = new ObservableCollection<Skin>();
             GetSkins(ChampName);
+            GoToChampionDetails = new AsyncCommand(NavToChampDetails);
         }
         public async void GetSkins(string _ChampName)
         {
@@ -160,7 +169,10 @@ namespace LoLSkinExplorer.Views
             ChampSkins.Remove(skins[0]);
             OnPropertyChanged(nameof(ChampSkins));
         }
-
+        async Task NavToChampDetails()
+        {
+            await Navigation.PushAsync(new ChampionPage(Tempchampion), true);
+        }
         public int Price(string Rarity)
         {
             if (Rarity == "kNoRarity")
@@ -185,6 +197,11 @@ namespace LoLSkinExplorer.Views
 
         {
             ((ListView)sender).SelectedItem = null;
+        }
+
+        private async void ChampionPageBTN(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ChampionPage(Tempchampion), true);
         }
     }
 }
