@@ -113,6 +113,29 @@
                                             Source="https://static.wikia.nocookie.net/leagueoflegends/images/5/5a/Tank_icon.png/revision/latest/scale-to-width-down/96?cb=20181117143558"
                                         />
                                     </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image
+                                        x:Name="SpellPImg"
+                                        
+                                        />
+                                        <Image
+                                        x:Name="SpellQImg"
+                                        
+                                        />
+                                        <Image
+                                        x:Name="SpellWImg"
+                                        
+                                        />
+                                        <Image
+                                        x:Name="SpellEImg"
+                                        
+                                        />
+                                        <Image
+                                        x:Name="SpellRImg"
+                                        
+                                        />
+                                    </StackLayout>
+                                    
                                 </StackLayout>
                             </Frame>
                         </StackLayout>

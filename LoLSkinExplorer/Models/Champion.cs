@@ -63,27 +63,7 @@ namespace LoLSkinExplorer.Models
                 NotifyPropertyChanged(nameof(ChampionId));
             }
         }
-        //public string Key;
-        //public string ChampionKey {
-        //    get => Key;
-        //    set
-        //    {
-        //        if(Key == value) return;
-        //        Key = value;
-        //        NotifyPropertyChanged(nameof(ChampionKey));
-        //    }
-        //}
-
-        //public string Title;
-        //public string ChampionTitle {
-        //    get => Title;
-        //    set
-        //    {
-        //        if(Title == value) return;
-        //        Title = value;
-        //        NotifyPropertyChanged(nameof(ChampionTitle));
-        //    }
-        //}
+        
 
         [JsonProperty("spells")]
         public List<Abilities> Abilities;
@@ -92,7 +72,70 @@ namespace LoLSkinExplorer.Models
         public List<string> Role = new List<string>();
 
 
-        //public List<Skin> _Skins;
+        public string spellP;
+        public string SpellP
+        {
+            get => spellP;
+            set
+            {
+                if(spellP == value) 
+                    return;
+                spellP = value;
+                NotifyPropertyChanged(nameof(spellP));
+            }
+        }
+        public string spellQ;
+        public string SpellQ
+        {
+            get => spellQ;
+            set
+            {
+                if (spellQ == value)
+                    return;
+                spellQ = value;
+                NotifyPropertyChanged(nameof(spellQ));
+            }
+        }
+        public string spellW;
+        public string SpellW
+        {
+            get => spellW;
+            set
+            {
+                if (spellW == value)
+                    return;
+                spellW = value;
+                NotifyPropertyChanged(nameof(spellW));
+            }
+        }
+        public string spellE;
+        public string SpellE
+        {
+            get => spellE;
+            set
+            {
+                if (spellE == value)
+                    return;
+                spellE = value;
+                NotifyPropertyChanged(nameof(spellE));
+            }
+        }
+        public string spellR;
+        public string SpellR
+        {
+            get => spellR;
+            set
+            {
+                if (spellR == value)
+                    return;
+                spellR = value;
+                NotifyPropertyChanged(nameof(spellR));
+            }
+        }
+
+
+
+
         [JsonProperty("skins")]
         public List<Skin> ChampionSkins = new List<Skin>();
 

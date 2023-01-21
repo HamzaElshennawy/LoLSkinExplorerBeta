@@ -32,7 +32,7 @@
 "splashPath": "/lol-game-data/assets/v1/champion-splashes/221/221000.jpg",
 "uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/221/221000.jpg",
 "tilePath": "/lol-game-data/assets/v1/champion-tiles/221/221000.jpg",
-"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Zeri/Skins/Base/ZeriLoadscreen_0.Zeri.jpg",
+"loadScreenPath": "Characters/Zeri/Skins/Base/ZeriLoadscreen_0.Zeri.jpg",
 "skinType": "",
 "rarity": "kNoRarity",
 "isLegacy": false,
@@ -53,7 +53,7 @@
 "splashPath": "/lol-game-data/assets/v1/champion-splashes/221/221001.jpg",
 "uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/221/221001.jpg",
 "tilePath": "/lol-game-data/assets/v1/champion-tiles/221/221001.jpg",
-"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Zeri/Skins/Skin01/ZeriLoadscreen_1.Zeri.jpg",
+"loadScreenPath": "Characters/Zeri/Skins/Skin01/ZeriLoadscreen_1.Zeri.jpg",
 "skinType": "",
 "rarity": "kEpic",
 "isLegacy": false,
@@ -213,7 +213,7 @@
 "splashPath": "/lol-game-data/assets/v1/champion-splashes/221/221010.jpg",
 "uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/221/221010.jpg",
 "tilePath": "/lol-game-data/assets/v1/champion-tiles/221/221010.jpg",
-"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Zeri/Skins/Skin10/ZeriLoadScreen_10.PIE_C_12_11.jpg",
+"loadScreenPath": "Characters/Zeri/Skins/Skin10/ZeriLoadScreen_10.PIE_C_12_11.jpg",
 "skinType": "",
 "rarity": "kEpic",
 "isLegacy": false,
@@ -339,7 +339,7 @@
 ],
 "passive": {
 "name": "Living Battery",
-"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Zeri/HUD/Icons2D/ZeriP.Zeri.png",
+"abilityIconPath": "Characters/Zeri/HUD/Icons2D/ZeriP.Zeri.png",
 "abilityVideoPath": "champion-abilities/0221/ability_0221_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0221/ability_0221_P1.jpg",
 "description": "Zeri gains Move Speed whenever she receives a shield. When she damages an enemy shield she absorbs its energy, shielding herself."
@@ -348,7 +348,7 @@
 {
 "spellKey": "q",
 "name": "Burst Fire",
-"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Zeri/HUD/Icons2D/ZeriQ.Zeri.png",
+"abilityIconPath": "Characters/Zeri/HUD/Icons2D/ZeriQ.Zeri.png",
 "abilityVideoPath": "champion-abilities/0221/ability_0221_Q1.webm",
 "abilityVideoImagePath": "champion-abilities/0221/ability_0221_Q1.jpg",
 "cost": "No Cost",
@@ -498,7 +498,7 @@
 {
 "spellKey": "w",
 "name": "Ultrashock Laser",
-"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Zeri/HUD/Icons2D/ZeriW.Zeri.png",
+"abilityIconPath": "Characters/Zeri/HUD/Icons2D/ZeriW.Zeri.png",
 "abilityVideoPath": "champion-abilities/0221/ability_0221_W1.webm",
 "abilityVideoImagePath": "champion-abilities/0221/ability_0221_W1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
@@ -648,7 +648,7 @@
 {
 "spellKey": "e",
 "name": "Spark Surge",
-"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Zeri/HUD/Icons2D/ZeriE.Zeri.png",
+"abilityIconPath": "Characters/Zeri/HUD/Icons2D/ZeriE.Zeri.png",
 "abilityVideoPath": "champion-abilities/0221/ability_0221_E1.webm",
 "abilityVideoImagePath": "champion-abilities/0221/ability_0221_E1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
@@ -798,7 +798,7 @@
 {
 "spellKey": "r",
 "name": "Lightning Crash",
-"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Zeri/HUD/Icons2D/ZeriR.Zeri.png",
+"abilityIconPath": "Characters/Zeri/HUD/Icons2D/ZeriR.Zeri.png",
 "abilityVideoPath": "champion-abilities/0221/ability_0221_R1.webm",
 "abilityVideoImagePath": "champion-abilities/0221/ability_0221_R1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",

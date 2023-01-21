@@ -33,7 +33,7 @@
 "splashPath": "/lol-game-data/assets/v1/champion-splashes/166/166000.jpg",
 "uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/166/166000.jpg",
 "tilePath": "/lol-game-data/assets/v1/champion-tiles/166/166000.jpg",
-"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Akshan/Skins/Base/AkshanLoadScreen.jpg",
+"loadScreenPath": "Characters/Akshan/Skins/Base/AkshanLoadScreen.jpg",
 "skinType": "",
 "rarity": "kNoRarity",
 "isLegacy": false,
@@ -54,7 +54,7 @@
 "splashPath": "/lol-game-data/assets/v1/champion-splashes/166/166001.jpg",
 "uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/166/166001.jpg",
 "tilePath": "/lol-game-data/assets/v1/champion-tiles/166/166001.jpg",
-"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Akshan/Skins/Skin01/AkshanLoadscreen_1.jpg",
+"loadScreenPath": "Characters/Akshan/Skins/Skin01/AkshanLoadscreen_1.jpg",
 "skinType": "",
 "rarity": "kEpic",
 "isLegacy": false,
@@ -184,7 +184,7 @@
 "splashPath": "/lol-game-data/assets/v1/champion-splashes/166/166010.jpg",
 "uncenteredSplashPath": "/lol-game-data/assets/v1/champion-splashes/uncentered/166/166010.jpg",
 "tilePath": "/lol-game-data/assets/v1/champion-tiles/166/166010.jpg",
-"loadScreenPath": "/lol-game-data/assets/ASSETS/Characters/Akshan/Skins/Skin10/AkshanLoadScreen_10.PIE_C_12_2.jpg",
+"loadScreenPath": "Characters/Akshan/Skins/Skin10/AkshanLoadScreen_10.PIE_C_12_2.jpg",
 "skinType": "",
 "rarity": "kEpic",
 "isLegacy": false,
@@ -335,7 +335,7 @@
 ],
 "passive": {
 "name": "Dirty Fighting",
-"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Akshan/HUD/Icons2D/akshan_p.png",
+"abilityIconPath": "Characters/Akshan/HUD/Icons2D/akshan_p.png",
 "abilityVideoPath": "champion-abilities/0166/ability_0166_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0166/ability_0166_P1.jpg",
 "description": "Every three hits from Akshan's Attacks and Abilities deals bonus damage and grants him a Shield if the target was a champion.<br><br>When Akshan Attacks, he fires an additional Attack for reduced damage. If he cancels the additional Attack, he instead gains Move Speed."
@@ -344,7 +344,7 @@
 {
 "spellKey": "q",
 "name": "Avengerang",
-"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Akshan/HUD/Icons2D/akshan_q.png",
+"abilityIconPath": "Characters/Akshan/HUD/Icons2D/akshan_q.png",
 "abilityVideoPath": "champion-abilities/0166/ability_0166_Q1.webm",
 "abilityVideoImagePath": "champion-abilities/0166/ability_0166_Q1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
@@ -494,7 +494,7 @@
 {
 "spellKey": "w",
 "name": "Going Rogue",
-"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Akshan/HUD/Icons2D/akshan_w.png",
+"abilityIconPath": "Characters/Akshan/HUD/Icons2D/akshan_w.png",
 "abilityVideoPath": "champion-abilities/0166/ability_0166_W1.webm",
 "abilityVideoImagePath": "champion-abilities/0166/ability_0166_W1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
@@ -644,7 +644,7 @@
 {
 "spellKey": "e",
 "name": "Heroic Swing",
-"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Akshan/HUD/Icons2D/akshan_e.png",
+"abilityIconPath": "Characters/Akshan/HUD/Icons2D/akshan_e.png",
 "abilityVideoPath": "champion-abilities/0166/ability_0166_E1.webm",
 "abilityVideoImagePath": "champion-abilities/0166/ability_0166_E1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
@@ -794,7 +794,7 @@
 {
 "spellKey": "r",
 "name": "Comeuppance",
-"abilityIconPath": "/lol-game-data/assets/ASSETS/Characters/Akshan/HUD/Icons2D/Akshan_R.png",
+"abilityIconPath": "Characters/Akshan/HUD/Icons2D/Akshan_R.png",
 "abilityVideoPath": "champion-abilities/0166/ability_0166_R1.webm",
 "abilityVideoImagePath": "champion-abilities/0166/ability_0166_R1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
