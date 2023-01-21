@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Text;
 
@@ -20,6 +21,20 @@ namespace LoLSkinExplorer.Models
                     return;
                 Alias = value;
                 NotifyPropertyChanged(nameof(ChampionAlias));
+            }
+        }
+
+        [JsonProperty("title")]
+        public string Title;
+        public string ChampionTitle
+        {
+            get => Title;
+            set
+            {
+                if (Title == value)
+                    return;
+                Title = value;
+                NotifyPropertyChanged(nameof(ChampionTitle));
             }
         }
 
@@ -73,7 +88,7 @@ namespace LoLSkinExplorer.Models
         [JsonProperty("spells")]
         public List<Abilities> Abilities;
 
-        [JsonProperty("roles")]
+        
         public List<string> Role { set; get; }
 
 

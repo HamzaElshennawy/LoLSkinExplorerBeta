@@ -13,20 +13,29 @@ using Xamarin.Forms.Xaml;
 
 namespace LoLSkinExplorer.Views
 {
+
+    
+
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ChampionPage : ContentPage
 	{
+        Champion championForXaml = new Champion();
         public ChampionPage(Champion TempChampion)
         {
             InitializeComponent();
             Champion MainChampion = TempChampion as Champion;
-            BindingContext = MainChampion;
+            championForXaml = TempChampion;
+            BindingContext = championForXaml;
             //Application.Current.MainPage.DisplayAlert("source", TempChampion.ChampionImage, "OK");
             BackGrounImage.Source = MainChampion.ChampionLoadingScreen;
             BindingMode bindingMode = BindingMode.TwoWay;
             
             Title = MainChampion.Name;
             BioLabel.Text = MainChampion.Bio;
+            //string role1 = MainChampion.Role[0];
+            //string role2 = MainChampion.Role[1];
+            //string roles = role1 +" , " +role2;
+            //TypeLabel.Text = roles;
             //Application.Current.MainPage.DisplayAlert("BIO", MainChampion.Bio, "OK");
         }
         

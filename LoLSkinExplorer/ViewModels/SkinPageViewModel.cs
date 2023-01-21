@@ -94,43 +94,22 @@ namespace LoLSkinExplorer.ViewModels
                         var champName = dobj["name"];
                         string _champName = (string)champName;
                         TempChampion.ChampionName = _champName.ToLower();
-                        //var champTitle = dobj["title"];
-                        //TempChampion.ChampionTitle = (string)champTitle;
+                        var champTitle = dobj["title"];
+                        TempChampion.ChampionTitle = (string)champTitle;
                         TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionAlias + "_0.jpg";
                         TempChampion._LoadingScreen = $"http://ddragon.leagueoflegends.com/cdn/img/champion/loading/"+TempChampion.ChampionAlias+"_0.jpg";
                         var champBio = dobj["shortBio"];
-                        //await Application.Current.MainPage.DisplayAlert("Bio", (string)champBio, "OK");
                         TempChampion._Bio = (string)champBio;
-                        //try
-                        //{
-                        //    TempChampion.Bio = (string)champBio;
-                        //}
-                        //catch (Exception e)
-                        //{
-                        //    await Application.Current.MainPage.DisplayAlert("Error BIO", e.Message, "OK");
-                        //}
+                        
                         var champRoles = dobj["roles"];
-                        //foreach ( var champRole in champRoles )
-                        //{
-                        //    try
-                        //    {
-                        //        TempChampion.Role.Add((string)champRole);
-                        //        //await Application.Current.MainPage.DisplayAlert("error", champRole.ToString(), "OK");
-                        //    }
-                        //    catch (Exception e)
-                        //    {
-
-                        //        await Application.Current.MainPage.DisplayAlert("error", e.Message, "OK");
-                        //    }
-                            
-                        //}
-
-
-                        /*
-                         
-                         This section is for the champion abilities
-                         
-                         */
+                        TempChampion.Role.Add("test");
+                        for(int j = 0; j < champRoles.Count(); j++)
+                        {
+                            string tempRole = champRoles[j].ToString();
+                            await Application.Current.MainPage.DisplayAlert("Role", tempRole, "OK");
+                            TempChampion.Role.Add(tempRole);
+                        }
+                        
 
 
 
