@@ -763,7 +763,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Shaco becomes Invisible and teleports to target location.<br><br>His first attack while Invisible is empowered, dealing bonus damage and critically striking if he attacks from behind.",
-"dynamicDescription": "Shaco teleports and becomes <keywordStealth>Invisible</keywordStealth> for @StealthDuration@ seconds. Using <spellName>Jack In The Box</spellName> or <spellName>Hallucinate</spellName> does not break <keywordStealth>Invisibility</keywordStealth>.<br><br>Shaco's next Attack while <keywordStealth>Invisible</keywordStealth> deals an additional <physicalDamage>@TotalDamage@ physical damage</physicalDamage>. If striking from behind, this Attack critically strikes for @QCritDamageMod@ damage.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Shaco teleports and becomes <keywordStealth>Invisible</keywordStealth> for @StealthDuration@ seconds. Using <spellName>Jack In The Box</spellName> or <spellName>Hallucinate</spellName> does not break <keywordStealth>Invisibility</keywordStealth>.<br><br>Shaco's next Attack while <keywordStealth>Invisible</keywordStealth> deals an additional @TotalDamage@ physical damage. If striking from behind, this Attack critically strikes for @QCritDamageMod@ damage.@SpellModifierDescriptionAppend@",
 "range": [
 400,
 400,

@@ -906,7 +906,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Zed and his shadows throw their shurikens.<br><br>Each shuriken deals damage to every enemy hit.",
-"dynamicDescription": "Zed and his <keywordMajor>Shadows</keywordMajor> throw their shurikens, each dealing <physicalDamage>@TotalDamage@ physical damage</physicalDamage> to the first enemy they pass through, and <physicalDamage>@PassThroughDamage@ physical damage</physicalDamage> to each additional enemy.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Zed and his <keywordMajor>Shadows</keywordMajor> throw their shurikens, each dealing @TotalDamage@ physical damage to the first enemy they pass through, and @PassThroughDamage@ physical damage to each additional enemy.@SpellModifierDescriptionAppend@",
 "range": [
 900,
 900,
@@ -1206,7 +1206,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Zed and his shadows slash, dealing damage to nearby enemies.",
-"dynamicDescription": "Zed and his <keywordMajor>Shadows</keywordMajor> slash, dealing <physicalDamage>@TotalDamage@ physical damage</physicalDamage> to nearby enemies.<br><br>Each enemy champion hit by Zed's slash reduces <spellName>Living Shadow</spellName>'s Cooldown by @ShadowHitCDR@ seconds.<br><br>Enemies hit by a <keywordMajor>Shadow</keywordMajor>'s slash are <status>Slowed</status> by @MoveSpeedMod*-100@% for @SlowDuration@ seconds. Enemies hit by multiple slashes take no additional damage but are <status>Slowed</status> by @MoveSpeedModBonus*-100@% instead.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Zed and his <keywordMajor>Shadows</keywordMajor> slash, dealing @TotalDamage@ physical damage to nearby enemies.<br><br>Each enemy champion hit by Zed's slash reduces <spellName>Living Shadow</spellName>'s Cooldown by @ShadowHitCDR@ seconds.<br><br>Enemies hit by a <keywordMajor>Shadow</keywordMajor>'s slash are <status>Slowed</status> by @MoveSpeedMod*-100@% for @SlowDuration@ seconds. Enemies hit by multiple slashes take no additional damage but are <status>Slowed</status> by @MoveSpeedModBonus*-100@% instead.@SpellModifierDescriptionAppend@",
 "range": [
 290,
 290,
@@ -1356,7 +1356,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Zed becomes untargetable and dashes to an enemy champion, marking them. After 3 seconds the mark triggers, repeating a portion of all the damage Zed dealt to the target while they were marked.",
-"dynamicDescription": "Zed becomes Untargetable and dashes to an enemy champion, marking them. After @RDeathMarkDuration@ seconds, the mark triggers, dealing <physicalDamage>@RCalculatedDamage@ physical damage</physicalDamage> and repeating @RDamageAmp*100@% of all damage dealt to the target by Zed while the mark was active.<br><br>The dash leaves a <keywordMajor>Shadow</keywordMajor> behind for @RShadowDurationDisplayed@ seconds. Zed can <recast>Recast</recast> this Ability to switch positions with this <keywordMajor>Shadow</keywordMajor>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Zed becomes Untargetable and dashes to an enemy champion, marking them. After @RDeathMarkDuration@ seconds, the mark triggers, dealing @RCalculatedDamage@ physical damage and repeating @RDamageAmp*100@% of all damage dealt to the target by Zed while the mark was active.<br><br>The dash leaves a <keywordMajor>Shadow</keywordMajor> behind for @RShadowDurationDisplayed@ seconds. Zed can <recast>Recast</recast> this Ability to switch positions with this <keywordMajor>Shadow</keywordMajor>.@SpellModifierDescriptionAppend@",
 "range": [
 625,
 625,

@@ -1408,7 +1408,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Blitzcrank charges up their fist to make the next attack deal double damage and pop their target up in the air.",
-"dynamicDescription": "Blitzcrank charges up their fist, causing their next Attack to <status>Knock Up</status> for @CCDuration@ second(s) and deal <physicalDamage>@TotalDamage@ physical damage</physicalDamage>.<br><br>Monsters and Minions take an additional <physicalDamage>@TotalDamageNonChampExtra@ physical damage</physicalDamage> bonus damage.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Blitzcrank charges up their fist, causing their next Attack to <status>Knock Up</status> for @CCDuration@ second(s) and deal @TotalDamage@ physical damage.<br><br>Monsters and Minions take an additional @TotalDamageNonChampExtra@ physical damage bonus damage.@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,

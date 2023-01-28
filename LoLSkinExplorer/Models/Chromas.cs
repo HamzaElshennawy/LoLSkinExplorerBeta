@@ -73,7 +73,8 @@ namespace LoLSkinExplorer.Models
                 {
                     if(description == value) return;
                     description = value;
-                    NotifyPropertyChanged(nameof(description));                }
+                    NotifyPropertyChanged(nameof(description));                
+                }
             }
         }
 

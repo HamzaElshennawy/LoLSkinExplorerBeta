@@ -623,7 +623,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Jhin launches a magical cartridge at an enemy. It can hit up to four targets and gains damage each time it kills.",
-"dynamicDescription": "Jhin launches a cartridge that deals <physicalDamage>@TotalDamage@ physical damage</physicalDamage> before bouncing to a nearby enemy that has not been hit yet.<br><br>The cartridge can hit a maximum of @TooltipMaxTargetsHit@ times. Enemies that die shortly after being hit increase the damage of subsequent hits by @PercentAmpOnKill*100@%.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Jhin launches a cartridge that deals @TotalDamage@ physical damage before bouncing to a nearby enemy that has not been hit yet.<br><br>The cartridge can hit a maximum of @TooltipMaxTargetsHit@ times. Enemies that die shortly after being hit increase the damage of subsequent hits by @PercentAmpOnKill*100@%.@SpellModifierDescriptionAppend@",
 "range": [
 550,
 550,
@@ -773,7 +773,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Jhin brandishes his cane, firing a single shot with incredible range. It pierces through minions and monsters, but stops on the first champion hit. If the target was recently struck by Jhin's allies, lotus traps, or damaged by Jhin, they are rooted.",
-"dynamicDescription": "Jhin fires a long range shot dealing <physicalDamage>@TotalDamage@ physical damage</physicalDamage> to the first champion hit and other enemies along the way.<br><br>If this skill strikes a champion that has been damaged by an allied champion within the last @SpottingDuration@ seconds, it will <status>Root</status> them for @RootDuration@ seconds and grant Jhin <spellName>Whisper</spellName>'s Move Speed.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Jhin fires a long range shot dealing @TotalDamage@ physical damage to the first champion hit and other enemies along the way.<br><br>If this skill strikes a champion that has been damaged by an allied champion within the last @SpottingDuration@ seconds, it will <status>Root</status> them for @RootDuration@ seconds and grant Jhin <spellName>Whisper</spellName>'s Move Speed.@SpellModifierDescriptionAppend@",
 "range": [
 3000,
 3000,
@@ -1073,7 +1073,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Jhin channels, transforming Whisper into a shoulder-mounted mega-cannon. It is able to fire 4 super shots at extreme range that pierce through minions and monsters, but stop on the first champion impacted. Whisper cripples enemies hit, which slows them and deals execute damage. The 4th shot is perfectly crafted, epically powerful, and guaranteed to critically strike.",
-"dynamicDescription": "Jhin sets up and channels, enabling him to fire 4 super shots, each dealing between <physicalDamage>@DamageCalc@</physicalDamage> and <physicalDamage>@MaxIncreaseCalc@ physical damage</physicalDamage> to the first champion hit based on their percentage missing health and <status>Slowing</status> them by @SlowPercent*100@% for @SlowDuration@ seconds. The fourth shot critically strikes for @FourthShotMultiplier*100@% damage.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Jhin sets up and channels, enabling him to fire 4 super shots, each dealing between @DamageCalc@ and @MaxIncreaseCalc@ physical damage to the first champion hit based on their percentage missing health and <status>Slowing</status> them by @SlowPercent*100@% for @SlowDuration@ seconds. The fourth shot critically strikes for @FourthShotMultiplier*100@% damage.@SpellModifierDescriptionAppend@",
 "range": [
 25000,
 25000,

@@ -19,7 +19,7 @@ namespace LoLSkinExplorer.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ChampionPage : ContentPage
 	{
-        Champion championForXaml = new Champion();
+        public Champion championForXaml = new Champion();
         public string baseSpellIconLink ;
         public string basePassiveLink;
         public ChampionPage(Champion TempChampion)
@@ -27,7 +27,7 @@ namespace LoLSkinExplorer.Views
             InitializeComponent();
             Champion MainChampion = TempChampion as Champion;
             championForXaml = TempChampion;
-            BindingContext = championForXaml;
+            BindingContext = this;
             //Application.Current.MainPage.DisplayAlert("source", TempChampion.ChampionImage, "OK");
             BackGrounImage.Source = MainChampion.ChampionLoadingScreen;
             BindingMode bindingMode = BindingMode.TwoWay;
@@ -64,18 +64,21 @@ namespace LoLSkinExplorer.Views
             MainChampion.SpellP = basePassiveLink +MainChampion.Alias+ "_P.png";
             //Application.Current.MainPage.DisplayAlert("Link", MainChampion.SpellP, "OK ");
 
-            SpellPImg.Source = MainChampion.SpellP;
+            //SpellPImg.Source = MainChampion.SpellP;
             MainChampion.SpellQ = baseSpellIconLink + "Q.png";
-            SpellQImg.Source = MainChampion.SpellQ;
+            //SpellQImg.Source = MainChampion.SpellQ;
             
             MainChampion.SpellW = baseSpellIconLink  + "W.png";
-            SpellWImg.Source = MainChampion.SpellW;
+            //SpellWImg.Source = MainChampion.SpellW;
             
             MainChampion.SpellE = baseSpellIconLink  + "E.png";
-            SpellEImg.Source = MainChampion.SpellE;
+            //SpellEImg.Source = MainChampion.SpellE;
             
             MainChampion.SpellR = baseSpellIconLink  + "R.png";
-            SpellRImg.Source = MainChampion.SpellR;
+            //SpellRImg.Source = MainChampion.SpellR;
+            championForXaml = MainChampion;
+            PassiveLBL.Text = championForXaml.Abilities[0].SpellDescription;
+            OnPropertyChanged(nameof(championForXaml));
             //Application.Current.MainPage.DisplayAlert("Link", MainChampion.SpellQ, "OK ");
         }
         public string getPassiveLink(string championName)

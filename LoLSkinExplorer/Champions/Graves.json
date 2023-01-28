@@ -878,7 +878,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Graves fires an explosive shell that detonates after 2 seconds, or 0.2 seconds if it strikes terrain.",
-"dynamicDescription": "Graves fires a powder round dealing <physicalDamage>@TotalDamage@ physical damage</physicalDamage>. After 1 second or after colliding with terrain, it detonates, dealing <physicalDamage>@TotalDetonationDamage@ physical damage</physicalDamage> along the travel path again and to enemies near the blast.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Graves fires a powder round dealing @TotalDamage@ physical damage. After 1 second or after colliding with terrain, it detonates, dealing @TotalDetonationDamage@ physical damage along the travel path again and to enemies near the blast.@SpellModifierDescriptionAppend@",
 "range": [
 925,
 925,
@@ -1328,7 +1328,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Graves fires an explosive shell dealing heavy damage to the first champion it hits. After hitting a champion or reaching the end of its range, the shell explodes dealing damage in a cone.",
-"dynamicDescription": "Graves fires an explosive cartridge, blasting himself backwards. The cartridge deals <physicalDamage>@Damage@ physical damage</physicalDamage> to the first enemy hit. After hitting an enemy champion or reaching the end of its range, the cartridge explodes outward, dealing <physicalDamage>@FalloffDamage@ physical damage</physicalDamage>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Graves fires an explosive cartridge, blasting himself backwards. The cartridge deals @Damage@ physical damage to the first enemy hit. After hitting an enemy champion or reaching the end of its range, the cartridge explodes outward, dealing @FalloffDamage@ physical damage.@SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,

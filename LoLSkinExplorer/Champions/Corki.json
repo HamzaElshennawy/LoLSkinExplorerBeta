@@ -979,7 +979,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Corki's gatling gun rapidly fires in a cone in front of him, dealing damage and reducing enemy Armor and Magic Resist.",
-"dynamicDescription": "Corki fires a gatling gun in front of him, dealing <physicalDamage>@PhysicalDamagePerSecond@ physical damage</physicalDamage> and <magicDamage>@MagicalDamagePerSecond@ magic damage</magicDamage> per second and shredding up to <scaleArmor>@Effect4Amount*-1@ Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> over @Effect2Amount@ seconds.<br><br>Total Damage Per Second: @TotalDamagePerSecond@@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Corki fires a gatling gun in front of him, dealing @PhysicalDamagePerSecond@ physical damage and <magicDamage>@MagicalDamagePerSecond@ magic damage</magicDamage> per second and shredding up to <scaleArmor>@Effect4Amount*-1@ Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> over @Effect2Amount@ seconds.<br><br>Total Damage Per Second: @TotalDamagePerSecond@@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,

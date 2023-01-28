@@ -1242,7 +1242,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Fiora lunges in a direction and stabs a nearby enemy, dealing physical damage and applying on-hit effects.",
-"dynamicDescription": "Fiora lunges in a direction and stabs the closest enemy, ward, or structure, dealing <physicalDamage>@TotalDamage@ physical damage</physicalDamage>. The strike will prioritize <keywordMajor>Vitals</keywordMajor> and enemies it will kill.<br><br>If Fiora strikes an enemy, this Ability's Cooldown is reduced by @Effect4Amount@%.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Fiora lunges in a direction and stabs the closest enemy, ward, or structure, dealing @TotalDamage@ physical damage. The strike will prioritize <keywordMajor>Vitals</keywordMajor> and enemies it will kill.<br><br>If Fiora strikes an enemy, this Ability's Cooldown is reduced by @Effect4Amount@%.@SpellModifierDescriptionAppend@",
 "range": [
 400,
 400,
@@ -1542,7 +1542,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Fiora has increased attack speed for the next two attacks. The first attack slows the target, and the second attack will critically strike.",
-"dynamicDescription": "Fiora gains <attackSpeed>@Effect4Amount@% Attack Speed</attackSpeed> for her next two Attacks. The first Attack <status>Slows</status> by @Effect3Amount@% for @Effect2Amount@ second. The second Attack always critically strikes for <physicalDamage>@f4@% damage</physicalDamage>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Fiora gains <attackSpeed>@Effect4Amount@% Attack Speed</attackSpeed> for her next two Attacks. The first Attack <status>Slows</status> by @Effect3Amount@% for @Effect2Amount@ second. The second Attack always critically strikes for @f4@% damage.@SpellModifierDescriptionAppend@",
 "range": [
 425,
 425,

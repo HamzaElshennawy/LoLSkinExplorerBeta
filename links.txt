@@ -1,0 +1,2 @@
+https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/aatrox/hud/icons2d/aatrox_passive.png
+https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/Aatrox/HUD/Icons2D/{}_Passive.png

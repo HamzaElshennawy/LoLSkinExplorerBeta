@@ -923,7 +923,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Lucian shoots a bolt of piercing light through a target.",
-"dynamicDescription": "Lucian shoots a bolt of piercing light, dealing <physicalDamage>@TotalDamage@ physical damage</physicalDamage>.<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Lucian shoots a bolt of piercing light, dealing @TotalDamage@ physical damage.<br>@SpellModifierDescriptionAppend@",
 "range": [
 500,
 500,
@@ -1373,7 +1373,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Lucian unleashes a torrent of shots from his weapons.",
-"dynamicDescription": "Lucian rapidly fires <keywordMajor>@TotalNumShots@</keywordMajor> shots in a direction for @Duration@ seconds or until he <recast>Recasts</recast>. Each shot deals <physicalDamage>@DamagePerBullet@ physical damage</physicalDamage> to the first enemy hit.<br><br>While firing, Lucian may use <spellName>Relentless Pursuit</spellName>.<br><br>Total Damage: <physicalDamage>@TotalDamage@ physical damage</physicalDamage><br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Lucian rapidly fires <keywordMajor>@TotalNumShots@</keywordMajor> shots in a direction for @Duration@ seconds or until he <recast>Recasts</recast>. Each shot deals @DamagePerBullet@ physical damage to the first enemy hit.<br><br>While firing, Lucian may use <spellName>Relentless Pursuit</spellName>.<br><br>Total Damage: @TotalDamage@ physical damage<br>@SpellModifierDescriptionAppend@",
 "range": [
 1400,
 1400,

@@ -947,7 +947,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Sivir hurls her crossblade like a boomerang, dealing damage each way.",
-"dynamicDescription": "Sivir hurls her crossblade like a boomerang, dealing <physicalDamage>@TotalDamage@</physicalDamage> to all enemies it cuts through. Hitting non-champions reduces the damage to subsequent targets, down to a minimum of @FallOffMinimum*100@%.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Sivir hurls her crossblade like a boomerang, dealing @TotalDamage@ to all enemies it cuts through. Hitting non-champions reduces the damage to subsequent targets, down to a minimum of @FallOffMinimum*100@%.@SpellModifierDescriptionAppend@",
 "range": [
 1200,
 1200,
@@ -1097,7 +1097,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Sivir's next few basic attacks gain additional attack speed and bounce to nearby targets, dealing reduced damage while bouncing.",
-"dynamicDescription": "For the next @BuffDuration@ seconds, Sivir gains <attackSpeed>@RicochetAttackSpeed*100@% Attack Speed</attackSpeed> and her auto attacks are empowered to bounce to additional surrounding enemies dealing <physicalDamage>@BounceDamage@ physical damage</physicalDamage> each bounce for up to @MaxBounces@ bounces.<br><br>These bounces critically strike if the attack generating them does.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "For the next @BuffDuration@ seconds, Sivir gains <attackSpeed>@RicochetAttackSpeed*100@% Attack Speed</attackSpeed> and her auto attacks are empowered to bounce to additional surrounding enemies dealing @BounceDamage@ physical damage each bounce for up to @MaxBounces@ bounces.<br><br>These bounces critically strike if the attack generating them does.@SpellModifierDescriptionAppend@",
 "range": [
 20,
 20,

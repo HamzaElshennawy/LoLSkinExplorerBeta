@@ -1091,7 +1091,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Sejuani swings her mace twice, dealing damage, slowing enemies and applying Frost stacks.",
-"dynamicDescription": "Sejuani swings her flail, dealing <physicalDamage>@FirstHitDamageTooltip@ physical damage</physicalDamage> and <status>Knocking Back</status> minions and jungle monsters. She then lashes out again, dealing <physicalDamage>@SecondHitDamageTooltip@ physical damage</physicalDamage> and briefly <status>Slowing</status> targets.<br><br>Both swings apply stacks of <spellName>Permafrost</spellName>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Sejuani swings her flail, dealing @FirstHitDamageTooltip@ physical damage and <status>Knocking Back</status> minions and jungle monsters. She then lashes out again, dealing @SecondHitDamageTooltip@ physical damage and briefly <status>Slowing</status> targets.<br><br>Both swings apply stacks of <spellName>Permafrost</spellName>.@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,

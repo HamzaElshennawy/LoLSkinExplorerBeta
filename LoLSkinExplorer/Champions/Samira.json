@@ -509,7 +509,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Samira fires a shot or swings her sword, dealing damage. If cast during Wild Rush, strike all enemies in her path upon completion.",
-"dynamicDescription": "Samira fires a shot, dealing <physicalDamage>@DamageCalc@ physical damage</physicalDamage> to the first enemy hit.<br><br>If this Ability is cast towards an enemy in melee range, Samira will instead slash with her sword, dealing <physicalDamage>@DamageCalc@ physical damage</physicalDamage>. @SpellModifierDescriptionAppend@",
+"dynamicDescription": "Samira fires a shot, dealing @DamageCalc@ physical damage to the first enemy hit.<br><br>If this Ability is cast towards an enemy in melee range, Samira will instead slash with her sword, dealing @DamageCalc@ physical damage. @SpellModifierDescriptionAppend@",
 "range": [
 950,
 950,
@@ -659,7 +659,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Samira slashes around her, damaging enemies and destroying enemy missiles.",
-"dynamicDescription": "Samira slashes around her for @SlashDuration@ seconds, damaging enemies twice for <physicalDamage>@DamageCalc@ physical damage</physicalDamage> each and destroying any enemy missiles that enter the area.<br><br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Samira slashes around her for @SlashDuration@ seconds, damaging enemies twice for @DamageCalc@ physical damage each and destroying any enemy missiles that enter the area.<br><br>@SpellModifierDescriptionAppend@",
 "range": [
 325,
 325,
@@ -959,7 +959,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Samira unleashes a torrent of shots from her weapons, wildly shooting all enemies surrounding her.",
-"dynamicDescription": "Samira can only use this Ability if her current <keywordMajor>Style</keywordMajor> rating is S.<br><br>Samira unleashes a torrent of shots from her weapons, wildly shooting all enemies surrounding her 10 times over 2 seconds, each shot dealing <physicalDamage>@DamageCalc@ physical damage</physicalDamage> and applying lifesteal at @LifestealMod*100@% effectiveness. Each shot can also critically strike.<br><br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Samira can only use this Ability if her current <keywordMajor>Style</keywordMajor> rating is S.<br><br>Samira unleashes a torrent of shots from her weapons, wildly shooting all enemies surrounding her 10 times over 2 seconds, each shot dealing @DamageCalc@ physical damage and applying lifesteal at @LifestealMod*100@% effectiveness. Each shot can also critically strike.<br><br>@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,

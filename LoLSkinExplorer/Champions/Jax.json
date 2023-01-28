@@ -670,7 +670,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Jax leaps toward a unit. If they are an enemy, he strikes them with his weapon.",
-"dynamicDescription": "Jax leaps to a friendly or enemy unit or ward, dealing <physicalDamage>@TotalDamage@ physical damage</physicalDamage> if it is an enemy.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Jax leaps to a friendly or enemy unit or ward, dealing @TotalDamage@ physical damage if it is an enemy.@SpellModifierDescriptionAppend@",
 "range": [
 700,
 700,
@@ -970,7 +970,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Jax's combat prowess allows him to dodge all incoming attacks for a short duration and then quickly counterattack, stunning all surrounding enemies.",
-"dynamicDescription": "Jax enters a defensive stance for up to @Effect6Amount@ seconds, dodging incoming Attacks and taking @Effect3Amount@% less damage from area of effect Abilities.<br><br>After @Effect6Amount@ seconds or <recast>Recasting</recast>, Jax deals <physicalDamage>@TotalDamage@ physical damage</physicalDamage> and <status>Stuns</status> nearby enemies for @Effect2Amount@ second. Deals @Effect5Amount@% increased damage for each Attack Jax dodged (max: @Effect4Amount@%).@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Jax enters a defensive stance for up to @Effect6Amount@ seconds, dodging incoming Attacks and taking @Effect3Amount@% less damage from area of effect Abilities.<br><br>After @Effect6Amount@ seconds or <recast>Recasting</recast>, Jax deals @TotalDamage@ physical damage and <status>Stuns</status> nearby enemies for @Effect2Amount@ second. Deals @Effect5Amount@% increased damage for each Attack Jax dodged (max: @Effect4Amount@%).@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,

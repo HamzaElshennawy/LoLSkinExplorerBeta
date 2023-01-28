@@ -66,7 +66,7 @@ namespace LoLSkinExplorer.Models
         
 
         [JsonProperty("spells")]
-        public List<Abilities> Abilities;
+        public List<Abilities> Abilities = new List<Abilities>();
 
 
         public List<string> Role = new List<string>();

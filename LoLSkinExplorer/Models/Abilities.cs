@@ -57,10 +57,10 @@ namespace LoLSkinExplorer.Models
         }
 
         [JsonProperty("range")]
-        public List<string> _SpellRange { get; set; }
+        public List<string> _SpellRange = new List<string>();
 
         [JsonProperty("cooldownCoefficients")]
-        public List<string> _SpellCoolDowns { get; set; }
+        public List<string> _SpellCoolDowns = new List<string>();
 
 
 

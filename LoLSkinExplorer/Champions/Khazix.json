@@ -990,7 +990,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Deals physical damage to the target. Damage increased on <font color='#FFF673'>Isolated</font> targets. If he chooses to <font color='#00DD33'>Evolve Reaper Claws</font>, this refunds a percent of it's cooldown against <font color='#FFF673'>Isolated</font> targets. Kha'Zix also gains increased range on his basic attacks and Taste Their Fear.",
-"dynamicDescription": "Kha'zix slashes a nearby enemy, dealing <physicalDamage>@spell.KhazixQ:BaseDamage@ physical damage</physicalDamage>. This deals <physicalDamage>@spell.KhazixQ:IsoDamage@ damage</physicalDamage> instead to enemies <keywordMajor>Isolated</keywordMajor> from their allies. @SpellModifierDescriptionAppend@",
+"dynamicDescription": "Kha'zix slashes a nearby enemy, dealing @spell.KhazixQ:BaseDamage@ physical damage. This deals @spell.KhazixQ:IsoDamage@ damage instead to enemies <keywordMajor>Isolated</keywordMajor> from their allies. @SpellModifierDescriptionAppend@",
 "range": [
 325,
 325,
@@ -1140,7 +1140,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Kha'Zix fires exploding spikes that deal physical damage to enemies hit. Kha'Zix is healed if he is also within the explosion radius. If he chooses to <font color='#00DD33'>Evolve Spike Racks</font>, Void Spike now fires three spikes in a cone, slow enemies hit, and reveals enemy champions hit for 2 seconds. <font color='#FFF673'>Isolated</font> targets are slowed for extra.",
-"dynamicDescription": "Kha'Zix fires a spike dealing <physicalDamage>@BaseDamage@ physical damage</physicalDamage> to the first enemy hit in a small area. If Kha'Zix is inside the area, he restores <healing>@HealAmount@ Health</healing>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Kha'Zix fires a spike dealing @BaseDamage@ physical damage to the first enemy hit in a small area. If Kha'Zix is inside the area, he restores <healing>@HealAmount@ Health</healing>@SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,
@@ -1290,7 +1290,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Kha'Zix leaps to an area, dealing physical damage upon landing. If he chooses to <font color='#00DD33'>Evolve Wings</font>, Leap's range increases by 200 and the cooldown resets on champion kill or assist.",
-"dynamicDescription": "Kha'Zix leaps, dealing <physicalDamage>@TotalDamage@ physical damage</physicalDamage> upon landing.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Kha'Zix leaps, dealing @TotalDamage@ physical damage upon landing.@SpellModifierDescriptionAppend@",
 "range": [
 700,
 700,

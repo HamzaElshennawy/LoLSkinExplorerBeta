@@ -46,7 +46,7 @@ namespace LoLSkinExplorer.Views
         string LegendarySkinLink = "https://static.wikia.nocookie.net/leagueoflegends/images/f/f1/Legendary_Skin.png/revision/latest/scale-to-width-down/20?cb=20171016035307";
         string MythicSkinLink = "https://static.wikia.nocookie.net/leagueoflegends/images/4/4d/Hextech_Skin.png/revision/latest/scale-to-width-down/20?cb=20171016035256";
         string UltimateSkinLink = "https://static.wikia.nocookie.net/leagueoflegends/images/2/25/Ultimate_Skin.png/revision/latest/scale-to-width-down/20?cb=20171016035317";
-
+        
         public AsyncCommand GoToChampionDetails { get; }
 
 
@@ -186,10 +186,19 @@ namespace LoLSkinExplorer.Views
         private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             Skin skin = ((ListView)sender).SelectedItem as Skin;
-            if (skin != null) 
-                await Application.Current.MainPage.DisplayAlert("Has crhomas?", skin.Chromas == null ? "No" : "Yes", "OK");
-                //Toast.MakeText(Application.Context, message, ToastLength.Short).Show();
-
+            if (skin != null)
+            //await Application.Current.MainPage.DisplayAlert("Has crhomas?", skin.Chromas == null ? "No" : "Yes", "OK");
+            //Toast.MakeText(Application.Context, message, ToastLength.Short).Show();
+            {
+                if (skin.Chromas != null)
+                {
+                    await Navigation.PushAsync(new ChromasPage(skin, Tempchampion.ChampionId), true);
+                }
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("Has crhomas?", "This skin has no chromas" , "OK");
+                }
+            }
         }
 
 

@@ -966,7 +966,7 @@
 "cost": "@Cost@ Mana Per Rocket",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Jinx modifies her basic attacks by swapping between Pow-Pow, her minigun and Fishbones, her rocket launcher. Attacks with Pow-Pow grant Attack Speed, while attacks with Fishbones deal area of effect damage, gain increased range, but drain Mana and attack slower.",
-"dynamicDescription": "Jinx swaps weapons between Fishbones the rocket launcher and Pow-Pow the minigun.<br><br>While using the rocket launcher, Jinx's Attacks deal <physicalDamage>@RocketDamage@ physical damage</physicalDamage> to the target and nearby enemies, gain @RocketBonusRange@ range, cost Mana, and scale @RocketASPDPenalty*100@% less with bonus Attack Speed.<br><br>While using the minigun, Jinx' Attacks grant <attackSpeed>Attack Speed</attackSpeed> for @MinigunAttackSpeedDuration@ seconds, stacking up to @MinigunAttackSpeedStacks@ times (<attackSpeed>+@MinigunAttackSpeedMax@% %i:scaleAS% max</attackSpeed>).@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Jinx swaps weapons between Fishbones the rocket launcher and Pow-Pow the minigun.<br><br>While using the rocket launcher, Jinx's Attacks deal @RocketDamage@ physical damage to the target and nearby enemies, gain @RocketBonusRange@ range, cost Mana, and scale @RocketASPDPenalty*100@% less with bonus Attack Speed.<br><br>While using the minigun, Jinx' Attacks grant <attackSpeed>Attack Speed</attackSpeed> for @MinigunAttackSpeedDuration@ seconds, stacking up to @MinigunAttackSpeedStacks@ times (<attackSpeed>+@MinigunAttackSpeedMax@% %i:scaleAS% max</attackSpeed>).@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,
@@ -1116,7 +1116,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Jinx uses Zapper, her shock pistol, to fire a blast that deals damage to the first enemy hit, slowing and revealing it.",
-"dynamicDescription": "Jinx fires a shock blast that deals <physicalDamage>@TotalDamage@ physical damage</physicalDamage> to the first enemy hit, <status>Slows</status> them by @SlowPercent@%, and reveals them for @SlowDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Jinx fires a shock blast that deals @TotalDamage@ physical damage to the first enemy hit, <status>Slows</status> them by @SlowPercent@%, and reveals them for @SlowDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 1450,
 1450,
@@ -1416,7 +1416,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Jinx fires a super rocket across the map that gains damage as it travels. The rocket will explode upon colliding with an enemy champion, dealing damage to it and surrounding enemies based on their missing Health.",
-"dynamicDescription": "Jinx fires a rocket that explodes on the first enemy champion hit, dealing <physicalDamage>@DamageFloor@ to @DamageMax@ + @PercentDamage@% missing Health physical damage</physicalDamage>, gaining damage over the first second of travel time. Nearby enemies take @AoEDamageMult*100@% Damage.<br><br><rules>Missing Health damage cannot exceed @MonsterExecuteMax@ against Monsters.</rules>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Jinx fires a rocket that explodes on the first enemy champion hit, dealing @DamageFloor@ to @DamageMax@ + @PercentDamage@% missing Health physical damage, gaining damage over the first second of travel time. Nearby enemies take @AoEDamageMult*100@% Damage.<br><br><rules>Missing Health damage cannot exceed @MonsterExecuteMax@ against Monsters.</rules>@SpellModifierDescriptionAppend@",
 "range": [
 25000,
 25000,

@@ -852,7 +852,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Tryndamere slices toward a target unit, dealing damage to enemies in his path.",
-"dynamicDescription": "Tryndamere spins through his enemies, dealing <physicalDamage>@TotalDamage@ physical damage</physicalDamage> and generating <keywordMajor>@FuryGained@ Fury</keywordMajor> per enemy hit.<br><br>This Ability's Cooldown is reduced by @Effect2Amount@ second when Tryndamere critically strikes, and reduced by @Effect3Amount@ seconds when critically striking a champion.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Tryndamere spins through his enemies, dealing @TotalDamage@ physical damage and generating <keywordMajor>@FuryGained@ Fury</keywordMajor> per enemy hit.<br><br>This Ability's Cooldown is reduced by @Effect2Amount@ second when Tryndamere critically strikes, and reduced by @Effect3Amount@ seconds when critically striking a champion.@SpellModifierDescriptionAppend@",
 "range": [
 650,
 650,

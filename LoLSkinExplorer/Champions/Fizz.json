@@ -542,7 +542,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Fizz dashes through his target, dealing magic damage and applying on hit effects.",
-"dynamicDescription": "Fizz dashes through an enemy, dealing <physicalDamage>@TotalDamage@ physical damage</physicalDamage> plus <magicDamage>@QDamage@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Fizz dashes through an enemy, dealing @TotalDamage@ physical damage plus <magicDamage>@QDamage@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
 "range": [
 550,
 550,

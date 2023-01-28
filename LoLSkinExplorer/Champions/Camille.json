@@ -533,7 +533,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Camille's next attack deals bonus damage and grants bonus Move Speed. This spell can be recast for a short period of time, doing significantly increased bonus damage if Camille delays a period of time between the two attacks.",
-"dynamicDescription": "Camille's next Attack deals an additional <physicalDamage>@BonusDamage@ physical damage</physicalDamage> and grants her <speed>@MSBonus*100@% Move Speed</speed> for @MSDuration@ second. This ability can be <recast>Recast</recast> in the next @QTotalRecastTime@ seconds.<br><br>If the <recast>Recast</recast> Attack hits at least @QRampUpTime@ seconds after the first, the bonus damage is increased to <physicalDamage>@EmpoweredBonusDamage@</physicalDamage> and @DamageConversionPercentage@ of the Attack's damage is converted into <trueDamage>true damage</trueDamage>.<br><br><rules>This Ability triggers spell effects upon dealing damage.</rules>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Camille's next Attack deals an additional @BonusDamage@ physical damage and grants her <speed>@MSBonus*100@% Move Speed</speed> for @MSDuration@ second. This ability can be <recast>Recast</recast> in the next @QTotalRecastTime@ seconds.<br><br>If the <recast>Recast</recast> Attack hits at least @QRampUpTime@ seconds after the first, the bonus damage is increased to @EmpoweredBonusDamage@ and @DamageConversionPercentage@ of the Attack's damage is converted into <trueDamage>true damage</trueDamage>.<br><br><rules>This Ability triggers spell effects upon dealing damage.</rules>@SpellModifierDescriptionAppend@",
 "range": [
 325,
 325,
@@ -683,7 +683,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Camille blasts in a cone after a delay, dealing damage. Enemies in the outer half are slowed and take extra damage, while also healing Camille.",
-"dynamicDescription": "Camille winds up and slices, dealing <physicalDamage>@BaseDamageTotal@ physical damage</physicalDamage>.<br><br>Enemies hit by the outer half are <status>Slowed</status> by @SlowPercentage@% decaying over @SlowDuration@ seconds, and they take an additional <physicalDamage>@OuterEdgeTooltip@ max Health physical damage</physicalDamage>. Camille restores <healing>@OuterConeHealingRatio@% of the bonus damage dealt to champions as Health</healing>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Camille winds up and slices, dealing @BaseDamageTotal@ physical damage.<br><br>Enemies hit by the outer half are <status>Slowed</status> by @SlowPercentage@% decaying over @SlowDuration@ seconds, and they take an additional @OuterEdgeTooltip@ max Health physical damage. Camille restores <healing>@OuterConeHealingRatio@% of the bonus damage dealt to champions as Health</healing>.@SpellModifierDescriptionAppend@",
 "range": [
 610,
 610,
@@ -833,7 +833,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Camille pulls herself to a wall, leaping off and knocking up enemy champions upon landing.",
-"dynamicDescription": "Camille fires a hookshot that attaches to terrain, pulling her to it for 1 second and allowing this Ability to be <recast>Recast</recast>.<br><br><recast>Recast:</recast> Camille dashes from the wall, colliding with the first enemy champion hit. Upon landing, she deals <physicalDamage>@TotalDamage@ physical damage</physicalDamage> to nearby enemies and <status>Stuns</status> enemy champions for @KnockupDuration@ seconds. Dashes towards enemy champions travel twice as far and grant <attackSpeed>@ASBuff*100@% Attack Speed</attackSpeed> for @ASDuration@ seconds on impact.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Camille fires a hookshot that attaches to terrain, pulling her to it for 1 second and allowing this Ability to be <recast>Recast</recast>.<br><br><recast>Recast:</recast> Camille dashes from the wall, colliding with the first enemy champion hit. Upon landing, she deals @TotalDamage@ physical damage to nearby enemies and <status>Stuns</status> enemy champions for @KnockupDuration@ seconds. Dashes towards enemy champions travel twice as far and grant <attackSpeed>@ASBuff*100@% Attack Speed</attackSpeed> for @ASDuration@ seconds on impact.@SpellModifierDescriptionAppend@",
 "range": [
 800,
 800,

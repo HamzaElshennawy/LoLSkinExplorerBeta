@@ -113,14 +113,14 @@ namespace LoLSkinExplorer.ViewModels
 
 
                         abilities = new ObservableRangeCollection<Abilities>();
-                        
-                        //var SpellP = dobj["passive"];
-                        //Abilities spellP = new Abilities();
-                        //spellP.SpellName = dobj["passive"]["name"].ToString();
-                        //spellP.SpellDescription = dobj["passive"]["description"].ToString();
-                        //spellP.SpellKey = "q";
-                        //abilities.Add(spellP);
-                        //TempChampion.Abilities.Add(spellP);
+
+                        var SpellP = dobj["passive"];
+                        Abilities spellP = new Abilities();
+                        spellP.SpellName = dobj["passive"]["name"].ToString();
+                        spellP.SpellDescription = dobj["passive"]["description"].ToString();
+                        spellP.SpellKey = "q";
+                        abilities.Add(spellP);
+                        TempChampion.Abilities.Add(spellP);
 
                         var champAbilities = dobj["spells"];
 
@@ -133,25 +133,28 @@ namespace LoLSkinExplorer.ViewModels
 
                             var spellName = champAbility["name"].ToString();
 
-                            var spellRanges = champAbility["range"].Values<JArray>();
+                            var spellRanges = champAbility["range"];
 
-                            var spellCoolDown = champAbility["cooldownCoefficients"].Values<JArray>();
+                            var spellCoolDown = champAbility["cooldownCoefficients"];
 
                             var spellDescription = champAbility["description"].ToString();
 
                             Abilities abilitiess = new Abilities();
-                            //if (spellRanges.Count() > 0)
-                            //{
-                            //    for (int j = 0; j < spellRanges.Count(); j++)
-                            //    {
-                            //        abilitiess._SpellRange.Add(spellRanges.ElementAt(j).ToString());
-                            //    }
-                            //    for (int j = 0; j < spellCoolDown.Count(); j++)
-                            //    {
-                            //        abilitiess._SpellCoolDowns.Add(spellCoolDown.ElementAt(j).ToString());
-                            //    }
-                            //}
-                            
+                            if (spellRanges.Count() > 0)
+                            {
+                                for (int j = 0; j < spellRanges.Count(); j++)
+                                {
+                                    //await Application.Current.MainPage.DisplayAlert("Range", spellRanges.ElementAt(j).ToString(), "OK");
+                                    abilitiess._SpellRange.Add(spellRanges.ElementAt(j).ToString());
+                                    //Application.Current.MainPage.DisplayAlert("Range", spellRanges.ElementAt(j).ToString(), "OK");
+                                }
+                                for (int j = 0; j < spellCoolDown.Count(); j++)
+                                {
+                                    abilitiess._SpellCoolDowns.Add(spellCoolDown.ElementAt(j).ToString());
+                                    //await Application.Current.MainPage.DisplayAlert("cooldown", TempChampion.Alias +" "+ spellCoolDown.ElementAt(j).ToString()+" "+spellKey, "ok");
+                                }
+                            }
+
                             //abilitiess._SpellRange = spellRanges.Values();
 
                             abilitiess.SpellName = spellName;

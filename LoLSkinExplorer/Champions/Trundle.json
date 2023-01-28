@@ -412,7 +412,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Trundle bites his opponent, dealing damage, briefly slowing and sapping some of their Attack Damage.",
-"dynamicDescription": "Trundle's next Attack deals an additional <physicalDamage>@TotalDamage@ physical damage</physicalDamage> and briefly <status>Slows</status> by @Effect7Amount*100@%, then Trundle gains <physicalDamage>@Effect3Amount@ Attack Damage</physicalDamage> for @Effect6Amount@ seconds and the enemy loses <physicalDamage>@Effect3Amount*0.5@ Attack Damage</physicalDamage> for the same duration.<br><br><rules>This Ability triggers spell effects upon dealing damage.</rules>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Trundle's next Attack deals an additional @TotalDamage@ physical damage and briefly <status>Slows</status> by @Effect7Amount*100@%, then Trundle gains @Effect3Amount@ Attack Damage for @Effect6Amount@ seconds and the enemy loses @Effect3Amount*0.5@ Attack Damage for the same duration.<br><br><rules>This Ability triggers spell effects upon dealing damage.</rules>@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,

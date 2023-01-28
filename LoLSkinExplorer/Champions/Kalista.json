@@ -293,7 +293,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Throw a fast moving spear that passes through enemies it kills.",
-"dynamicDescription": "Kalista hurls a spear, dealing <physicalDamage>@TotalDamage@ physical damage</physicalDamage> to the first target hit. If this kills the target, the spear continues onward, carrying any <spellName>Rend</spellName> stacks to the next target hit.<br><br>Kalista can dash after using this Ability using <spellName>Martial Poise</spellName>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Kalista hurls a spear, dealing @TotalDamage@ physical damage to the first target hit. If this kills the target, the spear continues onward, carrying any <spellName>Rend</spellName> stacks to the next target hit.<br><br>Kalista can dash after using this Ability using <spellName>Martial Poise</spellName>.@SpellModifierDescriptionAppend@",
 "range": [
 1150,
 1150,
@@ -593,7 +593,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@FakedCooldown@s Cooldown",
 "description": "Attacks impale their targets with spears. Activate to rip the spears out, slowing and dealing escalating damage.",
-"dynamicDescription": "<spellPassive>Passive: </spellPassive>Kalista's spears linger in their target for 4 seconds, stacking any number of times.<br><br><spellActive>Active:</spellActive> Kalista rips the spears from nearby enemies, dealing <physicalDamage>@NormalDamage@</physicalDamage> plus <physicalDamage>@AdditionalDamage@ physical damage</physicalDamage> per spear beyond the first. <status>Slows</status> enemies hit by @SlowAmount*100@% for @SlowDuration@ seconds.<br><br>If this Ability kills at least one target, its Cooldown is refreshed and it refunds <scaleMana>@ManaRefund@ Mana</scaleMana>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive: </spellPassive>Kalista's spears linger in their target for 4 seconds, stacking any number of times.<br><br><spellActive>Active:</spellActive> Kalista rips the spears from nearby enemies, dealing @NormalDamage@ plus @AdditionalDamage@ physical damage per spear beyond the first. <status>Slows</status> enemies hit by @SlowAmount*100@% for @SlowDuration@ seconds.<br><br>If this Ability kills at least one target, its Cooldown is refreshed and it refunds <scaleMana>@ManaRefund@ Mana</scaleMana>.@SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,

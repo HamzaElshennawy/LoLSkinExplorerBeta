@@ -436,7 +436,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Rek'Sai's next 3 basic attacks deal bonus Physical Damage to nearby enemies.<br><br>While Burrowed, Rek'Sai launches a burst of void-charged earth that deals Physical Damage and reveals enemies hit.",
-"dynamicDescription": "<keywordMajor>Un-Burrowed</keywordMajor>: Rek'Sai's next 3 Attacks within @Effect7Amount@ seconds deal an additional <physicalDamage>@spell.RekSaiQ:TotalDamageTooltip@ physical damage</physicalDamage> to nearby enemies.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<keywordMajor>Un-Burrowed</keywordMajor>: Rek'Sai's next 3 Attacks within @Effect7Amount@ seconds deal an additional @spell.RekSaiQ:TotalDamageTooltip@ physical damage to nearby enemies.@SpellModifierDescriptionAppend@",
 "range": [
 325,
 325,
@@ -736,7 +736,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Rek'Sai bites her target, dealing double and True Damage if she has max Fury.<br><br>While Burrowed, Rek'Sai creates a re-usable, long lasting tunnel. Enemies can destroy it by standing on top of either entrance.",
-"dynamicDescription": "<scaleAD>Un-Burrowed:</scaleAD> Rek'Sai bites a target, dealing <physicalDamage>@spell.RekSaiE:BaseDamageTooltip@ physical damage</physicalDamage>. At max <keywordMajor>Fury</keywordMajor>, the bite deals <trueDamage>@spell.RekSaiE:EmpoweredDamageTooltip@ true damage</trueDamage> instead.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<scaleAD>Un-Burrowed:</scaleAD> Rek'Sai bites a target, dealing @spell.RekSaiE:BaseDamageTooltip@ physical damage. At max <keywordMajor>Fury</keywordMajor>, the bite deals <trueDamage>@spell.RekSaiE:EmpoweredDamageTooltip@ true damage</trueDamage> instead.@SpellModifierDescriptionAppend@",
 "range": [
 250,
 250,
@@ -886,7 +886,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Rek'sai passively marks targets by damaging them. She can activate this ability to become briefly untargetable and lunge at a marked target for heavy damage based on their missing health.",
-"dynamicDescription": "Rek'Sai targets an enemy damaged by her in the last @PreyMarkDuration@ seconds and then dives underground, becoming untargetable. Moments later, she leaps unstoppably at her target, dealing <physicalDamage>@RBaseDamageCalc@ plus @PercentMissingHealthDamage@% missing Health physical damage</physicalDamage>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Rek'Sai targets an enemy damaged by her in the last @PreyMarkDuration@ seconds and then dives underground, becoming untargetable. Moments later, she leaps unstoppably at her target, dealing @RBaseDamageCalc@ plus @PercentMissingHealthDamage@% missing Health physical damage.@SpellModifierDescriptionAppend@",
 "range": [
 1500,
 1500,

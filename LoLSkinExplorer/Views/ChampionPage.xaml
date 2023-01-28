@@ -6,10 +6,10 @@
              Shell.ForegroundColor="Red"
              Shell.TitleColor="Red"
              
-             x:Class="LoLSkinExplorer.Views.ChampionPage" Title="{Binding MainChampion.Name}" BackgroundColor="#43494c">
-    <!--<ContentPage.BindingContext>
-        MainChampion
-    </ContentPage.BindingContext>-->
+             x:Class="LoLSkinExplorer.Views.ChampionPage" Title="{Binding championForXaml.Name}" BackgroundColor="#43494c">
+    <ContentPage.BindingContext>
+        championForXaml
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <!--<Image Source= "{Binding TempChampion.ChampionImage}" Opacity="0.5" VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" BackgroundColor="Red"/>-->
@@ -26,12 +26,13 @@
                                HeightRequest="1000"
                        />
                 </StackLayout>
-                <ScrollView Margin="0,-40,0,0">
+                <ScrollView Margin="0,-40,0,0" >
                     <StackLayout BackgroundColor="Transparent" Orientation="Vertical" HeightRequest="1000">
                         <StackLayout 
                             BackgroundColor="Transparent"
                             VerticalOptions="StartAndExpand"
                             HeightRequest="200"
+                            
                             >
                             <Label 
                                 Text="Bio"
@@ -61,7 +62,7 @@
                             <Frame 
                                 BackgroundColor="Transparent" 
                                 >
-                                <StackLayout Orientation="Vertical">
+                                <StackLayout Orientation="Vertical" >
                                     <Label 
                                         BackgroundColor="Transparent"
                                         Text="Category"
@@ -138,7 +139,30 @@
                                     
                                 </StackLayout>
                             </Frame>
+                            <Frame Padding="0" BackgroundColor="Transparent">
+                                <StackLayout BackgroundColor="Transparent" >
+                                    <StackLayout>
+                                        <Label Text="Passive" FontSize="30" TextColor="Orange" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                    <StackLayout BackgroundColor="Transparent">
+                                        <Label
+                                            x:Name="PassiveLBL"
+                                            Text="{Binding championForXaml.Abilities[0].SpellDescription}"
+                                            FontFamily="Times New Roman"
+                                            FontSize="16"
+                                            Padding="10"
+                                            Scale="1" 
+                                            FontAttributes="Bold"
+                                            LineHeight="1.6"
+                                            CharacterSpacing="1.1"
+                                            TextColor="White"
+                                            Margin="28,0,28,0"
+                                            />
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
                         </StackLayout>
+                        
                     </StackLayout>
                 </ScrollView>
             </StackLayout>

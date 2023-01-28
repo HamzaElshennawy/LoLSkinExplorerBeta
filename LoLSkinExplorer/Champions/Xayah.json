@@ -697,7 +697,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Xayah throws two damaging daggers that also drop Feathers she can recall.",
-"dynamicDescription": "Xayah throws two daggers, dealing <physicalDamage>@TotalDamage@ physical damage</physicalDamage> each and leaving two <keywordMajor>Feathers</keywordMajor>. Targets hit after the first take <physicalDamage>@MultiHitDamage@ damage</physicalDamage> from each dagger.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Xayah throws two daggers, dealing @TotalDamage@ physical damage each and leaving two <keywordMajor>Feathers</keywordMajor>. Targets hit after the first take @MultiHitDamage@ damage from each dagger.@SpellModifierDescriptionAppend@",
 "range": [
 400,
 400,
@@ -997,7 +997,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Xayah calls back all her dropped Feathers dealing damage and rooting enemies.",
-"dynamicDescription": "Xayah calls all <keywordMajor>Feathers</keywordMajor> back to her, dealing <physicalDamage>@FeatherDamage@ physical damage</physicalDamage> each. If @FeatherThreshold@ or more <keywordMajor>Feathers</keywordMajor> hit an enemy, they are <status>Rooted</status> for @RootDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Xayah calls all <keywordMajor>Feathers</keywordMajor> back to her, dealing @FeatherDamage@ physical damage each. If @FeatherThreshold@ or more <keywordMajor>Feathers</keywordMajor> hit an enemy, they are <status>Rooted</status> for @RootDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 2000,
 2000,
@@ -1147,7 +1147,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Xayah leaps into the air becoming untargetable and throwing out a fan of daggers, dropping Feathers she can recall.",
-"dynamicDescription": "Xayah leaps into the air becoming Untargetable and Ghosted for 1.5 seconds before raining down daggers that deal <physicalDamage>@Damage@ physical damage</physicalDamage> and leave behind a line of <keywordMajor>Feathers</keywordMajor>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Xayah leaps into the air becoming Untargetable and Ghosted for 1.5 seconds before raining down daggers that deal @Damage@ physical damage and leave behind a line of <keywordMajor>Feathers</keywordMajor>.@SpellModifierDescriptionAppend@",
 "range": [
 450,
 450,

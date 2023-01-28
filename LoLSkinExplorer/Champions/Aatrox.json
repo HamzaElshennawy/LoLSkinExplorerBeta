@@ -579,7 +579,7 @@
     "abilityIconPath": "Characters/Aatrox/HUD/Icons2D/Aatrox_Passive.png",
     "abilityVideoPath": "champion-abilities/0266/ability_0266_P1.webm",
     "abilityVideoImagePath": "champion-abilities/0266/ability_0266_P1.jpg",
-    "description": "Periodically, Aatrox's next basic attack deals bonus <physicalDamage>physical damage</physicalDamage> and heals him, based on the target's max health. "
+    "description": "Periodically, Aatrox's next basic attack deals bonus physical damage and heals him, based on the target's max health. "
   },
   "spells": [
     {
@@ -591,7 +591,7 @@
       "cost": "No Cost",
       "cooldown": "@Cooldown@s %i:cooldown%",
       "description": "Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect.",
-      "dynamicDescription": "Aatrox slams his greatsword, dealing <physicalDamage>@QDamage@ physical damage</physicalDamage>. If they are hit on the edge, they are briefly <status>Knocked Up</status> and they take <physicalDamage>@QEdgeDamage@</physicalDamage> instead. This Ability can be <recast>Recast</recast> twice, each one changing shape and dealing 25% more damage than the previous one.@SpellModifierDescriptionAppend@",
+      "dynamicDescription": "Aatrox slams his greatsword, dealing @QDamage@ physical damage. If they are hit on the edge, they are briefly <status>Knocked Up</status> and they take @QEdgeDamage@ instead. This Ability can be <recast>Recast</recast> twice, each one changing shape and dealing 25% more damage than the previous one.@SpellModifierDescriptionAppend@",
       "range": [
         25000,
         25000,
@@ -741,7 +741,7 @@
       "cost": "No Cost",
       "cooldown": "@Cooldown@s %i:cooldown%",
       "description": "Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again.",
-      "dynamicDescription": "Aatrox fires a chain, <status>Slowing</status> the first enemy hit by @WSlowPercentage*-100@% for @WSlowDuration@ seconds and dealing <physicalDamage>@WDamage@ physical damage</physicalDamage>. Champions and large jungle monsters have @WSlowDuration@ seconds to leave the impact area or be <status>Pulled</status> back to the center and damaged again for the same amount.@SpellModifierDescriptionAppend@",
+      "dynamicDescription": "Aatrox fires a chain, <status>Slowing</status> the first enemy hit by @WSlowPercentage*-100@% for @WSlowDuration@ seconds and dealing @WDamage@ physical damage. Champions and large jungle monsters have @WSlowDuration@ seconds to leave the impact area or be <status>Pulled</status> back to the center and damaged again for the same amount.@SpellModifierDescriptionAppend@",
       "range": [
         825,
         825,

@@ -1192,7 +1192,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Twitch wreaks further havoc on poisoned enemies with a blast of his vile diseases.",
-"dynamicDescription": "Deals <physicalDamage>@BaseDamage@ physical damage</physicalDamage> to all nearby enemies affected by <spellName>Deadly Venom</spellName>, plus an additional <physicalDamage>@PhysicalDamagePerStack@ physical damage</physicalDamage> and <magicDamage>@MagicDamagePerStack@ magical damage</magicDamage> per stack of <spellName>Deadly Venom</spellName>.<br><br>Max Damage: <physicalDamage>@MaxPhysicalDamage@ physical damage</physicalDamage> and <magicDamage>@MaxMagicDamage@ magical damage</magicDamage>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Deals @BaseDamage@ physical damage to all nearby enemies affected by <spellName>Deadly Venom</spellName>, plus an additional @PhysicalDamagePerStack@ physical damage and <magicDamage>@MagicDamagePerStack@ magical damage</magicDamage> per stack of <spellName>Deadly Venom</spellName>.<br><br>Max Damage: @MaxPhysicalDamage@ physical damage and <magicDamage>@MaxMagicDamage@ magical damage</magicDamage>.@SpellModifierDescriptionAppend@",
 "range": [
 1200,
 1200,

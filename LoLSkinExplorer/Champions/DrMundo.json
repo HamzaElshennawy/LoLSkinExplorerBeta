@@ -773,7 +773,7 @@
 "cost": "<font color='#CC3300'>@FlatHealthCost@ Health</font>",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Passive - Dr. Mundo gains bonus Attack Damage, increasing based on his missing Health.<br><br>Active - Dr. Mundo slams his “medical” bag into an enemy, dealing additional damage based on his missing Health. If the enemy dies they are swatted away, dealing damage to enemies they pass through.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Dr Mundo gains <physicalDamage>@PassiveBonusAD@ Attack Damage</physicalDamage>, plus up to <physicalDamage>@MaxMissingHealthAD@ Attack Damage</physicalDamage> based on his missing Health.<br><br><spellActive>Active:</spellActive> Mundo violently swings his \"medical\" bag, causing his next Attack to deal an additional <physicalDamage>@AdditionalDamage@ physical damage</physicalDamage>, increased by up to @MaxDamageAmpTooltip@ based on his missing Health. If the enemy is killed, Mundo swats them away, dealing the minimum damage to all enemies they pass through. Small monsters are swatted immediately.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Dr Mundo gains @PassiveBonusAD@ Attack Damage, plus up to @MaxMissingHealthAD@ Attack Damage based on his missing Health.<br><br><spellActive>Active:</spellActive> Mundo violently swings his \"medical\" bag, causing his next Attack to deal an additional @AdditionalDamage@ physical damage, increased by up to @MaxDamageAmpTooltip@ based on his missing Health. If the enemy is killed, Mundo swats them away, dealing the minimum damage to all enemies they pass through. Small monsters are swatted immediately.@SpellModifierDescriptionAppend@",
 "range": [
 0,
 0,
@@ -923,7 +923,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Dr. Mundo pumps himself with chemicals, instantly healing a percent of his missing Health. He then gains bonus Attack Damage and Move Speed, and regenerates a portion of his maximum Health over a long duration.",
-"dynamicDescription": "Dr. Mundo pumps himself with chemicals, temporarily gaining <healing>@MissingHealthHeal*100@% of his missing Health as max Health</healing> then gaining <speed>@SpeedBoostAmount*100@% Move Speed</speed>, <physicalDamage>@TotalBonusAD@ Attack Damage</physicalDamage>, and regenerating <healing>@MaxHealthHoT*100@% max Health</healing> over @Duration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Dr. Mundo pumps himself with chemicals, temporarily gaining <healing>@MissingHealthHeal*100@% of his missing Health as max Health</healing> then gaining <speed>@SpeedBoostAmount*100@% Move Speed</speed>, @TotalBonusAD@ Attack Damage, and regenerating <healing>@MaxHealthHoT*100@% max Health</healing> over @Duration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 20,
 20,
