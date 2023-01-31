@@ -49,17 +49,22 @@ namespace LoLSkinExplorer.ViewModels
             var ScreenWidthForCell = ScreenWidth * 0.80;
             var ScreenHightForCell = ScreenHeight * 0.3;
 
+
+            Thread thread = new Thread(GetData);
+
             Title = "ChampSkins";
             Champions = new ObservableRangeCollection<Champion>();
             Skins = new ObservableRangeCollection<Skin>();
             NewSkins = new ObservableRangeCollection<Skin>();
             GetDataCommand = new AsyncCommand(GetDataTask);
             _RefreshCommand = new AsyncCommand(Refresh);
-            DeviceScreenSize();
-            _=GetData();
+            //DeviceScreenSize();
+            thread.Start();
+            
+            //GetData();
             NewSkinsDisplay();
         }
-        public async Task GetData()
+        public async void GetData()
         {
             Skins.Clear();
             Champions.Clear();
@@ -181,13 +186,13 @@ namespace LoLSkinExplorer.ViewModels
         async Task GetDataTask()
         {
             IsBusy = true;
-            await GetData();
+            GetData();
             IsBusy = false;
         }
         async Task Refresh()
         {
             IsBusy = true;
-            await GetData();
+            GetData();
             IsBusy = false;
         }
         List<string> ChampionsNames = new List<string>()

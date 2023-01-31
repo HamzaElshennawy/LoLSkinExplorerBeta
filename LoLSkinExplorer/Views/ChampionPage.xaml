@@ -25,6 +25,7 @@
                                WidthRequest="100"
                                HeightRequest="1000"
                        />
+                    
                 </StackLayout>
                 <ScrollView Margin="0,-40,0,0" >
                     <StackLayout BackgroundColor="Transparent" Orientation="Vertical" HeightRequest="1000">

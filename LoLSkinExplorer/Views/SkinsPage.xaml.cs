@@ -13,6 +13,7 @@ using Xamarin.Forms.Xaml;
 using LoLSkinExplorer.ViewModels;
 using System.Collections.ObjectModel;
 using MvvmHelpers.Commands;
+using System.Threading;
 
 #pragma warning disable IDE1006 // Naming Styles
 
@@ -23,7 +24,7 @@ namespace LoLSkinExplorer.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SkinsPage : ContentPage
     {
-        public string champName;
+        public string champName = "";
         public string ChampName
         {
             get => champName;
@@ -49,7 +50,7 @@ namespace LoLSkinExplorer.Views
         
         public AsyncCommand GoToChampionDetails { get; }
 
-
+        
 
         public ObservableCollection<Skin> ChampSkins { get; set; }
         public ObservableCollection<Skin> Skinss { get; set; }
@@ -61,13 +62,17 @@ namespace LoLSkinExplorer.Views
             Title = ChampName;
             //Title = champion.Name;
             BindingContext = this;
+
+            //Thread thread = new Thread(()=> GetSkins(ChampName));
+            //thread.Start();
             //ChampName = champion.ChampionAlias;
             ChampSkins = new ObservableCollection<Skin>();
             Skinss = new ObservableCollection<Skin>();
             GetSkins(ChampName);
             GoToChampionDetails = new AsyncCommand(NavToChampDetails);
+            
         }
-        public async void GetSkins(string _ChampName)
+        private async void GetSkins(string _ChampName)
         {
             ChampSkins.Clear();
             string name = _ChampName;
@@ -155,6 +160,7 @@ namespace LoLSkinExplorer.Views
 
 
                     ChampSkins.Add(skins[i]);
+                    OnPropertyChanged(nameof(ChampSkins));
                 }
             }
             catch (Exception e)
@@ -210,7 +216,7 @@ namespace LoLSkinExplorer.Views
 
         private async void ChampionPageBTN(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ChampionPage(Tempchampion), true);
+            await Task.WhenAll(Navigation.PushAsync(new ChampionPage(Tempchampion), true));
         }
     }
 }

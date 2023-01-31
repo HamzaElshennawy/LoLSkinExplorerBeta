@@ -13,6 +13,7 @@ using System.Collections.ObjectModel;
 using MvvmHelpers;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
+using Xamarin.CommunityToolkit.Extensions;
 
 namespace LoLSkinExplorer.Views
 {
@@ -81,8 +82,13 @@ namespace LoLSkinExplorer.Views
             var champ = ((ListView)sender).SelectedItem as Champion;
             if (champ == null)
                 return;
-            await Navigation.PushAsync(new SkinsPage(champ,champ.ChampionAlias),true);
-            //await Navigation.PushAsync(new ChampionPage(champ), true);
+            
+            await Task.WhenAll(
+            ((ListView)sender).TranslateTo( -300,0,1500,Easing.Linear),
+            Navigation.PushAsync(new SkinsPage(champ, champ.ChampionAlias), true)
+            );
+            await ((ListView)sender).TranslateTo(0, 0, 0, Easing.Linear);
+            
         }
 
         

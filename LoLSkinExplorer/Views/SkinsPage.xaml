@@ -11,6 +11,7 @@
 
     <StackLayout>
         <Button 
+            x:Name="ChampPageBTN"
             Margin="0,5,0,-5"
             HeightRequest="40"
             WidthRequest="200"

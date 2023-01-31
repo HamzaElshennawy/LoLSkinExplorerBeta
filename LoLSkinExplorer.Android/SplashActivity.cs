@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace LoLSkinExplorer.Droid
 {
@@ -27,13 +28,16 @@ namespace LoLSkinExplorer.Droid
             base.OnResume();
             SetContentView(Resource.Layout.splash);
             Task startupWork = new Task(() => { _ = SimulateStartupAsync(); });
+            
             startupWork.Start();
         }
+        
         private async Task SimulateStartupAsync()
         {
-            await Task.Delay(2000);
-
-            StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+            await Task.Delay(2500);
+            Thread thread = new Thread(()=> StartActivity(new Intent(Application.Context, typeof(MainActivity))));
+            thread.Start();
+            
         }
     }
 }
