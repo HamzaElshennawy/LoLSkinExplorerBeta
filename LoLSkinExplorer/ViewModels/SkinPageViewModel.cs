@@ -146,6 +146,13 @@ namespace LoLSkinExplorer.ViewModels
 
                             abilities.Add(abilitiess);
                             TempChampion.Abilities = abilities.ToList<Abilities>();
+                            
+                            //small fix for Wukong icon and background in champion details page
+                            if(TempChampion.Alias == "Wukong")
+                            {
+                                TempChampion._LoadingScreen = $"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + "MonkeyKing" + "_0.jpg";
+                                TempChampion._Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + "MonkeyKing" + "_0.jpg";
+                            }
                         }
                         Champions.Add(TempChampion);
                     }

@@ -16,9 +16,11 @@
     <None Remove="Champions\Annie.json" />
     <None Remove="Champions\Aphelios.json" />
     <None Remove="Champions\Ashe.json" />
+    <None Remove="Champions\Aurelion Sol.json" />
     <None Remove="Champions\AurelionSol.json" />
     <None Remove="Champions\Azir.json" />
     <None Remove="Champions\Bard.json" />
+    <None Remove="Champions\Bel%27Veth.json" />
     <None Remove="Champions\Belveth.json" />
     <None Remove="Champions\Blitzcrank.json" />
     <None Remove="Champions\Brand.json" />
@@ -26,10 +28,12 @@
     <None Remove="Champions\Caitlyn.json" />
     <None Remove="Champions\Camille.json" />
     <None Remove="Champions\Cassiopeia.json" />
+    <None Remove="Champions\Cho%27Gath.json" />
     <None Remove="Champions\Chogath.json" />
     <None Remove="Champions\Corki.json" />
     <None Remove="Champions\Darius.json" />
     <None Remove="Champions\Diana.json" />
+    <None Remove="Champions\Dr. Mundo.json" />
     <None Remove="Champions\Draven.json" />
     <None Remove="Champions\DrMundo.json" />
     <None Remove="Champions\Ekko.json" />
@@ -52,11 +56,14 @@
     <None Remove="Champions\Irelia.json" />
     <None Remove="Champions\Ivern.json" />
     <None Remove="Champions\Janna.json" />
+    <None Remove="Champions\Jarvan IV.json" />
     <None Remove="Champions\JarvanIV.json" />
     <None Remove="Champions\Jax.json" />
     <None Remove="Champions\Jayce.json" />
     <None Remove="Champions\Jhin.json" />
     <None Remove="Champions\Jinx.json" />
+    <None Remove="Champions\K%27Sante.json" />
+    <None Remove="Champions\Kai%27Sa.json" />
     <None Remove="Champions\Kaisa.json" />
     <None Remove="Champions\Kalista.json" />
     <None Remove="Champions\Karma.json" />
@@ -66,12 +73,15 @@
     <None Remove="Champions\Kayle.json" />
     <None Remove="Champions\Kayn.json" />
     <None Remove="Champions\Kennen.json" />
+    <None Remove="Champions\Kha%27Zix.json" />
     <None Remove="Champions\Khazix.json" />
     <None Remove="Champions\Kindred.json" />
     <None Remove="Champions\Kled.json" />
+    <None Remove="Champions\Kog%27Maw.json" />
     <None Remove="Champions\KogMaw.json" />
     <None Remove="Champions\KSante.json" />
     <None Remove="Champions\Leblanc.json" />
+    <None Remove="Champions\Lee Sin.json" />
     <None Remove="Champions\LeeSin.json" />
     <None Remove="Champions\Leona.json" />
     <None Remove="Champions\Lillia.json" />
@@ -82,7 +92,9 @@
     <None Remove="Champions\Malphite.json" />
     <None Remove="Champions\Malzahar.json" />
     <None Remove="Champions\Maokai.json" />
+    <None Remove="Champions\Master Yi.json" />
     <None Remove="Champions\MasterYi.json" />
+    <None Remove="Champions\Miss Fortune.json" />
     <None Remove="Champions\MissFortune.json" />
     <None Remove="Champions\Mordekaiser.json" />
     <None Remove="Champions\Morgana.json" />
@@ -93,6 +105,7 @@
     <None Remove="Champions\Nidalee.json" />
     <None Remove="Champions\Nilah.json" />
     <None Remove="Champions\Nocturne.json" />
+    <None Remove="Champions\Nunu &amp; Willump.json" />
     <None Remove="Champions\Nunu.json" />
     <None Remove="Champions\Olaf.json" />
     <None Remove="Champions\Orianna.json" />
@@ -104,8 +117,10 @@
     <None Remove="Champions\Quinn.json" />
     <None Remove="Champions\Rakan.json" />
     <None Remove="Champions\Rammus.json" />
+    <None Remove="Champions\Rek%27Sai.json" />
     <None Remove="Champions\RekSai.json" />
     <None Remove="Champions\Rell.json" />
+    <None Remove="Champions\Renata Glasc.json" />
     <None Remove="Champions\Renata.json" />
     <None Remove="Champions\Renekton.json" />
     <None Remove="Champions\Rengar.json" />
@@ -129,6 +144,7 @@
     <None Remove="Champions\Swain.json" />
     <None Remove="Champions\Sylas.json" />
     <None Remove="Champions\Syndra.json" />
+    <None Remove="Champions\Tahm Kench.json" />
     <None Remove="Champions\TahmKench.json" />
     <None Remove="Champions\Taliyah.json" />
     <None Remove="Champions\Talon.json" />
@@ -138,6 +154,7 @@
     <None Remove="Champions\Tristana.json" />
     <None Remove="Champions\Trundle.json" />
     <None Remove="Champions\Tryndamere.json" />
+    <None Remove="Champions\Twisted Fate.json" />
     <None Remove="Champions\TwistedFate.json" />
     <None Remove="Champions\Twitch.json" />
     <None Remove="Champions\Udyr.json" />
@@ -145,6 +162,7 @@
     <None Remove="Champions\Varus.json" />
     <None Remove="Champions\Vayne.json" />
     <None Remove="Champions\Veigar.json" />
+    <None Remove="Champions\Vel%27Koz.json" />
     <None Remove="Champions\Velkoz.json" />
     <None Remove="Champions\Vex.json" />
     <None Remove="Champions\Vi.json" />
@@ -156,6 +174,7 @@
     <None Remove="Champions\Wukong.json" />
     <None Remove="Champions\Xayah.json" />
     <None Remove="Champions\Xerath.json" />
+    <None Remove="Champions\Xin Zhao.json" />
     <None Remove="Champions\XinZhao.json" />
     <None Remove="Champions\Yasuo.json" />
     <None Remove="Champions\Yone.json" />

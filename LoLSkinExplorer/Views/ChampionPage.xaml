@@ -28,7 +28,7 @@
                        />
                     
                 </StackLayout>
-                <ScrollView Margin="0,-40,0,0" >
+                <ScrollView Margin="0,-40,0,0" VerticalScrollBarVisibility="Never">
                     <StackLayout BackgroundColor="Transparent" Orientation="Vertical" HeightRequest="1000">
                         <StackLayout 
                             BackgroundColor="Transparent"
@@ -155,10 +155,40 @@
                                             Padding="10"
                                             Scale="1" 
                                             FontAttributes="Bold"
-                                            LineHeight="1.6"
+                                            LineHeight="1.9"
                                             CharacterSpacing="1.1"
                                             TextColor="White"
                                             Margin="28,0,28,0"
+                                            HorizontalTextAlignment="Start"
+                                            TextType="Html"
+                                            LineBreakMode="WordWrap"
+                                            />
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout>
+                            <Frame Padding="0" BackgroundColor="Transparent">
+                                <StackLayout BackgroundColor="Transparent" >
+                                    <StackLayout>
+                                        <Label Text="Passive" FontSize="30" TextColor="Orange" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                    <StackLayout BackgroundColor="Transparent">
+                                        <Label
+                                            
+                                            Text="{Binding championForXaml.Abilities[0].SpellDescription}"
+                                            FontFamily="Times New Roman"
+                                            FontSize="16"
+                                            Padding="10"
+                                            Scale="1" 
+                                            FontAttributes="Bold"
+                                            LineHeight="1.9"
+                                            CharacterSpacing="1.1"
+                                            TextColor="White"
+                                            Margin="28,0,28,0"
+                                            HorizontalTextAlignment="Start"
+                                            TextType="Html"
+                                            LineBreakMode="WordWrap"
                                             />
                                     </StackLayout>
                                 </StackLayout>

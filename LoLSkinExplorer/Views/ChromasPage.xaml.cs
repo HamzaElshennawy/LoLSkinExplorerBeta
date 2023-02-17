@@ -28,9 +28,9 @@ namespace LoLSkinExplorer.Views
                 _Chromas.Add(chroma);
             }
             OnPropertyChanged(nameof(_Chromas));
-            NumberOfChromas = "Number of Cromas: "+_Chromas.Count().ToString();
-            NumberOfChromasLBL.Text = NumberOfChromas;
-            OnPropertyChanged(nameof(NumberOfChromas));
+            //NumberOfChromas = "Number of Cromas: "+_Chromas.Count().ToString();
+            //NumberOfChromasLBL.Text = NumberOfChromas;
+            //OnPropertyChanged(nameof(NumberOfChromas));
         }
     }
 }
