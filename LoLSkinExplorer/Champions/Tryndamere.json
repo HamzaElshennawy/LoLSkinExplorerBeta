@@ -552,7 +552,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Tryndamere thrives on the thrills of combat, increasing his Attack Damage as he is more and more wounded. He can cast Bloodlust to consume his Fury and heal himself.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Tryndamere thirsts for blood, gaining <scaleAD>@Effect1Amount@ Attack Damage</scaleAD> plus <scaleAD>@Effect2Amount@</scaleAD> per 1% missing Health.<br><br><spellActive>Active:</spellActive> Tryndamere consumes his <keywordMajor>Fury</keywordMajor>, restoring <healing>@BaseHeal@ plus @Effect4Amount@ Health per Fury</healing>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Tryndamere thirsts for blood, gaining <scaleAD>@Effect1Amount@ Attack Damage</scaleAD> plus <scaleAD>@Effect2Amount@</scaleAD> per 1% missing Health.<spellActive>Active:</spellActive> Tryndamere consumes his <keywordMajor>Fury</keywordMajor>, restoring <healing>@BaseHeal@ plus @Effect4Amount@ Health per Fury</healing>.@SpellModifierDescriptionAppend@",
 "range": [
 400,
 400,
@@ -852,7 +852,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Tryndamere slices toward a target unit, dealing damage to enemies in his path.",
-"dynamicDescription": "Tryndamere spins through his enemies, dealing @TotalDamage@ physical damage and generating <keywordMajor>@FuryGained@ Fury</keywordMajor> per enemy hit.<br><br>This Ability's Cooldown is reduced by @Effect2Amount@ second when Tryndamere critically strikes, and reduced by @Effect3Amount@ seconds when critically striking a champion.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Tryndamere spins through his enemies, dealing @TotalDamage@ physical damage and generating <keywordMajor>@FuryGained@ Fury</keywordMajor> per enemy hit.This Ability's Cooldown is reduced by @Effect2Amount@ second when Tryndamere critically strikes, and reduced by @Effect3Amount@ seconds when critically striking a champion.@SpellModifierDescriptionAppend@",
 "range": [
 650,
 650,

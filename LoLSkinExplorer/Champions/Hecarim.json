@@ -602,7 +602,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Hecarim cleaves nearby enemies dealing physical damage. If Hecarim damages at least one enemy, he increases the damage and lowers the cooldown of subsequent Rampages.",
-"dynamicDescription": "Hecarim cleaves nearby enemies for @Damage@ physical damage. If this Ability hits, he gains a stack that decreases its Cooldown by @RampageCooldownReduction@ seconds and increases its damage by @RampageBonusDamagePerc@% for @Effect6Amount@ seconds. Stacks up to @Effect2Amount@ times.<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Hecarim cleaves nearby enemies for @Damage@ physical damage. If this Ability hits, he gains a stack that decreases its Cooldown by @RampageCooldownReduction@ seconds and increases its damage by @RampageBonusDamagePerc@% for @Effect6Amount@ seconds. Stacks up to @Effect2Amount@ times.@SpellModifierDescriptionAppend@",
 "range": [
 350,
 350,
@@ -752,7 +752,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Hecarim gains Armor and Magic Resist. Hecarim deals magic damage to nearby enemies, and gains Health equal to a percentage of any damage those enemies suffer.",
-"dynamicDescription": "Hecarim deals <magicDamage>@TotalDamage@ magic damage</magicDamage> over @BuffDuration@ seconds to nearby enemies. <br><br>Hecarim gains <passive>@ResistAmount@</passive> <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> and heals for <healing>@LeechAmount@% of damage</healing> nearby enemies take from Hecarim and <healing>@AllyTooltipLeachValue@% of damage</healing> taken from his allies.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Hecarim deals <magicDamage>@TotalDamage@ magic damage</magicDamage> over @BuffDuration@ seconds to nearby enemies. Hecarim gains <passive>@ResistAmount@</passive> <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> and heals for <healing>@LeechAmount@% of damage</healing> nearby enemies take from Hecarim and <healing>@AllyTooltipLeachValue@% of damage</healing> taken from his allies.@SpellModifierDescriptionAppend@",
 "range": [
 525,
 525,

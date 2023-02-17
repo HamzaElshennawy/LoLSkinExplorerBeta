@@ -27,11 +27,11 @@
             IsVisible="false"
             TextChanged="SearchEntryBox_TextChanged" />
         <Grid>
-            <Grid.RowDefinitions>
+            <!--<Grid.RowDefinitions>
                 <RowDefinition Height="3.5*"/>
                 <RowDefinition Height="7*"/>
-            </Grid.RowDefinitions>
-            <Label 
+            </Grid.RowDefinitions>-->
+            <!--<Label 
                 Text="New Skins"
                 FontSize="23"
                 Margin="10,0,0,0"
@@ -106,18 +106,19 @@
                         </DataTemplate>
                     </CarouselView.ItemTemplate>
                 </CarouselView>
-            </StackLayout>
+            </StackLayout>-->
+            <!--"10,-10,0,50"-->
             <Label 
                 Text="Champions"
+                Margin="10,-5,0,0"
                 FontSize="23"
-                Grid.Row="1"
-                Margin="10,-10,0,50"
+                Grid.Row="0"
                 TextColor="White"
                 xct:ShadowEffect.Color="Black"
                 xct:ShadowEffect.OffsetY="10"
                 xct:ShadowEffect.OffsetX="10"
                 xct:ShadowEffect.Radius="5"/>
-            <StackLayout Grid.Row="1" Margin="0,20,0,0">
+            <StackLayout Grid.Row="0" Margin="0,20,0,0">
                 <ListView
                     x:Name="ListViewomePage"
                     HasUnevenRows="True"

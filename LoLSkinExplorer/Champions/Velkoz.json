@@ -372,7 +372,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Vel'Koz shoots a bolt of plasma that splits in two on reactivation or upon hitting an enemy. The bolt slows and damages on hit.",
-"dynamicDescription": "Vel'Koz shoots a plasma bolt that deals <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Slows</status> by @SlowAmount*100@% decaying over @SlowDuration@ second(s). At the end of it's range, on hitting a target, or on <recast>Recasting</recast>, the bolt splits and fires two new bolts at a 90 degree angle.<br><br>Killing a unit with this restores <scaleMana>@TooltipManaRefund@ Mana</scaleMana>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Vel'Koz shoots a plasma bolt that deals <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Slows</status> by @SlowAmount*100@% decaying over @SlowDuration@ second(s). At the end of it's range, on hitting a target, or on <recast>Recasting</recast>, the bolt splits and fires two new bolts at a 90 degree angle.Killing a unit with this restores <scaleMana>@TooltipManaRefund@ Mana</scaleMana>.@SpellModifierDescriptionAppend@",
 "range": [
 1050,
 1050,
@@ -522,7 +522,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Vel'Koz opens a rift to the void that deals an initial burst of damage, then explodes for a second burst of damage after a delay.",
-"dynamicDescription": "Vel'Koz opens a rift to the void, dealing <magicDamage>@InitialDamage@ magic damage</magicDamage>. The rift then erupts, dealing <magicDamage>@SecondaryDamage@ magic damage</magicDamage>.<br><br>This Ability has 2 charges (@AmmoRechargeTime@ second refresh).@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Vel'Koz opens a rift to the void, dealing <magicDamage>@InitialDamage@ magic damage</magicDamage>. The rift then erupts, dealing <magicDamage>@SecondaryDamage@ magic damage</magicDamage>.This Ability has 2 charges (@AmmoRechargeTime@ second refresh).@SpellModifierDescriptionAppend@",
 "range": [
 1050,
 1050,
@@ -822,7 +822,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Vel'Koz unleashes a channelled beam that follows the cursor for 2.5 seconds that deals magic damage. Organic Deconstruction Researches enemy champions causing them to take true damage instead.",
-"dynamicDescription": "Vel'Koz channels a ray of energy that follows the cursor, dealing a total of <magicDamage>@TotalDamage@ magic damage</magicDamage> over 2.5 seconds and <status>Slowing</status> by @Effect3Amount@%. Deals <trueDamage>true damage</trueDamage> instead to enemies recently damaged by <spellName>Organic Deconstruction</spellName>.<br><br>Enemies gain stacks of <keywordMajor>Deconstruction</keywordMajor> periodically while in the beam.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Vel'Koz channels a ray of energy that follows the cursor, dealing a total of <magicDamage>@TotalDamage@ magic damage</magicDamage> over 2.5 seconds and <status>Slowing</status> by @Effect3Amount@%. Deals <trueDamage>true damage</trueDamage> instead to enemies recently damaged by <spellName>Organic Deconstruction</spellName>.Enemies gain stacks of <keywordMajor>Deconstruction</keywordMajor> periodically while in the beam.@SpellModifierDescriptionAppend@",
 "range": [
 1575,
 1575,

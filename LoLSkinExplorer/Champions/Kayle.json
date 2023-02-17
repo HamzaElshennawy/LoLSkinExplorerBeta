@@ -1271,8 +1271,8 @@
 "abilityVideoImagePath": "champion-abilities/0010/ability_0010_E1.jpg",
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Passive: Kayle's celestial sword, Virtue, deals bonus magic damage to enemies she attacks.<br><br>Active: Kayle's next attack smites her target with celestial fire, dealing bonus damage proportionate to their missing health.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Kayle's Attacks deal an additional <magicDamage>@EPassiveTotalDamage@ magic damage</magicDamage>.<br><br><spellActive>Active:</spellActive> Kayle's next Attack becomes ranged and deals an additional <magicDamage>@ActiveTotalExecuteDamage@ missing Health magic damage</magicDamage>. When Kayle reaches level @Spell.KaylePassive:LevelForPassiveRank2@, this Attack explodes on hitting the target, dealing damage to surrounding enemies.@SpellModifierDescriptionAppend@",
+"description": "Passive: Kayle's celestial sword, Virtue, deals bonus magic damage to enemies she attacks.Active: Kayle's next attack smites her target with celestial fire, dealing bonus damage proportionate to their missing health.",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Kayle's Attacks deal an additional <magicDamage>@EPassiveTotalDamage@ magic damage</magicDamage>.<spellActive>Active:</spellActive> Kayle's next Attack becomes ranged and deals an additional <magicDamage>@ActiveTotalExecuteDamage@ missing Health magic damage</magicDamage>. When Kayle reaches level @Spell.KaylePassive:LevelForPassiveRank2@, this Attack explodes on hitting the target, dealing damage to surrounding enemies.@SpellModifierDescriptionAppend@",
 "range": [
 550,
 550,

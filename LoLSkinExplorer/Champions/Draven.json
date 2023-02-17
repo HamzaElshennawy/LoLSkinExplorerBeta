@@ -835,7 +835,7 @@
 "id": 170
 }
 ],
-"description": "Draven's vivid violence gives everyone a fright<br>Hide 'n' seek is higher stakes these days at night<br>“There's no escape for you,” he cackles with delight<br>But say his name three times with praise, and he might forget the fight!"
+"description": "Draven's vivid violence gives everyone a frightHide 'n' seek is higher stakes these days at night“There's no escape for you,” he cackles with delightBut say his name three times with praise, and he might forget the fight!"
 }
 ],
 "passive": {
@@ -855,7 +855,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Draven's next attack will deal bonus physical damage. This axe will ricochet off the target high up into the air. If Draven catches it, he automatically readies another Spinning Axe. Draven can have two Spinning Axes at once.",
-"dynamicDescription": "Draven readies a <keywordMajor>Spinning Axe</keywordMajor>, causing his next Attack to deal an additional @TotalDamage@ physical damage and ricochet into the air. If Draven catches it, he readies another <keywordMajor>Spinning Axe</keywordMajor>.<br><br>Draven can hold two <keywordMajor>Spinning Axes</keywordMajor> at once.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Draven readies a <keywordMajor>Spinning Axe</keywordMajor>, causing his next Attack to deal an additional @TotalDamage@ physical damage and ricochet into the air. If Draven catches it, he readies another <keywordMajor>Spinning Axe</keywordMajor>.Draven can hold two <keywordMajor>Spinning Axes</keywordMajor> at once.@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,
@@ -1005,7 +1005,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Draven gains increased Move Speed and Attack Speed. The Move Speed bonus decreases rapidly over its duration. Catching a Spinning Axe will refresh the cooldown of Blood Rush.",
-"dynamicDescription": "Draven becomes Ghosted, gains <speed>@Effect2Amount@% Move Speed</speed> decaying over @Effect3Amount@ seconds and <attackSpeed>@Effect4Amount@% Attack Speed</attackSpeed> for @Effect5Amount@ seconds.<br><br>When Draven catches a <keywordMajor>Spinning Axe</keywordMajor>, this Ability's Cooldown is refreshed.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Draven becomes Ghosted, gains <speed>@Effect2Amount@% Move Speed</speed> decaying over @Effect3Amount@ seconds and <attackSpeed>@Effect4Amount@% Attack Speed</attackSpeed> for @Effect5Amount@ seconds.When Draven catches a <keywordMajor>Spinning Axe</keywordMajor>, this Ability's Cooldown is refreshed.@SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,
@@ -1305,7 +1305,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Draven hurls two massive axes to deal physical damage to each unit struck. Whirling Death slowly reverses direction and returns to Draven after striking an enemy champion. Draven may also activate this ability while the axes are in flight to cause it to return early. Deals less damage for each unit hit and resets when the axes reverse direction. Executes enemies who have less health than Draven's number of Adoration stacks.",
-"dynamicDescription": "Draven hurls two massive axes that deal @RCalculatedDamage@ physical damage. Upon hitting a champion or <recast>Recasting</recast>, they reverse direction and return to Draven. The axes deal @RDamageReductionPerHit*100@% less damage for each enemy hit, down to a minimum of @RMinDamagePercent@%.<br><br>If <keywordMajor>Whirling Death</keywordMajor> would leave an enemy champion with less health than @RPassiveStacksCoefficient*100@% of Draven's current <keywordMajor>League of Draven</keywordMajor> stacks (@RPassiveTrueDamage@), he will execute them.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Draven hurls two massive axes that deal @RCalculatedDamage@ physical damage. Upon hitting a champion or <recast>Recasting</recast>, they reverse direction and return to Draven. The axes deal @RDamageReductionPerHit*100@% less damage for each enemy hit, down to a minimum of @RMinDamagePercent@%.If <keywordMajor>Whirling Death</keywordMajor> would leave an enemy champion with less health than @RPassiveStacksCoefficient*100@% of Draven's current <keywordMajor>League of Draven</keywordMajor> stacks (@RPassiveTrueDamage@), he will execute them.@SpellModifierDescriptionAppend@",
 "range": [
 20000,
 20000,

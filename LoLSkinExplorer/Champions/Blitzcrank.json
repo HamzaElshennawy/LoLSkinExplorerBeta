@@ -1258,7 +1258,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Blitzcrank super charges themself to get dramatically increased Move and Attack Speed. They are temporarily slowed after the effect ends.",
-"dynamicDescription": "Blitzcrank supercharges themself, gaining <speed>@MoveSpeedMod*100@% decaying Move Speed</speed> and <attackSpeed>@AttackSpeedMod*100@% Attack Speed</attackSpeed> for @Duration@ seconds. During this time, their attacks deal an additional <magicDamage>@PercentHealthDamage*100@% Target Max Health magic damage</magicDamage> %i:OnHit% <OnHit>On-Hit</OnHit>.<br><br>Afterwards, Blitzcrank is <status>Slowed</status> by @MoveSpeedModReduction*100@% for @SlowDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Blitzcrank supercharges themself, gaining <speed>@MoveSpeedMod*100@% decaying Move Speed</speed> and <attackSpeed>@AttackSpeedMod*100@% Attack Speed</attackSpeed> for @Duration@ seconds. During this time, their attacks deal an additional <magicDamage>@PercentHealthDamage*100@% Target Max Health magic damage</magicDamage> %i:OnHit% <OnHit>On-Hit</OnHit>.Afterwards, Blitzcrank is <status>Slowed</status> by @MoveSpeedModReduction*100@% for @SlowDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 1,
 1,
@@ -1408,7 +1408,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Blitzcrank charges up their fist to make the next attack deal double damage and pop their target up in the air.",
-"dynamicDescription": "Blitzcrank charges up their fist, causing their next Attack to <status>Knock Up</status> for @CCDuration@ second(s) and deal @TotalDamage@ physical damage.<br><br>Monsters and Minions take an additional @TotalDamageNonChampExtra@ physical damage bonus damage.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Blitzcrank charges up their fist, causing their next Attack to <status>Knock Up</status> for @CCDuration@ second(s) and deal @TotalDamage@ physical damage.Monsters and Minions take an additional @TotalDamageNonChampExtra@ physical damage bonus damage.@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,
@@ -1558,7 +1558,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Enemies attacked by Blitzcrank are marked and take lightning damage after 1 second. Additionally, Blitzcrank can activate this ability to remove nearby enemies' shields, damage them, and silence them briefly.",
-"dynamicDescription": "<spellPassive>Passive: </spellPassive>While this ability is available, lightning charges Blitzcrank's fists, marking those  Attacked. After 1 second, they are shocked for <magicDamage>@PassiveDamage@ magic damage</magicDamage>.<br><br><spellActive>Active: </spellActive>Blitzcrank overcharges, dealing <magicDamage>@ActiveDamage@ magic damage</magicDamage> and <status>Silencing</status> nearby enemies for @SilenceDuration@ seconds. Their shields are also destroyed.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive: </spellPassive>While this ability is available, lightning charges Blitzcrank's fists, marking those  Attacked. After 1 second, they are shocked for <magicDamage>@PassiveDamage@ magic damage</magicDamage>.<spellActive>Active: </spellActive>Blitzcrank overcharges, dealing <magicDamage>@ActiveDamage@ magic damage</magicDamage> and <status>Silencing</status> nearby enemies for @SilenceDuration@ seconds. Their shields are also destroyed.@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,

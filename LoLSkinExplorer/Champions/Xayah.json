@@ -685,7 +685,7 @@
 "abilityIconPath": "Characters/Xayah/HUD/Icons2D/XayahPassive.png",
 "abilityVideoPath": "champion-abilities/0498/ability_0498_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0498/ability_0498_P1.jpg",
-"description": "After using an ability, Xayah's next basic attacks will hit all targets along their path and leave a <font color='#C200E1'>Feather</font>."
+"description": "After using an ability, Xayah's next basic attacks will hit all targets along their path and leave a <font color='#C200E1'>Feather."
 },
 "spells": [
 {
@@ -847,7 +847,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Xayah creates a storm of blades that increase her Attack Speed and damage while also granting her Move Speed if she attacks a champion.",
-"dynamicDescription": "Xayah creates a storm of blades for @Effect2Amount@ seconds that grants her <attackSpeed>@Effect1Amount@% Attack Speed</attackSpeed> and cause her Attacks to fire a secondary blade that deals @Effect5Amount@% damage.<br><br>When the secondary blade hits a champion, she grants herself <speed>@Effect3Amount@% Move Speed</speed> for @Effect4Amount@ seconds.<br><br>If Rakan is nearby he will also gain the effects of this Ability, except he gains <speed>Move Speed</speed> when <i>Xayah</i> strikes a target.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Xayah creates a storm of blades for @Effect2Amount@ seconds that grants her <attackSpeed>@Effect1Amount@% Attack Speed</attackSpeed> and cause her Attacks to fire a secondary blade that deals @Effect5Amount@% damage.When the secondary blade hits a champion, she grants herself <speed>@Effect3Amount@% Move Speed</speed> for @Effect4Amount@ seconds.If Rakan is nearby he will also gain the effects of this Ability, except he gains <speed>Move Speed</speed> when <i>Xayah</i> strikes a target.@SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,

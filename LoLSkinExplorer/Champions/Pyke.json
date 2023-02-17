@@ -914,7 +914,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Pyke either stabs an enemy in front of him or pulls an enemy towards him.",
-"dynamicDescription": "<tap>Tap:</tap> Pyke stabs, dealing @TotalDamage@ physical damage to the first enemy hit, preferring champions. They are then <status>Slowed</status> by @SlowAmount*100@% for @SlowDuration@ second.<br><br><hold>Hold: </hold>Pyke throws his harpoon, dealing @TotalDamage@ physical damage to the first enemy hit and <status>Pulling</status> them towards him. They are then <status>Slowed</status> by @SlowAmount*100@% for @SlowDuration@ second.<br><br>If Pyke successfully hits an enemy champion or the channel does not complete successfully, @ManaRefund*100@% of the Mana cost is refunded.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<tap>Tap:</tap> Pyke stabs, dealing @TotalDamage@ physical damage to the first enemy hit, preferring champions. They are then <status>Slowed</status> by @SlowAmount*100@% for @SlowDuration@ second.<hold>Hold: </hold>Pyke throws his harpoon, dealing @TotalDamage@ physical damage to the first enemy hit and <status>Pulling</status> them towards him. They are then <status>Slowed</status> by @SlowAmount*100@% for @SlowDuration@ second.If Pyke successfully hits an enemy champion or the channel does not complete successfully, @ManaRefund*100@% of the Mana cost is refunded.@SpellModifierDescriptionAppend@",
 "range": [
 400,
 400,
@@ -1364,7 +1364,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Pyke blinks to and executes low health enemies, allowing him to cast this spell again and granting additional gold to an ally who assists.",
-"dynamicDescription": "Pyke strikes all enemy champions in an X, teleporting to and <danger>executing</danger> targets below <scaleAD>@RDamage@</scaleAD> Health. Champions above the threshold and non-champions instead take physical damage equal to @ReducedDamage*100@% of that amount (@ReducedDamageFinal@). <br><br>When an enemy champion dies inside the X, Pyke can <recast>Recast</recast> this Ability for free within @RRecastDuration@ seconds. If he executed that champion, the last assisting ally will also get kill gold. If he did not, he will still get kill gold as if he did.<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Pyke strikes all enemy champions in an X, teleporting to and <danger>executing</danger> targets below <scaleAD>@RDamage@</scaleAD> Health. Champions above the threshold and non-champions instead take physical damage equal to @ReducedDamage*100@% of that amount (@ReducedDamageFinal@). When an enemy champion dies inside the X, Pyke can <recast>Recast</recast> this Ability for free within @RRecastDuration@ seconds. If he executed that champion, the last assisting ally will also get kill gold. If he did not, he will still get kill gold as if he did.@SpellModifierDescriptionAppend@",
 "range": [
 750,
 750,

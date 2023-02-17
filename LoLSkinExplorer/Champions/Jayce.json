@@ -617,7 +617,7 @@
 "abilityVideoImagePath": "champion-abilities/0126/ability_0126_Q1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Hammer Stance: Leaps to an enemy dealing physical damage and slowing enemies.<br><br>Cannon Stance: Fires an orb of electricity that detonates upon hitting an enemy (or reaching the end of its path) dealing physical damage to all enemies hit.",
+"description": "Hammer Stance: Leaps to an enemy dealing physical damage and slowing enemies.Cannon Stance: Fires an orb of electricity that detonates upon hitting an enemy (or reaching the end of its path) dealing physical damage to all enemies hit.",
 "dynamicDescription": "<keywordMajor>Mercury Hammer:</keywordMajor> Jayce leaps to an enemy, dealing @spell.JayceToTheSkies:Damage@ physical damage to surrounding enemies and <status>Slowing</status> them by @spell.JayceToTheSkies:Slow*-100@% for @spell.JayceToTheSkies:SlowDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 600,
@@ -767,8 +767,8 @@
 "abilityVideoImagePath": "champion-abilities/0126/ability_0126_W1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Hammer Stance: Passive: Restores Mana per strike. Active: Creates a field of lightning damaging nearby enemies for several seconds.<br><br>Cannon Stance: Gains a burst of energy, increasing Attack Speed to maximum for several attacks.",
-"dynamicDescription": "<keywordMajor>Mercury Hammer - Passive:</keywordMajor> Jayce's <keywordMajor>Hammer</keywordMajor> Attacks grant <scaleMana>@spell.JayceStaticField:ManaGain@ Mana</scaleMana>.<br><br><keywordMajor>Mercury Hammer - Active:</keywordMajor> Jayce creates an electric aura dealing <magicDamage>@spell.JayceStaticField:Damage@ magic damage</magicDamage> over @spell.JayceStaticField:Duration@ seconds.@SpellModifierDescriptionAppend@",
+"description": "Hammer Stance: Passive: Restores Mana per strike. Active: Creates a field of lightning damaging nearby enemies for several seconds.Cannon Stance: Gains a burst of energy, increasing Attack Speed to maximum for several attacks.",
+"dynamicDescription": "<keywordMajor>Mercury Hammer - Passive:</keywordMajor> Jayce's <keywordMajor>Hammer</keywordMajor> Attacks grant <scaleMana>@spell.JayceStaticField:ManaGain@ Mana</scaleMana>.<keywordMajor>Mercury Hammer - Active:</keywordMajor> Jayce creates an electric aura dealing <magicDamage>@spell.JayceStaticField:Damage@ magic damage</magicDamage> over @spell.JayceStaticField:Duration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 285,
 285,
@@ -917,7 +917,7 @@
 "abilityVideoImagePath": "champion-abilities/0126/ability_0126_E1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Hammer Stance: Deals magic damage to an enemy and knocks them back a short distance.<br><br>Cannon Stance: Deploys an Acceleration Gate increasing the Move Speed of all allied champions who pass through it. If Shock Blast is fired through the gate the missile speed, range, and damage will increase.",
+"description": "Hammer Stance: Deals magic damage to an enemy and knocks them back a short distance.Cannon Stance: Deploys an Acceleration Gate increasing the Move Speed of all allied champions who pass through it. If Shock Blast is fired through the gate the missile speed, range, and damage will increase.",
 "dynamicDescription": "<keywordMajor>Hammer Form</keywordMajor>: Jayce swings his hammer, <status>Knocking Back</status> his target and dealing <magicDamage>@spell.JayceThunderingBlow:FlatDamage@ plus @spell.JayceThunderingBlow:PercHPDamage*100@% max Health magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
 "range": [
 240,
@@ -1067,7 +1067,7 @@
 "abilityVideoImagePath": "champion-abilities/0126/ability_0126_R1.jpg",
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Hammer Stance: Transforms the Mercury Hammer into the Mercury Cannon gaining new abilities and increased range. The first attack in this form reduces the target's Armor and Magic Resist.<br><br>Cannon Stance: Transforms the Mercury Cannon into the Mercury Hammer gaining new abilities and increasing Armor and Magic Resist. The first attack in this form deals additional magic damage.",
+"description": "Hammer Stance: Transforms the Mercury Hammer into the Mercury Cannon gaining new abilities and increased range. The first attack in this form reduces the target's Armor and Magic Resist.Cannon Stance: Transforms the Mercury Cannon into the Mercury Hammer gaining new abilities and increasing Armor and Magic Resist. The first attack in this form deals additional magic damage.",
 "dynamicDescription": "<keywordMajor>Mercury Hammer</keywordMajor>: Jayce transforms his weapon into the <keywordMajor>Mercury Cannon</keywordMajor>, gaining Attack Range and new Abilities. Jayce's next Attack removes <scaleArmor>@spell.JayceStanceHtG:RangedFormShred@ Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> for @spell.JayceStanceHtG:ShredDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 600,

@@ -801,7 +801,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Olaf throws an axe into the ground at a target location, dealing damage to enemies it passes through and reducing their Armor and Move Speed. If Olaf picks up the axe, the ability's cooldown is reset.",
-"dynamicDescription": "Olaf throws an axe, dealing @TotalDamage@ physical damage and <status>Slowing</status> by @SlowAmount*100@% for up to @Effect3Amount@ seconds (based on distance travelled). Champions hit lose <scaleArmor>@ShredAmount*100@% Armor</scaleArmor> for @DebuffDuration@ seconds.<br><br>If Olaf picks up the axe, this Ability's Cooldown is reduced to @TooltipCDRefund@ seconds, or fully refunded if @TooltipCDRefund@ seconds has elapsed.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Olaf throws an axe, dealing @TotalDamage@ physical damage and <status>Slowing</status> by @SlowAmount*100@% for up to @Effect3Amount@ seconds (based on distance travelled). Champions hit lose <scaleArmor>@ShredAmount*100@% Armor</scaleArmor> for @DebuffDuration@ seconds.If Olaf picks up the axe, this Ability's Cooldown is reduced to @TooltipCDRefund@ seconds, or fully refunded if @TooltipCDRefund@ seconds has elapsed.@SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,
@@ -1098,10 +1098,10 @@
 "abilityIconPath": "Characters/Olaf/HUD/Icons2D/Olaf_E.png",
 "abilityVideoPath": "champion-abilities/0002/ability_0002_E1.webm",
 "abilityVideoImagePath": "champion-abilities/0002/ability_0002_E1.jpg",
-"cost": "Costs <font color='#FF3300'>@f1@ Health</font>",
+"cost": "Costs <font color='#FF3300'>@f1@ Health",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Olaf attacks with such force that it deals true damage to his target and himself, refunding the Health cost if he destroys the target.",
-"dynamicDescription": "Olaf ferociously swings his axes, dealing <trueDamage>@TotalDamage@ true damage</trueDamage>. If the enemy dies, the cost is refunded.<br><br>Attacks lower the Cooldown of this Ability by 1 second.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Olaf ferociously swings his axes, dealing <trueDamage>@TotalDamage@ true damage</trueDamage>. If the enemy dies, the cost is refunded.Attacks lower the Cooldown of this Ability by 1 second.@SpellModifierDescriptionAppend@",
 "range": [
 325,
 325,
@@ -1251,7 +1251,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Olaf passively gains increased armor and magic resist. He can activate this ability to become immune to disables for as long as he keeps attacking.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Olaf gains <scaleArmor>@Resists@ Armor</scaleArmor> and <scaleMR>@Resists@ Magic Resist</scaleMR>.<br><br><spellActive>Active: </spellActive>Olaf cleanses all <status>Immobilizing</status> and <status>Disabling</status> effects on himself and becomes immune to them for @Duration@ seconds. While active, Olaf gains <scaleAD>@AD@ Attack Damage</scaleAD>. Hitting a champion with an Attack or <spellName>Reckless Swing</spellName> extends the duration by @DurationExtension@ seconds.<br><br>Additionally, Olaf gains <speed>@Haste*100@% Move Speed</speed> towards enemy champions for @HasteDuration@ second.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Olaf gains <scaleArmor>@Resists@ Armor</scaleArmor> and <scaleMR>@Resists@ Magic Resist</scaleMR>.<spellActive>Active: </spellActive>Olaf cleanses all <status>Immobilizing</status> and <status>Disabling</status> effects on himself and becomes immune to them for @Duration@ seconds. While active, Olaf gains <scaleAD>@AD@ Attack Damage</scaleAD>. Hitting a champion with an Attack or <spellName>Reckless Swing</spellName> extends the duration by @DurationExtension@ seconds.Additionally, Olaf gains <speed>@Haste*100@% Move Speed</speed> towards enemy champions for @HasteDuration@ second.@SpellModifierDescriptionAppend@",
 "range": [
 400,
 400,

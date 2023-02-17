@@ -479,7 +479,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Tosses a bomb to target area that sticks to units that come near it (prioritizes Champions). It detonates after 3 seconds, dealing area of effect damage. If a Time Bomb is detonated early by another Time Bomb, it also stuns enemies.",
-"dynamicDescription": "Zilean tosses a time-delayed bomb that sticks to the first unit which comes within a small area around it. After @Effect2Amount@ seconds it detonates, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>.<br><br>Placing a second bomb on a unit that already has one detonates the first bomb immediately and <status>Stuns</status> enemies in the blast for @Effect4Amount@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Zilean tosses a time-delayed bomb that sticks to the first unit which comes within a small area around it. After @Effect2Amount@ seconds it detonates, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>.Placing a second bomb on a unit that already has one detonates the first bomb immediately and <status>Stuns</status> enemies in the blast for @Effect4Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 900,
 900,

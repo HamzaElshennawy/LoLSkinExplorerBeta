@@ -755,7 +755,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Galio charges a defensive stance, moving slowly. Upon releasing the charge, Galio will taunt and damage nearby enemies.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Galio gains a <shield>@TotalPassiveShield@ Magic Shield</shield> after not taking damage for @PassiveShieldOOCTimer@ seconds.<br><br><charge>Begin Charging:</charge> Galio reduces incoming magic damage by @MagicDamageReduction@ and incoming physical damage by @PhysicalDamageReduction@ and <status>Slows</status> himself by @Effect3Amount@%.<br><br><release>Release:</release> Galio <status>Taunts</status> enemy champions for between @Effect4Amount@ to @Effect7Amount@ seconds, deals between <magicDamage>@MinTotalDamage@</magicDamage> and <magicDamage>@MaxTotalDamage@ magic damage</magicDamage>, and refreshes the damage reduction for @Effect8Amount@ seconds. Taunt duration, damage, and range increase with charge time.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Galio gains a <shield>@TotalPassiveShield@ Magic Shield</shield> after not taking damage for @PassiveShieldOOCTimer@ seconds.<charge>Begin Charging:</charge> Galio reduces incoming magic damage by @MagicDamageReduction@ and incoming physical damage by @PhysicalDamageReduction@ and <status>Slows</status> himself by @Effect3Amount@%.<release>Release:</release> Galio <status>Taunts</status> enemy champions for between @Effect4Amount@ to @Effect7Amount@ seconds, deals between <magicDamage>@MinTotalDamage@</magicDamage> and <magicDamage>@MaxTotalDamage@ magic damage</magicDamage>, and refreshes the damage reduction for @Effect8Amount@ seconds. Taunt duration, damage, and range increase with charge time.@SpellModifierDescriptionAppend@",
 "range": [
 275,
 275,
@@ -905,7 +905,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Galio will briefly step back and charge, knocking up the first enemy champion he encounters.",
-"dynamicDescription": "Galio lunges forward with a mighty blow, <status>Knocking Up</status> for @KnockupDuration@ seconds and dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> to the first champion hit. Other enemies in the way take <magicDamage>@PVEDamage@ magic damage</magicDamage>.<br><br>Galio's dash stops on hitting terrain.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Galio lunges forward with a mighty blow, <status>Knocking Up</status> for @KnockupDuration@ seconds and dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> to the first champion hit. Other enemies in the way take <magicDamage>@PVEDamage@ magic damage</magicDamage>.Galio's dash stops on hitting terrain.@SpellModifierDescriptionAppend@",
 "range": [
 650,
 650,
@@ -1055,7 +1055,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Galio designates an ally's position as his landing spot, granting all allies in the area a magic shield. After a delay Galio smashes down location, knocking up nearby enemies.",
-"dynamicDescription": "Galio designates an allied champion's position as his landing spot, granting all allied champions in the area <spellName>Shield of Durand's</spellName> passive <shield>Shield</shield> for @TemporaryWShieldDuration@ seconds. Galio then flies to his landing zone.<br><br>When Galio lands, he <status>Knocks Up</status> for @StunDurationOuter@ seconds and deals <magicDamage>@TotalDamage@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Galio designates an allied champion's position as his landing spot, granting all allied champions in the area <spellName>Shield of Durand's</spellName> passive <shield>Shield</shield> for @TemporaryWShieldDuration@ seconds. Galio then flies to his landing zone.When Galio lands, he <status>Knocks Up</status> for @StunDurationOuter@ seconds and deals <magicDamage>@TotalDamage@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
 "range": [
 4000,
 4750,

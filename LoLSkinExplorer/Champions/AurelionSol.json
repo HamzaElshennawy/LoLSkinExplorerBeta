@@ -515,7 +515,7 @@
 "cost": "@Cost@ Mana",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Aurelion Sol pushes his stars farther out, increasing their damage and speed.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Increases <spellName>Center of the Universe's</spellName> damage by @StarBaseDamageIncrease@.<br><br><spellActive>Active:</spellActive> Aurelion Sol's stars expand to his <keywordMajor>Outer Limit</keywordMajor>, increase in speed, and deal @DamageMultiplier*100@% damage. After 3 seconds, <recast>Recasting</recast>, or using <spellName>Comet of Legend</spellName> they retract and Aurelion Sol gains <speed>40% Move Speed</speed>, decaying over 1.5 seconds.<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Increases <spellName>Center of the Universe's</spellName> damage by @StarBaseDamageIncrease@.<spellActive>Active:</spellActive> Aurelion Sol's stars expand to his <keywordMajor>Outer Limit</keywordMajor>, increase in speed, and deal @DamageMultiplier*100@% damage. After 3 seconds, <recast>Recasting</recast>, or using <spellName>Comet of Legend</spellName> they retract and Aurelion Sol gains <speed>40% Move Speed</speed>, decaying over 1.5 seconds.@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,
@@ -665,7 +665,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Aurelion Sol takes off flying for a long distance.",
-"dynamicDescription": "Aurelion Sol starts flying along a path at <speed>@Effect4Amount@ Move Speed</speed>. Taking damage from champions or structures ends the flight. While flying he can see and be seen over walls.<br><br>This ability can only be used outside of combat.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Aurelion Sol starts flying along a path at <speed>@Effect4Amount@ Move Speed</speed>. Taking damage from champions or structures ends the flight. While flying he can see and be seen over walls.This ability can only be used outside of combat.@SpellModifierDescriptionAppend@",
 "range": [
 5500,
 6000,

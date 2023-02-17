@@ -441,7 +441,7 @@
 "cost": "Costs @Effect2Amount*100@% of current Health (@HealthCostTooltip@)",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Zac stretches an arm, grabbing an enemy. Attacking a different enemy will cause him to throw both targets towards each other.",
-"dynamicDescription": "Zac stretches his arm out, attaching it to the first enemy hit to deal <magicDamage>@DamageTooltip@ magic damage</magicDamage> and briefly <status>Slow</status> them. Zac's next Attack gains increased range and applies the same damage and <status>Slow</status>. <br><br>If Zac hits a <i>different</i> enemy with this Attack, he <status>Knocks Up</status> both towards each other. If they collide, they and surrounding enemies take <magicDamage>@DamageTooltip@ magic damage</magicDamage> and are briefly <status>Slowed</status>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Zac stretches his arm out, attaching it to the first enemy hit to deal <magicDamage>@DamageTooltip@ magic damage</magicDamage> and briefly <status>Slow</status> them. Zac's next Attack gains increased range and applies the same damage and <status>Slow</status>. If Zac hits a <i>different</i> enemy with this Attack, he <status>Knocks Up</status> both towards each other. If they collide, they and surrounding enemies take <magicDamage>@DamageTooltip@ magic damage</magicDamage> and are briefly <status>Slowed</status>.@SpellModifierDescriptionAppend@",
 "range": [
 800,
 800,
@@ -591,7 +591,7 @@
 "cost": "Costs @Effect2Amount*100@% of current Health (@TooltipHealthCost@)",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Zac explodes outward towards nearby enemies, dealing a percentage of their maximum health as magic damage.",
-"dynamicDescription": "Zac's body erupts, dealing <magicDamage>@BaseDamage@ + @DisplayPercentDamage@ max Health magic damage</magicDamage> to nearby enemies.<br><br>Absorbing <keywordMajor>Goo</keywordMajor> reduces this Ability's Cooldown by 1 second.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Zac's body erupts, dealing <magicDamage>@BaseDamage@ + @DisplayPercentDamage@ max Health magic damage</magicDamage> to nearby enemies.Absorbing <keywordMajor>Goo</keywordMajor> reduces this Ability's Cooldown by 1 second.@SpellModifierDescriptionAppend@",
 "range": [
 350,
 350,
@@ -741,7 +741,7 @@
 "cost": "Costs @Effect2Amount*100@% of current Health (@HealthCostTooltip@)",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Zac attaches his arms to the ground and stretches back, launching himself forward.",
-"dynamicDescription": "<charge>Begin Charging:</charge> Zac pulls himself taut, charging up a dash over @Effect4Amount@ seconds.<br><br><release>Release:</release> Zac launches himself and <status>Knocks Up</status> enemies where he lands for up to @MaxStun@ second (based on charge time), dealing them <magicDamage>@Damage@ magic damage</magicDamage>. Zac spawns an extra chunk of <keywordMajor>Goo</keywordMajor> for each enemy champion hit.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<charge>Begin Charging:</charge> Zac pulls himself taut, charging up a dash over @Effect4Amount@ seconds.<release>Release:</release> Zac launches himself and <status>Knocks Up</status> enemies where he lands for up to @MaxStun@ second (based on charge time), dealing them <magicDamage>@Damage@ magic damage</magicDamage>. Zac spawns an extra chunk of <keywordMajor>Goo</keywordMajor> for each enemy champion hit.@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,
@@ -891,7 +891,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Zac bounces four times, knocking up enemies hit and slowing them.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> <spellName>Cell Division</spellName> healing is increased to <healing>@PassiveHealingTotalTooltip@ Health</healing> per <keywordMajor>Goo</keywordMajor> chunk.<br><br><spellActive>Active:</spellActive> Zac bounces @Bounces@ times. The first bounce to hit each enemy <status>Knocks</status> them back and deals <magicDamage>@DamagePerBounce@ magic damage</magicDamage>. Subsequent bounces deal <magicDamage>@DamagePerSubsequentBounce@ magic damage</magicDamage> and <status>Slow</status> by @SlowAmount*100@% for @SlowDuration@ second.<br><br>Zac gains up to <speed>@EndingMS*100@% Move Speed</speed> over time and can cast <spellName>Unstable Matter</spellName> while bouncing.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> <spellName>Cell Division</spellName> healing is increased to <healing>@PassiveHealingTotalTooltip@ Health</healing> per <keywordMajor>Goo</keywordMajor> chunk.<spellActive>Active:</spellActive> Zac bounces @Bounces@ times. The first bounce to hit each enemy <status>Knocks</status> them back and deals <magicDamage>@DamagePerBounce@ magic damage</magicDamage>. Subsequent bounces deal <magicDamage>@DamagePerSubsequentBounce@ magic damage</magicDamage> and <status>Slow</status> by @SlowAmount*100@% for @SlowDuration@ second.Zac gains up to <speed>@EndingMS*100@% Move Speed</speed> over time and can cast <spellName>Unstable Matter</spellName> while bouncing.@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,

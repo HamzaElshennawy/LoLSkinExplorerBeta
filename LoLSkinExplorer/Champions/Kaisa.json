@@ -832,8 +832,8 @@
 "abilityVideoImagePath": "champion-abilities/0145/ability_0145_Q1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Kai'Sa shoots a swarm of missiles that seek out nearby targets.<br><br>Living Weapon: Icathian Rain is upgraded to shoot more missiles.",
-"dynamicDescription": "Kai'Sa launches @Effect2Amount@ missiles that split among nearby enemies, each dealing @TotalIndividualMissileDamage@ physical damage. Additional hits on champions or monsters deal @Effect3Amount*100@% damage.<br><br><keywordMajor>Evolved</keywordMajor>: Kai'Sa instead fires @Effect7Amount@ missiles.<br>Current: @f11@/@Effect6Amount@ Bonus Attack Damage@SpellModifierDescriptionAppend@",
+"description": "Kai'Sa shoots a swarm of missiles that seek out nearby targets.Living Weapon: Icathian Rain is upgraded to shoot more missiles.",
+"dynamicDescription": "Kai'Sa launches @Effect2Amount@ missiles that split among nearby enemies, each dealing @TotalIndividualMissileDamage@ physical damage. Additional hits on champions or monsters deal @Effect3Amount*100@% damage.<keywordMajor>Evolved</keywordMajor>: Kai'Sa instead fires @Effect7Amount@ missiles.Current: @f11@/@Effect6Amount@ Bonus Attack Damage@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,
@@ -982,8 +982,8 @@
 "abilityVideoImagePath": "champion-abilities/0145/ability_0145_W1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Kai'Sa shoots a long range missile, marking enemies with her passive.<br><br>Living Weapon: Void Seeker is upgraded to apply more passive marks and reduce cooldown on champion hit.",
-"dynamicDescription": "Kai'Sa fires a void blast that deals <magicDamage>@TotalDamage@ magic damage</magicDamage>, applies @Effect4Amount@ stacks of <keywordMajor>Plasma</keywordMajor>, and grants <keywordStealth>True Sight</keywordStealth> of the first enemy hit for @spell.KaisaPassive:PDuration@ seconds.<br><br><keywordMajor>Evolved</keywordMajor>: Kai'Sa instead applies @Effect5Amount@ stacks of <keywordMajor>Plasma</keywordMajor> and hitting a champion reduces the Cooldown by @Effect3Amount@%.<br>Current: <scaleAP>@f2@/@Effect2Amount@ Ability Power</scaleAP>@SpellModifierDescriptionAppend@",
+"description": "Kai'Sa shoots a long range missile, marking enemies with her passive.Living Weapon: Void Seeker is upgraded to apply more passive marks and reduce cooldown on champion hit.",
+"dynamicDescription": "Kai'Sa fires a void blast that deals <magicDamage>@TotalDamage@ magic damage</magicDamage>, applies @Effect4Amount@ stacks of <keywordMajor>Plasma</keywordMajor>, and grants <keywordStealth>True Sight</keywordStealth> of the first enemy hit for @spell.KaisaPassive:PDuration@ seconds.<keywordMajor>Evolved</keywordMajor>: Kai'Sa instead applies @Effect5Amount@ stacks of <keywordMajor>Plasma</keywordMajor> and hitting a champion reduces the Cooldown by @Effect3Amount@%.Current: <scaleAP>@f2@/@Effect2Amount@ Ability Power</scaleAP>@SpellModifierDescriptionAppend@",
 "range": [
 3000,
 3000,
@@ -1132,8 +1132,8 @@
 "abilityVideoImagePath": "champion-abilities/0145/ability_0145_E1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Kai'Sa briefly increases her Move Speed, then increases her Attack Speed.<br><br>Living Weapon: Supercharge is upgraded to briefly grant Invisibility.",
-"dynamicDescription": "Kai'Sa supercharges her void energy, gaining <speed>@TotalMoveSpeed@ Move Speed</speed> and becoming Ghosted while charging, then gaining <attackSpeed>@Effect5Amount*100@% Attack Speed</attackSpeed> for @Effect2Amount@ seconds.<br><br>Attacks reduce this Ability's Cooldown by @Effect4Amount@ seconds.<br><br><keywordMajor>Evolved</keywordMajor>: Kai'Sa also becomes <keywordStealth>Invisible</keywordStealth> for @Effect7Amount@ seconds.<br>Current: <attackSpeed>@f10@/@Effect6Amount@% Bonus Attack Speed</attackSpeed>@SpellModifierDescriptionAppend@",
+"description": "Kai'Sa briefly increases her Move Speed, then increases her Attack Speed.Living Weapon: Supercharge is upgraded to briefly grant Invisibility.",
+"dynamicDescription": "Kai'Sa supercharges her void energy, gaining <speed>@TotalMoveSpeed@ Move Speed</speed> and becoming Ghosted while charging, then gaining <attackSpeed>@Effect5Amount*100@% Attack Speed</attackSpeed> for @Effect2Amount@ seconds.Attacks reduce this Ability's Cooldown by @Effect4Amount@ seconds.<keywordMajor>Evolved</keywordMajor>: Kai'Sa also becomes <keywordStealth>Invisible</keywordStealth> for @Effect7Amount@ seconds.Current: <attackSpeed>@f10@/@Effect6Amount@% Bonus Attack Speed</attackSpeed>@SpellModifierDescriptionAppend@",
 "range": [
 1,
 1,

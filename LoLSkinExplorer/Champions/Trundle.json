@@ -392,7 +392,7 @@
 "id": 170
 }
 ],
-"description": "Teenage nightmare Trundle leaves everything distressed<br>But he won't lift a finger cleaning up his mess<br>Howling, growling, scowling, his chores he won't address,<br>For he has a team (or two) of Scareball players to impress!"
+"description": "Teenage nightmare Trundle leaves everything distressedBut he won't lift a finger cleaning up his messHowling, growling, scowling, his chores he won't address,For he has a team (or two) of Scareball players to impress!"
 }
 ],
 "passive": {
@@ -412,7 +412,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Trundle bites his opponent, dealing damage, briefly slowing and sapping some of their Attack Damage.",
-"dynamicDescription": "Trundle's next Attack deals an additional @TotalDamage@ physical damage and briefly <status>Slows</status> by @Effect7Amount*100@%, then Trundle gains @Effect3Amount@ Attack Damage for @Effect6Amount@ seconds and the enemy loses @Effect3Amount*0.5@ Attack Damage for the same duration.<br><br><rules>This Ability triggers spell effects upon dealing damage.</rules>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Trundle's next Attack deals an additional @TotalDamage@ physical damage and briefly <status>Slows</status> by @Effect7Amount*100@%, then Trundle gains @Effect3Amount@ Attack Damage for @Effect6Amount@ seconds and the enemy loses @Effect3Amount*0.5@ Attack Damage for the same duration.<rules>This Ability triggers spell effects upon dealing damage.</rules>@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,

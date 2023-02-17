@@ -393,7 +393,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Volibear gains speed towards enemies, <status>Stunning</status> and damaging the first one he Attacks.",
-"dynamicDescription": "Volibear gains <speed>@MinSpeedCalc@ Move Speed</speed>, doubled to <speed>@MaxSpeedCalc@</speed> towards enemy champions for the next @Duration@ seconds. While active, Volibear's next Attack deals @CalculatedDamage@ physical damage and <status>Stuns</status> the target for @StunDuration@ second.<br><br>Volibear becomes enraged if an enemy <status>Immobilizes</status> him before he <status>Stuns</status> a target, ending the Ability early but refreshing its Cooldown.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Volibear gains <speed>@MinSpeedCalc@ Move Speed</speed>, doubled to <speed>@MaxSpeedCalc@</speed> towards enemy champions for the next @Duration@ seconds. While active, Volibear's next Attack deals @CalculatedDamage@ physical damage and <status>Stuns</status> the target for @StunDuration@ second.Volibear becomes enraged if an enemy <status>Immobilizes</status> him before he <status>Stuns</status> a target, ending the Ability early but refreshing its Cooldown.@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,
@@ -543,7 +543,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Volibear damages an enemy, applying on-hit effects and marking them.  Casting this ability again on the same target deals bonus damage and Heals Volibear.",
-"dynamicDescription": "Volibear mauls an enemy, dealing @TotalDamage@ physical damage and marking them for @MarkDuration@ seconds.<br><br>If this Ability is used on a marked target, its damage is increased to @EmpoweredDamage@ and Volibear restores <healing>@BaseHeal@ plus @PercentMissingHealthHealingRatio@ missing Health</healing>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Volibear mauls an enemy, dealing @TotalDamage@ physical damage and marking them for @MarkDuration@ seconds.If this Ability is used on a marked target, its damage is increased to @EmpoweredDamage@ and Volibear restores <healing>@BaseHeal@ plus @PercentMissingHealthHealingRatio@ missing Health</healing>.@SpellModifierDescriptionAppend@",
 "range": [
 325,
 325,
@@ -693,7 +693,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Volibear summons a lightning bolt at a location, dealing damage and Slowing enemies while granting Volibear a Shield if he's inside the blast radius.",
-"dynamicDescription": "Volibear summons a thundercloud that fires a lightning bolt, dealing <magicDamage>@TotalDamageTooltip@ plus @PercentDamage*100@% max Health magic damage</magicDamage> and <status>Slowing</status> by @SlowAmount*100@% for @SlowDuration@ seconds.<br><br>If Volibear is inside the blast zone, he gains a <shield>@ShieldAPRatioTooltip@ plus @ShieldAmount*100@% max Health Shield</shield> for @ShieldDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Volibear summons a thundercloud that fires a lightning bolt, dealing <magicDamage>@TotalDamageTooltip@ plus @PercentDamage*100@% max Health magic damage</magicDamage> and <status>Slowing</status> by @SlowAmount*100@% for @SlowDuration@ seconds.If Volibear is inside the blast zone, he gains a <shield>@ShieldAPRatioTooltip@ plus @ShieldAmount*100@% max Health Shield</shield> for @ShieldDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 1200,
 1200,
@@ -843,7 +843,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Volibear leaps to a target location, Slowing and damaging enemies beneath him while gaining bonus Health.  Enemy towers near his landing location become temporarily disabled.",
-"dynamicDescription": "Volibear transforms and leaps, gaining <healing>@HealthAmount@ Health</healing> and @BonusAttackRange@ Attack Range for the next @TransformDuration@ seconds.<br><br>Upon landing, Volibear cracks the earth, <status>Disabling</status> nearby towers for @TowerDisableDuration@ seconds and dealing @TowerDamageTooltip@ physical damage to them. Nearby enemies are <status>Slowed</status> by @SlowAmount*100@%, decaying over 1 second. Enemies directly underneath Volibear suffer @SweetSpotDamageTooltip@ physical damage.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Volibear transforms and leaps, gaining <healing>@HealthAmount@ Health</healing> and @BonusAttackRange@ Attack Range for the next @TransformDuration@ seconds.Upon landing, Volibear cracks the earth, <status>Disabling</status> nearby towers for @TowerDisableDuration@ seconds and dealing @TowerDamageTooltip@ physical damage to them. Nearby enemies are <status>Slowed</status> by @SlowAmount*100@%, decaying over 1 second. Enemies directly underneath Volibear suffer @SweetSpotDamageTooltip@ physical damage.@SpellModifierDescriptionAppend@",
 "range": [
 550,
 550,

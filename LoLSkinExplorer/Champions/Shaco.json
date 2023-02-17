@@ -208,7 +208,7 @@
 "id": 41
 }
 ],
-"description": "Last is the Jester, the wiliest sort<br>Obscured and forgotten by time,<br>Yet always much nearer than one might expect,<br>Stalking, closely, behind."
+"description": "Last is the Jester, the wiliest sortObscured and forgotten by time,Yet always much nearer than one might expect,Stalking, closely, behind."
 },
 {
 "id": 35008,
@@ -762,8 +762,8 @@
 "abilityVideoImagePath": "champion-abilities/0035/ability_0035_Q1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Shaco becomes Invisible and teleports to target location.<br><br>His first attack while Invisible is empowered, dealing bonus damage and critically striking if he attacks from behind.",
-"dynamicDescription": "Shaco teleports and becomes <keywordStealth>Invisible</keywordStealth> for @StealthDuration@ seconds. Using <spellName>Jack In The Box</spellName> or <spellName>Hallucinate</spellName> does not break <keywordStealth>Invisibility</keywordStealth>.<br><br>Shaco's next Attack while <keywordStealth>Invisible</keywordStealth> deals an additional @TotalDamage@ physical damage. If striking from behind, this Attack critically strikes for @QCritDamageMod@ damage.@SpellModifierDescriptionAppend@",
+"description": "Shaco becomes Invisible and teleports to target location.His first attack while Invisible is empowered, dealing bonus damage and critically striking if he attacks from behind.",
+"dynamicDescription": "Shaco teleports and becomes <keywordStealth>Invisible</keywordStealth> for @StealthDuration@ seconds. Using <spellName>Jack In The Box</spellName> or <spellName>Hallucinate</spellName> does not break <keywordStealth>Invisibility</keywordStealth>.Shaco's next Attack while <keywordStealth>Invisible</keywordStealth> deals an additional @TotalDamage@ physical damage. If striking from behind, this Attack critically strikes for @QCritDamageMod@ damage.@SpellModifierDescriptionAppend@",
 "range": [
 400,
 400,
@@ -913,7 +913,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Shaco creates a hidden animated Jack-in-the-Box. When triggered, it will fear and attack nearby enemies.",
-"dynamicDescription": "Shaco creates a trap that stealths itself after @Effect5Amount@ seconds and lasts for @TrapDuration@ seconds. It activates when an enemy comes near or when revealed, <status>Fearing</status> nearby enemy Champions for @Effect3Amount@ seconds, or @MinionFearDuration@ seconds for minions and jungle monsters.<br><br>Once activated, the trap fires at all nearby enemies for 5 seconds, dealing <magicDamage>@AoEDamage@ magic damage</magicDamage>, or <magicDamage>@STDamage@ damage</magicDamage> if focused on a single target.<br><br>Jack in the Box's attacks deal an additional <magicDamage>@MonsterBonusDamage@</magicDamage> damage to monsters.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Shaco creates a trap that stealths itself after @Effect5Amount@ seconds and lasts for @TrapDuration@ seconds. It activates when an enemy comes near or when revealed, <status>Fearing</status> nearby enemy Champions for @Effect3Amount@ seconds, or @MinionFearDuration@ seconds for minions and jungle monsters.Once activated, the trap fires at all nearby enemies for 5 seconds, dealing <magicDamage>@AoEDamage@ magic damage</magicDamage>, or <magicDamage>@STDamage@ damage</magicDamage> if focused on a single target.Jack in the Box's attacks deal an additional <magicDamage>@MonsterBonusDamage@</magicDamage> damage to monsters.@SpellModifierDescriptionAppend@",
 "range": [
 500,
 500,
@@ -1063,7 +1063,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Shaco's Shivs passively poison targets on hit, slowing their Move Speed. He can throw his Shivs to deal damage and poison the target. The thrown Shiv deals bonus damage if the target is below 30% health.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> While this Ability is off Cooldown, Shaco's Attacks <status>Slow</status> the target by @SlowAmount*-100@% for @SlowDurationPassive@ seconds.<br><br><spellActive>Active:</spellActive> Shaco throws a shiv, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Slowing</status> by @SlowAmount*-100@% for @SlowDurationActive@ seconds. If the target has less than @ExecuteHealthThreshold*100@% Health, the shiv deals <magicDamage>@TotalExecuteDamage@ damage</magicDamage> instead.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> While this Ability is off Cooldown, Shaco's Attacks <status>Slow</status> the target by @SlowAmount*-100@% for @SlowDurationPassive@ seconds.<spellActive>Active:</spellActive> Shaco throws a shiv, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Slowing</status> by @SlowAmount*-100@% for @SlowDurationActive@ seconds. If the target has less than @ExecuteHealthThreshold*100@% Health, the shiv deals <magicDamage>@TotalExecuteDamage@ damage</magicDamage> instead.@SpellModifierDescriptionAppend@",
 "range": [
 625,
 625,
@@ -1213,7 +1213,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Shaco creates an illusion of himself near him, which can attack nearby enemies (Deals reduced damage to turrets).  Upon death, it explodes, spawning three mini Jack in the Boxes and dealing damage to nearby enemies.",
-"dynamicDescription": "Shaco briefly disappears, then reappears with a clone that lasts @CloneLifetime@ seconds and detonates when it dies, dealing <magicDamage>@ExplosionTotalDamage@ magic damage</magicDamage> and spawning three mini <spellName>Jack in the Boxes</spellName> that trigger immediately. The clone deals @CloneAADamagePercent*100@% of Shaco's damage and receives @CloneIncomingDamagePercent*100@% increased damage.<br><br>Mini <spellName>Jack in the Boxes</spellName> deal <magicDamage>@AoEDamage@ magic damage</magicDamage>, or <magicDamage>@STDamage@ magic damage</magicDamage> if firing at only one enemy, and <status>Fear</status> for @BoxFearDuration@ second.<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Shaco briefly disappears, then reappears with a clone that lasts @CloneLifetime@ seconds and detonates when it dies, dealing <magicDamage>@ExplosionTotalDamage@ magic damage</magicDamage> and spawning three mini <spellName>Jack in the Boxes</spellName> that trigger immediately. The clone deals @CloneAADamagePercent*100@% of Shaco's damage and receives @CloneIncomingDamagePercent*100@% increased damage.Mini <spellName>Jack in the Boxes</spellName> deal <magicDamage>@AoEDamage@ magic damage</magicDamage>, or <magicDamage>@STDamage@ magic damage</magicDamage> if firing at only one enemy, and <status>Fear</status> for @BoxFearDuration@ second.@SpellModifierDescriptionAppend@",
 "range": [
 200,
 200,

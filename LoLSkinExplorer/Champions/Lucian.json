@@ -923,7 +923,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Lucian shoots a bolt of piercing light through a target.",
-"dynamicDescription": "Lucian shoots a bolt of piercing light, dealing @TotalDamage@ physical damage.<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Lucian shoots a bolt of piercing light, dealing @TotalDamage@ physical damage.@SpellModifierDescriptionAppend@",
 "range": [
 500,
 500,
@@ -1073,7 +1073,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Lucian shoots a missile that explodes in a star shape, marking and briefly revealing enemies. Lucian gains Move Speed for attacking marked enemies.",
-"dynamicDescription": "Lucian fires a shot that explodes at the end of its range or on the first enemy hit, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>, briefly revealing enemies and marking them for 6 seconds.<br><br>When Lucian or an ally damages a marked enemy, Lucian gains <speed>@Effect2Amount@ Move Speed</speed> for 1 second. Allies triggering this effect will also grant Lucian <attention>Vigilance</attention>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Lucian fires a shot that explodes at the end of its range or on the first enemy hit, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>, briefly revealing enemies and marking them for 6 seconds.When Lucian or an ally damages a marked enemy, Lucian gains <speed>@Effect2Amount@ Move Speed</speed> for 1 second. Allies triggering this effect will also grant Lucian <attention>Vigilance</attention>.@SpellModifierDescriptionAppend@",
 "range": [
 900,
 900,
@@ -1223,7 +1223,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Lucian quickly dashes a short distance. Lightslinger attacks reduce Relentless Pursuit's cooldown.",
-"dynamicDescription": "Lucian dashes.<br><br>Cooldown is reduced by @Effect1Amount@ second whenever Lucian hits an enemy with <spellName>Lightslinger</spellName> (@Effect2Amount@ seconds for champions). @SpellModifierDescriptionAppend@",
+"dynamicDescription": "Lucian dashes.Cooldown is reduced by @Effect1Amount@ second whenever Lucian hits an enemy with <spellName>Lightslinger</spellName> (@Effect2Amount@ seconds for champions). @SpellModifierDescriptionAppend@",
 "range": [
 445,
 445,
@@ -1373,7 +1373,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Lucian unleashes a torrent of shots from his weapons.",
-"dynamicDescription": "Lucian rapidly fires <keywordMajor>@TotalNumShots@</keywordMajor> shots in a direction for @Duration@ seconds or until he <recast>Recasts</recast>. Each shot deals @DamagePerBullet@ physical damage to the first enemy hit.<br><br>While firing, Lucian may use <spellName>Relentless Pursuit</spellName>.<br><br>Total Damage: @TotalDamage@ physical damage<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Lucian rapidly fires <keywordMajor>@TotalNumShots@</keywordMajor> shots in a direction for @Duration@ seconds or until he <recast>Recasts</recast>. Each shot deals @DamagePerBullet@ physical damage to the first enemy hit.While firing, Lucian may use <spellName>Relentless Pursuit</spellName>.Total Damage: @TotalDamage@ physical damage@SpellModifierDescriptionAppend@",
 "range": [
 1400,
 1400,

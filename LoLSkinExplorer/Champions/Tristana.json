@@ -1277,7 +1277,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Tristana fires at the ground to propel her to a distant location, dealing damage and slowing surrounding units for a brief period where she lands.",
-"dynamicDescription": "Tristana launches herself, dealing <magicDamage>@LandingDamage@ magic damage</magicDamage> and <status>Slowing</status> by @Effect3Amount*-100@% for @Effect2Amount@ seconds upon landing.<br><br>Champion takedowns and max stack <spellName>Explosive Charge</spellName> detonations on champions refresh this Ability's Cooldown.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Tristana launches herself, dealing <magicDamage>@LandingDamage@ magic damage</magicDamage> and <status>Slowing</status> by @Effect3Amount*-100@% for @Effect2Amount@ seconds upon landing.Champion takedowns and max stack <spellName>Explosive Charge</spellName> detonations on champions refresh this Ability's Cooldown.@SpellModifierDescriptionAppend@",
 "range": [
 900,
 900,
@@ -1427,7 +1427,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "When Tristana kills a unit, her cannonballs burst into shrapnel, dealing damage to surrounding enemies. Can be activated to place a bomb on a target enemy that explodes after a short duration dealing damage to surrounding units.",
-"dynamicDescription": "<spellPassive>Passive: </spellPassive>Tristana's Attacks that kill enemies deal <magicDamage>@PassiveDamage@ magic damage</magicDamage> to surrounding enemies.<br><br><spellActive>Active:</spellActive> Tristana attaches a bomb to an enemy or turret that deals @ActiveDamage@ physical damage to surrounding enemies after @ActiveDuration@ seconds. The damage is increased by @CritChanceAmp*100@% Critical Strike Chance and by @ActivePerStackAmp*100@% each time Tristana hits an Attack or Ability (max 4 stacks).<br><br>At @ActiveMaxStacks@ stacks, the bomb explodes immediately (max @ActiveMaxDamage@ physical damage).@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive: </spellPassive>Tristana's Attacks that kill enemies deal <magicDamage>@PassiveDamage@ magic damage</magicDamage> to surrounding enemies.<spellActive>Active:</spellActive> Tristana attaches a bomb to an enemy or turret that deals @ActiveDamage@ physical damage to surrounding enemies after @ActiveDuration@ seconds. The damage is increased by @CritChanceAmp*100@% Critical Strike Chance and by @ActivePerStackAmp*100@% each time Tristana hits an Attack or Ability (max 4 stacks).At @ActiveMaxStacks@ stacks, the bomb explodes immediately (max @ActiveMaxDamage@ physical damage).@SpellModifierDescriptionAppend@",
 "range": [
 550,
 550,

@@ -160,7 +160,7 @@
 "id": 94
 }
 ],
-"description": "And I think it's gonna be a long, long time<br>'Til touchdown brings me round again to find<br>I've stepped on another Teemo landmine!<br>Oh, no no no!"
+"description": "And I think it's gonna be a long, long time'Til touchdown brings me round again to findI've stepped on another Teemo landmine!Oh, no no no!"
 },
 {
 "id": 17005,
@@ -1233,7 +1233,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Teemo scampers around, passively increasing his Move Speed until he is struck by an enemy champion or turret. Teemo can sprint to gain bonus Move Speed that isn't stopped by being struck for a short time.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Teemo gains <speed>@PassiveMSBonus*100@% Move Speed</speed> while he hasn't been damaged by a champion or turret in the last 5 seconds.<br><br><spellActive>Active:</spellActive> Teemo sprints, gaining <speed>@PassiveMSBonus*200@% Move Speed</speed> that is not lost when struck for @MSBuffDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Teemo gains <speed>@PassiveMSBonus*100@% Move Speed</speed> while he hasn't been damaged by a champion or turret in the last 5 seconds.<spellActive>Active:</spellActive> Teemo sprints, gaining <speed>@PassiveMSBonus*200@% Move Speed</speed> that is not lost when struck for @MSBuffDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 20,
 20,
@@ -1533,7 +1533,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Teemo throws an explosive poisonous trap using one of the mushrooms stored in his pack. If an enemy steps on the trap, it will release a poisonous cloud, slowing enemies and damaging them over time. If Teemo throws a mushroom onto another mushroom it will bounce, gaining additional range.",
-"dynamicDescription": "Teemo tosses a mushroom trap that detonates when stepped on. The traps <status>Slow</status> by @SlowAmount@% and deal <magicDamage>@TotalDamage@ magic damage</magicDamage> over @DebuffDuration@ seconds. Enemies are revealed for the same duration.<br><br>Traps last @MushroomDuration@ minutes and are stealthed. A mushroom tossed onto another mushroom bounces before landing at its position. This Ability has @MaxAmmo@ charges (@AmmoRechargeTime@ second refresh).<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Teemo tosses a mushroom trap that detonates when stepped on. The traps <status>Slow</status> by @SlowAmount@% and deal <magicDamage>@TotalDamage@ magic damage</magicDamage> over @DebuffDuration@ seconds. Enemies are revealed for the same duration.Traps last @MushroomDuration@ minutes and are stealthed. A mushroom tossed onto another mushroom bounces before landing at its position. This Ability has @MaxAmmo@ charges (@AmmoRechargeTime@ second refresh).@SpellModifierDescriptionAppend@",
 "range": [
 600,
 750,

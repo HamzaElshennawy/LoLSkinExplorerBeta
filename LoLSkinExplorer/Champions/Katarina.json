@@ -848,7 +848,7 @@
 "abilityIconPath": "Characters/Katarina/HUD/Icons2D/Katarina_Passive.png",
 "abilityVideoPath": "champion-abilities/0055/ability_0055_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0055/ability_0055_P1.jpg",
-"description": "Whenever an enemy champion dies that Katarina has damaged recently, her remaining ability cooldowns are dramatically reduced.<br><br>If Katarina picks up a <font color='#FFF673'>Dagger</font>, she uses it to slash through all nearby enemies, dealing magic damage."
+"description": "Whenever an enemy champion dies that Katarina has damaged recently, her remaining ability cooldowns are dramatically reduced.If Katarina picks up a <font color='#FFF673'>Dagger, she uses it to slash through all nearby enemies, dealing magic damage."
 },
 "spells": [
 {
@@ -859,7 +859,7 @@
 "abilityVideoImagePath": "champion-abilities/0055/ability_0055_Q1.jpg",
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Katarina throws a <font color='#FFF673'>Dagger</font> at the target that then bounces to nearby enemies before ricocheting onto the ground.",
+"description": "Katarina throws a <font color='#FFF673'>Dagger at the target that then bounces to nearby enemies before ricocheting onto the ground.",
 "dynamicDescription": "Katarina throws a <keywordMajor>Dagger</keywordMajor>, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> to the target and @MaxBounces@ nearby enemies. The <keywordMajor>Dagger</keywordMajor> then ricochets onto the ground behind the primary target.@SpellModifierDescriptionAppend@",
 "range": [
 625,
@@ -1009,7 +1009,7 @@
 "abilityVideoImagePath": "champion-abilities/0055/ability_0055_W1.jpg",
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Katarina gains a burst of Move Speed, tossing a <font color='#FFF673'>Dagger</font> into the air directly above herself.",
+"description": "Katarina gains a burst of Move Speed, tossing a <font color='#FFF673'>Dagger into the air directly above herself.",
 "dynamicDescription": "Katarina tosses a <keywordMajor>Dagger</keywordMajor> into the air and gains <speed>@Effect4Amount@% Move Speed</speed> decaying over @Effect2Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 25000,
@@ -1160,7 +1160,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Katarina blinks to the target, striking it if its an enemy, or striking the nearest enemy otherwise.",
-"dynamicDescription": "Katarina dashes in the blink of an eye to the target ally, enemy, or <keywordMajor>Dagger</keywordMajor>. If it is an enemy, Katarina strikes for <magicDamage>@TotalDamage@ magic damage</magicDamage> - otherwise she strikes the nearest enemy in range.<br><br>Picking up a <keywordMajor>Dagger</keywordMajor> will reduce this Ability's Cooldown by <scaleLevel>@DaggerCooldownReduction@</scaleLevel> seconds (<scaleLevel>@TooltipDaggerReduction@</scaleLevel>).<br><br><rules>Katarina can blink to any location near the target.</rules>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Katarina dashes in the blink of an eye to the target ally, enemy, or <keywordMajor>Dagger</keywordMajor>. If it is an enemy, Katarina strikes for <magicDamage>@TotalDamage@ magic damage</magicDamage> - otherwise she strikes the nearest enemy in range.Picking up a <keywordMajor>Dagger</keywordMajor> will reduce this Ability's Cooldown by <scaleLevel>@DaggerCooldownReduction@</scaleLevel> seconds (<scaleLevel>@TooltipDaggerReduction@</scaleLevel>).<rules>Katarina can blink to any location near the target.</rules>@SpellModifierDescriptionAppend@",
 "range": [
 725,
 725,
@@ -1310,7 +1310,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Katarina becomes a flurry of blades, dealing massive magic damage while she channels to the 3 nearest enemy champions.",
-"dynamicDescription": "Katarina becomes a flurry of blades, rapidly attacking the three nearest enemy champions with a flurry of knives. Each knife deals <magicDamage>@DamageCalc@ magic damage</magicDamage> and @ADDamageCalc@ physical damage, and applies @GrievousAmount*100@% Grievous Wounds for @GrievousDuration@ seconds.<br><br>Total over @Duration@ seconds to each enemy: <magicDamage>@TotalDamageCalc@ magic damage</magicDamage> and @TotalADDamageCalc@ physical damage.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Katarina becomes a flurry of blades, rapidly attacking the three nearest enemy champions with a flurry of knives. Each knife deals <magicDamage>@DamageCalc@ magic damage</magicDamage> and @ADDamageCalc@ physical damage, and applies @GrievousAmount*100@% Grievous Wounds for @GrievousDuration@ seconds.Total over @Duration@ seconds to each enemy: <magicDamage>@TotalDamageCalc@ magic damage</magicDamage> and @TotalADDamageCalc@ physical damage.@SpellModifierDescriptionAppend@",
 "range": [
 550,
 550,

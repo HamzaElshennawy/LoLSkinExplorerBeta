@@ -891,7 +891,7 @@
       "cost": "No Cost",
       "cooldown": "@Cooldown@s %i:cooldown%",
       "description": "Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction.",
-      "dynamicDescription": "<spellPassive>Passive:</spellPassive> Aatrox gains <lifeSteal>@ESpellVamp@% Omnivamp</lifeSteal> against champions, increased to <lifeSteal>@ESpellVampEmpowered@% Omnivamp</lifeSteal> during <keywordMajor>World Ender</keywordMajor>.<br><br><spellActive>Active:</spellActive> Aatrox dashes. He can use this Ability while winding up his other Abilities.@SpellModifierDescriptionAppend@",
+      "dynamicDescription": "<spellPassive>Passive:</spellPassive> Aatrox gains <lifeSteal>@ESpellVamp@% Omnivamp</lifeSteal> against champions, increased to <lifeSteal>@ESpellVampEmpowered@% Omnivamp</lifeSteal> during <keywordMajor>World Ender</keywordMajor>.<spellActive>Active:</spellActive> Aatrox dashes. He can use this Ability while winding up his other Abilities.@SpellModifierDescriptionAppend@",
       "range": [
         25000,
         25000,
@@ -1041,7 +1041,7 @@
       "cost": "No Cost",
       "cooldown": "@Cooldown@s %i:cooldown%",
       "description": "Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended.",
-      "dynamicDescription": "Aatrox reveals his true demonic form, <status>Fearing</status> nearby minions for @RMinionFearDuration@ seconds and gaining <speed>@RMovementSpeedBonus*100@% Move Speed</speed> decaying over @RDuration@ seconds. He also gains <scaleAD>@RTotalADAmp*100@% Attack Damage</scaleAD> and increases <healing>self-healing by @RHealingAmp*100@%</healing> for the duration.<br><br>Champion takedowns extend the duration of this effect by @RExtension@ seconds and refresh the <speed>Move Speed</speed> effect.@SpellModifierDescriptionAppend@",
+      "dynamicDescription": "Aatrox reveals his true demonic form, <status>Fearing</status> nearby minions for @RMinionFearDuration@ seconds and gaining <speed>@RMovementSpeedBonus*100@% Move Speed</speed> decaying over @RDuration@ seconds. He also gains <scaleAD>@RTotalADAmp*100@% Attack Damage</scaleAD> and increases <healing>self-healing by @RHealingAmp*100@%</healing> for the duration.Champion takedowns extend the duration of this effect by @RExtension@ seconds and refresh the <speed>Move Speed</speed> effect.@SpellModifierDescriptionAppend@",
       "range": [
         25000,
         25000,

@@ -749,7 +749,7 @@
 "id": 170
 }
 ],
-"description": "Awful Orphan Annie comes home from school each day<br>A lonely little lady with whom no one will play<br>Now all her family's fled (or dead or gone away)<br>She can depend on Mr. Tibbers to make her new friends stay!"
+"description": "Awful Orphan Annie comes home from school each dayA lonely little lady with whom no one will playNow all her family's fled (or dead or gone away)She can depend on Mr. Tibbers to make her new friends stay!"
 }
 ],
 "passive": {
@@ -1069,7 +1069,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Grants Annie or an ally a shield, a burst of Move Speed, and damages enemies who attack her with basic attacks.",
-"dynamicDescription": "Annie grants herself or an ally <shield>@ShieldBlockTotal@ Shield</shield> for @ShieldDuration@ seconds and <speed>@MoveSpeedCalc@ Move Speed</speed> decaying over @MovementSpeedDuration@ seconds. While the shield holds, enemies who Attack it take <magicDamage>@DamageReturn@ magic damage</magicDamage>.<br><br>Tibbers always gains the effects of Molten Shield if summoned.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Annie grants herself or an ally <shield>@ShieldBlockTotal@ Shield</shield> for @ShieldDuration@ seconds and <speed>@MoveSpeedCalc@ Move Speed</speed> decaying over @MovementSpeedDuration@ seconds. While the shield holds, enemies who Attack it take <magicDamage>@DamageReturn@ magic damage</magicDamage>.Tibbers always gains the effects of Molten Shield if summoned.@SpellModifierDescriptionAppend@",
 "range": [
 800,
 800,
@@ -1219,7 +1219,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Annie wills her bear Tibbers to life, dealing damage to units in the area. Tibbers can attack and also burns enemies that stand near him.",
-"dynamicDescription": "Annie summons her bear Tibbers, dealing <magicDamage>@InitialBurstDamage@ magic damage</magicDamage>. For the next @TibbersLifetime@ seconds, Tibbers burns nearby enemies for <magicDamage>@TibbersAuraDamage@ magic damage per second</magicDamage> and his Attacks deal <magicDamage>@TibbersAADamage@ magic damage</magicDamage>. Annie can <recast>Recast</recast> this ability to direct Tibbers.<br><br>Tibbers becomes enraged when summoned, if Annie stuns an enemy champion, and if Annie dies. When enraged, Tibbers gains <attackSpeed>275% Attack Speed</attackSpeed> and <speed>100% Move Speed</speed> decaying over 3 seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Annie summons her bear Tibbers, dealing <magicDamage>@InitialBurstDamage@ magic damage</magicDamage>. For the next @TibbersLifetime@ seconds, Tibbers burns nearby enemies for <magicDamage>@TibbersAuraDamage@ magic damage per second</magicDamage> and his Attacks deal <magicDamage>@TibbersAADamage@ magic damage</magicDamage>. Annie can <recast>Recast</recast> this ability to direct Tibbers.Tibbers becomes enraged when summoned, if Annie stuns an enemy champion, and if Annie dies. When enraged, Tibbers gains <attackSpeed>275% Attack Speed</attackSpeed> and <speed>100% Move Speed</speed> decaying over 3 seconds.@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,

@@ -793,7 +793,7 @@
 "abilityIconPath": "Characters/Amumu/HUD/Icons2D/Amumu_Passive.png",
 "abilityVideoPath": "",
 "abilityVideoImagePath": "",
-"description": "Amumu's basic attacks <font color='#9b0f5f'>Curse</font> his enemies, causing them to take bonus true damage from incoming magic damage."
+"description": "Amumu's basic attacks <font color='#9b0f5f'>Curse his enemies, causing them to take bonus true damage from incoming magic damage."
 },
 "spells": [
 {
@@ -805,7 +805,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@AmmoRechargeTime@s Recharge (@Cooldown@s %i:cooldown%)",
 "description": "Amumu tosses a sticky bandage at a target, stunning and damaging the target while he pulls himself to them.",
-"dynamicDescription": "Amumu launches a bandage, pulling himself to the first enemy hit, <status>Stunning</status> them for @Effect2Amount@ second, and dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>.<br><br>This Ability has 2 charges.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Amumu launches a bandage, pulling himself to the first enemy hit, <status>Stunning</status> them for @Effect2Amount@ second, and dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>.This Ability has 2 charges.@SpellModifierDescriptionAppend@",
 "range": [
 1100,
 1100,
@@ -954,7 +954,7 @@
 "abilityVideoImagePath": "champion-abilities/0032/ability_0032_W1.jpg",
 "cost": "@Cost@ @AbilityResourceName@ per Second",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Overcome by anguish, nearby enemies lose a percentage of their maximum Health each second and have their <font color='#9b0f5f'>Curses</font> refreshed.",
+"description": "Overcome by anguish, nearby enemies lose a percentage of their maximum Health each second and have their <font color='#9b0f5f'>Curses refreshed.",
 "dynamicDescription": "<toggle>Toggle:</toggle> Amumu begins crying, dealing <magicDamage>@Effect2Amount*2@ plus @TotalHealthDamagePercent@ max Health magic damage</magicDamage> to nearby enemies every second and refreshing <keywordMajor>Curse</keywordMajor>.@SpellModifierDescriptionAppend@",
 "range": [
 300,
@@ -1105,7 +1105,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Permanently reduces the physical damage Amumu would take. Amumu can unleash his rage, dealing damage to surrounding enemies. Each time Amumu is hit, the cooldown on Tantrum is reduced by 0.5 seconds.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Amumu takes @DamageReduction@ reduced physical damage. Additionally, when Amumu is hit by an Attack, this Ability's Cooldown is reduced by 0.5 seconds.<br><br><spellActive>Active:</spellActive> Amumu throws a tantrum, dealing <magicDamage>@TantrumDamage@ magic damage</magicDamage> to nearby enemies.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Amumu takes @DamageReduction@ reduced physical damage. Additionally, when Amumu is hit by an Attack, this Ability's Cooldown is reduced by 0.5 seconds.<spellActive>Active:</spellActive> Amumu throws a tantrum, dealing <magicDamage>@TantrumDamage@ magic damage</magicDamage> to nearby enemies.@SpellModifierDescriptionAppend@",
 "range": [
 350,
 350,

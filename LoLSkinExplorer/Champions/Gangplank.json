@@ -111,7 +111,7 @@
 "id": 100
 }
 ],
-"description": "O, Bilgewater has been my home,<br>Since last time I was sailing!<br>But I'll not stay another day,<br>I'd sooner be out whaling.\\n"
+"description": "O, Bilgewater has been my home,Since last time I was sailing!But I'll not stay another day,I'd sooner be out whaling.\\n"
 },
 {
 "id": 41004,
@@ -641,7 +641,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Shoots target, plundering Gold for each enemy unit killed.",
-"dynamicDescription": "Gangplank fires a bullet dealing @ShotDamage@ physical damage. If this kills the target, Gangplank gains an additional @Effect2Amount@ Gold and @Effect5Amount@ Silver Serpents.<br><br>Gangplank can spend Silver Serpents in the shop to upgrade <spellName>Cannon Barrage</spellName>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Gangplank fires a bullet dealing @ShotDamage@ physical damage. If this kills the target, Gangplank gains an additional @Effect2Amount@ Gold and @Effect5Amount@ Silver Serpents.Gangplank can spend Silver Serpents in the shop to upgrade <spellName>Cannon Barrage</spellName>.@SpellModifierDescriptionAppend@",
 "range": [
 625,
 625,
@@ -941,7 +941,7 @@
 "cost": "No Cost",
 "cooldown": "@AmmoRechargeTime@s Recharge (max: @MaxAmmo@)",
 "description": "Gangplank uncovers a powder keg at target location. If he attacks it, it explodes, spreading the attack's damage to enemies in the area, slowing them.",
-"dynamicDescription": "Gangplank places a powder keg that can be attacked by Gangplank and enemy champions for @Effect5Amount@ seconds. When an enemy destroys it, the keg is defused. When Gangplank destroys it, it explodes, <status>Slowing</status> by @FinalSlowAmount@% for @Effect2Amount@ seconds and dealing the Attack's damage, ignoring @Effect10Amount@% Armor. Champions take an additional @Effect3Amount@ physical damage.<br><br>Keg health decays every @f5@ seconds. Keg explosions detonate other kegs with overlapping blast zones, but don't deal damage to the same target more than once. Keg explosions triggered by <spellName>Parrrley</spellName> will grant the bonus gold for targets killed.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Gangplank places a powder keg that can be attacked by Gangplank and enemy champions for @Effect5Amount@ seconds. When an enemy destroys it, the keg is defused. When Gangplank destroys it, it explodes, <status>Slowing</status> by @FinalSlowAmount@% for @Effect2Amount@ seconds and dealing the Attack's damage, ignoring @Effect10Amount@% Armor. Champions take an additional @Effect3Amount@ physical damage.Keg health decays every @f5@ seconds. Keg explosions detonate other kegs with overlapping blast zones, but don't deal damage to the same target more than once. Keg explosions triggered by <spellName>Parrrley</spellName> will grant the bonus gold for targets killed.@SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,
@@ -1091,7 +1091,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Gangplank signals his ship to bombard an area, slowing and damaging enemies.",
-"dynamicDescription": "Gangplank signals his ship to fire @f3@ waves of cannonballs anywhere on the map over @Effect3Amount@ seconds. Each wave <status>Slows</status> by @Effect2Amount@% for @Effect6Amount@ seconds and deals <magicDamage>@OneWaveDamage@ magic damage</magicDamage>.<br><br>This Ability can be upgraded in the shop via <spellName>Parrrley</spellName>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Gangplank signals his ship to fire @f3@ waves of cannonballs anywhere on the map over @Effect3Amount@ seconds. Each wave <status>Slows</status> by @Effect2Amount@% for @Effect6Amount@ seconds and deals <magicDamage>@OneWaveDamage@ magic damage</magicDamage>.This Ability can be upgraded in the shop via <spellName>Parrrley</spellName>.@SpellModifierDescriptionAppend@",
 "range": [
 30000,
 30000,

@@ -986,7 +986,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Darius winds up and swings his axe in a wide circle. Enemies struck by the blade take more damage than those struck by the handle. Darius heals based on enemy champions and large monsters hit by the blade.",
-"dynamicDescription": "Darius hefts his axe then swings it around, dealing @BladeDamage@ physical damage with the edge and @HandleDamage@ damage with the handle. Enemies hit with the handle do not take a <keywordMajor>Hemorrhage</keywordMajor> stack.<br><br>Darius restores <healing>@Effect5Amount@% missing Health</healing> per enemy champion and large jungle monster hit with the edge, up to a max of <healing>@Effect7Amount@%</healing>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Darius hefts his axe then swings it around, dealing @BladeDamage@ physical damage with the edge and @HandleDamage@ damage with the handle. Enemies hit with the handle do not take a <keywordMajor>Hemorrhage</keywordMajor> stack.Darius restores <healing>@Effect5Amount@% missing Health</healing> per enemy champion and large jungle monster hit with the edge, up to a max of <healing>@Effect7Amount@%</healing>.@SpellModifierDescriptionAppend@",
 "range": [
 1,
 1,
@@ -1136,7 +1136,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Darius's next attack strikes an enemy's crucial artery. As they bleed out, their Move Speed is slowed.",
-"dynamicDescription": "Darius' next Attack deals @EmpoweredAttackDamage@ physical damage and <status>Slows</status> by @Effect2Amount@% for @Effect5Amount@ second.<br><br>This Ability refunds its Mana cost and reduces its Cooldown by @Effect3Amount@% if it kills the target.<br><br><rules>This Ability triggers spell effects upon dealing damage.</rules>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Darius' next Attack deals @EmpoweredAttackDamage@ physical damage and <status>Slows</status> by @Effect2Amount@% for @Effect5Amount@ second.This Ability refunds its Mana cost and reduces its Cooldown by @Effect3Amount@% if it kills the target.<rules>This Ability triggers spell effects upon dealing damage.</rules>@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,
@@ -1286,7 +1286,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Darius hones his axe, passively causing his physical damage to ignore a percentage of his target's Armor. When activated, Darius sweeps up his enemies with his axe's hook and pulls them to him.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Darius gains @Effect1Amount@% Armor Penetration.<br><br><spellActive>Active:</spellActive> Darius hooks with his axe, <status>Pulling</status>, and <status>Knocking Up</status> and <status>Slowing</status> by @Effect2Amount@% for @Effect3Amount@ second.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Darius gains @Effect1Amount@% Armor Penetration.<spellActive>Active:</spellActive> Darius hooks with his axe, <status>Pulling</status>, and <status>Knocking Up</status> and <status>Slowing</status> by @Effect2Amount@% for @Effect3Amount@ second.@SpellModifierDescriptionAppend@",
 "range": [
 535,
 535,
@@ -1436,7 +1436,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Darius leaps to an enemy champion and strikes a lethal blow, dealing true damage. This damage is increased for each stack of Hemorrhage on the target. If Noxian Guillotine is a killing blow, its cooldown is refreshed for a brief duration.",
-"dynamicDescription": "Darius leaps to an enemy and strikes a lethal blow, dealing <trueDamage>@Damage@ true damage</trueDamage>. For each <keywordMajor>Hemorrhage</keywordMajor> on the target, this Ability deals an additional @RDamagePercentPerHemoStack*100@% damage, up to a max of <trueDamage>@MaximumDamage@ damage</trueDamage>.<br><br>If this kills the target, Darius may <recast>Recast</recast> this Ability once within @RRecastDuration@ seconds. At rank 3, this Ability has no Mana cost and kills refresh the Cooldown completely.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Darius leaps to an enemy and strikes a lethal blow, dealing <trueDamage>@Damage@ true damage</trueDamage>. For each <keywordMajor>Hemorrhage</keywordMajor> on the target, this Ability deals an additional @RDamagePercentPerHemoStack*100@% damage, up to a max of <trueDamage>@MaximumDamage@ damage</trueDamage>.If this kills the target, Darius may <recast>Recast</recast> this Ability once within @RRecastDuration@ seconds. At rank 3, this Ability has no Mana cost and kills refresh the Cooldown completely.@SpellModifierDescriptionAppend@",
 "range": [
 460,
 460,

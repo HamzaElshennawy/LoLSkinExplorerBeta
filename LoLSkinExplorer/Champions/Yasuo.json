@@ -998,8 +998,8 @@
 "abilityVideoImagePath": "champion-abilities/0157/ability_0157_Q1.jpg",
 "cost": "No Cost",
 "cooldown": "@f1@s %i:cooldown%",
-"description": "Thrusts forward, damaging all enemies in a line.<br><br>On hit, grants a stack of Gathering Storm for a few seconds. At 2 stacks, Steel Tempest fires a whirlwind that knocks <font color='#6655CC'>Airborne</font>.<br><br>Steel Tempest is treated as a basic attack and scales with all the same things.",
-"dynamicDescription": "Yasuo thrusts, dealing @TotalDamage@ physical damage. If he hits, he gains a stack for @GatheringStormDuration@ seconds. While he has 2 stacks, his next use of this Ability fires a whirlwind from range, dealing the same damage and <status>Knocking Up</status> for @KnockUpDurationTOOLTIPONLY@ second.<br><br>If used while dashing, this Ability strikes in a circle rather than a stab.@SpellModifierDescriptionAppend@",
+"description": "Thrusts forward, damaging all enemies in a line.On hit, grants a stack of Gathering Storm for a few seconds. At 2 stacks, Steel Tempest fires a whirlwind that knocks <font color='#6655CC'>Airborne.Steel Tempest is treated as a basic attack and scales with all the same things.",
+"dynamicDescription": "Yasuo thrusts, dealing @TotalDamage@ physical damage. If he hits, he gains a stack for @GatheringStormDuration@ seconds. While he has 2 stacks, his next use of this Ability fires a whirlwind from range, dealing the same damage and <status>Knocking Up</status> for @KnockUpDurationTOOLTIPONLY@ second.If used while dashing, this Ability strikes in a circle rather than a stab.@SpellModifierDescriptionAppend@",
 "range": [
 475,
 475,
@@ -1298,8 +1298,8 @@
 "abilityVideoImagePath": "champion-abilities/0157/ability_0157_E1.jpg",
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Dashes through target enemy, dealing magic damage. Each cast increases your next dash's base Damage, up to a max amount.<br><br>Cannot be re-cast on the same enemy for a few seconds.<br><br><font color='#99FF99'>If Steel Tempest is cast while dashing, it will strike as a circle.</font>",
-"dynamicDescription": "Yasuo dashes through a target, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>. Each use of this Ability grants @Effect5Amount*100@% bonus damage to the next use for 5 seconds, stacking up to 50%.<br><br>This Ability has a @Effect2Amount@ second per-target Cooldown.@SpellModifierDescriptionAppend@",
+"description": "Dashes through target enemy, dealing magic damage. Each cast increases your next dash's base Damage, up to a max amount.Cannot be re-cast on the same enemy for a few seconds.<font color='#99FF99'>If Steel Tempest is cast while dashing, it will strike as a circle.",
+"dynamicDescription": "Yasuo dashes through a target, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>. Each use of this Ability grants @Effect5Amount*100@% bonus damage to the next use for 5 seconds, stacking up to 50%.This Ability has a @Effect2Amount@ second per-target Cooldown.@SpellModifierDescriptionAppend@",
 "range": [
 475,
 475,
@@ -1448,8 +1448,8 @@
 "abilityVideoImagePath": "champion-abilities/0157/ability_0157_R1.jpg",
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Blinks to an <factionIonia1>Airborne</factionIonia1> enemy champion, dealing physical damage and holding all <factionIonia1>Airborne</factionIonia1> enemies in the area in the air. Grants maximum Flow but resets all stacks of Gathering Storm.<br><br>For a moderate time afterwards, Yasuo's critical strikes gain significant Bonus Armor Penetration.",
-"dynamicDescription": "Yasuo teleports to an <status>Airborne</status> enemy champion, dealing @Damage@ physical damage and holding all nearby <status>Airborne</status> enemies up for an additional @RKnockupDuration@ second. Yasuo also gains maximum <keywordMajor>Flow</keywordMajor>, but loses all <spellName>Steel Tempest</spellName> stacks.<br><br>Afterwards, Yasuo's critical strikes ignore <scaleArmor>@RPercentArmorPen@% bonus Armor</scaleArmor> for @RBuffDuration@ seconds.@SpellModifierDescriptionAppend@",
+"description": "Blinks to an <factionIonia1>Airborne</factionIonia1> enemy champion, dealing physical damage and holding all <factionIonia1>Airborne</factionIonia1> enemies in the area in the air. Grants maximum Flow but resets all stacks of Gathering Storm.For a moderate time afterwards, Yasuo's critical strikes gain significant Bonus Armor Penetration.",
+"dynamicDescription": "Yasuo teleports to an <status>Airborne</status> enemy champion, dealing @Damage@ physical damage and holding all nearby <status>Airborne</status> enemies up for an additional @RKnockupDuration@ second. Yasuo also gains maximum <keywordMajor>Flow</keywordMajor>, but loses all <spellName>Steel Tempest</spellName> stacks.Afterwards, Yasuo's critical strikes ignore <scaleArmor>@RPercentArmorPen@% bonus Armor</scaleArmor> for @RBuffDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 1400,
 1400,

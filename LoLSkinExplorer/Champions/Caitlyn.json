@@ -781,7 +781,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Caitlyn revs up her rifle for 1 second to unleash a penetrating shot that deals physical damage (deals less damage to subsequent targets).",
-"dynamicDescription": "Caitlyn revs her rifle to fire a piercing shot dealing @InitialDamage@ physical damage. After the bolt strikes the first target, it opens into a wider shot that deals @SecondaryDamage@ physical damage.<br><br>Enemies revealed by <spellName>Yordle Snap Trap</spellName> always take full damage.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Caitlyn revs her rifle to fire a piercing shot dealing @InitialDamage@ physical damage. After the bolt strikes the first target, it opens into a wider shot that deals @SecondaryDamage@ physical damage.Enemies revealed by <spellName>Yordle Snap Trap</spellName> always take full damage.@SpellModifierDescriptionAppend@",
 "range": [
 1250,
 1250,
@@ -1231,7 +1231,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Caitlyn takes time to line up the perfect shot, dealing massive damage to a single target at a huge range. Enemy champions can intercept the bullet for their ally.",
-"dynamicDescription": "Caitlyn takes a moment to channel and line up the perfect shot, then she fires, dealing @RTotalDamage@ physical damage, but other enemy champions can intercept it. This Ability grants <keywordStealth>True Sight</keywordStealth> of the target during the channel.<br><br><rules>Deals up to an additional @CritChanceAmp*100@% based on Caitlyn's Critical Strike chance.</rules>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Caitlyn takes a moment to channel and line up the perfect shot, then she fires, dealing @RTotalDamage@ physical damage, but other enemy champions can intercept it. This Ability grants <keywordStealth>True Sight</keywordStealth> of the target during the channel.<rules>Deals up to an additional @CritChanceAmp*100@% based on Caitlyn's Critical Strike chance.</rules>@SpellModifierDescriptionAppend@",
 "range": [
 3500,
 3500,

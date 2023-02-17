@@ -326,7 +326,7 @@
 "abilityIconPath": "Characters/Kled/HUD/Icons2D/Kled_P.png",
 "abilityVideoPath": "champion-abilities/0240/ability_0240_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0240/ability_0240_P1.jpg",
-"description": "Kled rides his trusty steed, Skaarl, who takes damage for him. When Skaarl's health depletes, Kled dismounts.<br><br>While dismounted, Kled's abilities change and he deals less damage to champions. Kled can restore Skaarl's courage by fighting enemies. At maximum courage, Kled remounts with a portion of Skaarl's health."
+"description": "Kled rides his trusty steed, Skaarl, who takes damage for him. When Skaarl's health depletes, Kled dismounts.While dismounted, Kled's abilities change and he deals less damage to champions. Kled can restore Skaarl's courage by fighting enemies. At maximum courage, Kled remounts with a portion of Skaarl's health."
 },
 "spells": [
 {
@@ -337,8 +337,8 @@
 "abilityVideoImagePath": "champion-abilities/0240/ability_0240_Q1.jpg",
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Kled throws a bear trap that damages and hooks an enemy champion. If shackled for a short duration, the target takes additional physical damage and is yanked toward Kled.<br><br>When dismounted, this ability is replaced by Pocket Pistol, a ranged gun blast that knocks back Kled and restores courage.",
-"dynamicDescription": "<keywordMajor>Mounted:</keywordMajor> Kled throws a bear trap that deals @TotalDamage@ physical damage and hooks onto the first enemy champion or large jungle monster hit.<br><br>If Kled stays near a hooked enemy for @Effect3Amount@ seconds, he yanks out the trap, dealing @TotalYankDamage@ physical damage, <status>Pulling</status> them, <status>Slowing</status> by @SlowAmount*-100@% for @SlowDuration@ seconds, and applying @GrievousAmount*100@% Grievous Wounds for @GrievousDuration@ seconds.@SpellModifierDescriptionAppend@",
+"description": "Kled throws a bear trap that damages and hooks an enemy champion. If shackled for a short duration, the target takes additional physical damage and is yanked toward Kled.When dismounted, this ability is replaced by Pocket Pistol, a ranged gun blast that knocks back Kled and restores courage.",
+"dynamicDescription": "<keywordMajor>Mounted:</keywordMajor> Kled throws a bear trap that deals @TotalDamage@ physical damage and hooks onto the first enemy champion or large jungle monster hit.If Kled stays near a hooked enemy for @Effect3Amount@ seconds, he yanks out the trap, dealing @TotalYankDamage@ physical damage, <status>Pulling</status> them, <status>Slowing</status> by @SlowAmount*-100@% for @SlowDuration@ seconds, and applying @GrievousAmount*100@% Grievous Wounds for @GrievousDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 800,
 800,
@@ -488,7 +488,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Kled gains massive attack speed for four attacks. The fourth attack deals more damage.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Every @Effect6Amount@ seconds, Kled's next Attack grants <attackSpeed>@Effect2Amount*100@% Attack Speed</attackSpeed> for four Attacks or @Effect6Amount@ seconds.<br><br>The fourth hit deals an additional @Effect4Amount@ plus @PercentDamage@ max Health physical damage.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Every @Effect6Amount@ seconds, Kled's next Attack grants <attackSpeed>@Effect2Amount*100@% Attack Speed</attackSpeed> for four Attacks or @Effect6Amount@ seconds.The fourth hit deals an additional @Effect4Amount@ plus @PercentDamage@ max Health physical damage.@SpellModifierDescriptionAppend@",
 "range": [
 0,
 0,
@@ -638,7 +638,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Kled dashes, dealing physical damage and gaining a short burst of speed. Kled can cast this ability again to dash back through his initial target, dealing the same damage.",
-"dynamicDescription": "Kled dashes, dealing @TotalDamage@ physical damage to enemies he passes through.<br><br>If this Ability hits an enemy champion or large jungle monster, Kled gains <speed>@Effect5Amount*100@% Move Speed</speed> for @Effect4Amount@ second and can <recast>Recast</recast> within @Effect6Amount@ seconds to dash back through the same target.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Kled dashes, dealing @TotalDamage@ physical damage to enemies he passes through.If this Ability hits an enemy champion or large jungle monster, Kled gains <speed>@Effect5Amount*100@% Move Speed</speed> for @Effect4Amount@ second and can <recast>Recast</recast> within @Effect6Amount@ seconds to dash back through the same target.@SpellModifierDescriptionAppend@",
 "range": [
 550,
 550,

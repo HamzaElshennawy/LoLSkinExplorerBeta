@@ -554,7 +554,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Rammus accelerates in a ball towards his enemies, dealing damage and slowing targets affected by the impact.",
-"dynamicDescription": "Rammus curls into a ball, gaining <speed>@MinimumMoveSpeed@ Move Speed</speed>, accelerating up to <speed>@MaximumMoveSpeed@ Move Speed</speed> over @Effect4Amount@ seconds. Rammus stops after colliding with an enemy, dealing <magicDamage>@PowerBallDamage@ magic damage</magicDamage>, <status>Knocking Back</status>, and <status>Slowing</status> nearby enemies by @Effect2Amount@% for @Effect3Amount@ second.<br><br><recast>Recast</recast>: Rammus ends this Ability early.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Rammus curls into a ball, gaining <speed>@MinimumMoveSpeed@ Move Speed</speed>, accelerating up to <speed>@MaximumMoveSpeed@ Move Speed</speed> over @Effect4Amount@ seconds. Rammus stops after colliding with an enemy, dealing <magicDamage>@PowerBallDamage@ magic damage</magicDamage>, <status>Knocking Back</status>, and <status>Slowing</status> nearby enemies by @Effect2Amount@% for @Effect3Amount@ second.<recast>Recast</recast>: Rammus ends this Ability early.@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,
@@ -704,7 +704,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Rammus goes into a defensive formation, vastly increasing his Armor and Magic Resistance, amplifying Spiked Shells' damage, and returning damage to enemies that basic attack him.",
-"dynamicDescription": "Rammus enters a defensive formation, gaining <scaleArmor>@BonusArmorCalc@ Armor</scaleArmor> and <scaleMR>@BonusMRCalc@ Magic Resist</scaleMR>. While active, <spellName>Spiked Shell's</spellName> damage is increased by @PassiveDamageAmpCalc@% and also damages enemies that Attack Rammus.<br><br>Rammus's Attacks increase the duration by @BonusDurationPerAuto@ seconds (max: @MaxBonusDuration@).<br><br><recast>Recast</recast>: Rammus ends this Ability early.<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Rammus enters a defensive formation, gaining <scaleArmor>@BonusArmorCalc@ Armor</scaleArmor> and <scaleMR>@BonusMRCalc@ Magic Resist</scaleMR>. While active, <spellName>Spiked Shell's</spellName> damage is increased by @PassiveDamageAmpCalc@% and also damages enemies that Attack Rammus.Rammus's Attacks increase the duration by @BonusDurationPerAuto@ seconds (max: @MaxBonusDuration@).<recast>Recast</recast>: Rammus ends this Ability early.@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,
@@ -1004,7 +1004,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Rammus hops into the air and slams down at a target area, dealing magic damage and slowing enemies. If cast while Rammus is in Powerball, Rammus knocks up enemies near the center as well.",
-"dynamicDescription": "Rammus hops into the air and slams down in an area, dealing <magicDamage>@InitialDamageCalc@ magic damage</magicDamage> and <status>Slowing</status> by @SlowAmount*100@% for @SlowDuration@ seconds. Enemies in the center take additional damage based on how far Rammus hopped (max: <magicDamage>@TooltipMaxDamageCalc@ magic damage</magicDamage>). If used during <spellName>Powerball</spellName>, enemies in the center are also <status>Knocked Up</status> for @KnockupDuration@ seconds.<br><br>Rammus then creates @NumberOfPulses@ aftershocks in the area over @BuffDuration@ seconds, each dealing <magicDamage>@PulseDamageCalc@ magic damage</magicDamage> and stacking the <status>Slow</status> (max: @MaxSlow@%).<br><br>The range of this Ability is increased by Rammus's <speed>Move Speed</speed>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Rammus hops into the air and slams down in an area, dealing <magicDamage>@InitialDamageCalc@ magic damage</magicDamage> and <status>Slowing</status> by @SlowAmount*100@% for @SlowDuration@ seconds. Enemies in the center take additional damage based on how far Rammus hopped (max: <magicDamage>@TooltipMaxDamageCalc@ magic damage</magicDamage>). If used during <spellName>Powerball</spellName>, enemies in the center are also <status>Knocked Up</status> for @KnockupDuration@ seconds.Rammus then creates @NumberOfPulses@ aftershocks in the area over @BuffDuration@ seconds, each dealing <magicDamage>@PulseDamageCalc@ magic damage</magicDamage> and stacking the <status>Slow</status> (max: @MaxSlow@%).The range of this Ability is increased by Rammus's <speed>Move Speed</speed>.@SpellModifierDescriptionAppend@",
 "range": [
 25000,
 25000,

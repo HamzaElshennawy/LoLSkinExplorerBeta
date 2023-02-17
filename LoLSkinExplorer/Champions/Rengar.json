@@ -753,7 +753,7 @@
 "abilityIconPath": "Characters/Rengar/HUD/Icons2D/Rengar_P.png",
 "abilityVideoPath": "champion-abilities/0107/ability_0107_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0107/ability_0107_P1.jpg",
-"description": "While in Brush, Rengar leaps at his target with his basic attack.<br><br>Rengar generates Ferocity whenever he casts an ability. At Max Ferocity, his next ability is empowered.<br><br>Killing enemy champions awards trophies on Rengar's <font color='#BBFFFF'>Bonetooth Necklace</font>, granting bonus attack damage."
+"description": "While in Brush, Rengar leaps at his target with his basic attack.Rengar generates Ferocity whenever he casts an ability. At Max Ferocity, his next ability is empowered.Killing enemy champions awards trophies on Rengar's <font color='#BBFFFF'>Bonetooth Necklace, granting bonus attack damage."
 },
 "spells": [
 {
@@ -762,10 +762,10 @@
 "abilityIconPath": "Characters/Rengar/HUD/Icons2D/RengarQ.png",
 "abilityVideoPath": "champion-abilities/0107/ability_0107_Q1.webm",
 "abilityVideoImagePath": "champion-abilities/0107/ability_0107_Q1.jpg",
-"cost": "<font color='#EDDA74'>Generates 1 Ferocity</font>",
+"cost": "<font color='#EDDA74'>Generates 1 Ferocity",
 "cooldown": "@AmmoRechargeTime@s %i:cooldown%",
-"description": "Rengar's next attack brutally stabs his target for bonus damage.<br><br>Ferocity effect: deals increased damage and grants Attack Speed.",
-"dynamicDescription": "Rengar's next 2 Attacks gain <attackSpeed>@Effect5Amount@% Attack Speed</attackSpeed>. The first Attack critically strikes for @F4@ (%i:scaleAD%%i:scaleCrit%) physical damage.<br><br><keywordMajor>Max Ferocity:</keywordMajor> The first Attack critically strikes for @F5@ (%i:scaleLevel%%i:scaleAD%%i:scaleCrit%) physical damage and grants Rengar <attackSpeed>@EmpoweredQAS@ Attack Speed</attackSpeed> for @Effect3Amount@ seconds.@SpellModifierDescriptionAppend@",
+"description": "Rengar's next attack brutally stabs his target for bonus damage.Ferocity effect: deals increased damage and grants Attack Speed.",
+"dynamicDescription": "Rengar's next 2 Attacks gain <attackSpeed>@Effect5Amount@% Attack Speed</attackSpeed>. The first Attack critically strikes for @F4@ (%i:scaleAD%%i:scaleCrit%) physical damage.<keywordMajor>Max Ferocity:</keywordMajor> The first Attack critically strikes for @F5@ (%i:scaleLevel%%i:scaleAD%%i:scaleCrit%) physical damage and grants Rengar <attackSpeed>@EmpoweredQAS@ Attack Speed</attackSpeed> for @Effect3Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 450,
 450,
@@ -912,10 +912,10 @@
 "abilityIconPath": "Characters/Rengar/HUD/Icons2D/Rengar_W.png",
 "abilityVideoPath": "champion-abilities/0107/ability_0107_W1.webm",
 "abilityVideoImagePath": "champion-abilities/0107/ability_0107_W1.jpg",
-"cost": "<font color='#EDDA74'>Generates 1 Ferocity</font>",
+"cost": "<font color='#EDDA74'>Generates 1 Ferocity",
 "cooldown": "@AmmoRechargeTime@s %i:cooldown%",
-"description": "Rengar lets out a battle roar, damaging enemies and healing for some of the recent damage he has taken.<br><br>Ferocity effect: additionally breaks crowd control effects.",
-"dynamicDescription": "Rengar roars, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> to nearby enemies and restoring <healing>@Effect2Amount@%</healing> of the damage taken in the last @Effect3Amount@ seconds as Health.<br><br><keywordMajor>Max Ferocity:</keywordMajor> Deals <magicDamage>@TotalDamageEmpowered@ magic damage</magicDamage> and additionally cleanses Rengar of crowd control.@SpellModifierDescriptionAppend@",
+"description": "Rengar lets out a battle roar, damaging enemies and healing for some of the recent damage he has taken.Ferocity effect: additionally breaks crowd control effects.",
+"dynamicDescription": "Rengar roars, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> to nearby enemies and restoring <healing>@Effect2Amount@%</healing> of the damage taken in the last @Effect3Amount@ seconds as Health.<keywordMajor>Max Ferocity:</keywordMajor> Deals <magicDamage>@TotalDamageEmpowered@ magic damage</magicDamage> and additionally cleanses Rengar of crowd control.@SpellModifierDescriptionAppend@",
 "range": [
 450,
 450,
@@ -1062,10 +1062,10 @@
 "abilityIconPath": "Characters/Rengar/HUD/Icons2D/Rengar_E.png",
 "abilityVideoPath": "champion-abilities/0107/ability_0107_E1.webm",
 "abilityVideoImagePath": "champion-abilities/0107/ability_0107_E1.jpg",
-"cost": "<font color='#EDDA74'>Generates 1 Ferocity</font>",
+"cost": "<font color='#EDDA74'>Generates 1 Ferocity",
 "cooldown": "@AmmoRechargeTime@s %i:cooldown%",
-"description": "Rengar throws a bola, slowing the first target hit for a short duration.<br><br>Ferocity effect: roots the target.",
-"dynamicDescription": "Rengar throws a bola, dealing @TotalDamage@ physical damage to the first enemy hit, Revealing and <status>Slowing</status> them by @Effect2Amount@% for @Effect3Amount@ seconds.<br><br><keywordMajor>Max Ferocity:</keywordMajor> Deals @TotalEmpoweredDamage@ physical damage and <status>Roots</status> for @Effect4Amount@ seconds.@SpellModifierDescriptionAppend@",
+"description": "Rengar throws a bola, slowing the first target hit for a short duration.Ferocity effect: roots the target.",
+"dynamicDescription": "Rengar throws a bola, dealing @TotalDamage@ physical damage to the first enemy hit, Revealing and <status>Slowing</status> them by @Effect2Amount@% for @Effect3Amount@ seconds.<keywordMajor>Max Ferocity:</keywordMajor> Deals @TotalEmpoweredDamage@ physical damage and <status>Roots</status> for @Effect4Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,
@@ -1214,8 +1214,8 @@
 "abilityVideoImagePath": "champion-abilities/0107/ability_0107_R1.jpg",
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Rengar's predatory instincts take over, <font color='#cd90ee'>Camouflaging</font> him and revealing the nearest enemy champion in a large radius around him. During Thrill of the Hunt, Rengar gains Move Speed and he can leap to the tracked enemy without being in brush, reducing their armor.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Rengar will also leap attack when <keywordStealth>Camouflaged</keywordStealth>.<br><br><spellActive>Active:</spellActive> Rengar gains <speed>@StealthMS@% Move Speed</speed> and <keywordStealth>True Sight</keywordStealth> in a small area around the nearest enemy champion for @StealthDuration@ seconds.<br><br>After @FadeTime@ seconds, Rengar becomes <keywordStealth>Camouflaged</keywordStealth> and can leap without being in Brush. Leaping to the nearest champion deals an additional @BonusDamage@ physical damage, shreds <scaleArmor>@ArmorShred@ Armor</scaleArmor> for @ArmorShredDuration@ seconds, and ends this Ability.@SpellModifierDescriptionAppend@",
+"description": "Rengar's predatory instincts take over, <font color='#cd90ee'>Camouflaging him and revealing the nearest enemy champion in a large radius around him. During Thrill of the Hunt, Rengar gains Move Speed and he can leap to the tracked enemy without being in brush, reducing their armor.",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Rengar will also leap attack when <keywordStealth>Camouflaged</keywordStealth>.<spellActive>Active:</spellActive> Rengar gains <speed>@StealthMS@% Move Speed</speed> and <keywordStealth>True Sight</keywordStealth> in a small area around the nearest enemy champion for @StealthDuration@ seconds.After @FadeTime@ seconds, Rengar becomes <keywordStealth>Camouflaged</keywordStealth> and can leap without being in Brush. Leaping to the nearest champion deals an additional @BonusDamage@ physical damage, shreds <scaleArmor>@ArmorShred@ Armor</scaleArmor> for @ArmorShredDuration@ seconds, and ends this Ability.@SpellModifierDescriptionAppend@",
 "range": [
 2500,
 3000,

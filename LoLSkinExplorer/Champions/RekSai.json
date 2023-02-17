@@ -435,7 +435,7 @@
 "abilityVideoImagePath": "champion-abilities/0421/ability_0421_Q1.jpg",
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Rek'Sai's next 3 basic attacks deal bonus Physical Damage to nearby enemies.<br><br>While Burrowed, Rek'Sai launches a burst of void-charged earth that deals Physical Damage and reveals enemies hit.",
+"description": "Rek'Sai's next 3 basic attacks deal bonus Physical Damage to nearby enemies.While Burrowed, Rek'Sai launches a burst of void-charged earth that deals Physical Damage and reveals enemies hit.",
 "dynamicDescription": "<keywordMajor>Un-Burrowed</keywordMajor>: Rek'Sai's next 3 Attacks within @Effect7Amount@ seconds deal an additional @spell.RekSaiQ:TotalDamageTooltip@ physical damage to nearby enemies.@SpellModifierDescriptionAppend@",
 "range": [
 325,
@@ -585,7 +585,7 @@
 "abilityVideoImagePath": "champion-abilities/0421/ability_0421_W1.jpg",
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Rek'Sai burrows into the ground, gaining new abilities and increased Move Speed. Her vision range is reduced and she cannot use basic attacks.<br><br>While Burrowed, Rek'Sai may cast Un-burrow to knock up and damage nearby enemies.",
+"description": "Rek'Sai burrows into the ground, gaining new abilities and increased Move Speed. Her vision range is reduced and she cannot use basic attacks.While Burrowed, Rek'Sai may cast Un-burrow to knock up and damage nearby enemies.",
 "dynamicDescription": "<keywordMajor>Un-Burrowed:</keywordMajor> Rek'sai burrows into the ground, gaining access to new Abilities, and <speed>@spell.RekSaiW:SpeedBonus@ Move Speed</speed>, but cannot Attack. She has reduced vision range, but nearby enemies that move and are otherwise unseen will have their positions revealed to Rek'sai and her allies.@SpellModifierDescriptionAppend@",
 "range": [
 1650,
@@ -735,7 +735,7 @@
 "abilityVideoImagePath": "champion-abilities/0421/ability_0421_E1.jpg",
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Rek'Sai bites her target, dealing double and True Damage if she has max Fury.<br><br>While Burrowed, Rek'Sai creates a re-usable, long lasting tunnel. Enemies can destroy it by standing on top of either entrance.",
+"description": "Rek'Sai bites her target, dealing double and True Damage if she has max Fury.While Burrowed, Rek'Sai creates a re-usable, long lasting tunnel. Enemies can destroy it by standing on top of either entrance.",
 "dynamicDescription": "<scaleAD>Un-Burrowed:</scaleAD> Rek'Sai bites a target, dealing @spell.RekSaiE:BaseDamageTooltip@ physical damage. At max <keywordMajor>Fury</keywordMajor>, the bite deals <trueDamage>@spell.RekSaiE:EmpoweredDamageTooltip@ true damage</trueDamage> instead.@SpellModifierDescriptionAppend@",
 "range": [
 250,

@@ -835,7 +835,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Miss Fortune fires a bullet at an enemy, damaging them and a target behind them. Both strikes can also apply Love Tap.",
-"dynamicDescription": "Miss Fortune fires a bouncing shot, dealing @TotalDamageTooltip@ physical damage to an enemy and to another one behind them. <br><br>The second shot can critically strike. It always critically strikes if the first shot kills its target. @SpellModifierDescriptionAppend@",
+"dynamicDescription": "Miss Fortune fires a bouncing shot, dealing @TotalDamageTooltip@ physical damage to an enemy and to another one behind them. The second shot can critically strike. It always critically strikes if the first shot kills its target. @SpellModifierDescriptionAppend@",
 "range": [
 650,
 650,
@@ -985,7 +985,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Miss Fortune passively gains Move Speed when not attacked. This ability can be activated to grant bonus Attack Speed for a short duration. While it's on cooldown, Love Taps reduce the remaining cooldown of Strut.",
-"dynamicDescription": "<passive>Passive:</passive> After @PassiveBaseMSOOC@ seconds of not taking damage, Miss Fortune gains <speed>@PassiveBaseMS@ Move Speed</speed>. After another @PassiveMaxMSExtraOOC@ seconds, this increases to <speed>@PassiveMaxMS@</speed>.<br><br><active>Active:</active> Gain the passive effect's full <speed>Move Speed</speed> bonus and <attackSpeed>@ActiveAS*100@% Attack Speed</attackSpeed> for @ActiveDuration@ seconds.<br><br><spellName>Love Taps</spellName> reduce the Cooldown of this Ability by @LoveTapRefund@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<passive>Passive:</passive> After @PassiveBaseMSOOC@ seconds of not taking damage, Miss Fortune gains <speed>@PassiveBaseMS@ Move Speed</speed>. After another @PassiveMaxMSExtraOOC@ seconds, this increases to <speed>@PassiveMaxMS@</speed>.<active>Active:</active> Gain the passive effect's full <speed>Move Speed</speed> bonus and <attackSpeed>@ActiveAS*100@% Attack Speed</attackSpeed> for @ActiveDuration@ seconds.<spellName>Love Taps</spellName> reduce the Cooldown of this Ability by @LoveTapRefund@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,
@@ -1285,7 +1285,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Miss Fortune channels a barrage of bullets into a cone in front of her, dealing large amounts of damage to enemies. Each wave of Bullet Time can critically strike",
-"dynamicDescription": "Miss Fortune channels a barrage of bullets, firing @TotalWaves@ waves over @TotalChannelDuration@ seconds, dealing @PhysicalDamagePerWave@ physical damage per wave (total @TotalPhysicalDamage@ physical damage).<br><br>Each wave can critically strike for %i:scaleCrit% @PhysicalCritPerWave@ physical damage (total %i:scaleCrit% @TotalPhysicalCritDamage@ physical damage).@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Miss Fortune channels a barrage of bullets, firing @TotalWaves@ waves over @TotalChannelDuration@ seconds, dealing @PhysicalDamagePerWave@ physical damage per wave (total @TotalPhysicalDamage@ physical damage).Each wave can critically strike for %i:scaleCrit% @PhysicalCritPerWave@ physical damage (total %i:scaleCrit% @TotalPhysicalCritDamage@ physical damage).@SpellModifierDescriptionAppend@",
 "range": [
 25000,
 25000,

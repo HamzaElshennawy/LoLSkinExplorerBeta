@@ -667,7 +667,7 @@
 "abilityIconPath": "Characters/Corki/HUD/Icons2D/Corki_RapidReload.png",
 "abilityVideoPath": "champion-abilities/0042/ability_0042_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0042/ability_0042_P1.jpg",
-"description": "A percentage of Corki's basic attack damage is converted into <magicDamage>magic damage</magicDamage>.<br><br>Corki can occasionally retrieve The Package inside his base, granting him Move Speed and an empowered cast of Valkyrie."
+"description": "A percentage of Corki's basic attack damage is converted into <magicDamage>magic damage</magicDamage>.Corki can occasionally retrieve The Package inside his base, granting him Move Speed and an empowered cast of Valkyrie."
 },
 "spells": [
 {
@@ -829,7 +829,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Corki flies a short distance, dropping bombs that create a trail of fire that damages opponents who remain in it.",
-"dynamicDescription": "Corki flies over and scorches a path, burning it for @TrailDuration@ seconds. Enemies in the fire take <magicDamage>@TotalDamagePerSecond@ magic damage</magicDamage> per second.<br><br>If Corki has <keywordMajor>The Package</keywordMajor>, he instead consumes it to fly a much greater distance, refresh this Ability's Cooldown, <status>Knock Aside</status> enemies hit, and burn the path for @MegaTrailDuration@ seconds. Enemies hit and in the path are <status>Slowed</status> by @Spell.CarpetBombMega:SlowAmount*100@% and take <magicDamage>@Spell.CarpetBombMega:TotalDamagePerSecond@ magic damage</magicDamage> per second for @Spell.CarpetBombMega:DirectBurnDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Corki flies over and scorches a path, burning it for @TrailDuration@ seconds. Enemies in the fire take <magicDamage>@TotalDamagePerSecond@ magic damage</magicDamage> per second.If Corki has <keywordMajor>The Package</keywordMajor>, he instead consumes it to fly a much greater distance, refresh this Ability's Cooldown, <status>Knock Aside</status> enemies hit, and burn the path for @MegaTrailDuration@ seconds. Enemies hit and in the path are <status>Slowed</status> by @Spell.CarpetBombMega:SlowAmount*100@% and take <magicDamage>@Spell.CarpetBombMega:TotalDamagePerSecond@ magic damage</magicDamage> per second for @Spell.CarpetBombMega:DirectBurnDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,
@@ -979,7 +979,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Corki's gatling gun rapidly fires in a cone in front of him, dealing damage and reducing enemy Armor and Magic Resist.",
-"dynamicDescription": "Corki fires a gatling gun in front of him, dealing @PhysicalDamagePerSecond@ physical damage and <magicDamage>@MagicalDamagePerSecond@ magic damage</magicDamage> per second and shredding up to <scaleArmor>@Effect4Amount*-1@ Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> over @Effect2Amount@ seconds.<br><br>Total Damage Per Second: @TotalDamagePerSecond@@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Corki fires a gatling gun in front of him, dealing @PhysicalDamagePerSecond@ physical damage and <magicDamage>@MagicalDamagePerSecond@ magic damage</magicDamage> per second and shredding up to <scaleArmor>@Effect4Amount*-1@ Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> over @Effect2Amount@ seconds.Total Damage Per Second: @TotalDamagePerSecond@@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,
@@ -1129,7 +1129,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@AmmoRechargeTime@s Ammo Recharge (@Cooldown@s %i:cooldown%)",
 "description": "Corki fires a missile toward his target location that explodes on impact, dealing damage to enemies in an area. Corki stores missiles over time, up to a maximum. Every 3rd missile fired will be a Big One, dealing extra damage.",
-"dynamicDescription": "Corki fires a missile that explodes on the first enemy hit, dealing <magicDamage>@RSmallMissileDamage@ magic damage</magicDamage> to surrounding enemies. Every third missile instead deals <magicDamage>@RBigMissileDamage@ magic damage</magicDamage>.<br><br>This Ability has 7 charges.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Corki fires a missile that explodes on the first enemy hit, dealing <magicDamage>@RSmallMissileDamage@ magic damage</magicDamage> to surrounding enemies. Every third missile instead deals <magicDamage>@RBigMissileDamage@ magic damage</magicDamage>.This Ability has 7 charges.@SpellModifierDescriptionAppend@",
 "range": [
 1225,
 1225,

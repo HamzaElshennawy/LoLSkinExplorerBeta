@@ -905,7 +905,7 @@
 "abilityVideoImagePath": "champion-abilities/0238/ability_0238_Q1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Zed and his shadows throw their shurikens.<br><br>Each shuriken deals damage to every enemy hit.",
+"description": "Zed and his shadows throw their shurikens.Each shuriken deals damage to every enemy hit.",
 "dynamicDescription": "Zed and his <keywordMajor>Shadows</keywordMajor> throw their shurikens, each dealing @TotalDamage@ physical damage to the first enemy they pass through, and @PassThroughDamage@ physical damage to each additional enemy.@SpellModifierDescriptionAppend@",
 "range": [
 900,
@@ -1055,8 +1055,8 @@
 "abilityVideoImagePath": "champion-abilities/0238/ability_0238_W1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "<font color='#FF9900'>Passive:</font> Zed gains energy whenever he and his shadows strike an enemy with the same ability. Energy can only be gained once per cast ability.<br><br><font color='#FF9900'>Active:</font> Zed's shadow dashes forward, remaining in place for a few seconds. Reactivating Living Shadow will cause Zed to switch positions with this shadow.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Zed gains <keywordMajor>@Effect3Amount@ Energy</keywordMajor> whenever he and his <keywordMajor>Shadows</keywordMajor> strike an enemy with the same Ability.<br><br><spellActive>Active:</spellActive> Zed's <keywordMajor>Shadow</keywordMajor> dashes forward, remaining in place for @Effect5Amount@ seconds. <recast>Recasting</recast> this Ability will cause Zed to switch positions with this <keywordMajor>Shadow</keywordMajor>.@SpellModifierDescriptionAppend@",
+"description": "<font color='#FF9900'>Passive: Zed gains energy whenever he and his shadows strike an enemy with the same ability. Energy can only be gained once per cast ability.<font color='#FF9900'>Active: Zed's shadow dashes forward, remaining in place for a few seconds. Reactivating Living Shadow will cause Zed to switch positions with this shadow.",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Zed gains <keywordMajor>@Effect3Amount@ Energy</keywordMajor> whenever he and his <keywordMajor>Shadows</keywordMajor> strike an enemy with the same Ability.<spellActive>Active:</spellActive> Zed's <keywordMajor>Shadow</keywordMajor> dashes forward, remaining in place for @Effect5Amount@ seconds. <recast>Recasting</recast> this Ability will cause Zed to switch positions with this <keywordMajor>Shadow</keywordMajor>.@SpellModifierDescriptionAppend@",
 "range": [
 650,
 650,
@@ -1206,7 +1206,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Zed and his shadows slash, dealing damage to nearby enemies.",
-"dynamicDescription": "Zed and his <keywordMajor>Shadows</keywordMajor> slash, dealing @TotalDamage@ physical damage to nearby enemies.<br><br>Each enemy champion hit by Zed's slash reduces <spellName>Living Shadow</spellName>'s Cooldown by @ShadowHitCDR@ seconds.<br><br>Enemies hit by a <keywordMajor>Shadow</keywordMajor>'s slash are <status>Slowed</status> by @MoveSpeedMod*-100@% for @SlowDuration@ seconds. Enemies hit by multiple slashes take no additional damage but are <status>Slowed</status> by @MoveSpeedModBonus*-100@% instead.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Zed and his <keywordMajor>Shadows</keywordMajor> slash, dealing @TotalDamage@ physical damage to nearby enemies.Each enemy champion hit by Zed's slash reduces <spellName>Living Shadow</spellName>'s Cooldown by @ShadowHitCDR@ seconds.Enemies hit by a <keywordMajor>Shadow</keywordMajor>'s slash are <status>Slowed</status> by @MoveSpeedMod*-100@% for @SlowDuration@ seconds. Enemies hit by multiple slashes take no additional damage but are <status>Slowed</status> by @MoveSpeedModBonus*-100@% instead.@SpellModifierDescriptionAppend@",
 "range": [
 290,
 290,
@@ -1356,7 +1356,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Zed becomes untargetable and dashes to an enemy champion, marking them. After 3 seconds the mark triggers, repeating a portion of all the damage Zed dealt to the target while they were marked.",
-"dynamicDescription": "Zed becomes Untargetable and dashes to an enemy champion, marking them. After @RDeathMarkDuration@ seconds, the mark triggers, dealing @RCalculatedDamage@ physical damage and repeating @RDamageAmp*100@% of all damage dealt to the target by Zed while the mark was active.<br><br>The dash leaves a <keywordMajor>Shadow</keywordMajor> behind for @RShadowDurationDisplayed@ seconds. Zed can <recast>Recast</recast> this Ability to switch positions with this <keywordMajor>Shadow</keywordMajor>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Zed becomes Untargetable and dashes to an enemy champion, marking them. After @RDeathMarkDuration@ seconds, the mark triggers, dealing @RCalculatedDamage@ physical damage and repeating @RDamageAmp*100@% of all damage dealt to the target by Zed while the mark was active.The dash leaves a <keywordMajor>Shadow</keywordMajor> behind for @RShadowDurationDisplayed@ seconds. Zed can <recast>Recast</recast> this Ability to switch positions with this <keywordMajor>Shadow</keywordMajor>.@SpellModifierDescriptionAppend@",
 "range": [
 625,
 625,

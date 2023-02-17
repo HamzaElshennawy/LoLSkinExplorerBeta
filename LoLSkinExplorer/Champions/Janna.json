@@ -1168,7 +1168,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Janna summons an air elemental that passively increases her Move Speed and enables her to pass through units. She may also activate this ability to deal damage and slow an enemy's Move Speed. The passive is lost while this ability is on cooldown.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> While this Ability is available, Janna gains <speed>@TotalMS@% Move Speed</speed> and is Ghosted.<br><br><spellActive>Active:</spellActive> Janna's elemental strikes an enemy, <status>Slowing</status> them by @TotalSlow@% for @Effect4Amount@ seconds, and dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> While this Ability is available, Janna gains <speed>@TotalMS@% Move Speed</speed> and is Ghosted.<spellActive>Active:</spellActive> Janna's elemental strikes an enemy, <status>Slowing</status> them by @TotalSlow@% for @Effect4Amount@ seconds, and dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
 "range": [
 650,
 650,
@@ -1318,7 +1318,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Janna conjures a defensive gale that shields an ally champion or turret from incoming damage and increases their Attack Damage.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Janna gains @EmpowerPercent*100@% Heal and Shield Power for @EmpowerDuration@ seconds whenever she impairs an enemy champion's movement.<br><br><spellActive>Active:</spellActive> Janna grants an ally champion or turret <shield>@TotalShield@ Shield</shield> decaying over @Effect3Amount@ seconds. While shielded, they gain <scaleAD>@TotalAD@ Attack Damage</scaleAD>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Janna gains @EmpowerPercent*100@% Heal and Shield Power for @EmpowerDuration@ seconds whenever she impairs an enemy champion's movement.<spellActive>Active:</spellActive> Janna grants an ally champion or turret <shield>@TotalShield@ Shield</shield> decaying over @Effect3Amount@ seconds. While shielded, they gain <scaleAD>@TotalAD@ Attack Damage</scaleAD>.@SpellModifierDescriptionAppend@",
 "range": [
 800,
 800,

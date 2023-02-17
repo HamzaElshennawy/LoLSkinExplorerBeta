@@ -409,7 +409,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@AmmoRechargeTime@s %i:cooldown%",
 "description": "Fires a long-range beam of energy, dealing magic damage to all targets hit.",
-"dynamicDescription": "<charge>Begin Charging:</charge> Xerath begins charging an arcane beam, <status>Slowing</status> himself gradually up to 50%. <br><br><release>Release:</release> Xerath fires the beam, dealing <magicDamage>@TooltipTotalDamage@ magic damage</magicDamage>. The range increases with time charged.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<charge>Begin Charging:</charge> Xerath begins charging an arcane beam, <status>Slowing</status> himself gradually up to 50%. <release>Release:</release> Xerath fires the beam, dealing <magicDamage>@TooltipTotalDamage@ magic damage</magicDamage>. The range increases with time charged.@SpellModifierDescriptionAppend@",
 "range": [
 750,
 750,
@@ -859,7 +859,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Xerath immobilizes himself and gains numerous long-range barrages.",
-"dynamicDescription": "Xerath ascends to his true form and channels for @Effect1Amount@ seconds. During this time he may <recast>Recast</recast> up to @Effect2Amount@ times.<br><br><recast>Recast:</recast> Xerath launches a magical artillery, dealing <magicDamage>@TooltipTotalDamage@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Xerath ascends to his true form and channels for @Effect1Amount@ seconds. During this time he may <recast>Recast</recast> up to @Effect2Amount@ times.<recast>Recast:</recast> Xerath launches a magical artillery, dealing <magicDamage>@TooltipTotalDamage@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
 "range": [
 5000,
 5000,

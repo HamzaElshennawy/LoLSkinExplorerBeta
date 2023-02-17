@@ -1,6 +1,4 @@
 ﻿using LoLSkinExplorer.Views;
-using System;
-using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace LoLSkinExplorer
@@ -10,9 +8,9 @@ namespace LoLSkinExplorer
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(SkinsPage),typeof(SkinsPage));
+            Routing.RegisterRoute(nameof(SkinsPage), typeof(SkinsPage));
         }
 
-        
+
     }
 }

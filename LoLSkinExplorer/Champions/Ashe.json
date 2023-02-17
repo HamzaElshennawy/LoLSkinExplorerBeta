@@ -938,7 +938,7 @@
 "abilityIconPath": "Characters/Ashe/HUD/Icons2D/Ashe_P.png",
 "abilityVideoPath": "champion-abilities/0022/ability_0022_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0022/ability_0022_P1.jpg",
-"description": "Ashe's attacks slow their target, causing her to deal increased damage to these targets.<br><br>Ashe's critical strikes deal no bonus damage but apply an empowered slow to the target."
+"description": "Ashe's attacks slow their target, causing her to deal increased damage to these targets.Ashe's critical strikes deal no bonus damage but apply an empowered slow to the target."
 },
 "spells": [
 {
@@ -950,7 +950,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Ashe builds up Focus by attacking. At maximum Focus, Ashe can cast Ranger's Focus to consume all stacks of Focus, temporarily increasing her Attack Speed and transforming her basic attack into a powerful flurry attack for the duration.",
-"dynamicDescription": "<spellPassive>Passive: </spellPassive>Ashe's Attacks grant a stack for @Effect1Amount@ seconds. At @Effect2Amount@ stacks, she may activate this ability.<br><br><spellPassive>Active:</spellPassive> Ashe gains <attackSpeed>@Effect4Amount@% Attack Speed</attackSpeed> and her Attacks deal @EmpoweredDamage@ damage instead for @Effect3Amount@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive: </spellPassive>Ashe's Attacks grant a stack for @Effect1Amount@ seconds. At @Effect2Amount@ stacks, she may activate this ability.<spellPassive>Active:</spellPassive> Ashe gains <attackSpeed>@Effect4Amount@% Attack Speed</attackSpeed> and her Attacks deal @EmpoweredDamage@ damage instead for @Effect3Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 400,
 400,
@@ -1250,7 +1250,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Ashe sends her Hawk Spirit on a scouting mission anywhere on the map.",
-"dynamicDescription": "Ashe sends forth a hawk to grant vision for 5 seconds anywhere on the map. It also reveals the area around it as it flies.<br><br>This ability has 2 charges (@ChargeCooldown@ second recharge).@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Ashe sends forth a hawk to grant vision for 5 seconds anywhere on the map. It also reveals the area around it as it flies.This ability has 2 charges (@ChargeCooldown@ second recharge).@SpellModifierDescriptionAppend@",
 "range": [
 25000,
 25000,

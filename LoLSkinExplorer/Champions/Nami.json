@@ -1055,7 +1055,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Unleashes a stream of water that bounces back and forth between allied and enemy champions, healing allies and damaging enemies.",
-"dynamicDescription": "Nami unleashes a stream of water that bounces between allied and enemy champions. Each champion can only be hit once, and it hits up to @Effect2Amount@ targets.<li>Restores <healing>@TotalHealTooltip@ Health</healing> to allies and will bounce to a nearby enemy champion. <li>Deals <magicDamage>@TotalDamageTooltip@ magic damage</magicDamage> to enemies and will bounce to a nearby allied champion.<br>The damage and healing value is modified by @BounceScalingTooltip@ each bounce. @SpellModifierDescriptionAppend@",
+"dynamicDescription": "Nami unleashes a stream of water that bounces between allied and enemy champions. Each champion can only be hit once, and it hits up to @Effect2Amount@ targets.<li>Restores <healing>@TotalHealTooltip@ Health</healing> to allies and will bounce to a nearby enemy champion. <li>Deals <magicDamage>@TotalDamageTooltip@ magic damage</magicDamage> to enemies and will bounce to a nearby allied champion.The damage and healing value is modified by @BounceScalingTooltip@ each bounce. @SpellModifierDescriptionAppend@",
 "range": [
 725,
 725,
@@ -1355,7 +1355,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Summons a massive Tidal Wave that knocks up, slows, and damages enemies. Allies hit gain double the effect of Surging Tides.",
-"dynamicDescription": "Nami summons a tidal wave, <status>Knocking Up</status> for 0.5 seconds, <status>Slowing</status> by @Effect4Amount@%, and dealing <magicDamage>@TotalDamageTooltip@ magic damage</magicDamage>. The duration of the <status>Slow</status> increases based on distance the wave traveled, up to @Effect5Amount@ seconds.<br><br>Allies hit by the wave gain double the effect of <spellName>Surging Tides</spellName>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Nami summons a tidal wave, <status>Knocking Up</status> for 0.5 seconds, <status>Slowing</status> by @Effect4Amount@%, and dealing <magicDamage>@TotalDamageTooltip@ magic damage</magicDamage>. The duration of the <status>Slow</status> increases based on distance the wave traveled, up to @Effect5Amount@ seconds.Allies hit by the wave gain double the effect of <spellName>Surging Tides</spellName>.@SpellModifierDescriptionAppend@",
 "range": [
 2550,
 2550,

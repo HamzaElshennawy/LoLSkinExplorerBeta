@@ -620,7 +620,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Vi charges her gauntlets and unleashes a vault shattering punch, carrying her forward. Enemies she hits are knocked back and receive a stack of Denting Blows.",
-"dynamicDescription": "<charge>Begin Charging:</charge> Vi begins charging a powerful punch, <status>Slowing</status> herself by @Effect4Amount@%.<br><br><release>Release:</release> Vi dashes forward dealing between @TotalDamage@ and @MaxDamageTooltip@ physical damage based on charge time and applying <spellName>Denting Blows</spellName> to all enemies hit. Vi stops upon colliding with an enemy champion, and <status>Knocks</status> them <status>Back</status>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<charge>Begin Charging:</charge> Vi begins charging a powerful punch, <status>Slowing</status> herself by @Effect4Amount@%.<release>Release:</release> Vi dashes forward dealing between @TotalDamage@ and @MaxDamageTooltip@ physical damage based on charge time and applying <spellName>Denting Blows</spellName> to all enemies hit. Vi stops upon colliding with an enemy champion, and <status>Knocks</status> them <status>Back</status>.@SpellModifierDescriptionAppend@",
 "range": [
 250,
 250,
@@ -920,7 +920,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Vi's next attack blasts through her target, dealing damage to enemies behind it.",
-"dynamicDescription": "Vi's next Attack deals @TotalDamageTooltip@ physical damage to the target and enemies behind them.<br><br>This Ability has 2 charges (@AmmoRechargeTime@ second refresh).@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Vi's next Attack deals @TotalDamageTooltip@ physical damage to the target and enemies behind them.This Ability has 2 charges (@AmmoRechargeTime@ second refresh).@SpellModifierDescriptionAppend@",
 "range": [
 400,
 400,
@@ -1070,7 +1070,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Vi runs down an enemy, knocking aside anyone in the way. When she reaches her target she knocks it into the air, jumps after it, and slams it back into the ground.",
-"dynamicDescription": "Vi singles out an enemy champion, revealing them and dashing unstoppably towards them. Upon reaching them, Vi <status>Knocks</status> them <status>Up</status> for @RStunDuration@ seconds and deals @Damage@ physical damage.<br><br>Any other enemies Vi collides with are dealt damage, knocked aside, and <status>Stunned</status> for @SecondaryTargetStunDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Vi singles out an enemy champion, revealing them and dashing unstoppably towards them. Upon reaching them, Vi <status>Knocks</status> them <status>Up</status> for @RStunDuration@ seconds and deals @Damage@ physical damage.Any other enemies Vi collides with are dealt damage, knocked aside, and <status>Stunned</status> for @SecondaryTargetStunDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 800,
 800,

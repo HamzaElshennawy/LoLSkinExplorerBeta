@@ -1057,8 +1057,8 @@
 "abilityVideoImagePath": "champion-abilities/0131/ability_0131_Q1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Unleashes a bolt of lunar energy in an arc dealing magic damage.<br><br>Afflicts enemies struck with Moonlight, revealing them if they are not stealthed for 3 seconds.",
-"dynamicDescription": "Diana unleashes an arc of lunar energy, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> and marking with <keywordMajor>Moonlight</keywordMajor> for @MoonlightDuration@ seconds. <br><br><keywordMajor>Moonlight</keywordMajor> reveals enemies that are not <keywordStealth>stealthed</keywordStealth>.@SpellModifierDescriptionAppend@",
+"description": "Unleashes a bolt of lunar energy in an arc dealing magic damage.Afflicts enemies struck with Moonlight, revealing them if they are not stealthed for 3 seconds.",
+"dynamicDescription": "Diana unleashes an arc of lunar energy, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> and marking with <keywordMajor>Moonlight</keywordMajor> for @MoonlightDuration@ seconds. <keywordMajor>Moonlight</keywordMajor> reveals enemies that are not <keywordStealth>stealthed</keywordStealth>.@SpellModifierDescriptionAppend@",
 "range": [
 900,
 900,
@@ -1208,7 +1208,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Diana creates three orbiting spheres that detonate on contact with enemies to deal damage in an area. She also gains a temporary shield that absorbs damage. If her third sphere detonates, the shield gains additional strength.",
-"dynamicDescription": "Diana creates three orbiting spheres for @ShieldDuration@ seconds that explode on contact, each dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>, up to a max of <magicDamage>@TotalMaxDamage@ damage</magicDamage>.<br><br>Diana also gains <shield>@ShieldValue@ Shield</shield> for the same duration. When the last sphere detonates, she gains an additional <shield>@ShieldValue@ Shield</shield> and refreshes the duration.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Diana creates three orbiting spheres for @ShieldDuration@ seconds that explode on contact, each dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>, up to a max of <magicDamage>@TotalMaxDamage@ damage</magicDamage>.Diana also gains <shield>@ShieldValue@ Shield</shield> for the same duration. When the last sphere detonates, she gains an additional <shield>@ShieldValue@ Shield</shield> and refreshes the duration.@SpellModifierDescriptionAppend@",
 "range": [
 800,
 800,
@@ -1357,7 +1357,7 @@
 "abilityVideoImagePath": "champion-abilities/0131/ability_0131_E1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Becomes the living embodiment of the vengeful moon, dashing to an enemy and dealing magic damage.<br><br>Lunar Rush has no cooldown when used to dash to an enemy afflicted with Moonlight. All other enemies will have the Moonlight debuff removed regardless of whether they were the target of Lunar Rush.",
+"description": "Becomes the living embodiment of the vengeful moon, dashing to an enemy and dealing magic damage.Lunar Rush has no cooldown when used to dash to an enemy afflicted with Moonlight. All other enemies will have the Moonlight debuff removed regardless of whether they were the target of Lunar Rush.",
 "dynamicDescription": "Diana becomes as the vengeful moon, dashing to an enemy and dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>. If the target is afflicted with <keywordMajor>Moonlight</keywordMajor>, this Ability's Cooldown is refreshed.@SpellModifierDescriptionAppend@",
 "range": [
 825,
@@ -1507,8 +1507,8 @@
 "abilityVideoImagePath": "champion-abilities/0131/ability_0131_R1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Diana reveals and draws in all nearby enemies and slows them.<br><br>If Diana pulls in one or more enemy champions, the moonlight crashes down onto her after a short delay, dealing magic damage in an area around her, increased for each target beyond the first pulled.",
-"dynamicDescription": "Diana <status>Pulls In</status>, <status>Slows</status> by @SlowTooltip@%, and reveals nearby enemies for @SlowDuration@ seconds.<br><br>If Diana hits at least one enemy champion, she calls to the moon, dealing <magicDamage>@RExplosionDamage@ magic damage</magicDamage> plus <magicDamage>@RMultihitAmplification@</magicDamage> for each champion pulled beyond the first, up to a max of an additional <magicDamage>@MaxDamage@ damage</magicDamage>.@SpellModifierDescriptionAppend@",
+"description": "Diana reveals and draws in all nearby enemies and slows them.If Diana pulls in one or more enemy champions, the moonlight crashes down onto her after a short delay, dealing magic damage in an area around her, increased for each target beyond the first pulled.",
+"dynamicDescription": "Diana <status>Pulls In</status>, <status>Slows</status> by @SlowTooltip@%, and reveals nearby enemies for @SlowDuration@ seconds.If Diana hits at least one enemy champion, she calls to the moon, dealing <magicDamage>@RExplosionDamage@ magic damage</magicDamage> plus <magicDamage>@RMultihitAmplification@</magicDamage> for each champion pulled beyond the first, up to a max of an additional <magicDamage>@MaxDamage@ damage</magicDamage>.@SpellModifierDescriptionAppend@",
 "range": [
 475,
 475,

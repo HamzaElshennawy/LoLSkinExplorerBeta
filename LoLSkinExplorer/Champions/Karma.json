@@ -987,7 +987,7 @@
 "abilityVideoImagePath": "champion-abilities/0043/ability_0043_Q1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Karma sends forth a ball of spirit energy that explodes and deals damage upon hitting an enemy unit.<br><br>Mantra Bonus: In addition to the explosion, Mantra increases the destructive power of her Inner Flame, creating a cataclysm which deals damage after a short delay.",
+"description": "Karma sends forth a ball of spirit energy that explodes and deals damage upon hitting an enemy unit.Mantra Bonus: In addition to the explosion, Mantra increases the destructive power of her Inner Flame, creating a cataclysm which deals damage after a short delay.",
 "dynamicDescription": "Karma fires a blast of energy, dealing <magicDamage>@BaseDamage@ magic damage</magicDamage> to the first target hit and surrounding enemies, and <status>Slowing</status> them by @Effect2Amount*100@% for @Effect3Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 950,
@@ -1137,7 +1137,7 @@
 "abilityVideoImagePath": "champion-abilities/0043/ability_0043_W1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Karma creates a tether between herself and a targeted enemy, dealing damage and revealing them. If the tether is not broken, the enemy will be rooted and damaged again.<br><br>Mantra Bonus: Karma strengthens the link, healing herself and extending the root duration.",
+"description": "Karma creates a tether between herself and a targeted enemy, dealing damage and revealing them. If the tether is not broken, the enemy will be rooted and damaged again.Mantra Bonus: Karma strengthens the link, healing herself and extending the root duration.",
 "dynamicDescription": "Karma tethers herself to a champion or jungle monster, dealing <magicDamage>@InitialDamage@ magic damage</magicDamage> and revealing them for 2 seconds. If the tether remains unbroken, the target takes <magicDamage>@InitialDamage@ magic damage</magicDamage> again and is <status>Rooted</status> for @Effect2Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 675,
@@ -1287,7 +1287,7 @@
 "abilityVideoImagePath": "champion-abilities/0043/ability_0043_E1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Karma summons a protective shield that absorbs incoming damage and increases the Move Speed of the protected ally.<br><br>Mantra Bonus: Energy radiates out from her target, strengthening the initial shield and applying Inspire to nearby allied champions.",
+"description": "Karma summons a protective shield that absorbs incoming damage and increases the Move Speed of the protected ally.Mantra Bonus: Energy radiates out from her target, strengthening the initial shield and applying Inspire to nearby allied champions.",
 "dynamicDescription": "Karma grants an allied champion <shield>@TotalShield@ Shield</shield> for @Effect4Amount@ seconds and <speed>@Effect3Amount*100@% Move Speed</speed> for @Effect2Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 800,
@@ -1438,7 +1438,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Karma empowers her next ability to do an additional effect. Mantra is available at level 1 and does not require a skill point.",
-"dynamicDescription": "Karma empowers her next Ability used within 8 seconds.<br><li><spellName>Inner Flame</spellName>: Deals an additional <magicDamage>@RQTotalImpactDamage@ magic damage</magicDamage> and leaves behind a circle of flame, <status>Slowing</status> enemies and dealing an additional <magicDamage>@RQFieldDamage@ magic damage</magicDamage>.<li><spellName>Focused Resolve</spellName>: Karma will restore <healing>@RWHealAmount@ Health</healing> at the beginning and end of the tether, and <status>Root</status> for @RWTotalRoot@ second(s) longer.<li><spellName>Inspire</spellName>: Karma shields her target for <shield>@REBonusShield@ more Shield</shield>, and also shields allies near her target, granting @Effect9Amount*100@% of the total <shield>Shield</shield> and <speed>Move Speed</speed> value.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Karma empowers her next Ability used within 8 seconds.<li><spellName>Inner Flame</spellName>: Deals an additional <magicDamage>@RQTotalImpactDamage@ magic damage</magicDamage> and leaves behind a circle of flame, <status>Slowing</status> enemies and dealing an additional <magicDamage>@RQFieldDamage@ magic damage</magicDamage>.<li><spellName>Focused Resolve</spellName>: Karma will restore <healing>@RWHealAmount@ Health</healing> at the beginning and end of the tether, and <status>Root</status> for @RWTotalRoot@ second(s) longer.<li><spellName>Inspire</spellName>: Karma shields her target for <shield>@REBonusShield@ more Shield</shield>, and also shields allies near her target, granting @Effect9Amount*100@% of the total <shield>Shield</shield> and <speed>Move Speed</speed> value.@SpellModifierDescriptionAppend@",
 "range": [
 1100,
 1100,

@@ -1,10 +1,7 @@
 ﻿using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Numerics;
 using System.Runtime.CompilerServices;
-using System.Text;
 
 namespace LoLSkinExplorer.Models
 {
@@ -17,7 +14,7 @@ namespace LoLSkinExplorer.Models
             get => Alias;
             set
             {
-                if(Alias == value)
+                if (Alias == value)
                     return;
                 Alias = value;
                 NotifyPropertyChanged(nameof(ChampionAlias));
@@ -41,11 +38,12 @@ namespace LoLSkinExplorer.Models
 
         [JsonProperty("name")]
         public string Name;
-        public string ChampionName {
+        public string ChampionName
+        {
             get => Name;
             set
             {
-                if(Name == value) return;
+                if (Name == value) return;
                 Name = value;
                 NotifyPropertyChanged(nameof(ChampionName));
             }
@@ -54,16 +52,17 @@ namespace LoLSkinExplorer.Models
 
         [JsonProperty("id")]
         public string ID;
-        public string ChampionId {
+        public string ChampionId
+        {
             get => ID;
             set
             {
-                if(ID == value) return;
+                if (ID == value) return;
                 ID = value;
                 NotifyPropertyChanged(nameof(ChampionId));
             }
         }
-        
+
 
         [JsonProperty("spells")]
         public List<Abilities> Abilities = new List<Abilities>();
@@ -78,7 +77,7 @@ namespace LoLSkinExplorer.Models
             get => spellP;
             set
             {
-                if(spellP == value) 
+                if (spellP == value)
                     return;
                 spellP = value;
                 NotifyPropertyChanged(nameof(spellP));
@@ -147,7 +146,7 @@ namespace LoLSkinExplorer.Models
             get => _Bio;
             set
             {
-                if(Bio == value) 
+                if (Bio == value)
                     return;
                 Bio = value;
                 NotifyPropertyChanged(nameof(_Bio));
@@ -187,3 +186,4 @@ namespace LoLSkinExplorer.Models
         }
     }
 }
+

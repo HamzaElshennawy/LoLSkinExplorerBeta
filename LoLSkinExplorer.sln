@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoLSkinExplorer.Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoLSkinExplorer.iOS", "LoLSkinExplorer.iOS\LoLSkinExplorer.iOS.csproj", "{D7A87DA9-59DB-4DD3-BE2C-4E15A3088E74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoLSkinExplorer", "LoLSkinExplorer\LoLSkinExplorer.csproj", "{6D5D95CF-D770-4A33-A0EB-08C7301C521A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoLSkinExplorer", "LoLSkinExplorer\LoLSkinExplorer.csproj", "{6D5D95CF-D770-4A33-A0EB-08C7301C521A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

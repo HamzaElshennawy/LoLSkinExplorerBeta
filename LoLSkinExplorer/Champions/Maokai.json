@@ -910,7 +910,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Maokai flings a sapling to the target area to stand guard. More effective in brush.",
-"dynamicDescription": "Maokai flings a sapling, which stands watch for @SaplingDuration@ seconds. Saplings chase nearby enemies, detonating on arrival to deal <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Slow</status> surrounding enemies by @SlowAmount*100@% for @SlowDuration@ seconds. <keywordMajor>Sap Magic's</keywordMajor> Cooldown is reduced by an additional 4 seconds if the sapling hits an enemy champion or epic monster.<br><br>If placed in brush, Saplings instead last for @EmpoweredSaplingDuration@ seconds and cause a larger explosion, dealing <magicDamage>@TotalEmpoweredDamage@ magic damage</magicDamage> over @EmpoweredDoTDuration@ seconds and <status>Slowing</status> enemies by @EmpoweredSlowAmount@.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Maokai flings a sapling, which stands watch for @SaplingDuration@ seconds. Saplings chase nearby enemies, detonating on arrival to deal <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Slow</status> surrounding enemies by @SlowAmount*100@% for @SlowDuration@ seconds. <keywordMajor>Sap Magic's</keywordMajor> Cooldown is reduced by an additional 4 seconds if the sapling hits an enemy champion or epic monster.If placed in brush, Saplings instead last for @EmpoweredSaplingDuration@ seconds and cause a larger explosion, dealing <magicDamage>@TotalEmpoweredDamage@ magic damage</magicDamage> over @EmpoweredDoTDuration@ seconds and <status>Slowing</status> enemies by @EmpoweredSlowAmount@.@SpellModifierDescriptionAppend@",
 "range": [
 1100,
 1100,

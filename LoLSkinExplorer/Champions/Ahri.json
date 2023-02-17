@@ -1419,7 +1419,7 @@
 "abilityIconPath": "Characters/Ahri/HUD/Icons2D/Ahri_SoulEater2.png",
 "abilityVideoPath": "champion-abilities/0103/ability_0103_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0103/ability_0103_P1.jpg",
-"description": "After killing 9 minions or monsters, Ahri heals.<br>After taking down an enemy champion, Ahri heals for a greater amount."
+"description": "After killing 9 minions or monsters, Ahri heals.After taking down an enemy champion, Ahri heals for a greater amount."
 },
 "spells": [
 {
@@ -1881,7 +1881,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Ahri dashes forward and fires essence bolts, damaging nearby enemies. Spirit Rush can be cast up to three times before going on cooldown, and gains additional recasts when taking down enemy champions.",
-"dynamicDescription": "Ahri nimbly dashes, firing @RMaxTargetsPerCast@ essence bolts at nearby enemies, prioritizing champions. These bolts deal <magicDamage>@RCalculatedDamage@ magic damage</magicDamage> each. Spirit Rush can be recast up to 2 more times within @RRecastWindow@ seconds.<br><br>Consuming a champion's Essence with Essence Theft during this period extends the recast window by up to @PDurationExtension@ seconds and grants an additional recast of Spirit Rush (up to @RMaxCasts@ stored).@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Ahri nimbly dashes, firing @RMaxTargetsPerCast@ essence bolts at nearby enemies, prioritizing champions. These bolts deal <magicDamage>@RCalculatedDamage@ magic damage</magicDamage> each. Spirit Rush can be recast up to 2 more times within @RRecastWindow@ seconds.Consuming a champion's Essence with Essence Theft during this period extends the recast window by up to @PDurationExtension@ seconds and grants an additional recast of Spirit Rush (up to @RMaxCasts@ stored).@SpellModifierDescriptionAppend@",
 "range": [
 450,
 450,

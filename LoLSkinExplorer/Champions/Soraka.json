@@ -732,7 +732,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "A star falls from the sky at the target location dealing magic damage and slowing enemies. If an enemy champion is hit by Starcall, Soraka recovers Health.",
-"dynamicDescription": "Soraka calls down a star, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Slowing</status> by @MoveSpeedSlow*100@% for @SlowDuration@ seconds. <br><br>Hitting an enemy champion grants Soraka <keywordMajor>Rejuvenation</keywordMajor>, which restores <healing>@TotalHoT@ Health</healing> over @HoTDuration@ seconds and grants <speed>@MoveSpeedHaste*100@% Move Speed</speed> decaying over the same duration.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Soraka calls down a star, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Slowing</status> by @MoveSpeedSlow*100@% for @SlowDuration@ seconds. Hitting an enemy champion grants Soraka <keywordMajor>Rejuvenation</keywordMajor>, which restores <healing>@TotalHoT@ Health</healing> over @HoTDuration@ seconds and grants <speed>@MoveSpeedHaste*100@% Move Speed</speed> decaying over the same duration.@SpellModifierDescriptionAppend@",
 "range": [
 810,
 810,
@@ -882,7 +882,7 @@
 "cost": "@PercentHealthCost*100@% Max Health, @Cost@ Mana",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Soraka sacrifices a portion of her own health to heal another friendly champion.",
-"dynamicDescription": "Soraka restores <healing>@TotalHeal@ Health</healing> to another allied champion.<br><br>If Soraka is affected by <keywordMajor>Rejuvenation</keywordMajor>, the Health cost will be reduced by @PercentHealthCostRefund*100@%, and the target will gain <keywordMajor>Rejuvenation</keywordMajor> for @Spell.SorakaQ:HoTDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Soraka restores <healing>@TotalHeal@ Health</healing> to another allied champion.If Soraka is affected by <keywordMajor>Rejuvenation</keywordMajor>, the Health cost will be reduced by @PercentHealthCostRefund*100@%, and the target will gain <keywordMajor>Rejuvenation</keywordMajor> for @Spell.SorakaQ:HoTDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 550,
 550,

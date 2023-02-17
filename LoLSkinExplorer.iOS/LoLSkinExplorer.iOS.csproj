@@ -141,6 +141,9 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.2-beta1</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Forms.VideoPlayer">
+      <Version>1.0.8</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.CommunityToolkit">
       <Version>[2.0.4]</Version>
     </PackageReference>

@@ -909,7 +909,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Xin Zhao's next 3 standard attacks deal increased damage with the third attack knocking an opponent into the air.",
-"dynamicDescription": "Xin Zhao's next 3 Attacks deal an additional @BonusDamage@ physical damage and reduces his other Ability's Cooldowns by 1 second. The third Attack also <status>Knocks Up</status> for @Effect2Amount@ seconds.<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Xin Zhao's next 3 Attacks deal an additional @BonusDamage@ physical damage and reduces his other Ability's Cooldowns by 1 second. The third Attack also <status>Knocks Up</status> for @Effect2Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 375,
 375,
@@ -1059,7 +1059,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Xin Zhao slashes in front of himself with his spear, then thrusts it forward, slowing affected enemies and marking them as Challenged.",
-"dynamicDescription": "Xin Zhao slashes, dealing @SlashDamage@ physical damage, then thrusts, dealing @ThrustDamage@. Enemies hit by the thrust are <status>Slowed</status> by @Effect6Amount*-100@% for @Effect7Amount@ seconds. <br><br>Champions and Large Monsters hit by the thrust are marked as <keywordMajor>Challenged</keywordMajor> for @MarkDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Xin Zhao slashes, dealing @SlashDamage@ physical damage, then thrusts, dealing @ThrustDamage@. Enemies hit by the thrust are <status>Slowed</status> by @Effect6Amount*-100@% for @Effect7Amount@ seconds. Champions and Large Monsters hit by the thrust are marked as <keywordMajor>Challenged</keywordMajor> for @MarkDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,
@@ -1209,7 +1209,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Xin Zhao charges to an enemy, gaining increased Attack Speed and dealing damage to all enemies in the area, slowing them briefly. Audacious Charge gains increased range against Challenged targets.",
-"dynamicDescription": "Xin Zhao charges an enemy, dealing <magicDamage>@ChargeDamage@ magic damage</magicDamage> to nearby enemies and <status>Slowing</status> them by @BaseSlowAmount@% for @Effect6Amount@ seconds.<br><br>Xin Zhao also grants himself <attackSpeed>@Effect3Amount*100@% Attack Speed</attackSpeed> for @Effect4Amount@ seconds.<br><br><spellName>Audacious Charge's</spellName> range is increased on enemies that are <keywordMajor>Challenged</keywordMajor>. <br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Xin Zhao charges an enemy, dealing <magicDamage>@ChargeDamage@ magic damage</magicDamage> to nearby enemies and <status>Slowing</status> them by @BaseSlowAmount@% for @Effect6Amount@ seconds.Xin Zhao also grants himself <attackSpeed>@Effect3Amount*100@% Attack Speed</attackSpeed> for @Effect4Amount@ seconds.<spellName>Audacious Charge's</spellName> range is increased on enemies that are <keywordMajor>Challenged</keywordMajor>. @SpellModifierDescriptionAppend@",
 "range": [
 650,
 650,
@@ -1359,7 +1359,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Xin Zhao challenges an enemy he damaged recently. Xin Zhao deals damage to nearby enemies based on their current Health and knocks non-challenged targets back, becoming impervious to damage dealt by champions outside of the circle created.",
-"dynamicDescription": "The last champion Xin Zhao damaged with an Attack or <spellName>Audacious Charge</spellName> is <keywordMajor>Challenged</keywordMajor> for @MarkDuration@ seconds.<br><br>Xin Zhao unleashes a sweep around him that deals @TotalDamage@ plus @PercentCurrentHealthDamage*100@% current Health physical damage and <status>Knocks Back</status> all <keywordMajor>non-Challenged</keywordMajor> enemies. <br>  <br>Afterwards, Xin Zhao becomes immune to damage from enemies outside the sweep range for @MissileDefenseBaseDuration@ seconds. @SpellModifierDescriptionAppend@",
+"dynamicDescription": "The last champion Xin Zhao damaged with an Attack or <spellName>Audacious Charge</spellName> is <keywordMajor>Challenged</keywordMajor> for @MarkDuration@ seconds.Xin Zhao unleashes a sweep around him that deals @TotalDamage@ plus @PercentCurrentHealthDamage*100@% current Health physical damage and <status>Knocks Back</status> all <keywordMajor>non-Challenged</keywordMajor> enemies.   Afterwards, Xin Zhao becomes immune to damage from enemies outside the sweep range for @MissileDefenseBaseDuration@ seconds. @SpellModifierDescriptionAppend@",
 "range": [
 500,
 500,

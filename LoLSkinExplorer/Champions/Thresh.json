@@ -773,7 +773,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Thresh binds an enemy in chains and pulls them toward him. Activating this ability a second time pulls Thresh to the enemy.",
-"dynamicDescription": "Thresh throws out his scythe, <status>Stunning</status> the first unit hit and <status>Pulling</status> them towards Thresh for @Effect2Amount@ seconds. The scythe does <magicDamage>@TotalDamage@ magic damage</magicDamage> and also grants <keywordStealth>True Sight</keywordStealth> for the duration.<br><br>Thresh can <recast>Recast</recast> this Ability to pull himself to the enemy.<br><br>If this Ability hits, its Cooldown is reduced by @Effect4Amount@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Thresh throws out his scythe, <status>Stunning</status> the first unit hit and <status>Pulling</status> them towards Thresh for @Effect2Amount@ seconds. The scythe does <magicDamage>@TotalDamage@ magic damage</magicDamage> and also grants <keywordStealth>True Sight</keywordStealth> for the duration.Thresh can <recast>Recast</recast> this Ability to pull himself to the enemy.If this Ability hits, its Cooldown is reduced by @Effect4Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 1075,
 1075,
@@ -923,7 +923,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Thresh throws out a lantern that shields nearby allied Champions from damage. Allies can click the lantern to dash to Thresh.",
-"dynamicDescription": "Thresh throws his lantern, allowing an ally to click on it to dash to Thresh.<br><br>The lantern also grants <shield>@TotalShield@ Shield</shield> for @Effect5Amount@ seconds to Thresh and the first ally champion to come in contact with it.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Thresh throws his lantern, allowing an ally to click on it to dash to Thresh.The lantern also grants <shield>@TotalShield@ Shield</shield> for @Effect5Amount@ seconds to Thresh and the first ally champion to come in contact with it.@SpellModifierDescriptionAppend@",
 "range": [
 950,
 950,
@@ -1073,7 +1073,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Thresh's attacks wind up, dealing more damage the longer he waits between attacks. When activated, Thresh sweeps his chain, knocking all enemies hit in the direction of the blow.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Thresh's Attacks deal additional damage based on how long since he last Attacked. They deal between <magicDamage>@PAttackDamageMin@</magicDamage> and <magicDamage>@PAttackDamageMax@ magic damage</magicDamage>.<br><br><spellActive>Active:</spellActive> Thresh whips his chains, <status>Pulling</status> or <status>Pushing</status> enemies in the direction of the swing. Enemies hit are also <status>Slowed</status> by @Effect2Amount@% for @Effect4Amount@ second and take <magicDamage>@TotalDamage@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Thresh's Attacks deal additional damage based on how long since he last Attacked. They deal between <magicDamage>@PAttackDamageMin@</magicDamage> and <magicDamage>@PAttackDamageMax@ magic damage</magicDamage>.<spellActive>Active:</spellActive> Thresh whips his chains, <status>Pulling</status> or <status>Pushing</status> enemies in the direction of the swing. Enemies hit are also <status>Slowed</status> by @Effect2Amount@% for @Effect4Amount@ second and take <magicDamage>@TotalDamage@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
 "range": [
 500,
 500,

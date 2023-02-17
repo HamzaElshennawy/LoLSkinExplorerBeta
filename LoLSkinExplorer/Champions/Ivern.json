@@ -519,7 +519,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@f12@s Cooldown",
 "description": "In brush, Ivern's attacks deal bonus magic damage. Ivern can activate this ability to create a patch of brush.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> While in brush and for 3 seconds after leaving it Ivern's Attacks deal an additional <magicDamage>@TotalDamage@ magic damage</magicDamage>.<br><br><spellActive>Active:</spellActive> Ivern grows a patch of Brush for @Effect1Amount@ seconds and reveals it for 3 seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> While in brush and for 3 seconds after leaving it Ivern's Attacks deal an additional <magicDamage>@TotalDamage@ magic damage</magicDamage>.<spellActive>Active:</spellActive> Ivern grows a patch of Brush for @Effect1Amount@ seconds and reveals it for 3 seconds.@SpellModifierDescriptionAppend@",
 "range": [
 1150,
 1150,
@@ -819,7 +819,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Ivern summons his Sentinel friend Daisy to fight with him. Daisy will send out a shockwave if she attacks the same champion three times in a row.",
-"dynamicDescription": "Ivern summons his sentinel friend Daisy for @f6@ seconds. If Daisy Attacks the same champion three consecutive times she creates a shockwave, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Knocking Up</status> enemies for 1 second (3s Cooldown).<br><br>Daisy has:<br><healing>@TotalDaisyHP@ Health</healing><br><scaleArmor>@TotalBonusResists@ Armor</scaleArmor><br><scaleMR>@TotalBonusResists@ Magic Resist</scaleMR><br><scaleAD>@TotalDaisyAD@ Attack Damage</scaleAD><br><br><recast>Recast:</recast> Manually issue orders to Daisy.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Ivern summons his sentinel friend Daisy for @f6@ seconds. If Daisy Attacks the same champion three consecutive times she creates a shockwave, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Knocking Up</status> enemies for 1 second (3s Cooldown).Daisy has:<healing>@TotalDaisyHP@ Health</healing><scaleArmor>@TotalBonusResists@ Armor</scaleArmor><scaleMR>@TotalBonusResists@ Magic Resist</scaleMR><scaleAD>@TotalDaisyAD@ Attack Damage</scaleAD><recast>Recast:</recast> Manually issue orders to Daisy.@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,

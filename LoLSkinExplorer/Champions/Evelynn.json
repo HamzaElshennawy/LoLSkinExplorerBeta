@@ -784,7 +784,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Evelynn strikes out with her Lasher, dealing damage to the first unit hit. Then, Evelynn can shoot a line of spikes at nearby foes up to 3 times.",
-"dynamicDescription": "Evelynn strikes with her Lasher, dealing <magicDamage>@MissileDamageTOOLTIP@ magic damage</magicDamage> to the first enemy hit and causing Evelynn's next 3 Attacks or Abilities on that unit to deal an additional <magicDamage>@TotalBonusDamageTOOLTIP@ magic damage</magicDamage>. Evelynn can <recast>Recast</recast> this Ability up to 3 times.<br><br><recast>Recast:</recast> Evelynn fires spikes through the nearest enemy, dealing <magicDamage>@MissileDamageTOOLTIP@ magic damage</magicDamage> to all enemies hit.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Evelynn strikes with her Lasher, dealing <magicDamage>@MissileDamageTOOLTIP@ magic damage</magicDamage> to the first enemy hit and causing Evelynn's next 3 Attacks or Abilities on that unit to deal an additional <magicDamage>@TotalBonusDamageTOOLTIP@ magic damage</magicDamage>. Evelynn can <recast>Recast</recast> this Ability up to 3 times.<recast>Recast:</recast> Evelynn fires spikes through the nearest enemy, dealing <magicDamage>@MissileDamageTOOLTIP@ magic damage</magicDamage> to all enemies hit.@SpellModifierDescriptionAppend@",
 "range": [
 800,
 800,
@@ -934,7 +934,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Evelynn curses her target, causing her next attack or spell after a delay to charm her target and reduce their magic resist.",
-"dynamicDescription": "Evelynn marks a champion or monster for 5 seconds. If Evelynn hits the target with an Attack or Ability, she will expunge the mark, refund its cost, and <status>Slow</status> the target by @SlowAmount*100@% for @SlowDuration@ seconds.<br><br>If the mark lasts at least 2.5 seconds, expunging it has extra effects:<li>Against champions: <status>Charms</status> them for @CharmDuration@ second(s) and removes <scaleMR>@MRShred*100@% Magic Resist</scaleMR> for @ShredDuration@ seconds.<li>Against monsters: <status>Charms</status> them for @MonsterCharm@ seconds and deals <magicDamage>@MonsterDamageTotalTOOLTIP@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Evelynn marks a champion or monster for 5 seconds. If Evelynn hits the target with an Attack or Ability, she will expunge the mark, refund its cost, and <status>Slow</status> the target by @SlowAmount*100@% for @SlowDuration@ seconds.If the mark lasts at least 2.5 seconds, expunging it has extra effects:<li>Against champions: <status>Charms</status> them for @CharmDuration@ second(s) and removes <scaleMR>@MRShred*100@% Magic Resist</scaleMR> for @ShredDuration@ seconds.<li>Against monsters: <status>Charms</status> them for @MonsterCharm@ seconds and deals <magicDamage>@MonsterDamageTotalTOOLTIP@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
 "range": [
 1200,
 1300,
@@ -1084,7 +1084,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Evelynn whips her target with her Lasher, dealing damage. She then gains Move Speed for a short duration.",
-"dynamicDescription": "Evelynn whips an enemy, dealing <magicDamage>@BaseDamage@ plus @PercentHealthBaseTOOLTIP@ max Health magic damage</magicDamage>. Evelynn gains <speed>@SpeedAmount*100@% Move Speed</speed> for @SpeedDuration@ seconds.<br><br>Entering <keywordMajor>Demon Shade</keywordMajor> refreshes this Ability's cooldown and empowers it. When this Ability is empowered, Evelynn dashes to the target and deals <magicDamage>@EmpoweredDamage@ plus @PercentHealthEmpoweredTOOLTIP@ max Health magic damage</magicDamage> to her target and everyone she passes through instead.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Evelynn whips an enemy, dealing <magicDamage>@BaseDamage@ plus @PercentHealthBaseTOOLTIP@ max Health magic damage</magicDamage>. Evelynn gains <speed>@SpeedAmount*100@% Move Speed</speed> for @SpeedDuration@ seconds.Entering <keywordMajor>Demon Shade</keywordMajor> refreshes this Ability's cooldown and empowers it. When this Ability is empowered, Evelynn dashes to the target and deals <magicDamage>@EmpoweredDamage@ plus @PercentHealthEmpoweredTOOLTIP@ max Health magic damage</magicDamage> to her target and everyone she passes through instead.@SpellModifierDescriptionAppend@",
 "range": [
 210,
 210,

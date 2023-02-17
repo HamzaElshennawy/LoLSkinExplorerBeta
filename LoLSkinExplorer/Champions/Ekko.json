@@ -972,7 +972,7 @@
 "abilityIconPath": "Characters/Ekko/HUD/Icons2D/Ekko_P.png",
 "abilityVideoPath": "champion-abilities/0245/ability_0245_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0245/ability_0245_P1.jpg",
-"description": "Every third attack or damaging spell on the same target deals bonus magic damage, and grants Ekko a burst of speed if the target is a champion.<br><br>"
+"description": "Every third attack or damaging spell on the same target deals bonus magic damage, and grants Ekko a burst of speed if the target is a champion."
 },
 "spells": [
 {
@@ -1134,7 +1134,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Ekko's basic attacks deal bonus magic damage to low health enemies. He can cast Parallel Convergence to split the timeline, creating an anomaly after a few seconds that slows enemies caught inside. If Ekko enters the anomaly, he gains shielding and stuns enemies by suspending them in time.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Ekko's Attacks against enemies below 30% Health deal <magicDamage>@MissingHealthPercent@ missing Health magic damage</magicDamage>.<br><br><spellActive>Active:</spellActive> Ekko launches a chronosphere lasting 1.5 seconds after a delay that <status>Slows</status> enemies inside by @Effect10Amount@%. If Ekko enters the sphere, he detonates it, <status>Stunning</status> for @Effect2Amount@ seconds and gaining <shield>@TotalShield@ Shield</shield>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Ekko's Attacks against enemies below 30% Health deal <magicDamage>@MissingHealthPercent@ missing Health magic damage</magicDamage>.<spellActive>Active:</spellActive> Ekko launches a chronosphere lasting 1.5 seconds after a delay that <status>Slows</status> enemies inside by @Effect10Amount@%. If Ekko enters the sphere, he detonates it, <status>Stunning</status> for @Effect2Amount@ seconds and gaining <shield>@TotalShield@ Shield</shield>.@SpellModifierDescriptionAppend@",
 "range": [
 1600,
 1600,

@@ -1,9 +1,6 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text;
 
 namespace LoLSkinExplorer.Models
 {
@@ -14,9 +11,9 @@ namespace LoLSkinExplorer.Models
         public string ChromaName
         {
             get => Name;
-            set 
+            set
             {
-                if(Name == value) 
+                if (Name == value)
                     return;
                 Name = value;
                 NotifyPropertyChanged(nameof(Name));
@@ -29,7 +26,7 @@ namespace LoLSkinExplorer.Models
             get => id;
             set
             {
-                if(id == value) 
+                if (id == value)
                     return;
                 id = value;
                 NotifyPropertyChanged(nameof(id));
@@ -42,13 +39,13 @@ namespace LoLSkinExplorer.Models
             get => path;
             set
             {
-                if(path == value)
+                if (path == value)
                     return;
                 path = value;
                 NotifyPropertyChanged(nameof(path));
             }
         }
-        
+
         public class Description : Chromas
         {
             [JsonProperty("region")]
@@ -58,7 +55,7 @@ namespace LoLSkinExplorer.Models
                 get => region;
                 set
                 {
-                    if(region == value)
+                    if (region == value)
                         return;
                     region = value;
                     NotifyPropertyChanged(nameof(region));
@@ -71,9 +68,9 @@ namespace LoLSkinExplorer.Models
                 get => description;
                 set
                 {
-                    if(description == value) return;
+                    if (description == value) return;
                     description = value;
-                    NotifyPropertyChanged(nameof(description));                
+                    NotifyPropertyChanged(nameof(description));
                 }
             }
         }

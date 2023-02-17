@@ -755,7 +755,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Ziggs flings an explosive charge that detonates after 4 seconds, or when this ability is activated again. The explosion deals magic damage to enemies, knocking them away. Ziggs is also knocked away, but takes no damage. Ziggs can use the Satchel to hexplode vulnerable enemy turrets.",
-"dynamicDescription": "Ziggs flings an explosive charge that detonates after @Effect2Amount@ seconds, or when this ability is <recast>Recast</recast>. It deals <magicDamage>@TotalDamage@ magic damage</magicDamage> to enemies and <status>Knocks</status> them <status>Back</status>. Ziggs is also knocked away, but takes no damage.<br><br>Satchel Charge will automatically destroy towers below @f1*100@% of their Health.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Ziggs flings an explosive charge that detonates after @Effect2Amount@ seconds, or when this ability is <recast>Recast</recast>. It deals <magicDamage>@TotalDamage@ magic damage</magicDamage> to enemies and <status>Knocks</status> them <status>Back</status>. Ziggs is also knocked away, but takes no damage.Satchel Charge will automatically destroy towers below @f1*100@% of their Health.@SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,

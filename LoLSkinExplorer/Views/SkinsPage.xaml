@@ -6,6 +6,7 @@
              x:Class="LoLSkinExplorer.Views.SkinsPage" 
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarHasShadow="True"
+             Shell.PresentationMode="Animated"
              BackgroundColor="#43494c" Title="{Binding ChampName}">
 
 

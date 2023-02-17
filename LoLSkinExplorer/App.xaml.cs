@@ -1,7 +1,4 @@
-﻿using LoLSkinExplorer.Views;
-using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace LoLSkinExplorer
 {
@@ -11,7 +8,7 @@ namespace LoLSkinExplorer
         public App()
         {
             InitializeComponent();
-
+            
             MainPage = new AppShell();
         }
 

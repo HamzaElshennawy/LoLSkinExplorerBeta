@@ -757,7 +757,7 @@
 "abilityIconPath": "Characters/Senna/HUD/Icons2D/Senna_Passive.png",
 "abilityVideoPath": "champion-abilities/0235/ability_0235_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0235/ability_0235_P1.jpg",
-"description": "When units die near Senna, their souls are periodically trapped by the Black Mist. Senna can attack these souls to free them, absorbing the Mist that held them in death. Mist fuels her Relic Cannon's power with increased Attack Damage, Attack Range, and Critical Strike Chance. <br><br>Attacks from Senna's Relic Cannon take longer to fire, deal bonus damage, and briefly grant her a portion of her target's Move Speed."
+"description": "When units die near Senna, their souls are periodically trapped by the Black Mist. Senna can attack these souls to free them, absorbing the Mist that held them in death. Mist fuels her Relic Cannon's power with increased Attack Damage, Attack Range, and Critical Strike Chance. Attacks from Senna's Relic Cannon take longer to fire, deal bonus damage, and briefly grant her a portion of her target's Move Speed."
 },
 "spells": [
 {
@@ -769,7 +769,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "From the twin barrels of her Relic Cannon, Senna fires a unified beam of light and shadow through a target, healing allies and damaging enemies.",
-"dynamicDescription": "Senna shoots a bolt of piercing shadow through an ally or enemy, dealing @TotalDamage@ physical damage to enemies and <status>Slowing</status> them by @TotalSlow@ for @SlowDuration@ second(s). Restores <healing>@TotalHeal@ Health</healing> to allied champions. <br><br>Attacks reduce this Ability's Cooldown by @CDReductionOnHit@ second.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Senna shoots a bolt of piercing shadow through an ally or enemy, dealing @TotalDamage@ physical damage to enemies and <status>Slowing</status> them by @TotalSlow@ for @SlowDuration@ second(s). Restores <healing>@TotalHeal@ Health</healing> to allied champions. Attacks reduce this Ability's Cooldown by @CDReductionOnHit@ second.@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,

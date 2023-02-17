@@ -1242,7 +1242,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Fiora lunges in a direction and stabs a nearby enemy, dealing physical damage and applying on-hit effects.",
-"dynamicDescription": "Fiora lunges in a direction and stabs the closest enemy, ward, or structure, dealing @TotalDamage@ physical damage. The strike will prioritize <keywordMajor>Vitals</keywordMajor> and enemies it will kill.<br><br>If Fiora strikes an enemy, this Ability's Cooldown is reduced by @Effect4Amount@%.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Fiora lunges in a direction and stabs the closest enemy, ward, or structure, dealing @TotalDamage@ physical damage. The strike will prioritize <keywordMajor>Vitals</keywordMajor> and enemies it will kill.If Fiora strikes an enemy, this Ability's Cooldown is reduced by @Effect4Amount@%.@SpellModifierDescriptionAppend@",
 "range": [
 400,
 400,
@@ -1692,7 +1692,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Fiora reveals all four Vitals on an enemy champion and gains Move Speed while near them. If Fiora hits all four Vitals or if the target dies after she has hit at least one, Fiora and her allies in the area are healed over the next few seconds.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> <spellName>Duelist's Dance</spellName> <speed>Move Speed</speed> bonus is increased to @PercentMS@%.<br><br><spellActive>Active:</spellActive> Fiora reveals all four <keywordMajor>Vitals</keywordMajor> on a champion for a max of <trueDamage>@spell.FioraPassive:RDamageTotal@ max Health true damage</trueDamage> and gains <speed><spellName>Duelist's Dance</spellName>'s Move Speed</speed> bonus while near the target.<br><br>If Fiora strikes all four <keywordMajor>Vitals</keywordMajor> within @MarkDuration@ seconds or if the target dies after she has hit at least one, Fiora restores <healing>@HealPerSecondCalc@ Health per second</healing> to surrounding allied champions for between @MinHealDuration@ to @HealDuration@ seconds, scaling with the number of <keywordMajor>Vitals</keywordMajor> hit.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> <spellName>Duelist's Dance</spellName> <speed>Move Speed</speed> bonus is increased to @PercentMS@%.<spellActive>Active:</spellActive> Fiora reveals all four <keywordMajor>Vitals</keywordMajor> on a champion for a max of <trueDamage>@spell.FioraPassive:RDamageTotal@ max Health true damage</trueDamage> and gains <speed><spellName>Duelist's Dance</spellName>'s Move Speed</speed> bonus while near the target.If Fiora strikes all four <keywordMajor>Vitals</keywordMajor> within @MarkDuration@ seconds or if the target dies after she has hit at least one, Fiora restores <healing>@HealPerSecondCalc@ Health per second</healing> to surrounding allied champions for between @MinHealDuration@ to @HealDuration@ seconds, scaling with the number of <keywordMajor>Vitals</keywordMajor> hit.@SpellModifierDescriptionAppend@",
 "range": [
 500,
 500,

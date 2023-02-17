@@ -461,7 +461,7 @@
 "abilityIconPath": "Characters/DrMundo/HUD/Icons2D/DrMundo_P.png",
 "abilityVideoPath": "champion-abilities/0036/ability_0036_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0036/ability_0036_P1.jpg",
-"description": "Dr. Mundo resists the first Immobilizing effect that hits him, instead losing Health and dropping a chemical cannister nearby. Dr. Mundo can pick it up by walking over it, restoring Health and reducing this Ability's Cooldown.<br><br>Dr. Mundo also has significantly increased Health regeneration.<br>"
+"description": "Dr. Mundo resists the first Immobilizing effect that hits him, instead losing Health and dropping a chemical cannister nearby. Dr. Mundo can pick it up by walking over it, restoring Health and reducing this Ability's Cooldown.Dr. Mundo also has significantly increased Health regeneration."
 },
 "spells": [
 {
@@ -470,10 +470,10 @@
 "abilityIconPath": "Characters/DrMundo/HUD/Icons2D/DrMundo_Q.png",
 "abilityVideoPath": "champion-abilities/0036/ability_0036_Q1.webm",
 "abilityVideoImagePath": "champion-abilities/0036/ability_0036_Q1.jpg",
-"cost": "<font color='#CC3300'>@HealthCost@ Health</font>",
+"cost": "<font color='#CC3300'>@HealthCost@ Health",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Dr. Mundo throws an infected bonesaw, dealing damage to the first enemy hit based on their current health and slowing them.",
-"dynamicDescription": "Dr. Mundo hurls his bonesaw, dealing <magicDamage>@CurrentHealthDamage*100@% current Health magic damage</magicDamage> to the first enemy hit and <status>Slowing</status> them by @SlowAmount*100@% for @SlowDuration@ seconds.<br><br>If the bonesaw hits a champion or monster, Dr. Mundo restores <healing>@HealthRestoreOnHitChampionMonster@ Health</healing>. If it hits a non-champion or non-monster, Dr. Mundo instead restores <healing>@HealthRestoreOnHitMinion@ Health</healing>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Dr. Mundo hurls his bonesaw, dealing <magicDamage>@CurrentHealthDamage*100@% current Health magic damage</magicDamage> to the first enemy hit and <status>Slowing</status> them by @SlowAmount*100@% for @SlowDuration@ seconds.If the bonesaw hits a champion or monster, Dr. Mundo restores <healing>@HealthRestoreOnHitChampionMonster@ Health</healing>. If it hits a non-champion or non-monster, Dr. Mundo instead restores <healing>@HealthRestoreOnHitMinion@ Health</healing>.@SpellModifierDescriptionAppend@",
 "range": [
 975,
 975,
@@ -620,10 +620,10 @@
 "abilityIconPath": "Characters/DrMundo/HUD/Icons2D/DrMundo_W.png",
 "abilityVideoPath": "champion-abilities/0036/ability_0036_W1.webm",
 "abilityVideoImagePath": "champion-abilities/0036/ability_0036_W1.jpg",
-"cost": "<font color='#CC3300'>@CurrentHealthCost*100@% Current Health</font>",
+"cost": "<font color='#CC3300'>@CurrentHealthCost*100@% Current Health",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Dr. Mundo electrocutes himself, dealing persistent damage to nearby enemies and storing a portion of damage he takes. At the end of the duration or on Recast, Dr. Mundo deals a burst of damage to nearby enemies. If the burst hit an enemy, he heals a percentage of the stored damage.",
-"dynamicDescription": "Dr. Mundo charges up a defibrilator, dealing <magicDamage>@DamagePerTick*4@ magic damage</magicDamage> each second for up to @Duration@ seconds to nearby enemies. While active he stores @GrayHealthStorage*100@% of damage taken as gray health and can <recast>Recast</recast>.<br><br><recast>Recast:</recast> Detonate the defibrilator, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> to nearby enemies. If this hits at least one champion, Dr. Mundo restores <healing>@GrayHealthBigMod*100@% of gray health</healing>. If only non-champions were hit, Dr. Mundo instead restores <healing>@GrayHealthSmallMod*100@% of gray health</healing>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Dr. Mundo charges up a defibrilator, dealing <magicDamage>@DamagePerTick*4@ magic damage</magicDamage> each second for up to @Duration@ seconds to nearby enemies. While active he stores @GrayHealthStorage*100@% of damage taken as gray health and can <recast>Recast</recast>.<recast>Recast:</recast> Detonate the defibrilator, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> to nearby enemies. If this hits at least one champion, Dr. Mundo restores <healing>@GrayHealthBigMod*100@% of gray health</healing>. If only non-champions were hit, Dr. Mundo instead restores <healing>@GrayHealthSmallMod*100@% of gray health</healing>.@SpellModifierDescriptionAppend@",
 "range": [
 325,
 325,
@@ -770,10 +770,10 @@
 "abilityIconPath": "Characters/DrMundo/HUD/Icons2D/DrMundo_E.png",
 "abilityVideoPath": "champion-abilities/0036/ability_0036_E1.webm",
 "abilityVideoImagePath": "champion-abilities/0036/ability_0036_E1.jpg",
-"cost": "<font color='#CC3300'>@FlatHealthCost@ Health</font>",
+"cost": "<font color='#CC3300'>@FlatHealthCost@ Health",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Passive - Dr. Mundo gains bonus Attack Damage, increasing based on his missing Health.<br><br>Active - Dr. Mundo slams his “medical” bag into an enemy, dealing additional damage based on his missing Health. If the enemy dies they are swatted away, dealing damage to enemies they pass through.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Dr Mundo gains @PassiveBonusAD@ Attack Damage, plus up to @MaxMissingHealthAD@ Attack Damage based on his missing Health.<br><br><spellActive>Active:</spellActive> Mundo violently swings his \"medical\" bag, causing his next Attack to deal an additional @AdditionalDamage@ physical damage, increased by up to @MaxDamageAmpTooltip@ based on his missing Health. If the enemy is killed, Mundo swats them away, dealing the minimum damage to all enemies they pass through. Small monsters are swatted immediately.@SpellModifierDescriptionAppend@",
+"description": "Passive - Dr. Mundo gains bonus Attack Damage, increasing based on his missing Health.Active - Dr. Mundo slams his “medical” bag into an enemy, dealing additional damage based on his missing Health. If the enemy dies they are swatted away, dealing damage to enemies they pass through.",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Dr Mundo gains @PassiveBonusAD@ Attack Damage, plus up to @MaxMissingHealthAD@ Attack Damage based on his missing Health.<spellActive>Active:</spellActive> Mundo violently swings his \"medical\" bag, causing his next Attack to deal an additional @AdditionalDamage@ physical damage, increased by up to @MaxDamageAmpTooltip@ based on his missing Health. If the enemy is killed, Mundo swats them away, dealing the minimum damage to all enemies they pass through. Small monsters are swatted immediately.@SpellModifierDescriptionAppend@",
 "range": [
 0,
 0,

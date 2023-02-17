@@ -704,8 +704,8 @@
 "abilityVideoImagePath": "champion-abilities/0350/ability_0350_Q1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Yuumi fires a missile, dealing damage to the first target hit. It deals bonus damage and slows if it takes at least 1 second to get to its target.<br><br>While Attached, the missile can be controlled with your cursor.",
-"dynamicDescription": "Yuumi summons an errant missile that deals <magicDamage>@TotalMissileDamage@ magic damage</magicDamage> to the first enemy hit. If the missile travels for @AfterburnerTimeTooltip@ second before impacting, it deals <magicDamage>@EmpoweredMissileDamage@ plus @CurrentHealthDamage*100@% current Health magic damage</magicDamage> instead and <status>Slows</status> champions by @SlowAmount@% for @SlowDuration@ second.<br><br>If cast while <keywordMajor>Attached</keywordMajor>, Yuumi can control the missile using her mouse.@SpellModifierDescriptionAppend@",
+"description": "Yuumi fires a missile, dealing damage to the first target hit. It deals bonus damage and slows if it takes at least 1 second to get to its target.While Attached, the missile can be controlled with your cursor.",
+"dynamicDescription": "Yuumi summons an errant missile that deals <magicDamage>@TotalMissileDamage@ magic damage</magicDamage> to the first enemy hit. If the missile travels for @AfterburnerTimeTooltip@ second before impacting, it deals <magicDamage>@EmpoweredMissileDamage@ plus @CurrentHealthDamage*100@% current Health magic damage</magicDamage> instead and <status>Slows</status> champions by @SlowAmount@% for @SlowDuration@ second.If cast while <keywordMajor>Attached</keywordMajor>, Yuumi can control the missile using her mouse.@SpellModifierDescriptionAppend@",
 "range": [
 1150,
 1150,
@@ -855,7 +855,7 @@
 "cost": "No Cost",
 "cooldown": "@AttachCooldown@s Cooldown",
 "description": "Passively, Yuumi increases her ally's Adaptive Force and her own. Actively, Yuumi dashes to a target ally, becoming untargetable from everything except turrets.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Yuumi increases her <keywordMajor>Attached</keywordMajor> ally's Adaptive Force by @FlatAdaptiveStats@ + @AdaptiveStatSharing*100@%, and grants herself the same amount.<br><br><spellActive>Active:</spellActive> Yuumi dashes to an ally champion and <keywordMajor>Attaches</keywordMajor> to them. While Yuumi is <keywordMajor>Attached</keywordMajor>, she follows her partner's movement and is Untargetable except from towers.<br><br><status>Immobilizing</status> effects on Yuumi place this Ability on a @CCAttachLockout@ second Cooldown.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Yuumi increases her <keywordMajor>Attached</keywordMajor> ally's Adaptive Force by @FlatAdaptiveStats@ + @AdaptiveStatSharing*100@%, and grants herself the same amount.<spellActive>Active:</spellActive> Yuumi dashes to an ally champion and <keywordMajor>Attaches</keywordMajor> to them. While Yuumi is <keywordMajor>Attached</keywordMajor>, she follows her partner's movement and is Untargetable except from towers.<status>Immobilizing</status> effects on Yuumi place this Ability on a @CCAttachLockout@ second Cooldown.@SpellModifierDescriptionAppend@",
 "range": [
 25000,
 25000,
@@ -1004,7 +1004,7 @@
 "abilityVideoImagePath": "champion-abilities/0350/ability_0350_E1.jpg",
 "cost": "@BaseManaCost@ Mana + <scaleMana>@PercentManaCost*100@% Max Mana</scaleMana>",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Heals Yuumi and boosts Move Speed and Attack Speed. If she's attached, she passes it to her ally instead.<br>",
+"description": "Heals Yuumi and boosts Move Speed and Attack Speed. If she's attached, she passes it to her ally instead.",
 "dynamicDescription": "Yuumi restores <healing>@TotalHealing@ Health</healing> to herself and gains <speed>@FinalMoveSpeed@% Move Speed</speed> and <attackSpeed>@AttackSpeedAmount*100@% Attack Speed</attackSpeed> for @MSDuration@ seconds. If Yuumi is <keywordMajor>Attached</keywordMajor>, this Ability affects her ally instead.@SpellModifierDescriptionAppend@",
 "range": [
 25000,
@@ -1155,7 +1155,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Yuumi channels seven waves of damage, rooting anyone hit by three or more. Yuumi can move, attach, and cast Zoomies! while channeling.",
-"dynamicDescription": "Yuumi channels for @UltDuration@ seconds, launching @NumberOfWaves@ waves dealing <magicDamage>@TotalMissileDamage@ magic damage</magicDamage>. Champions hit by @WavesToRoot@ waves are <status>Rooted</status> for @CCDuration@ seconds.<br><br>Yuumi can move and cast <spellName>You and Me!</spellName> and <spellName>Zoomies</spellName> while channeling.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Yuumi channels for @UltDuration@ seconds, launching @NumberOfWaves@ waves dealing <magicDamage>@TotalMissileDamage@ magic damage</magicDamage>. Champions hit by @WavesToRoot@ waves are <status>Rooted</status> for @CCDuration@ seconds.Yuumi can move and cast <spellName>You and Me!</spellName> and <spellName>Zoomies</spellName> while channeling.@SpellModifierDescriptionAppend@",
 "range": [
 1100,
 1100,

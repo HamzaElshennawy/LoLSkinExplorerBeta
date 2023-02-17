@@ -493,7 +493,7 @@
 "abilityIconPath": "Characters/Bard/HUD/Icons2D/Bard_Passive.png",
 "abilityVideoPath": "champion-abilities/0432/ability_0432_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0432/ability_0432_P1.jpg",
-"description": "<font color='#FF9900'>Meeps:</font> Bard attracts lesser spirits that assist with his basic attacks to deal extra magic damage. When Bard has collected enough  <font color='#cccc00'>Chimes</font>, his meeps will also deal damage in an area and slow enemies hit.<br><br><font color='#FF9900'>Chimes:</font> Ancient <font color='#cccc00'>chimes</font> randomly appear for Bard to collect. These grant experience, restore mana, and provide out of combat Move Speed."
+"description": "Meeps: Bard attracts lesser spirits that assist with his basic attacks to deal extra magic damage. When Bard has collected enough Chimes, his meeps will also deal damage in an area and slow enemies hit.Chimes: Ancient chimes randomly appear for Bard to collect. These grant experience, restore mana, and provide out of combat Move Speed."
 },
 "spells": [
 {
@@ -505,7 +505,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Bard fires a missile which will slow the first enemy struck, and continue onward. If it strikes a wall, it will stun the initial target; if it strikes another enemy, it will stun them both.",
-"dynamicDescription": "Bard fires an energy bolt, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> to the first two enemies hit. The first target hit is <status>Slowed</status> by @Effect3Amount@% for @Effect4Amount@ second(s).<br><br>If the bolt hits a second enemy or a wall, any enemies hit are <status>Stunned</status> for @Effect2Amount@ second(s).<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Bard fires an energy bolt, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> to the first two enemies hit. The first target hit is <status>Slowed</status> by @Effect3Amount@% for @Effect4Amount@ second(s).If the bolt hits a second enemy or a wall, any enemies hit are <status>Stunned</status> for @Effect2Amount@ second(s).@SpellModifierDescriptionAppend@",
 "range": [
 25000,
 25000,
@@ -655,7 +655,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Reveals a healing shrine which powers up over a short time, disappearing after healing and speeding up the first ally that touches it.",
-"dynamicDescription": "Bard creates a health shrine that grants <speed>@Effect1Amount@% Move Speed</speed> decaying over @Effect2Amount@ seconds and restores at least <healing>@InitialHeal@ Health</healing> to the first ally to enter. The shrine grows to restore <healing>@MaxHeal@ Health</healing> after existing for @Effect8Amount@ seconds.<br><br>Bard can have up to @Effect3Amount@ shrines at once. If an enemy champion enters a shrine, it is destroyed.<br><br>Current Active Shrines: @f1@ / @f2@@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Bard creates a health shrine that grants <speed>@Effect1Amount@% Move Speed</speed> decaying over @Effect2Amount@ seconds and restores at least <healing>@InitialHeal@ Health</healing> to the first ally to enter. The shrine grows to restore <healing>@MaxHeal@ Health</healing> after existing for @Effect8Amount@ seconds.Bard can have up to @Effect3Amount@ shrines at once. If an enemy champion enters a shrine, it is destroyed.Current Active Shrines: @f1@ / @f2@@SpellModifierDescriptionAppend@",
 "range": [
 800,
 800,

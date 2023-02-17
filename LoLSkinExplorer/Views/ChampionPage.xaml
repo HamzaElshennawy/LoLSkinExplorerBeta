@@ -23,7 +23,8 @@
                                Margin="0,-200,0,0"
                                VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
                                WidthRequest="100"
-                               HeightRequest="1000"
+                               HeightRequest="1300"
+                           Aspect="Fill"
                        />
                     
                 </StackLayout>

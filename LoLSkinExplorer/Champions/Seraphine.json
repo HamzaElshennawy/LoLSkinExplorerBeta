@@ -647,7 +647,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Seraphine Shields and Hastes nearby allies. If she is already Shielded she will Heal nearby allies as well.",
-"dynamicDescription": "Seraphine spurs her nearby allied champions in song, granting herself <speed>@WMSBonusTotal@ decaying Move Speed</speed> and <shield>@ShieldValueSeraphine@ Shield</shield> for @ShieldDuration@ seconds (allies granted <speed>@HasteValueAllies@ Move Speed</speed> and <shield>@TotalShieldStrength@ Shield</shield> instead).<br><br>If Seraphine is already <shield>Shielded</shield>, she calls out to her allies to join her, restoring <healing>@WMissingHPHeal@% missing Health</healing> to them per nearby ally champion after a @WHealSplitDelay@ second delay.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Seraphine spurs her nearby allied champions in song, granting herself <speed>@WMSBonusTotal@ decaying Move Speed</speed> and <shield>@ShieldValueSeraphine@ Shield</shield> for @ShieldDuration@ seconds (allies granted <speed>@HasteValueAllies@ Move Speed</speed> and <shield>@TotalShieldStrength@ Shield</shield> instead).If Seraphine is already <shield>Shielded</shield>, she calls out to her allies to join her, restoring <healing>@WMissingHPHeal@% missing Health</healing> to them per nearby ally champion after a @WHealSplitDelay@ second delay.@SpellModifierDescriptionAppend@",
 "range": [
 800,
 800,
@@ -797,7 +797,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Seraphine deals damage and impairs the movement of enemies in a line.",
-"dynamicDescription": "Seraphine unleashes a heavy soundwave, dealing <magicDamage>@FinalDamage@ Magic Damage</magicDamage> to enemies in a line and <status>Slowing</status> them by @SlowValue@% for @SlowDuration@ seconds.<br><br>Enemies that are already <status>Slowed</status> are <status>Rooted</status> instead, and <status>Immobilized</status> enemies are <status>Stunned</status>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Seraphine unleashes a heavy soundwave, dealing <magicDamage>@FinalDamage@ Magic Damage</magicDamage> to enemies in a line and <status>Slowing</status> them by @SlowValue@% for @SlowDuration@ seconds.Enemies that are already <status>Slowed</status> are <status>Rooted</status> instead, and <status>Immobilized</status> enemies are <status>Stunned</status>.@SpellModifierDescriptionAppend@",
 "range": [
 1300,
 1300,
@@ -947,7 +947,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Seraphine deals damage and charms enemies hit, refreshing the range with every allied or enemy champion hit.",
-"dynamicDescription": "Seraphine takes the stage, projecting a captivating force that <status>Charms</status> for @RChannelDuration@ seconds and deals <magicDamage>@R1TotalDamage@ magic damage</magicDamage>.<br><br>Any champions struck (including allies) become part of the performance, extending the range of this Ability. Allied champions gain maximum <keywordMajor>Notes</keywordMajor>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Seraphine takes the stage, projecting a captivating force that <status>Charms</status> for @RChannelDuration@ seconds and deals <magicDamage>@R1TotalDamage@ magic damage</magicDamage>.Any champions struck (including allies) become part of the performance, extending the range of this Ability. Allied champions gain maximum <keywordMajor>Notes</keywordMajor>.@SpellModifierDescriptionAppend@",
 "range": [
 25000,
 25000,

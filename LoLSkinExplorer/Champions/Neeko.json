@@ -718,7 +718,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Neeko passively deals bonus magic damage every third attack. Neeko can activate to send a clone in a direction.",
-"dynamicDescription": "<font color='#FF9900'>Passive:</font> Every 3rd attack deals @PassiveBonusDamageCalc@ bonus magic damage and increases Neeko's Move Speed by @PassiveHaste@% for @PassiveHasteDuration@ second.<br><br><font color='#FF9900'>Active:</font> Neeko becomes invisible for @StealthDuration@ seconds and projects a clone that lasts @CloneDuration@ seconds. Neeko and the clone gain @Haste@% Move Speed for @HasteDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<font color='#FF9900'>Passive: Every 3rd attack deals @PassiveBonusDamageCalc@ bonus magic damage and increases Neeko's Move Speed by @PassiveHaste@% for @PassiveHasteDuration@ second.<font color='#FF9900'>Active: Neeko becomes invisible for @StealthDuration@ seconds and projects a clone that lasts @CloneDuration@ seconds. Neeko and the clone gain @Haste@% Move Speed for @HasteDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 900,
 900,
@@ -868,7 +868,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Neeko slings a tangle that damage and root everything it passes through. If the tangle kills an enemy or passes through a champion, it becomes larger, faster, and roots for longer.",
-"dynamicDescription": "Neeko slings a tangle that deals @BaseDamage@ magic damage and roots for @MinRootDuration@ seconds.<br><br>The tangle becomes empowered after hitting an enemy, growing larger, moving faster, and rooting for @MaxRootDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Neeko slings a tangle that deals @BaseDamage@ magic damage and roots for @MinRootDuration@ seconds.The tangle becomes empowered after hitting an enemy, growing larger, moving faster, and rooting for @MaxRootDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,
@@ -1018,7 +1018,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "After a short preparation, Neeko leaps into the air and gains a shield. Upon landing, nearby enemies are damaged and stunned. The preparation is hidden if Neeko is disguised.",
-"dynamicDescription": "After @DelayUntilReveal@ seconds Neeko leaps into the air. She gains a shield that absorbs @BaseShield@ damage (+@ShieldMultiplier@ for each nearby enemy champion).<br><br>When Neeko lands she deals @TotalDamage@ magic damage and stuns nearby enemies for @CCDuration@ seconds.<br><br>This ability can be prepared in secret if Neeko is disguised.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "After @DelayUntilReveal@ seconds Neeko leaps into the air. She gains a shield that absorbs @BaseShield@ damage (+@ShieldMultiplier@ for each nearby enemy champion).When Neeko lands she deals @TotalDamage@ magic damage and stuns nearby enemies for @CCDuration@ seconds.This ability can be prepared in secret if Neeko is disguised.@SpellModifierDescriptionAppend@",
 "range": [
 600,
 600,

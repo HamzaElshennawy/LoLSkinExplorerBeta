@@ -799,7 +799,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Varus readies and then fires a powerful shot that gains extra range and damage the longer he spends preparing to fire.",
-"dynamicDescription": "<charge>Begin Charging:</charge> Varus draws back his next shot, <status>Slowing</status> himself by @Effect7Amount*-100@%. After @Effect5Amount@ seconds, if not fired, Varus will cancel the Ability and refund @Effect4Amount*100@% of its Mana cost.<br><br><release>Release:</release> Varus releases the arrow, dealing @TotalDamageMinTooltip@ physical damage, reduced by @Effect3Amount*100@% per enemy hit (minimum @Effect9Amount*100@%). Damage and <keywordMajor>Blight</keywordMajor> detonation effects are increased by up to @MaxChargeAmp*100@% based on charge time (maximum @TotalDamageMax@) .@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<charge>Begin Charging:</charge> Varus draws back his next shot, <status>Slowing</status> himself by @Effect7Amount*-100@%. After @Effect5Amount@ seconds, if not fired, Varus will cancel the Ability and refund @Effect4Amount*100@% of its Mana cost.<release>Release:</release> Varus releases the arrow, dealing @TotalDamageMinTooltip@ physical damage, reduced by @Effect3Amount*100@% per enemy hit (minimum @Effect9Amount*100@%). Damage and <keywordMajor>Blight</keywordMajor> detonation effects are increased by up to @MaxChargeAmp*100@% based on charge time (maximum @TotalDamageMax@) .@SpellModifierDescriptionAppend@",
 "range": [
 925,
 925,
@@ -949,7 +949,7 @@
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Passive: Varus' basic attacks deal bonus magic damage and apply Blight. Varus' other abilities detonate Blight, dealing magic damage based on the target's maximum Health. Active: Varus empowers his next Piercing Arrow.",
-"dynamicDescription": "<spellPassive>Passive: </spellPassive>Varus' Attacks deal an additional <magicDamage>@OnHitDamage@ magic damage</magicDamage> and apply a <keywordMajor>Blight</keywordMajor> stack for @Effect3Amount@ seconds (max @Effect4Amount@ stacks).<br><br>Varus' other Abilities detonate <keywordMajor>Blight</keywordMajor> stacks dealing <magicDamage>@PercentHPPerStack@ max Health magic damage</magicDamage> per stack (max <magicDamage>@MaxPercentHPPerStack@ max Health damage</magicDamage>). Detonating <keywordMajor>Blight</keywordMajor> on champions and epic monsters also reduces his basic Abilities' Cooldowns by @CDRPerBlightStack*100@% of their Maximum per stack.<br><br><spellActive>Active:</spellActive> Varus' next <spellName>Piercing Arrow</spellName> deals an additonal <magicDamage>@QEmpowerPercentHP@ missing Health magic damage</magicDamage>, increased up to <magicDamage>@MaxQEmpowerPercentHP@ missing Health damage</magicDamage> based on charge time.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive: </spellPassive>Varus' Attacks deal an additional <magicDamage>@OnHitDamage@ magic damage</magicDamage> and apply a <keywordMajor>Blight</keywordMajor> stack for @Effect3Amount@ seconds (max @Effect4Amount@ stacks).Varus' other Abilities detonate <keywordMajor>Blight</keywordMajor> stacks dealing <magicDamage>@PercentHPPerStack@ max Health magic damage</magicDamage> per stack (max <magicDamage>@MaxPercentHPPerStack@ max Health damage</magicDamage>). Detonating <keywordMajor>Blight</keywordMajor> on champions and epic monsters also reduces his basic Abilities' Cooldowns by @CDRPerBlightStack*100@% of their Maximum per stack.<spellActive>Active:</spellActive> Varus' next <spellName>Piercing Arrow</spellName> deals an additonal <magicDamage>@QEmpowerPercentHP@ missing Health magic damage</magicDamage>, increased up to <magicDamage>@MaxQEmpowerPercentHP@ missing Health damage</magicDamage> based on charge time.@SpellModifierDescriptionAppend@",
 "range": [
 750,
 750,
@@ -1249,7 +1249,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Varus flings out a damaging tendril of corruption that immobilizes the first enemy champion hit and then spreads towards nearby uninfected champions, immobilizing them too on contact.",
-"dynamicDescription": "Varus flings out a tendril of corruption, <status>Rooting</status> the first champion hit for @Effect2Amount@ seconds and dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>. <status>Rooted</status> enemies gain @Effect4Amount@ <keywordMajor>Blight</keywordMajor> stacks over the duration.<br><br>The corruption spreads from its target to uninfected enemy champions. If it reaches them, they take the same damage and <status>Root</status>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Varus flings out a tendril of corruption, <status>Rooting</status> the first champion hit for @Effect2Amount@ seconds and dealing <magicDamage>@TotalDamage@ magic damage</magicDamage>. <status>Rooted</status> enemies gain @Effect4Amount@ <keywordMajor>Blight</keywordMajor> stacks over the duration.The corruption spreads from its target to uninfected enemy champions. If it reaches them, they take the same damage and <status>Root</status>.@SpellModifierDescriptionAppend@",
 "range": [
 1300,
 1300,

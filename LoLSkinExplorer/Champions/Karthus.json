@@ -794,7 +794,7 @@
 "cost": "@Cost@ Mana per Second",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Karthus passively steals energy from his victims, gaining Mana on each kill. Alternatively, Karthus can surround himself in the souls of his prey, dealing damage to nearby enemies, but quickly draining his own Mana.",
-"dynamicDescription": "<spellPassive>Passive: </spellPassive>When Karthus kills a unit, he restores <scaleMana>@Effect2Amount@ Mana</scaleMana>.<br><br><toggle>Toggle: </toggle>Karthus creates a necrotic aura, dealing <magicDamage>@TotalDPS@ magic damage</magicDamage> per second to nearby enemies.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive: </spellPassive>When Karthus kills a unit, he restores <scaleMana>@Effect2Amount@ Mana</scaleMana>.<toggle>Toggle: </toggle>Karthus creates a necrotic aura, dealing <magicDamage>@TotalDPS@ magic damage</magicDamage> per second to nearby enemies.@SpellModifierDescriptionAppend@",
 "range": [
 550,
 550,

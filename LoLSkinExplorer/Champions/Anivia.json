@@ -840,7 +840,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Anivia brings her wings together and summons a sphere of ice that flies towards her opponents, chilling and damaging anyone in its path. When the sphere explodes it does moderate damage in a radius, stunning anyone in the area.",
-"dynamicDescription": "Anivia fires a massive chunk of ice, dealing <magicDamage>@TotalPassthroughDamage@ magic damage</magicDamage> and <keywordMajor>Chilling</keywordMajor> enemies for @SlowDuration@ seconds, <status>Slowing</status> them by @Spell.GlacialStorm:SlowAmount@%. At the end of its range, the ice detonates, <status>Stunning</status> enemies for @StunDuration@ seconds and dealing <magicDamage>@TotalExplosionDamage@ magic damage</magicDamage>.<br><br>Anivia can <recast>Recast</recast> this ability while the ice flies to detonate it early.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Anivia fires a massive chunk of ice, dealing <magicDamage>@TotalPassthroughDamage@ magic damage</magicDamage> and <keywordMajor>Chilling</keywordMajor> enemies for @SlowDuration@ seconds, <status>Slowing</status> them by @Spell.GlacialStorm:SlowAmount@%. At the end of its range, the ice detonates, <status>Stunning</status> enemies for @StunDuration@ seconds and dealing <magicDamage>@TotalExplosionDamage@ magic damage</magicDamage>.Anivia can <recast>Recast</recast> this ability while the ice flies to detonate it early.@SpellModifierDescriptionAppend@",
 "range": [
 1075,
 1075,
@@ -1290,7 +1290,7 @@
 "cost": "@Cost@ + @ManaCostPerSecond@ Mana per second",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Anivia summons a driving rain of ice and hail to damage her enemies and slow their advance.",
-"dynamicDescription": "<toggle>Toggle:</toggle> Anivia calls forth a driving rain of ice and hail that <status>Slows</status> enemies by @SlowAmount@% and deals <magicDamage>@TotalDamagePerSecond@ magic damage per second</magicDamage>. The storm increases in size over @GrowthTime@ seconds.<br><br>When the storm is fully formed, it <keywordMajor>Chills</keywordMajor>, <status>Slows</status> by @SlowPercentEmpoweredTT@%, and does <magicDamage>@EmpoweredDamagePerSecondTooltipOnly@ magic damage per second</magicDamage> instead.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<toggle>Toggle:</toggle> Anivia calls forth a driving rain of ice and hail that <status>Slows</status> enemies by @SlowAmount@% and deals <magicDamage>@TotalDamagePerSecond@ magic damage per second</magicDamage>. The storm increases in size over @GrowthTime@ seconds.When the storm is fully formed, it <keywordMajor>Chills</keywordMajor>, <status>Slows</status> by @SlowPercentEmpoweredTT@%, and does <magicDamage>@EmpoweredDamagePerSecondTooltipOnly@ magic damage per second</magicDamage> instead.@SpellModifierDescriptionAppend@",
 "range": [
 750,
 750,

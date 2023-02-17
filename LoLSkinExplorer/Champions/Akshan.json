@@ -338,7 +338,7 @@
 "abilityIconPath": "Characters/Akshan/HUD/Icons2D/akshan_p.png",
 "abilityVideoPath": "champion-abilities/0166/ability_0166_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0166/ability_0166_P1.jpg",
-"description": "Every three hits from Akshan's Attacks and Abilities deals bonus damage and grants him a Shield if the target was a champion.<br><br>When Akshan Attacks, he fires an additional Attack for reduced damage. If he cancels the additional Attack, he instead gains Move Speed."
+"description": "Every three hits from Akshan's Attacks and Abilities deals bonus damage and grants him a Shield if the target was a champion.When Akshan Attacks, he fires an additional Attack for reduced damage. If he cancels the additional Attack, he instead gains Move Speed."
 },
 "spells": [
 {
@@ -350,7 +350,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Akshan throws a boomerang that deals damage going out and coming back, extending its range each time it hits an enemy.",
-"dynamicDescription": "Akshan throws a boomerang that deals @FinalDamage@ physical damage, extending the range each time an enemy is hit.<br><br>Champion hits grant Akshan <speed>@HasteValue*100@% Move Speed</speed> decaying over @HasteDuration@ second.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Akshan throws a boomerang that deals @FinalDamage@ physical damage, extending the range each time an enemy is hit.Champion hits grant Akshan <speed>@HasteValue*100@% Move Speed</speed> decaying over @HasteDuration@ second.@SpellModifierDescriptionAppend@",
 "range": [
 850,
 850,
@@ -499,8 +499,8 @@
 "abilityVideoImagePath": "champion-abilities/0166/ability_0166_W1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Akshan passively marks enemy champions as Scoundrels when they kill his ally champions. If Akshan kills a Scoundrel, he resurrects the allies they killed, gains bonus gold, and clears all marks.<br><br>When activated, Akshan enters camouflage and gains Move Speed and Mana Regen while moving towards Scoundrels. Akshan loses the camouflage quickly while he is not in brush or near terrain.",
-"dynamicDescription": "<spellPassive>Passive</spellPassive>: Enemy champions that kill Akshan's allies become <keywordMajor>Scoundrels</keywordMajor> for @VengeanceDuration@ seconds. Takedowns on a <keywordMajor>Scoundrel</keywordMajor> within @RecentlyDamagedWindow@ seconds of being damaged by Akshan grant him @GoldReward@ Gold, resurrects the slain allies, and removes all other <keywordMajor>Scoundrels</keywordMajor>.<br><br><spellActive>Active</spellActive>: Akshan becomes <keywordStealth>Camouflaged</keywordStealth> for @WallGracePeriod@ seconds or indefinitely while he is near a wall or in brush. While <keywordStealth>Camouflaged</keywordStealth> in this way, Akshan also gains <speed>@MSValue@ Move Speed</speed> and <scaleMana>@MissingManaRegen*100@% missing Mana regen</scaleMana> while moving towards <keywordMajor>Scoundrels</keywordMajor>.@SpellModifierDescriptionAppend@",
+"description": "Akshan passively marks enemy champions as Scoundrels when they kill his ally champions. If Akshan kills a Scoundrel, he resurrects the allies they killed, gains bonus gold, and clears all marks.When activated, Akshan enters camouflage and gains Move Speed and Mana Regen while moving towards Scoundrels. Akshan loses the camouflage quickly while he is not in brush or near terrain.",
+"dynamicDescription": "<spellPassive>Passive</spellPassive>: Enemy champions that kill Akshan's allies become <keywordMajor>Scoundrels</keywordMajor> for @VengeanceDuration@ seconds. Takedowns on a <keywordMajor>Scoundrel</keywordMajor> within @RecentlyDamagedWindow@ seconds of being damaged by Akshan grant him @GoldReward@ Gold, resurrects the slain allies, and removes all other <keywordMajor>Scoundrels</keywordMajor>.<spellActive>Active</spellActive>: Akshan becomes <keywordStealth>Camouflaged</keywordStealth> for @WallGracePeriod@ seconds or indefinitely while he is near a wall or in brush. While <keywordStealth>Camouflaged</keywordStealth> in this way, Akshan also gains <speed>@MSValue@ Move Speed</speed> and <scaleMana>@MissingManaRegen*100@% missing Mana regen</scaleMana> while moving towards <keywordMajor>Scoundrels</keywordMajor>.@SpellModifierDescriptionAppend@",
 "range": [
 5500,
 5500,
@@ -650,7 +650,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Akshan fires a grappling hook into terrain then swings around it, repeatedly firing at the nearest enemy while swinging. He can jump off early or gets knocked off when colliding with champions or terrain.",
-"dynamicDescription": "<spellActive>First Cast:</spellActive> Akshan fires a grappling hook, attaching to the first terrain hit.<br><br><spellActive>Second Cast:</spellActive> Akshan swings around the terrain, repeatedly firing at the nearest enemy for @ASModDamageToDeal@ physical damage per shot.<br><br><spellActive>Third Cast:</spellActive> Akshan dives off the rope, firing a final shot.<br><br>Colliding with an enemy Champion or terrain ends the swing early.<br><br>Champion takedowns refresh this Ability's Cooldown.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellActive>First Cast:</spellActive> Akshan fires a grappling hook, attaching to the first terrain hit.<spellActive>Second Cast:</spellActive> Akshan swings around the terrain, repeatedly firing at the nearest enemy for @ASModDamageToDeal@ physical damage per shot.<spellActive>Third Cast:</spellActive> Akshan dives off the rope, firing a final shot.Colliding with an enemy Champion or terrain ends the swing early.Champion takedowns refresh this Ability's Cooldown.@SpellModifierDescriptionAppend@",
 "range": [
 800,
 800,
@@ -800,7 +800,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Akshan locks onto an enemy champion and starts storing bullets. When released, he fires all stored bullets, dealing damage based on missing health to the first champion, minion, or structure hit.",
-"dynamicDescription": "Akshan locks onto a champion and begins overcharging his gun for up to @ChannelDuration@ seconds, storing up to @NumberOfBullets@ bullets.<br><br><recast>Recast:</recast> Akshan unleashes the stored bullets, each dealing at least @DamagePerBulletWithCrit@ physical damage to the first enemy or structure hit, increased up to @MaxDamagePerBullet@ physical damage based on missing Health.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Akshan locks onto a champion and begins overcharging his gun for up to @ChannelDuration@ seconds, storing up to @NumberOfBullets@ bullets.<recast>Recast:</recast> Akshan unleashes the stored bullets, each dealing at least @DamagePerBulletWithCrit@ physical damage to the first enemy or structure hit, increased up to @MaxDamagePerBullet@ physical damage based on missing Health.@SpellModifierDescriptionAppend@",
 "range": [
 2500,
 2500,

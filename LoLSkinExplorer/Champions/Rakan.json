@@ -508,7 +508,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Flings a magical feather that deals magic damage. Striking a champion or epic monster enables Rakan to heal his allies.",
-"dynamicDescription": "Rakan flings a magical feather that deals <magicDamage>@TotalDamage@ magic damage</magicDamage> to the first enemy hit.<br><br>If the feather hits a champion or epic jungle monster, Rakan restores <healing>@TotalHeal@ Health</healing> to himself and nearby allies after @HealDelay@ seconds or when he touches an allied champion.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Rakan flings a magical feather that deals <magicDamage>@TotalDamage@ magic damage</magicDamage> to the first enemy hit.If the feather hits a champion or epic jungle monster, Rakan restores <healing>@TotalHeal@ Health</healing> to himself and nearby allies after @HealDelay@ seconds or when he touches an allied champion.@SpellModifierDescriptionAppend@",
 "range": [
 850,
 850,
@@ -808,7 +808,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@f2@s %i:cooldown%",
 "description": "Flies to an allied champion granting them a shield. Can be re-cast for free for a short duration.",
-"dynamicDescription": "Rakan dashes to an allied champion, granting them <shield>@TotalShield@ Shield</shield> for @Effect3Amount@ seconds.<br><br>Rakan can <recast>Recast</recast> this Ability once within @Effect2Amount@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Rakan dashes to an allied champion, granting them <shield>@TotalShield@ Shield</shield> for @Effect3Amount@ seconds.Rakan can <recast>Recast</recast> this Ability once within @Effect2Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 650,
 650,

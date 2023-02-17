@@ -435,7 +435,7 @@
 "abilityIconPath": "Characters/Quinn/HUD/Icons2D/Quinn_Passive.png",
 "abilityVideoPath": "champion-abilities/0133/ability_0133_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0133/ability_0133_P1.jpg",
-"description": "Valor, Quinn's Demacian eagle, periodically marks enemies as <font color='#FFF673'>Vulnerable</font>. Quinn's first basic attack against <font color='#FFF673'>Vulnerable</font> targets will deal bonus physical damage."
+"description": "Valor, Quinn's Demacian eagle, periodically marks enemies as <font color='#FFF673'>Vulnerable. Quinn's first basic attack against <font color='#FFF673'>Vulnerable targets will deal bonus physical damage."
 },
 "spells": [
 {
@@ -447,7 +447,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Quinn calls Valor to mark an enemy and hinder its vision before damaging all enemies in the immediate area.",
-"dynamicDescription": "Quinn orders Valor to dive, making the first enemy hit <keywordMajor>Vulnerable</keywordMajor>, reducing their vision radius for @Effect3Amount@ seconds and dealing @TotalDamage@ physical damage to all surrounding enemies.<br><br>If the first enemy struck is not a champion, it is <status>Disarmed</status> for @Effect3Amount@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Quinn orders Valor to dive, making the first enemy hit <keywordMajor>Vulnerable</keywordMajor>, reducing their vision radius for @Effect3Amount@ seconds and dealing @TotalDamage@ physical damage to all surrounding enemies.If the first enemy struck is not a champion, it is <status>Disarmed</status> for @Effect3Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 1025,
 1025,
@@ -596,8 +596,8 @@
 "abilityVideoImagePath": "champion-abilities/0133/ability_0133_W1.jpg",
 "cost": "No Cost",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Passively grants Quinn Attack Speed and Move Speed after she attacks a <font color='#FFF673'>Vulnerable</font> target. Activate to have Valor reveal a large area nearby.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Attacking a <keywordMajor>Vulnerable</keywordMajor> target grants Quinn <attackSpeed>@Effect2Amount*100@% Attack Speed</attackSpeed> and <speed>@Effect3Amount*100@% Move Speed</speed> for @Effect1Amount@ seconds.<br><br><spellActive>Active:</spellActive> Valor reveals a large area nearby for @Effect5Amount@ seconds.@SpellModifierDescriptionAppend@",
+"description": "Passively grants Quinn Attack Speed and Move Speed after she attacks a <font color='#FFF673'>Vulnerable target. Activate to have Valor reveal a large area nearby.",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Attacking a <keywordMajor>Vulnerable</keywordMajor> target grants Quinn <attackSpeed>@Effect2Amount*100@% Attack Speed</attackSpeed> and <speed>@Effect3Amount*100@% Move Speed</speed> for @Effect1Amount@ seconds.<spellActive>Active:</spellActive> Valor reveals a large area nearby for @Effect5Amount@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 2100,
 2100,
@@ -897,7 +897,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Quinn and Valor team up to fly around at great speed.  Ending the ability casts Skystrike, which deals damage to nearby enemies and marks champions as Vulnerable.",
-"dynamicDescription": "Quinn calls to Valor, pairing up after channeling for 2 seconds gaining <speed>@MovementSpeedMod*100@% Move Speed</speed> and allowing her to <recast>Recast</recast> this Ability. Attacking or using <spellName>Blinding Assault</spellName> or <spellName>Vault</spellName> automatically <recast>Recasts</recast> this Ability.<br><br><recast>Recast</recast>: Quinn and Valor perform an aerial maneuver, dealing @Damage@ physical damage, marking champions as <keywordMajor>Vulnerable</keywordMajor>, and ending this Ability.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Quinn calls to Valor, pairing up after channeling for 2 seconds gaining <speed>@MovementSpeedMod*100@% Move Speed</speed> and allowing her to <recast>Recast</recast> this Ability. Attacking or using <spellName>Blinding Assault</spellName> or <spellName>Vault</spellName> automatically <recast>Recasts</recast> this Ability.<recast>Recast</recast>: Quinn and Valor perform an aerial maneuver, dealing @Damage@ physical damage, marking champions as <keywordMajor>Vulnerable</keywordMajor>, and ending this Ability.@SpellModifierDescriptionAppend@",
 "range": [
 700,
 700,

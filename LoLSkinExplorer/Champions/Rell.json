@@ -352,8 +352,8 @@
 "abilityVideoImagePath": "champion-abilities/0526/ability_0526_Q1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Rell thrusts her lance to deal <magicDamage>magic damage</magicDamage> to units in a line, breaking their Shields.  The first unit hit additionally suffers <spellName>Break the Mold</spellName>'s defense steal. <br><br>If Rell is bound to an ally with <spellName>Attract and Repel</spellName>, they both recover health for each enemy champion hit by this spell.",
-"dynamicDescription": "Rell thrusts her lance, destroying all Shield and dealing <magicDamage>@DamageSubsequent@ magic damage</magicDamage>. The first unit hit takes <magicDamage>@Damage@ damage</magicDamage> instead and suffers <spellName>Break the Mold</spellName>'s defense steal. <br><br>If Rell is bound to an ally with <spellName>Attract and Repel</spellName>, they both recover <healing>@FlatHeal@ plus @MissingHealthHeal*100@% missing Health</healing> for each enemy champion hit.@SpellModifierDescriptionAppend@",
+"description": "Rell thrusts her lance to deal <magicDamage>magic damage</magicDamage> to units in a line, breaking their Shields.  The first unit hit additionally suffers <spellName>Break the Mold</spellName>'s defense steal. If Rell is bound to an ally with <spellName>Attract and Repel</spellName>, they both recover health for each enemy champion hit by this spell.",
+"dynamicDescription": "Rell thrusts her lance, destroying all Shield and dealing <magicDamage>@DamageSubsequent@ magic damage</magicDamage>. The first unit hit takes <magicDamage>@Damage@ damage</magicDamage> instead and suffers <spellName>Break the Mold</spellName>'s defense steal. If Rell is bound to an ally with <spellName>Attract and Repel</spellName>, they both recover <healing>@FlatHeal@ plus @MissingHealthHeal*100@% missing Health</healing> for each enemy champion hit.@SpellModifierDescriptionAppend@",
 "range": [
 700,
 700,
@@ -502,8 +502,8 @@
 "abilityVideoImagePath": "champion-abilities/0526/ability_0526_W1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "<spellPassive>Passive:</spellPassive> Rell gains additional Move Speed while mounted and additional <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> while armored.<br><br><spellActive>Active:</spellActive> Rell changes forms, casting a different spell based on form.<li> Mounted: Rell crashes down in her armor, knocking enemies up and gaining a large shield.</li><li> Armored: Rell forms her mount, gaining a burst of speed and flipping the next enemy she attacks.</li>",
-"dynamicDescription": "<spellPassive>Passive - Mounted:</spellPassive> Rell gains <speed>@OOCMS@ Move Speed</speed>, reduced when taking damage. <br><br><spellActive>Active - Ferromancy: Crash Down:</spellActive> Rell leaps off her mount, <status>Knocking Up</status> enemies for @StunDuration@ second and dealing <magicDamage>@ChargeDamage@ magic damage</magicDamage>. Rell then enters Armored form, gaining <shield>@Shield@ Shield</shield>, reducing her <speed>Move Speed</speed>, and allowing her to use <spellName>Ferromancy: Mount Up</spellName>.@SpellModifierDescriptionAppend@",
+"description": "<spellPassive>Passive:</spellPassive> Rell gains additional Move Speed while mounted and additional <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> while armored.<spellActive>Active:</spellActive> Rell changes forms, casting a different spell based on form.<li> Mounted: Rell crashes down in her armor, knocking enemies up and gaining a large shield.</li><li> Armored: Rell forms her mount, gaining a burst of speed and flipping the next enemy she attacks.</li>",
+"dynamicDescription": "<spellPassive>Passive - Mounted:</spellPassive> Rell gains <speed>@OOCMS@ Move Speed</speed>, reduced when taking damage. <spellActive>Active - Ferromancy: Crash Down:</spellActive> Rell leaps off her mount, <status>Knocking Up</status> enemies for @StunDuration@ second and dealing <magicDamage>@ChargeDamage@ magic damage</magicDamage>. Rell then enters Armored form, gaining <shield>@Shield@ Shield</shield>, reducing her <speed>Move Speed</speed>, and allowing her to use <spellName>Ferromancy: Mount Up</spellName>.@SpellModifierDescriptionAppend@",
 "range": [
 550,
 550,
@@ -652,8 +652,8 @@
 "abilityVideoImagePath": "champion-abilities/0526/ability_0526_E1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Rell binds a piece of her Armor to another allied champion to grant them <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> while near.<br><br>While she has an ally bound in this way, Rell can cast this ability without targeting an allied champion to snap the binding and <status>Stun</status> enemies caught in it.",
-"dynamicDescription": "Rell binds a piece of her Armor to another allied champion, granting them <scaleArmor>@AllyArmor@ Armor</scaleArmor> and <scaleMR>@AllyResist@ Magic Resist</scaleMR> while near you. Doing this has no cost and puts this Ability on Cooldown for 3 seconds.<br><br>If Rell uses this Ability without targeting an allied champion, she snaps the binding, <status>Stunning</status> enemies around and between herself and her bound ally for @StunDuration@ seconds and dealing <magicDamage>@Damage@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
+"description": "Rell binds a piece of her Armor to another allied champion to grant them <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> while near.While she has an ally bound in this way, Rell can cast this ability without targeting an allied champion to snap the binding and <status>Stun</status> enemies caught in it.",
+"dynamicDescription": "Rell binds a piece of her Armor to another allied champion, granting them <scaleArmor>@AllyArmor@ Armor</scaleArmor> and <scaleMR>@AllyResist@ Magic Resist</scaleMR> while near you. Doing this has no cost and puts this Ability on Cooldown for 3 seconds.If Rell uses this Ability without targeting an allied champion, she snaps the binding, <status>Stunning</status> enemies around and between herself and her bound ally for @StunDuration@ seconds and dealing <magicDamage>@Damage@ magic damage</magicDamage>.@SpellModifierDescriptionAppend@",
 "range": [
 1500,
 1500,

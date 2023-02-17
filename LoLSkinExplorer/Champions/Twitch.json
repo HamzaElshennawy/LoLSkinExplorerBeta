@@ -891,8 +891,8 @@
 "abilityVideoImagePath": "champion-abilities/0029/ability_0029_Q1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Twitch becomes Camouflaged for a short duration and gains Move Speed. When leaving Camouflage, Twitch gains Attack Speed for a short duration.<br><br>When an enemy champion with Deadly Venom dies, Ambush's cooldown is reset.",
-"dynamicDescription": "Twitch <keywordStealth>Camouflages</keywordStealth> and gains <speed>@Effect3Amount@% Move Speed</speed> for @Effect2Amount@ seconds. The Move Speed increases to @Effect3Amount*3@% while near an enemy champion that can't see him. After exiting <keywordStealth>Camouflage</keywordStealth>, Twitch gains <attackSpeed>@Effect1Amount@% Attack Speed</attackSpeed> for @Effect6Amount@ seconds.<br><br>When an enemy champion dies while afflicted with <keywordMajor>Venom</keywordMajor>, this Ability's Cooldown is refreshed.@SpellModifierDescriptionAppend@",
+"description": "Twitch becomes Camouflaged for a short duration and gains Move Speed. When leaving Camouflage, Twitch gains Attack Speed for a short duration.When an enemy champion with Deadly Venom dies, Ambush's cooldown is reset.",
+"dynamicDescription": "Twitch <keywordStealth>Camouflages</keywordStealth> and gains <speed>@Effect3Amount@% Move Speed</speed> for @Effect2Amount@ seconds. The Move Speed increases to @Effect3Amount*3@% while near an enemy champion that can't see him. After exiting <keywordStealth>Camouflage</keywordStealth>, Twitch gains <attackSpeed>@Effect1Amount@% Attack Speed</attackSpeed> for @Effect6Amount@ seconds.When an enemy champion dies while afflicted with <keywordMajor>Venom</keywordMajor>, this Ability's Cooldown is refreshed.@SpellModifierDescriptionAppend@",
 "range": [
 20,
 20,
@@ -1042,7 +1042,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Twitch hurls a cask of venom that explodes in an area, slowing targets and applying deadly venom to the target.",
-"dynamicDescription": "Twitch hurls a cask that adds a stack of <spellName>Deadly Venom</spellName> to all enemies struck and leaves behind a toxic cloud that persists for @Duration@ seconds.<br><br>Enemies that remain within the cloud are <status>Slowed</status> by @TotalSlowAmount@% and receive an additional stack of <spellName>Deadly Venom</spellName> each second.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Twitch hurls a cask that adds a stack of <spellName>Deadly Venom</spellName> to all enemies struck and leaves behind a toxic cloud that persists for @Duration@ seconds.Enemies that remain within the cloud are <status>Slowed</status> by @TotalSlowAmount@% and receive an additional stack of <spellName>Deadly Venom</spellName> each second.@SpellModifierDescriptionAppend@",
 "range": [
 950,
 950,
@@ -1192,7 +1192,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Twitch wreaks further havoc on poisoned enemies with a blast of his vile diseases.",
-"dynamicDescription": "Deals @BaseDamage@ physical damage to all nearby enemies affected by <spellName>Deadly Venom</spellName>, plus an additional @PhysicalDamagePerStack@ physical damage and <magicDamage>@MagicDamagePerStack@ magical damage</magicDamage> per stack of <spellName>Deadly Venom</spellName>.<br><br>Max Damage: @MaxPhysicalDamage@ physical damage and <magicDamage>@MaxMagicDamage@ magical damage</magicDamage>.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Deals @BaseDamage@ physical damage to all nearby enemies affected by <spellName>Deadly Venom</spellName>, plus an additional @PhysicalDamagePerStack@ physical damage and <magicDamage>@MagicDamagePerStack@ magical damage</magicDamage> per stack of <spellName>Deadly Venom</spellName>.Max Damage: @MaxPhysicalDamage@ physical damage and <magicDamage>@MaxMagicDamage@ magical damage</magicDamage>.@SpellModifierDescriptionAppend@",
 "range": [
 1200,
 1200,
@@ -1342,7 +1342,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Twitch unleashes the full power of his crossbow, shooting bolts over a great distance that pierce all enemies caught in their path.",
-"dynamicDescription": "Twitch unleashes his crossbow, gaining @BonusRange@ Attack Range and <scaleAD>@BonusAD@ Attack Damage</scaleAD>, and causing his Attacks to become piercing bolts for @Duration@ seconds. These bolts hit all enemies they pass through, but deal @FallOffDamage*100@% less damage to subsequent targets, down to a minimum of @MinimumFallOffDamage*100@% damage.<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Twitch unleashes his crossbow, gaining @BonusRange@ Attack Range and <scaleAD>@BonusAD@ Attack Damage</scaleAD>, and causing his Attacks to become piercing bolts for @Duration@ seconds. These bolts hit all enemies they pass through, but deal @FallOffDamage*100@% less damage to subsequent targets, down to a minimum of @MinimumFallOffDamage*100@% damage.@SpellModifierDescriptionAppend@",
 "range": [
 1200,
 1200,

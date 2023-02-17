@@ -731,7 +731,7 @@
 "abilityIconPath": "Characters/Braum/HUD/Icons2D/Braum_Passive.png",
 "abilityVideoPath": "champion-abilities/0201/ability_0201_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0201/ability_0201_P1.jpg",
-"description": "Braum's basic attacks apply Concussive Blows. Once the first stack is applied, <font color='#FFF673'>ally</font> basic attacks also stack Concussive Blows. <br><br>Upon reaching 4 stacks, the target is stunned and takes magic damage. For the next few seconds they cannot receive new stacks, but take bonus magic damage from Braum's attacks."
+"description": "Braum's basic attacks apply Concussive Blows. Once the first stack is applied, <font color='#FFF673'>ally basic attacks also stack Concussive Blows. Upon reaching 4 stacks, the target is stunned and takes magic damage. For the next few seconds they cannot receive new stacks, but take bonus magic damage from Braum's attacks."
 },
 "spells": [
 {
@@ -742,8 +742,8 @@
 "abilityVideoImagePath": "champion-abilities/0201/ability_0201_Q1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Braum propels freezing ice from his shield, slowing and dealing magic damage.<br><br>Applies a stack of <font color='#FFF673'>Concussive Blows</font>.",
-"dynamicDescription": "Braum propels freezing ice from his shield, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> to the first enemy hit and <status>Slowing</status> them by @Effect2Amount@% decaying over @Effect5Amount@ seconds.<br><br>Applies a stack of <keywordMajor>Concussive Blows</keywordMajor>. @SpellModifierDescriptionAppend@",
+"description": "Braum propels freezing ice from his shield, slowing and dealing magic damage.Applies a stack of <font color='#FFF673'>Concussive Blows.",
+"dynamicDescription": "Braum propels freezing ice from his shield, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> to the first enemy hit and <status>Slowing</status> them by @Effect2Amount@% decaying over @Effect5Amount@ seconds.Applies a stack of <keywordMajor>Concussive Blows</keywordMajor>. @SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,
@@ -1043,7 +1043,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Braum raises his shield in a direction for several seconds, intercepting all projectiles causing them to hit him and be destroyed. He negates the damage of the first attack completely and reduces the damage of all subsequent attacks from this direction.",
-"dynamicDescription": "Braum raises his shield for @Effect2Amount@ seconds, intercepting enemy missiles from the chosen direction, causing them to hit Braum and then be destroyed. The first missile Braum blocks deals no damage, and subsequent projectiles deal @Effect3Amount@% reduced damage.<br><br>Braum gains <speed>@Effect4Amount@% Move Speed</speed> while his shield is raised.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Braum raises his shield for @Effect2Amount@ seconds, intercepting enemy missiles from the chosen direction, causing them to hit Braum and then be destroyed. The first missile Braum blocks deals no damage, and subsequent projectiles deal @Effect3Amount@% reduced damage.Braum gains <speed>@Effect4Amount@% Move Speed</speed> while his shield is raised.@SpellModifierDescriptionAppend@",
 "range": [
 25000,
 25000,
@@ -1193,7 +1193,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Braum slams the ground, knocking up enemies nearby and in a line in front of him. A fissure is left along the line that slows enemies.",
-"dynamicDescription": "Braum slams the ground sending forth a fissure that <status>Knocks Up</status> enemies in its path and nearby Braum, and deals <magicDamage>@TotalDamage@ magic damage</magicDamage>. The first target hit is <status>Knocked Up</status> for between @MinKnockup@ and @MaxKnockup@ seconds, increasing with distance from Braum. All others hit are <status>Knocked Up</status> for @MinKnockup@ seconds.<br><br>The fissure also creates a zone for @SlowZoneDuration@ seconds, that <status>Slows</status> by @MoveSpeedMod@%.<br>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Braum slams the ground sending forth a fissure that <status>Knocks Up</status> enemies in its path and nearby Braum, and deals <magicDamage>@TotalDamage@ magic damage</magicDamage>. The first target hit is <status>Knocked Up</status> for between @MinKnockup@ and @MaxKnockup@ seconds, increasing with distance from Braum. All others hit are <status>Knocked Up</status> for @MinKnockup@ seconds.The fissure also creates a zone for @SlowZoneDuration@ seconds, that <status>Slows</status> by @MoveSpeedMod@%.@SpellModifierDescriptionAppend@",
 "range": [
 1250,
 1250,

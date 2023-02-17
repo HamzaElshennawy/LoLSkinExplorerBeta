@@ -820,7 +820,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Jax charges his weapon with energy, causing his next attack to deal additional damage.",
-"dynamicDescription": "Jax charges his weapon with energy, causing his next Attack or <spellName>Leap Strike</spellName> to deal an additional <magicDamage>@TotalDamage@ magic damage</magicDamage>.<br><br><rules>This Ability triggers spell effects upon dealing damage.</rules>@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Jax charges his weapon with energy, causing his next Attack or <spellName>Leap Strike</spellName> to deal an additional <magicDamage>@TotalDamage@ magic damage</magicDamage>.<rules>This Ability triggers spell effects upon dealing damage.</rules>@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,
@@ -970,7 +970,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Jax's combat prowess allows him to dodge all incoming attacks for a short duration and then quickly counterattack, stunning all surrounding enemies.",
-"dynamicDescription": "Jax enters a defensive stance for up to @Effect6Amount@ seconds, dodging incoming Attacks and taking @Effect3Amount@% less damage from area of effect Abilities.<br><br>After @Effect6Amount@ seconds or <recast>Recasting</recast>, Jax deals @TotalDamage@ physical damage and <status>Stuns</status> nearby enemies for @Effect2Amount@ second. Deals @Effect5Amount@% increased damage for each Attack Jax dodged (max: @Effect4Amount@%).@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Jax enters a defensive stance for up to @Effect6Amount@ seconds, dodging incoming Attacks and taking @Effect3Amount@% less damage from area of effect Abilities.After @Effect6Amount@ seconds or <recast>Recasting</recast>, Jax deals @TotalDamage@ physical damage and <status>Stuns</status> nearby enemies for @Effect2Amount@ second. Deals @Effect5Amount@% increased damage for each Attack Jax dodged (max: @Effect4Amount@%).@SpellModifierDescriptionAppend@",
 "range": [
 300,
 300,
@@ -1120,7 +1120,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Every third consecutive attack deals additional Magic Damage. Additionally, Jax can activate this ability to strengthen his resolve, increasing his Armor and Magic Resist for a short duration.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Every third Attack deals an additional <magicDamage>@DamageCalc@ magic damage</magicDamage>.<br><br><spellActive>Active:</spellActive> Jax strengthens his resolve, granting him <scaleArmor>@ArmorCalc@ Armor</scaleArmor> and <scaleMR>@MRCalc@ Magic Resist</scaleMR> for @ActiveDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Every third Attack deals an additional <magicDamage>@DamageCalc@ magic damage</magicDamage>.<spellActive>Active:</spellActive> Jax strengthens his resolve, granting him <scaleArmor>@ArmorCalc@ Armor</scaleArmor> and <scaleMR>@MRCalc@ Magic Resist</scaleMR> for @ActiveDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 100,
 100,

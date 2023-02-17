@@ -631,7 +631,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Passive: Kassadin's basic attacks deal bonus magic damage. Active: Kassadin's next basic attack deals significant bonus magic damage and restores Mana.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Kassadin's Attacks deal an additional <magicDamage>@OnHitDamage@ magic damage</magicDamage>.<br><br><spellActive>Active:</spellActive> Kassadin charges his blade, causing his next Attack to deal <magicDamage>@ActiveDamage@ magic damage</magicDamage> and restore <scaleMana>@Effect1Amount@% missing Mana</scaleMana>, increased to <scaleMana>@Effect4Amount@%</scaleMana> against champions.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Kassadin's Attacks deal an additional <magicDamage>@OnHitDamage@ magic damage</magicDamage>.<spellActive>Active:</spellActive> Kassadin charges his blade, causing his next Attack to deal <magicDamage>@ActiveDamage@ magic damage</magicDamage> and restore <scaleMana>@Effect1Amount@% missing Mana</scaleMana>, increased to <scaleMana>@Effect4Amount@%</scaleMana> against champions.@SpellModifierDescriptionAppend@",
 "range": [
 1,
 1,
@@ -781,7 +781,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Kassadin draws energy from spells cast in his vicinity. Upon charging up, Kassadin can use Force Pulse to damage and slow enemies in a cone in front of him.",
-"dynamicDescription": "<spellPassive>Passive:</spellPassive> Kassadin gains a charge whenever any Ability is used near him. At 6 charges, Kassadin can activate this Ability.<br><br><spellActive>Active:</spellActive> Kassadin unleashes a void pulse, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Slowing</status> by @Effect2Amount@% for @Effect3Amount@ second.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Passive:</spellPassive> Kassadin gains a charge whenever any Ability is used near him. At 6 charges, Kassadin can activate this Ability.<spellActive>Active:</spellActive> Kassadin unleashes a void pulse, dealing <magicDamage>@TotalDamage@ magic damage</magicDamage> and <status>Slowing</status> by @Effect2Amount@% for @Effect3Amount@ second.@SpellModifierDescriptionAppend@",
 "range": [
 400,
 400,
@@ -931,7 +931,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Kassadin teleports to a nearby location dealing damage to nearby enemy units. Multiple Riftwalks in a short period of time cost additional Mana but also deal additional damage.",
-"dynamicDescription": "Kassadin teleports to a nearby location, dealing <magicDamage>@BaseDamage@ magic damage</magicDamage>.<br><br>Each subsequent use of this Ability within the next @RStackDuration@ seconds doubles the Mana cost and deals an additional <magicDamage>@BonusDamage@ magic damage</magicDamage>. The cost and damage increases can stack up to @MaxStacks@ times.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Kassadin teleports to a nearby location, dealing <magicDamage>@BaseDamage@ magic damage</magicDamage>.Each subsequent use of this Ability within the next @RStackDuration@ seconds doubles the Mana cost and deals an additional <magicDamage>@BonusDamage@ magic damage</magicDamage>. The cost and damage increases can stack up to @MaxStacks@ times.@SpellModifierDescriptionAppend@",
 "range": [
 500,
 500,

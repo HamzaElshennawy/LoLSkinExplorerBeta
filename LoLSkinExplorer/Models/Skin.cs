@@ -1,21 +1,20 @@
-﻿using System;
+﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text;
-using Newtonsoft.Json;
 
 namespace LoLSkinExplorer.Models
 {
     public class Skin : INotifyPropertyChanged
     {
-        [JsonProperty ("id")]
+        [JsonProperty("id")]
         public string skinId { get; set; }
-        public string SkinID {
+        public string SkinID
+        {
             get => skinId;
             set
             {
-                if(skinId == value)
+                if (skinId == value)
                     return;
                 skinId = value;
                 NotifyPropertyChanged(nameof(SkinID));
@@ -24,8 +23,9 @@ namespace LoLSkinExplorer.Models
 
         [JsonProperty("num")]
         public int skinNum;
-        public int SkinNum {
-            get => skinNum; 
+        public int SkinNum
+        {
+            get => skinNum;
             set
             {
                 if (skinNum == value)
@@ -36,7 +36,8 @@ namespace LoLSkinExplorer.Models
         }
         [JsonProperty("name")]
         public string skinName;
-        public string SkinName {
+        public string SkinName
+        {
             get => skinName;
             set
             {
@@ -60,8 +61,8 @@ namespace LoLSkinExplorer.Models
                 NotifyPropertyChanged(nameof(chromas));
             }
         }
-        
-        
+
+
         //public bool hasChromas;
         //public bool HasChromas {
         //    get => hasChromas;
@@ -73,7 +74,8 @@ namespace LoLSkinExplorer.Models
         //    }
         //}
         public string imgLink;
-        public string ImgLink {
+        public string ImgLink
+        {
             get => imgLink;
             set
             {
@@ -90,7 +92,7 @@ namespace LoLSkinExplorer.Models
             get => _LoadingScreen;
             set
             {
-                if(_LoadingScreen == value)
+                if (_LoadingScreen == value)
                     return;
                 _LoadingScreen = value;
                 NotifyPropertyChanged(nameof(_LoadingScreen));
@@ -123,7 +125,7 @@ namespace LoLSkinExplorer.Models
                 NotifyPropertyChanged(nameof(SkinPrice));
             }
         }
-        
+
         [JsonProperty("isLegacy")]
         public bool isavailable;
         public bool IsAvailable

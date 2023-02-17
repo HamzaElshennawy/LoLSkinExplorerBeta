@@ -476,7 +476,7 @@
 "abilityIconPath": "Characters/Illaoi/HUD/Icons2D/Illaoi_P.png",
 "abilityVideoPath": "champion-abilities/0420/ability_0420_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0420/ability_0420_P1.jpg",
-"description": "Illaoi and the <font color='#669900'>Vessels</font> she creates spawn Tentacles on nearby impassible terrain. Tentacles swing at spirits, <font color='#669900'>Vessels</font>, and victims of Illaoi's Harsh lesson. Tentacles deal physical damage to enemies hit, and will heal Illaoi if they damage a champion."
+"description": "Illaoi and the Vessels she creates spawn Tentacles on nearby impassible terrain. Tentacles swing at spirits, Vessels, and victims of Illaoi's Harsh lesson. Tentacles deal physical damage to enemies hit, and will heal Illaoi if they damage a champion."
 },
 "spells": [
 {
@@ -488,7 +488,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Increases the damage dealt by Tentacles. When activated, Illaoi smashes down a Tentacle that deals physical damage.",
-"dynamicDescription": "<passive>Passive:</passive> <keywordMajor>Slam</keywordMajor> damage is increased by @TentacleDamageAmp*100@% (currently @f1@ physical damage).<br><br><active>Active:</active> Illaoi swings her idol, causing a Tentacle to <keywordMajor>Slam</keywordMajor> forward.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<passive>Passive:</passive> <keywordMajor>Slam</keywordMajor> damage is increased by @TentacleDamageAmp*100@% (currently @f1@ physical damage).<active>Active:</active> Illaoi swings her idol, causing a Tentacle to <keywordMajor>Slam</keywordMajor> forward.@SpellModifierDescriptionAppend@",
 "range": [
 850,
 850,
@@ -787,8 +787,8 @@
 "abilityVideoImagePath": "champion-abilities/0420/ability_0420_E1.jpg",
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
-"description": "Illaoi rips the spirit from a foe's body, forcing it to stand before her. Spirits echo a percentage of the damage they take to the original target. If killed, or if the target gets too far from the spirit, the target will become a <font color='#669900'>Vessel</font> and begin spawning Tentacles.",
-"dynamicDescription": "Illaoi pulls the spirit from an enemy champion for @SpiritDuration@ seconds. The spirit can be damaged like a champion, with @EchoPercentTooltipOnly@ of that damage echoing to its owner.<br><br>If the spirit dies or the target leaves its range, the target becomes marked for @VesselDuration@ seconds and is <status>Slowed</status> by @SlowAmount*100@% for @SlowDuration@ seconds. Marked enemies spawn Tentacles every <scaleLevel>@f1@</scaleLevel> seconds.<br><br>Tentacles will automatically <keywordMajor>Slam</keywordMajor> at spirits and marked enemies once every @TimeBetweenVesselTentacleSlams@ seconds.@SpellModifierDescriptionAppend@",
+"description": "Illaoi rips the spirit from a foe's body, forcing it to stand before her. Spirits echo a percentage of the damage they take to the original target. If killed, or if the target gets too far from the spirit, the target will become a Vessel and begin spawning Tentacles.",
+"dynamicDescription": "Illaoi pulls the spirit from an enemy champion for @SpiritDuration@ seconds. The spirit can be damaged like a champion, with @EchoPercentTooltipOnly@ of that damage echoing to its owner.If the spirit dies or the target leaves its range, the target becomes marked for @VesselDuration@ seconds and is <status>Slowed</status> by @SlowAmount*100@% for @SlowDuration@ seconds. Marked enemies spawn Tentacles every <scaleLevel>@f1@</scaleLevel> seconds.Tentacles will automatically <keywordMajor>Slam</keywordMajor> at spirits and marked enemies once every @TimeBetweenVesselTentacleSlams@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 900,
 900,
@@ -938,7 +938,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Illaoi smashes her idol into the ground, dealing physical damage to nearby enemies. A Tentacle spawns for each enemy champion hit.",
-"dynamicDescription": "Illaoi smashes her idol into the ground, dealing @DamageCalc@ physical damage to nearby enemies and spawning a Tentacle for each enemy champion hit.<br><br>For the next @Duration@ seconds, Tentacles are untargetable and <keywordMajor>Slam</keywordMajor> 50% faster, and <spellName>Harsh Lesson</spellName> has a 2 second cooldown.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Illaoi smashes her idol into the ground, dealing @DamageCalc@ physical damage to nearby enemies and spawning a Tentacle for each enemy champion hit.For the next @Duration@ seconds, Tentacles are untargetable and <keywordMajor>Slam</keywordMajor> 50% faster, and <spellName>Harsh Lesson</spellName> has a 2 second cooldown.@SpellModifierDescriptionAppend@",
 "range": [
 450,
 450,

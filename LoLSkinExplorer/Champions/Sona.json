@@ -797,7 +797,7 @@
 "abilityIconPath": "Characters/Sona/HUD/Icons2D/Sona_Passive_Charged.png",
 "abilityVideoPath": "champion-abilities/0037/ability_0037_P1.webm",
 "abilityVideoImagePath": "champion-abilities/0037/ability_0037_P1.jpg",
-"description": "<passive>Accelerando</passive>: Sona gains non-Ultimate ability haste permanently for her basic abilities as she uses her abilities well, up to a cap. Beyond that cap, further successful uses reduce her ultimate's remaining cooldown instead.<br><br><passive>Power Chord</passive>: Every few spell casts, Sona's next attack will deal bonus magic damage in addition to an additional effect based on what basic Ability Sona last activated."
+"description": "<passive>Accelerando</passive>: Sona gains non-Ultimate ability haste permanently for her basic abilities as she uses her abilities well, up to a cap. Beyond that cap, further successful uses reduce her ultimate's remaining cooldown instead.<passive>Power Chord</passive>: Every few spell casts, Sona's next attack will deal bonus magic damage in addition to an additional effect based on what basic Ability Sona last activated."
 },
 "spells": [
 {
@@ -809,7 +809,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Sona plays the Hymn of Valor, sends out bolts of sound, dealing magic damage to two nearby enemies, prioritizing champions and monsters. Sona gains a temporary aura that grants allies tagged by the zone bonus damage on their next attack against enemies.",
-"dynamicDescription": "Sona deals <magicDamage>@TotalDamage@ magic damage</magicDamage> to the nearest two enemies, prioritizing champions. She then begins a new <keywordMajor>Melody</keywordMajor>. Gain a stack of <keywordMajor>Accelerando</keywordMajor> for every champion you damage with this.<br><br><keywordMajor>Melody:</keywordMajor> Sona gains an aura for @AuraDuration@ seconds, granting allied champions an additional <magicDamage>@TotalOnHitDamage@ magic damage</magicDamage> %i:OnHit% on their next Attack within @OnHitDuration@ seconds.<br><br><keywordMajor>Power Chord - Staccato:</keywordMajor> Power Chord bonus damage (<magicDamage>@TotalStaccatoDamage@ total magic damage</magicDamage>).@SpellModifierDescriptionAppend@",
+"dynamicDescription": "Sona deals <magicDamage>@TotalDamage@ magic damage</magicDamage> to the nearest two enemies, prioritizing champions. She then begins a new <keywordMajor>Melody</keywordMajor>. Gain a stack of <keywordMajor>Accelerando</keywordMajor> for every champion you damage with this.<keywordMajor>Melody:</keywordMajor> Sona gains an aura for @AuraDuration@ seconds, granting allied champions an additional <magicDamage>@TotalOnHitDamage@ magic damage</magicDamage> %i:OnHit% on their next Attack within @OnHitDuration@ seconds.<keywordMajor>Power Chord - Staccato:</keywordMajor> Power Chord bonus damage (<magicDamage>@TotalStaccatoDamage@ total magic damage</magicDamage>).@SpellModifierDescriptionAppend@",
 "range": [
 825,
 825,
@@ -959,7 +959,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Sona plays the Aria of Perseverance, sending out protective melodies, healing Sona and a nearby wounded ally. Sona gains a temporary aura that grants allies tagged by the zone a temporary shield.",
-"dynamicDescription": "<spellPassive>Active:</spellPassive> Sona restores <healing>@TotalHeal@ Health</healing> to herself and a nearby allied champion, prioritizing the most wounded. She then begins a new <keywordMajor>Melody</keywordMajor>.<br><br><keywordMajor>Melody:</keywordMajor> Sona gains an aura for @AuraDuration@ seconds, granting allied champions <shield>@TotalShield@ Shield</shield> for @ShieldDuration@ seconds.<br><br>Gain a stack of <keywordMajor>Accelerando</keywordMajor> whenever you heal another injured ally and every time you protect another ally from at least @AccelerandoShieldBreakpoint@ damage with this shield.<br><br><keywordMajor>Power Chord - Diminuendo:</keywordMajor> Power Chord also reduces physical and magic damage dealt by the target by @TotalDiminuendoWeakenPercent@ for @DiminuendoDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Active:</spellPassive> Sona restores <healing>@TotalHeal@ Health</healing> to herself and a nearby allied champion, prioritizing the most wounded. She then begins a new <keywordMajor>Melody</keywordMajor>.<keywordMajor>Melody:</keywordMajor> Sona gains an aura for @AuraDuration@ seconds, granting allied champions <shield>@TotalShield@ Shield</shield> for @ShieldDuration@ seconds.Gain a stack of <keywordMajor>Accelerando</keywordMajor> whenever you heal another injured ally and every time you protect another ally from at least @AccelerandoShieldBreakpoint@ damage with this shield.<keywordMajor>Power Chord - Diminuendo:</keywordMajor> Power Chord also reduces physical and magic damage dealt by the target by @TotalDiminuendoWeakenPercent@ for @DiminuendoDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 1000,
 1000,
@@ -1109,7 +1109,7 @@
 "cost": "@Cost@ @AbilityResourceName@",
 "cooldown": "@Cooldown@s %i:cooldown%",
 "description": "Sona plays the Song of Celerity, granting nearby allies bonus Move Speed. Sona gains a temporary aura that grants allied champions tagged by the zone bonus Move Speed.",
-"dynamicDescription": "<spellPassive>Active:</spellPassive> She begins a new <keywordMajor>Melody</keywordMajor> and grants herself <speed>@TotalSelfMovementSpeed@ Move Speed</speed> for @SelfMovementSpeedDurationMin@ seconds, extended to up to @SelfMovementSpeedDurationMax@ seconds if she doesn't take damage. <br><br><keywordMajor>Melody:</keywordMajor> Sona gains an aura for @AuraDuration@ seconds that grants allied champions <speed>@TotalAllyMovementSpeed@ Move Speed</speed> for @AllyMovementSpeedDuration@ seconds.<br><br><keywordMajor>Power Chord - Tempo:</keywordMajor> Power Chord also <status>Slows</status> the target by @TotalTempoMoveSpeedSlow@ for @TempoDuration@ seconds.@SpellModifierDescriptionAppend@",
+"dynamicDescription": "<spellPassive>Active:</spellPassive> She begins a new <keywordMajor>Melody</keywordMajor> and grants herself <speed>@TotalSelfMovementSpeed@ Move Speed</speed> for @SelfMovementSpeedDurationMin@ seconds, extended to up to @SelfMovementSpeedDurationMax@ seconds if she doesn't take damage. <keywordMajor>Melody:</keywordMajor> Sona gains an aura for @AuraDuration@ seconds that grants allied champions <speed>@TotalAllyMovementSpeed@ Move Speed</speed> for @AllyMovementSpeedDuration@ seconds.<keywordMajor>Power Chord - Tempo:</keywordMajor> Power Chord also <status>Slows</status> the target by @TotalTempoMoveSpeedSlow@ for @TempoDuration@ seconds.@SpellModifierDescriptionAppend@",
 "range": [
 430,
 430,
