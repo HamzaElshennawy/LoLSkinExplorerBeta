@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace LoLSkinExplorer.Models
 {
+    [JsonObject("abilities")]
     public class Abilities : INotifyPropertyChanged
     {
 

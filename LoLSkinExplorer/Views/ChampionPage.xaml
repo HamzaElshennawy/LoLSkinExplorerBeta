@@ -1,15 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:models="clr-namespace:LoLSkinExplorer.Models" 
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarHasShadow="True"
              Shell.ForegroundColor="Red"
              Shell.TitleColor="Red"
-             
-             x:Class="LoLSkinExplorer.Views.ChampionPage" Title="{Binding championForXaml.Name}" BackgroundColor="#43494c">
-    <ContentPage.BindingContext>
-        championForXaml
-    </ContentPage.BindingContext>
+             Title="{Binding MainChampion.ChampionTitle}"
+             x:Class="LoLSkinExplorer.Views.ChampionPage" BackgroundColor="#43494c">
+    
     <ContentPage.Content>
         <!--<Image Source= "{Binding TempChampion.ChampionImage}" Opacity="0.5" VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" BackgroundColor="Red"/>-->
@@ -19,6 +17,7 @@
             <StackLayout BackgroundColor="Transparent">
                 <StackLayout Padding="0" Grid.Row="0" Grid.RowSpan="2" HeightRequest="50">
                     <Image x:Name="BackGrounImage" 
+                           Source="{Binding MainChampion.ChampionLoadingScreen}"
                                Opacity="0.3" BackgroundColor="Transparent" 
                                Margin="0,-200,0,0"
                                VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
@@ -28,8 +27,8 @@
                        />
                     
                 </StackLayout>
-                <ScrollView Margin="0,-40,0,0" VerticalScrollBarVisibility="Never">
-                    <StackLayout BackgroundColor="Transparent" Orientation="Vertical" HeightRequest="1000">
+                <ScrollView Margin="0,-40,0,0" VerticalScrollBarVisibility="Never" VerticalOptions="StartAndExpand">
+                    <StackLayout BackgroundColor="Transparent" Orientation="Vertical" HeightRequest="1300">
                         <StackLayout 
                             BackgroundColor="Transparent"
                             VerticalOptions="StartAndExpand"
@@ -50,6 +49,7 @@
                                 >
                                 <Label 
                                     x:Name="BioLabel" 
+                                    Text="{Binding MainChampion.Bio}"
                                     FontFamily="Times New Roman"
                                     FontSize="16"
                                     Padding="10"
@@ -146,10 +146,10 @@
                                     <StackLayout>
                                         <Label Text="Passive" FontSize="30" TextColor="Orange" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
                                     </StackLayout>
-                                    <StackLayout BackgroundColor="Transparent">
+                                    <StackLayout BackgroundColor="Transparent" >
                                         <Label
                                             x:Name="PassiveLBL"
-                                            Text="{Binding championForXaml.Abilities[0].SpellDescription}"
+                                            Text="{Binding ChampAbilities[0].SpellDescription}"
                                             FontFamily="Times New Roman"
                                             FontSize="16"
                                             Padding="10"
@@ -158,25 +158,88 @@
                                             LineHeight="1.9"
                                             CharacterSpacing="1.1"
                                             TextColor="White"
-                                            Margin="28,0,28,0"
-                                            HorizontalTextAlignment="Start"
+                                            Margin="0,0,0,0"
+                                            HorizontalTextAlignment="Center"
                                             TextType="Html"
                                             LineBreakMode="WordWrap"
                                             />
                                     </StackLayout>
                                 </StackLayout>
                             </Frame>
-                        </StackLayout>
-                        <StackLayout>
+                        <StackLayout VerticalOptions="StartAndExpand">
                             <Frame Padding="0" BackgroundColor="Transparent">
                                 <StackLayout BackgroundColor="Transparent" >
                                     <StackLayout>
-                                        <Label Text="Passive" FontSize="30" TextColor="Orange" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                                        <Label Text="Abilities" FontSize="30" TextColor="Orange" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
                                     </StackLayout>
                                     <StackLayout BackgroundColor="Transparent">
-                                        <Label
+                                            <Frame 
+                                                BackgroundColor="Gray" 
+                                                CornerRadius="15"
+                                                HasShadow="True"
+                                                
+                                                >
+                                                <Label
+                                                    Text="{Binding ChampAbilities[1].SpellName , StringFormat='{0} (Q)'}"
+                                                    FontFamily="Times New Roman"
+                                                    FontSize="20"
+                                                    Padding="0"
+                                                    Scale="1" 
+                                                    FontAttributes="Bold"
+                                                    LineHeight="1.9"
+                                                    CharacterSpacing="1.1"
+                                                    TextColor="White"
+                                                    Margin="0,0,0,0"
+                                                    HorizontalTextAlignment="Center"
+                                                    TextType="Html"
+                                                    LineBreakMode="WordWrap"
+                                                    
+                                                    HorizontalOptions="CenterAndExpand"
+                                                    VerticalOptions="StartAndExpand"
+                                                
+                                            />
+                                            </Frame>
                                             
-                                            Text="{Binding championForXaml.Abilities[0].SpellDescription}"
+                                            <Label
+                                            
+                                                Text="{Binding ChampAbilities[1].SpellDescription}"
+                                                FontFamily="Times New Roman"
+                                                FontSize="16"
+                                                Padding="10"
+                                                Scale="1" 
+                                                FontAttributes="Bold"
+                                                LineHeight="1.9"
+                                                CharacterSpacing="1.1"
+                                                TextColor="White"
+                                                Margin="0,0,0,0"
+                                                HorizontalTextAlignment="Center"
+                                                TextType="Html"
+                                                LineBreakMode="WordWrap"
+                                                />
+                                            <Frame BackgroundColor="Gray" CornerRadius="15">
+                                                <Label
+                                                    Text="{Binding ChampAbilities[2].SpellName , StringFormat='{0} (W)'}"
+                                                    FontFamily="Times New Roman"
+                                                    FontSize="20"
+                                                    Padding="0"
+                                                    Scale="1" 
+                                                    FontAttributes="Bold"
+                                                    LineHeight="1.9"
+                                                    CharacterSpacing="1.1"
+                                                    TextColor="White"
+                                                    Margin="0,0,0,0"
+                                                    HorizontalTextAlignment="Center"
+                                                    TextType="Html"
+                                                    LineBreakMode="WordWrap"
+                                                    
+                                                    HorizontalOptions="CenterAndExpand"
+                                                    VerticalOptions="StartAndExpand"
+                                                
+                                            />
+                                            </Frame>
+                                            <Label
+                                            
+                                            Text="{Binding ChampAbilities[2].SpellDescription, StringFormat=' {0}'}"
                                             FontFamily="Times New Roman"
                                             FontSize="16"
                                             Padding="10"
@@ -185,15 +248,92 @@
                                             LineHeight="1.9"
                                             CharacterSpacing="1.1"
                                             TextColor="White"
-                                            Margin="28,0,28,0"
-                                            HorizontalTextAlignment="Start"
+                                            Margin="0,0,0,0"
+                                            HorizontalTextAlignment="Center"
                                             TextType="Html"
                                             LineBreakMode="WordWrap"
                                             />
-                                    </StackLayout>
+                                            <Frame BackgroundColor="Gray" CornerRadius="15">
+                                                <Label
+                                                    Text="{Binding ChampAbilities[3].SpellName , StringFormat='{0} (E)'}"
+                                                    FontFamily="Times New Roman"
+                                                    FontSize="20"
+                                                    Padding="0"
+                                                    Scale="1" 
+                                                    FontAttributes="Bold"
+                                                    LineHeight="1.9"
+                                                    CharacterSpacing="1.1"
+                                                    TextColor="White"
+                                                    Margin="0,0,0,0"
+                                                    HorizontalTextAlignment="Center"
+                                                    TextType="Html"
+                                                    LineBreakMode="WordWrap"
+                                                    
+                                                    HorizontalOptions="CenterAndExpand"
+                                                    VerticalOptions="StartAndExpand"
+                                                
+                                            />
+                                            </Frame>
+                                            <Label
+                                            
+                                            Text="{Binding ChampAbilities[3].SpellDescription, StringFormat=' {0}'}"
+                                            FontFamily="Times New Roman"
+                                            FontSize="16"
+                                            Padding="10"
+                                            Scale="1" 
+                                            FontAttributes="Bold"
+                                            LineHeight="1.9"
+                                            CharacterSpacing="1.1"
+                                            TextColor="White"
+                                            Margin="0,0,0,0"
+                                            HorizontalTextAlignment="Center"
+                                            TextType="Html"
+                                            LineBreakMode="WordWrap"
+                                            />
+                                            <Frame BackgroundColor="Gray" CornerRadius="15">
+                                                <Label
+                                                    Text="{Binding ChampAbilities[4].SpellName , StringFormat='{0} (R)'}"
+                                                    FontFamily="Times New Roman"
+                                                    FontSize="20"
+                                                    Padding="0"
+                                                    Scale="1" 
+                                                    FontAttributes="Bold"
+                                                    LineHeight="1.9"
+                                                    CharacterSpacing="1.1"
+                                                    TextColor="White"
+                                                    Margin="0,0,0,0"
+                                                    HorizontalTextAlignment="Center"
+                                                    TextType="Html"
+                                                    LineBreakMode="WordWrap"
+                                                    
+                                                    HorizontalOptions="CenterAndExpand"
+                                                    VerticalOptions="StartAndExpand"
+                                                
+                                            />
+                                            </Frame>
+                                        
+                                            <Label
+                                            
+                                            Text="{Binding ChampAbilities[4].SpellDescription, StringFormat=' {0}'}"
+                                            FontFamily="Times New Roman"
+                                            FontSize="16"
+                                            Padding="10"
+                                            Scale="1" 
+                                            FontAttributes="Bold"
+                                            LineHeight="1.9"
+                                            CharacterSpacing="1.1"
+                                            TextColor="White"
+                                            Margin="0,0,0,0"
+                                            HorizontalTextAlignment="Center"
+                                            TextType="Html"
+                                            LineBreakMode="WordWrap"
+                                            />
+                                        </StackLayout>
                                 </StackLayout>
                             </Frame>
                         </StackLayout>
+                        </StackLayout>
+                        
                         
                     </StackLayout>
                 </ScrollView>

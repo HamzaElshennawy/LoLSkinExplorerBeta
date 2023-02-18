@@ -53,7 +53,7 @@ namespace LoLSkinExplorer.ViewModels
             thread.Start();
 
             //GetData();
-            NewSkinsDisplay();
+            //NewSkinsDisplay();
         }
         public async void GetData()
         {
@@ -79,29 +79,30 @@ namespace LoLSkinExplorer.ViewModels
                         string JsonText = sr.ReadToEnd();
                         
                         JObject dobj = JsonConvert.DeserializeObject<dynamic>(JsonText);
-                        Champion TempChampion = new Champion();
-                        var champID = dobj["id"];
-                        TempChampion.ChampionId = (string)champID;
-                        //var champKey = dobj["key"];
-                        //TempChampion.ChampionKey = (string)champKey;
-                        var championAlias = dobj["alias"];
-                        TempChampion.ChampionAlias = (string)championAlias;
-                        var champName = dobj["name"];
-                        string _champName = (string)champName;
-                        TempChampion.ChampionName = _champName.ToLower();
-                        var champTitle = dobj["title"];
-                        TempChampion.ChampionTitle = (string)champTitle;
+                        //Champion TempChampion = new Champion();
+                        Champion TempChampion = JsonConvert.DeserializeObject<Champion>(JsonText);
+                        //var champID = dobj["id"];
+                        //TempChampion.ChampionId = (string)champID;
+                        ////var champKey = dobj["key"];
+                        ////TempChampion.ChampionKey = (string)champKey;
+                        //var championAlias = dobj["alias"];
+                        //TempChampion.ChampionAlias = (string)championAlias;
+                        //var champName = dobj["name"];
+                        //string _champName = (string)champName;
+                        //TempChampion.ChampionName = _champName.ToLower();
+                        //var champTitle = dobj["title"];
+                        //TempChampion.ChampionTitle = (string)champTitle;
                         TempChampion.ChampionImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + TempChampion.ChampionAlias + "_0.jpg";
                         TempChampion._LoadingScreen = $"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + TempChampion.ChampionAlias + "_0.jpg";
-                        var champBio = dobj["shortBio"];
-                        TempChampion._Bio = (string)champBio;
+                        //var champBio = dobj["shortBio"];
+                        //TempChampion._Bio = (string)champBio;
 
-                        var champRoles = dobj["roles"];
-                        for (int j = 0; j < champRoles.Count(); j++)
-                        {
-                            string tempRole = champRoles[j].ToString();
-                            TempChampion.Role.Add(tempRole);
-                        }
+                        //var champRoles = dobj["roles"];
+                        //for (int j = 0; j < champRoles.Count(); j++)
+                        //{
+                        //    string tempRole = champRoles[j].ToString();
+                        //    TempChampion.Role.Add(tempRole);
+                        //}
 
                         abilities = new ObservableRangeCollection<Abilities>();
 
@@ -111,7 +112,10 @@ namespace LoLSkinExplorer.ViewModels
                         spellP.SpellDescription = dobj["passive"]["description"].ToString();
                         spellP.SpellKey = "q";
                         abilities.Add(spellP);
-                        TempChampion.Abilities.Add(spellP);
+                        TempChampion.Abilities = new List<Abilities>
+                        {
+                            spellP
+                        };
 
                         var champAbilities = dobj["spells"];
 
@@ -146,14 +150,15 @@ namespace LoLSkinExplorer.ViewModels
 
                             abilities.Add(abilitiess);
                             TempChampion.Abilities = abilities.ToList<Abilities>();
-                            
-                            //small fix for Wukong icon and background in champion details page
-                            if(TempChampion.Alias == "Wukong")
+
+                            //    //small fix for Wukong icon and background in champion details page
+                            if (TempChampion.Alias == "Wukong")
                             {
                                 TempChampion._LoadingScreen = $"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + "MonkeyKing" + "_0.jpg";
                                 TempChampion._Image = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + "MonkeyKing" + "_0.jpg";
                             }
                         }
+
                         Champions.Add(TempChampion);
                     }
                     catch (Exception ex)
@@ -177,6 +182,7 @@ namespace LoLSkinExplorer.ViewModels
         async Task Refresh()
         {
             IsBusy = true;
+            await Task.Delay(000);
             GetData();
             IsBusy = false;
         }

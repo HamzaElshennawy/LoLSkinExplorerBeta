@@ -197,7 +197,7 @@ namespace LoLSkinExplorer.Views
                 }
                 else
                 {
-                    await Application.Current.MainPage.DisplayAlert("Has crhomas?", "This skin has no chromas", "OK");
+                    await Application.Current.MainPage.DisplayAlert("Ops!", "This skin has no chromas", "OK");
                 }
             }
         }
