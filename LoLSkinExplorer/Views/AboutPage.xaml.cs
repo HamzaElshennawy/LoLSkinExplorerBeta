@@ -52,11 +52,11 @@ namespace LoLSkinExplorer.Views
             {
                 if (e.NewTextValue[0].ToString() == e.NewTextValue[0].ToString().ToUpper())
                 {
-                    ListViewomePage.ItemsSource = _container.Champions.Where(i => i.ChampionAlias.Contains(e.NewTextValue));
+                    ListViewomePage.ItemsSource = _container.Champions.Where(i => i.ChampionAlias.ToLower().Contains(e.NewTextValue));
                 }
                 else
                 {
-                    ListViewomePage.ItemsSource = _container.Champions.Where(i => i.ChampionName.Contains(e.NewTextValue));
+                    ListViewomePage.ItemsSource = _container.Champions.Where(i => i.ChampionAlias.ToLower().Contains(e.NewTextValue));
                 }
             }
             ListViewomePage.EndRefresh();

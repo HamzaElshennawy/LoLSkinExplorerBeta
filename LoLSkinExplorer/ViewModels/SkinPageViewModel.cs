@@ -150,7 +150,7 @@ namespace LoLSkinExplorer.ViewModels
 
                             abilities.Add(abilitiess);
                             TempChampion.Abilities = abilities.ToList<Abilities>();
-
+                            //TempChampion.ChampionAlias = TempChampion.ChampionAlias.ToLower();
                             //    //small fix for Wukong icon and background in champion details page
                             if (TempChampion.Alias == "Wukong")
                             {

@@ -159,7 +159,7 @@
                                             </StackLayout>
                                             <StackLayout Orientation="Horizontal">
                                                 <Label
-                                                    Text="{Binding ChampionAlias}"
+                                                    Text="{Binding ChampionName}"
                                                     TextColor="White" 
                                                     HorizontalTextAlignment="Start"
                                                     HorizontalOptions="CenterAndExpand"

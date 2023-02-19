@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -24,9 +25,11 @@ namespace LoLSkinExplorer.Views
 
         public string baseSpellIconLink;
         public string basePassiveLink;
+        public double screenHeight { set; get; }
         public ChampionPage(Champion TempChampion)
         {
             InitializeComponent();
+            screenHeight = DeviceDisplay.MainDisplayInfo.Height;
             MainChampion = new Champion();
             MainChampion = TempChampion;
             ChampAbilities = new ObservableCollection<Abilities>();

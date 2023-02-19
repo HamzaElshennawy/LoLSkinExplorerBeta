@@ -31188,6 +31188,9 @@ namespace LoLSkinExplorer.Droid
 			// aapt resource value: 0x7F1000E8
 			public const int EmptyTheme = 2131755240;
 			
+			// aapt resource value: 0x7F1002FB
+			public const int invisible_action_bar_style = 2131755771;
+			
 			// aapt resource value: 0x7F1000E9
 			public const int MainTheme = 2131755241;
 			
@@ -31416,11 +31419,11 @@ namespace LoLSkinExplorer.Droid
 			// aapt resource value: 0x7F100134
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131755316;
 			
-			// aapt resource value: 0x7F1002FB
-			public const int scrollViewScrollBars = 2131755771;
-			
 			// aapt resource value: 0x7F1002FC
-			public const int scrollViewTheme = 2131755772;
+			public const int scrollViewScrollBars = 2131755772;
+			
+			// aapt resource value: 0x7F1002FD
+			public const int scrollViewTheme = 2131755773;
 			
 			// aapt resource value: 0x7F10013B
 			public const int ShapeAppearanceOverlay = 2131755323;

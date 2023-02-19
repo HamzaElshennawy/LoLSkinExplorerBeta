@@ -6,6 +6,7 @@
              Shell.ForegroundColor="Red"
              Shell.TitleColor="Red"
              Title="{Binding MainChampion.ChampionTitle}"
+             
              x:Class="LoLSkinExplorer.Views.ChampionPage" BackgroundColor="#43494c">
     
     <ContentPage.Content>
@@ -22,13 +23,13 @@
                                Margin="0,-200,0,0"
                                VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
                                WidthRequest="100"
-                               HeightRequest="1300"
+                               HeightRequest="{Binding screenHeight}"
                            Aspect="Fill"
                        />
                     
                 </StackLayout>
                 <ScrollView Margin="0,-40,0,0" VerticalScrollBarVisibility="Never" VerticalOptions="StartAndExpand">
-                    <StackLayout BackgroundColor="Transparent" Orientation="Vertical" HeightRequest="1300">
+                    <StackLayout BackgroundColor="Transparent" Orientation="Vertical" HeightRequest="1900">
                         <StackLayout 
                             BackgroundColor="Transparent"
                             VerticalOptions="StartAndExpand"
