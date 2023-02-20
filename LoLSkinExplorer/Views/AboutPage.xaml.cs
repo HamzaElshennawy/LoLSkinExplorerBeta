@@ -75,7 +75,7 @@ namespace LoLSkinExplorer.Views
 
             await Task.WhenAll(
             ((ListView)sender).TranslateTo(-300, 0, 1500, Easing.Linear),
-            Navigation.PushAsync(new SkinsPage(champ, champ.ChampionAlias), true)
+            Navigation.PushAsync(new ChampionPage(champ), true)
             );
             await ((ListView)sender).TranslateTo(0, 0, 0, Easing.Linear);
 
