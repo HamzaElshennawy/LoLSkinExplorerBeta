@@ -6,7 +6,7 @@
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              Shell.FlyoutBehavior="Disabled"
              Shell.NavBarHasShadow="True"
-             x:Class="LoLSkinExplorer.Views.AboutPage"
+             x:Class="LoLSkinExplorer.Views.HomePage"
              BackgroundColor="#43494c"
              Title="Skin Explorer">
 
@@ -27,87 +27,7 @@
             IsVisible="false"
             TextChanged="SearchEntryBox_TextChanged" />
         <Grid>
-            <!--<Grid.RowDefinitions>
-                <RowDefinition Height="3.5*"/>
-                <RowDefinition Height="7*"/>
-            </Grid.RowDefinitions>-->
-            <!--<Label 
-                Text="New Skins"
-                FontSize="23"
-                Margin="10,0,0,0"
-                TextColor="White"
-                xct:ShadowEffect.Color="Black"
-                xct:ShadowEffect.OffsetY="10"
-                xct:ShadowEffect.OffsetX="10"
-                xct:ShadowEffect.Radius="5"/>
-            <StackLayout 
-                Margin="0,25,0,0"
-                BackgroundColor="Transparent"
-                Orientation="Vertical">
-                <CarouselView
-                    ItemsSource="{Binding NewSkins}" 
-                    HorizontalScrollBarVisibility="Always" 
-                    PeekAreaInsets="0"
-                    BackgroundColor="Transparent" 
-                    >
-                    <CarouselView.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout>
-                                <Grid Padding="6">
-                                    <Frame 
-                                        Padding="0"  
-                                        HasShadow="True" 
-                                        CornerRadius="10" 
-                                        HeightRequest="180">
-                                        <Grid>
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="6*"/>
-                                                <ColumnDefinition Width="4*"/>
-                                            </Grid.ColumnDefinitions>
-                                            <Image
-                                                Source="{Binding ImgLink}"
-                                                VerticalOptions="CenterAndExpand"
-                                                Aspect="Fill"
-                                                Grid.ColumnSpan="2"
-                                            />
-                                            <Label 
-                                                Text="{Binding SkinName}" 
-                                                TextColor="GhostWhite"
-                                                FontAttributes="Bold"
-                                                HorizontalTextAlignment="Start"
-                                                HorizontalOptions="StartAndExpand"
-                                                VerticalOptions="EndAndExpand"
-                                                FontSize="Large"
-                                                Margin="3,0,0,0"
-                                                xct:ShadowEffect.Color="Black"
-                                                xct:ShadowEffect.OffsetY="10"
-                                                xct:ShadowEffect.OffsetX="10"
-                                                xct:ShadowEffect.Radius="5"
-                                                Grid.Column="0"
-                                                LineBreakMode="TailTruncation"
-                                            />
-                                            <Label 
-                                                Text="{Binding SkinPrice}" TextColor="Orange" 
-                                                HorizontalTextAlignment="Start"
-                                                HorizontalOptions="EndAndExpand"
-                                                VerticalOptions="EndAndExpand"
-                                                FontSize="Large"
-                                                Margin="0,0,5,0"
-                                                xct:ShadowEffect.Color="Black"
-                                                xct:ShadowEffect.OffsetY="10"
-                                                xct:ShadowEffect.OffsetX="10"
-                                                xct:ShadowEffect.Radius="5"
-                                                Grid.Column="1"
-                                            />
-                                        </Grid>
-                                    </Frame>
-                                </Grid>
-                            </StackLayout>
-                        </DataTemplate>
-                    </CarouselView.ItemTemplate>
-                </CarouselView>
-            </StackLayout>-->
-            <!--"10,-10,0,50"-->
+            
             <Label 
                 Text="Champions"
                 Margin="10,-5,0,0"

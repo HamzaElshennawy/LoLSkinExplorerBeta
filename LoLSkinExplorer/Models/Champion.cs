@@ -178,13 +178,48 @@ namespace LoLSkinExplorer.Models
                 NotifyPropertyChanged(nameof(_LoadingScreen));
             }
         }
+        [JsonProperty("tacticalInfo")]
+        public TacticalInfo TacticalInfo { set; get; }
 
+        [JsonProperty("playstyleInfo")]
+        public PlaystyleInfo PlaystyleInfo { set; get; }
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+    }
+    [JsonObject("tacticalInfo")]
+    public class TacticalInfo
+    {
+        [JsonProperty("style")]
+        public int Style { set; get; }
+        [JsonProperty("difficulty")]
+        public int Difficulty { set; get; }
+        [JsonProperty("damageType")]
+        public string DamageType { set; get; }
+    }
+    
+    
+    [JsonObject("playstyleInfo")]
+    public class PlaystyleInfo
+    {
+        [JsonProperty("damage")]
+        public int Damage { set; get; }
+
+        [JsonProperty("durability")]
+        public int Durability { set; get; }
+
+        [JsonProperty("crowdControl")]
+        public int CrowdControl { set; get; }
+
+        [JsonProperty("mobility")]
+        public int Mobility { set; get; }
+
+        [JsonProperty("utility")]
+        public int Utility { set; get; }
     }
 }
 

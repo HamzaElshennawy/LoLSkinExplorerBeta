@@ -70,7 +70,7 @@ namespace LoLSkinExplorer.ViewModels
                         //    await Application.Current.MainPage.DisplayAlert("sr", ChampionsNames[i], "ok");
                         //}
 
-                        var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
+                        var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(HomePage)).Assembly;
                         System.IO.Stream s = tmp.GetManifestResourceStream($"LoLSkinExplorer.Champions.{ChampionsNames[i]}.json");
                         System.IO.StreamReader sr = new System.IO.StreamReader(s);
 

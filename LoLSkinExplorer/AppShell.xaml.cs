@@ -8,7 +8,7 @@ namespace LoLSkinExplorer
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(SkinsPage), typeof(SkinsPage));
+            Routing.RegisterRoute(nameof(ChampionPage), typeof(ChampionPage));
         }
 
 

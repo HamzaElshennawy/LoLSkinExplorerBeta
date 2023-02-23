@@ -7,10 +7,10 @@ using Xamarin.Forms;
 
 namespace LoLSkinExplorer.Views
 {
-    public partial class AboutPage : ContentPage
+    public partial class HomePage : ContentPage
     {
         public MvvmHelpers.ObservableRangeCollection<Skin> Skins { get; set; }
-        public AboutPage()
+        public HomePage()
         {
             InitializeComponent();
             Skins = new MvvmHelpers.ObservableRangeCollection<Skin>();

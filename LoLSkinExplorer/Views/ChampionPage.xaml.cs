@@ -13,6 +13,7 @@ using System.Threading;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Threading.Tasks;
 
 namespace LoLSkinExplorer.Views
 {
@@ -22,6 +23,10 @@ namespace LoLSkinExplorer.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ChampionPage : TabbedPage
     {
+
+
+        public Command DifficultyExpCommand { set; get; }
+        public Command MobilityExpCommand { set; get; }
 
         //Important links
         string BaseSplashLink = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/";
@@ -54,12 +59,23 @@ namespace LoLSkinExplorer.Views
         public string baseSpellIconLink;
         public string basePassiveLink;
         public double screenHeight { set; get; }
+        public double screenWidth { set; get; }
+
+        public double PBWidth { set; get; }
         public ChampionPage(Champion TempChampion)
         {
             InitializeComponent();
+
+            DifficultyExpCommand = new Command(AnimateDifficulty);
+            MobilityExpCommand = new Command(AnimateMobility);
+
+
             screenHeight = DeviceDisplay.MainDisplayInfo.Height;
+            screenWidth = DeviceDisplay.MainDisplayInfo.Width;
+            PBWidth = (screenWidth / 3) - 30;
             MainChampion = new Champion();
             MainChampion = TempChampion;
+            BackgroundImageSource = MainChampion.ChampionLoadingScreen;
 
             ChampSkins = new ObservableCollection<Skin>();
             Skinss = new ObservableCollection<Skin>();
@@ -67,17 +83,35 @@ namespace LoLSkinExplorer.Views
             ChampionRoles = new ObservableCollection<string>();
 
             BindingContext = this;
-            
+
             basePassiveLink = "http://ddragon.leagueoflegends.com/cdn/13.1.1/img/passive/";
             baseSpellIconLink = "http://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/" + MainChampion.Alias;
             GetChampionCoreData(MainChampion);//pass the main champion to the function to get the core data such as lore, title,role, etc.
             //Application.Current.MainPage.DisplayAlert("Alias", MainChampion.Name, "OK");
             string ChampName = MainChampion.ChampionAlias;
+
             Thread SkinsThread = new Thread(() => { GetSkins(ChampName); });
             SkinsThread.Start();
 
+            
+            this.BackgroundImageSource = MainChampion.ChampionLoadingScreen;
+            
         }
 
+        
+
+        private void ReformatDamageType()
+        {
+            //replace kPhysical to Physical in the damagetype
+
+            if (MainChampion.TacticalInfo.DamageType == "kPhysical")
+                MainChampion.TacticalInfo.DamageType = "Physical";
+            if (MainChampion.TacticalInfo.DamageType == "kMagic")
+                MainChampion.TacticalInfo.DamageType = "Magic";
+            if (MainChampion.TacticalInfo.DamageType == "kMixed")
+                MainChampion.TacticalInfo.DamageType = "Mixed";
+            OnPropertyChanged(nameof(MainChampion));
+        }
 
         public void GetChampionCoreData(Champion champion)
         {
@@ -85,14 +119,14 @@ namespace LoLSkinExplorer.Views
             string championRoles = "";
             if (_MainChampion.Role.Count() == 2)
             {
-                
-                ChampionRoles.Add(MainChampion.Role[0]);
-                ChampionRoles.Add(MainChampion.Role[1]);
+
+                ChampionRoles.Add(MainChampion.Role[0].ToUpper());
+                ChampionRoles.Add(MainChampion.Role[1].ToUpper());
 
             }
             else
             {
-                ChampionRoles.Add(MainChampion.Role[0]);
+                ChampionRoles.Add(MainChampion.Role[0].ToUpper());
                 Type2Label.IsVisible = false;
                 Role2image.IsVisible = false;
             }
@@ -104,19 +138,83 @@ namespace LoLSkinExplorer.Views
             _MainChampion.ChampionTitle = _MainChampion.ChampionTitle.ToUpper();
             MainChampion = _MainChampion;
             AddAbilitiesToCollection();
-            OnPropertyChanged(nameof(MainChampion));
-        }
-        public string getPassiveLink(string championName)
-        {
-            string championJson = $"http://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion/{championName}.json";
+            ReformatDamageType();
 
-            return "";
+            
+            OnPropertyChanged(nameof(MainChampion));
+            OnPropertyChanged(nameof(ChampionRoles));
         }
+
+        private async void AnimateMobilityProgressBar()
+        {
+            if (MainChampion.PlaystyleInfo.Mobility == 1)
+            {
+                await MobilityPB1.ProgressTo(1, 850, Easing.Linear);
+            }
+            if (MainChampion.PlaystyleInfo.Mobility == 2)
+            {
+                await MobilityPB1.ProgressTo(1, 850, Easing.Linear);
+                await MobilityPB2.ProgressTo(1, 750, Easing.Linear);
+            }
+            if (MainChampion.PlaystyleInfo.Mobility == 3)
+            {
+                await MobilityPB1.ProgressTo(1, 850, Easing.Linear);
+                await MobilityPB2.ProgressTo(1, 750, Easing.Linear);
+                await MobilityPB3.ProgressTo(1, 850, Easing.Linear);
+            }
+        }
+        private async void AnimateMobilityProgressBarBack()
+        {
+            await MobilityPB1.ProgressTo(0, 600, Easing.Linear);
+            await MobilityPB2.ProgressTo(0, 600, Easing.Linear);
+            await MobilityPB3.ProgressTo(0, 600, Easing.Linear);
+        }
+
+        private async void AnimateMobility()
+        {
+            if (MobilityExp.IsExpanded)
+                await Task.Run(AnimateMobilityProgressBar);
+            else
+                Task.Run(AnimateMobilityProgressBarBack);
+        }
+        private async void AnimateDifficultyProgressBarBack()
+        {
+            await DifficultyPB1.ProgressTo(0, 600, Easing.Linear);
+            await DifficultyPB2.ProgressTo(0, 600, Easing.Linear);
+            await DifficultyPB3.ProgressTo(0, 600, Easing.Linear);
+        }
+        private async void AnimateDifficultyProgressBar()
+        {
+
+            if (MainChampion.TacticalInfo.Difficulty == 3)
+            {
+                await DifficultyPB1.ProgressTo(1, 850, Easing.Linear);
+                await DifficultyPB2.ProgressTo(1, 850, Easing.Linear);
+                await DifficultyPB3.ProgressTo(1, 750, Easing.Linear);
+            }
+            if (MainChampion.TacticalInfo.Difficulty == 2)
+            {
+                await DifficultyPB1.ProgressTo(1, 850, Easing.Linear);
+                await DifficultyPB2.ProgressTo(1, 750, Easing.Linear);
+            }
+            if (MainChampion.TacticalInfo.Difficulty == 1)
+            {
+                await DifficultyPB1.ProgressTo(1, 950, Easing.Linear);
+            }
+        }
+        private async void AnimateDifficulty()
+        {
+            if (DifficultyExp.IsExpanded)
+                await Task.Run(AnimateDifficultyProgressBar);
+            else /*(!DifficultyExp.IsExpanded)*/
+                await Task.Run(AnimateDifficultyProgressBarBack);
+        }
+
         public void AddAbilitiesToCollection()
         {
             for (int i = 0; i < MainChampion.Abilities.Count; i++)
             {
-                 ChampAbilities.Add(MainChampion.Abilities[i]);
+                ChampAbilities.Add(MainChampion.Abilities[i]);
             }
             OnPropertyChanged(nameof(ChampAbilities));
         }
@@ -128,7 +226,7 @@ namespace LoLSkinExplorer.Views
             string name = _ChampName;
 
 
-            var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(AboutPage)).Assembly;
+            var tmp = System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(HomePage)).Assembly;
             System.IO.Stream s = tmp.GetManifestResourceStream($"LoLSkinExplorer.Champions.{name}.json");
             System.IO.StreamReader sr = new System.IO.StreamReader(s);
 
